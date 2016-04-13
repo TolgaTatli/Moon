@@ -1,17 +1,33 @@
 ---
 layout: page
 title: About the Theme
-tags: [about, Jekyll, theme, ramme]
+tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 ---
-![Logo]({{ site.url }}/{{ site.picture }}){: .selfie}
+    
+**[Moon](http://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
 
-**Ramme** is a simple jekyll theme.
-     
-I made this theme after seeing this [screenshot](http://spoonm.org/share/rice/01.png). I took some parts from @mmistakes, like TOC, sample posts. I never tought making a theme from scratch would be this hard. And it's still WIP.
-     
-I'm not a designer or something, so I'm sure there is a better way to make this theme. But it's working and looks acceptable for different screen sizes. If something looks extremely ugly and you can't resist to fix it, just send me a PR. I will be grateful.
-     
-You want to **use it?**      
+## Features
+* Minimal, you can focus on your content
+* Responsive
+* Disqus integration
+* Syntax highlighting
+* Optional post image
+* Social icons
+* Page for sharing projects
+* Optional background image
+* Simple navigation menu
+* MathJax support
+
+## Preview
+
+![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
+![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
+
+See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+
+## Getting Started
+
+To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
       
-[Install Ramme](https://github.com/TaylanTatli/Ramme){: .btn}
+[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}

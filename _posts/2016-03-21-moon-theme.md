@@ -121,8 +121,8 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
 - title: About
   url: /about/
 
-- title: Ramme
-  url: http://taylantatli.me/Ramme
+- title: Moon
+  url: http://taylantatli.me/Moon
 {% endhighlight %}
 
 ---

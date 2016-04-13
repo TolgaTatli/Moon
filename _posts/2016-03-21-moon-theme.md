@@ -12,6 +12,8 @@ tag:
 - theme
 comments: true
 ---
+
+![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
     
 <center><b>Moon</b> is a minimal, one column jekyll theme.</center>
      
@@ -112,13 +114,16 @@ Moon Theme use [Jekyll Compress](https://github.com/penibelst/jekyll-compress-ht
 
 ### Feature Image
 
-You can set feature image per post. Just add `feature: some link` to your post's front matter. This also will be used for twitter card.
+You can set feature image per post. Just add `feature: some link` to your post's front matter.
 
 ```
 feature: /assets/img/some-image.png
 or
 feaure: http://example.com/some-image.png
-```
+```    
+ This also will be used for twitter card:
+
+![Moon Twitter Card](https://cloud.githubusercontent.com/assets/754514/14509719/61c5751c-01d6-11e6-8c29-ce8ccad149bf.png)
 
 ### Comments
 To show disqus comments for your post add `comments: true` to your post's front matter.

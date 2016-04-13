@@ -1,0 +1,222 @@
+//@extend-elements
+%extend1 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+}
+
+
+html {
+	@extend %extend1;
+}
+body {
+	@extend %extend1;
+	font-family: $font1;
+	@include font-rem($doc-font-size);
+	color: $color_tuatara;
+	background-color: $bodycolor;
+	background-position: center center;
+	background-attachment: fixed;
+	@media #{$small} {
+	    background-image: none !important;
+		background: $white;
+	}
+}
+* {
+	box-sizing: border-box;
+}
+*::after {
+	box-sizing: border-box;
+}
+*::before {
+	box-sizing: border-box;
+}
+.header {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	text-align: left;
+	color: $white;
+	@media #{$small} {
+		display: block !important;
+	}
+	@media only screen and (max-height: 500px) {
+	    display: block !important;
+	}
+}
+.flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.container {
+	width: 36rem;
+	max-width: 550px;
+	padding-right: 15px;
+	padding-left: 15px;
+	@include center-block();
+	background-color: $white;
+	color: $color_shark;
+	z-index: 1;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	@include transition(.5s);
+	@media #{$small} {
+		width: 100%;
+	    box-shadow: none;
+	}
+	@media #{$medium} {
+		width: 80%;
+	}
+}
+.row {
+	margin-top: 15px;
+	text-align: center;
+	.title {
+	    margin-top: 0;
+	    margin-bottom: 5px;
+	}
+	@media #{$small} {
+		padding: 0 1em;
+	}
+}
+.wrapper {
+	width: 75%;
+	max-width: 850px;
+	margin: 4rem auto;
+	background: $white;
+	color: $color_tuatara;
+	padding: 2em;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	@include transition(.5s);
+	@media #{$small} {
+		width: 90%;
+		padding: 2em 0;
+	    box-shadow: none;
+	}
+}
+#disqus_thread {
+	width: 75%;
+	max-width: 850px;
+	margin: -3rem auto 4rem;
+	background: $white;
+	color: $color_tuatara;
+	padding: 2em;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	@include transition(.5s);
+	@media #{$small} {
+		width: 90%;
+		padding: 2em 0;
+	    box-shadow: none;
+	}
+}
+// entry meta
+.entry-meta {
+	@include font-rem(12);
+	text-transform: uppercase;
+	color: lighten($color_tuatara,60);
+	padding-left: 0;
+	a {
+		color: lighten($color_tuatara,60);
+	}
+	li {
+	    list-style-type: none;
+	    display: inline;
+	}
+	.tag {
+	    display: inline-block;
+        border: 1px solid;
+        border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
+        @include rounded(3px);
+        text-decoration: none;
+        background-color: $white;
+        color: $color_tuatara;
+        @include transition(.75s);
+        margin: 2px 5px;
+		span {
+			float: left;
+			padding: 2px 6px;
+		}
+		.count {
+			background-color: darken($white,15);
+			@include border-radius(3px,3px,0,0);
+		}
+		&:hover {
+			background-color: darken($white,15);
+			box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
+		}
+	}
+}
+header .entry-meta {
+	display: none; // hide header meta on small screens
+	@media #{$notsmall} {
+		display: block;
+	}
+}
+.entry-title a {
+    text-decoration: none;
+}
+.entry-tags {
+	display: block;
+    margin-top: 1rem;
+	width: 70%;
+    float: left;
+    text-align: left;
+}
+.social-share {
+	display: block;
+    margin-top: 1rem;
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+.feature {
+    @include transition(.5s);
+    @media #{$small} {
+        background-image: none !important;
+    }
+    @media #{$medium} {
+        color: white;
+        padding: 4em;
+        margin-left: -4rem;
+        margin-right: -4rem;
+        margin-top: -2rem;
+        border-radius: 3px 3px 0 0;
+        background-color: rgba($black, 0.6);
+        background-blend-mode: multiply;
+        background-position: center center;
+    }
+    @media #{$notsmall} {
+        color: white;
+        padding: 10em;
+        margin-left: -4rem;
+        margin-right: -4rem;
+        margin-top: -2rem;
+        border-radius: 3px 3px 0 0;
+        background-color: rgba($black, 0.6);
+        background-blend-mode: multiply;
+        background-position: center center;
+    }
+}

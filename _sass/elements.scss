@@ -175,8 +175,8 @@ svg:not(:root) {
 kbd {
 	display: inline-block;
 	margin: 0 1px;
-	padding: 2px 10px;
-	@include font(13);
+	padding: 1px 8px;
+	@include font(10);
 	font-weight: bold;
 	color: $color_fuscous_gray;
 	vertical-align: middle;

@@ -1,13 +1,13 @@
 # Site
-title:              Moon
+title:              和光同尘
 bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+description:        "lypeer|和其光，同其尘"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 locale:             en_US
-url:                http://taylantatli.me/Moon
+url:                "http://lypeer"
 
 # Jekyll
 permalink:          /:title/
@@ -37,18 +37,18 @@ disqus_shortname:   taylantatli
   #ad-slot:
 #bing-verify:
 #email:
-twitter:            username
-facebook:           username
-github:             username
+twitter:            lypeer
+facebook:           lypeer
+github:             lypeer
 #stackoverflow:      123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:           username
 #xing:              username
-instagram:          username
+instagram:          lypeer
 #lastfm:             username
 #tumblr:             username
 #pinterest:         username
 #foursquare:        username
-steam:              username
+steam:              lypeer
 #dribbble:          username
 #youtube:            username
 #soundcloud:        username

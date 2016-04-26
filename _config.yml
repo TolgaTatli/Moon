@@ -55,6 +55,7 @@ steam:              username
 #weibo:             username
 #flickr:            username
 #codepen:           username
+#keybase:           username
 
 # Gems
 gems:

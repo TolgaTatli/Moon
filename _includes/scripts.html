@@ -5,6 +5,8 @@
     <script src="{{ site.url }}/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.fitvid.min.js"></script>
     <script src="{{ site.url }}/assets/js/scripts.js"></script>
+    <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js"
+        type="text/javascript"></script>
     {% if site.google_analytics %}
     <!-- Asynchronous Google Analytics snippet -->
     <script>
@@ -12,7 +14,7 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');  
+      ga('create', '{{ site.google_analytics }}', 'auto');
       ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
     </script>
@@ -20,3 +22,9 @@
     {% if page.comments != false %}
         {% include disqus_comments.html %}
     {% endif %}
+    <script>
+    cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+  alert('Has encontrado un easter egg salvaje!');
+  alert('Revisaste el código acaso?')
+});
+    </script>

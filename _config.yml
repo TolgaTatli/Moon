@@ -10,7 +10,7 @@ locale:             es_ES
 url:                https://agucova.github.io/
 
 # Jekyll
-enforce_ssl: agucova.github.io
+enforce_ssl:        agucova.github.io
 permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge

@@ -7,7 +7,7 @@ words_per_minute:   200
 logo:               'assets/img/logo3.png'
 background:         'assets/img/placeholder-big.jpg'
 locale:             es_ES
-url:                //agucova.github.io/
+url:                https://agucova.github.io/
 
 # Jekyll
 permalink:          /:title/

@@ -7,6 +7,7 @@
 <script src="{{ site.url }}/assets/js/scripts.js"></script>
 <script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
 <script src="assets/js/jquery.raptorize.1.0.js"></script>
+<script src="assets/js/clippy.min.js"></script>
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
@@ -26,21 +27,15 @@
     ga('send', 'pageview');
 </script>
 {% endif %} {% if page.comments != false %} {% include disqus_comments.html %} {% endif %}
-<script type="text/javascript">
-     $(window).load(function() {
-          $('.myButton').raptorize();
-     });
-</script>
-<script type="text/javascript">
-   $(window).load(function() {
-      $('.button').raptorize({
-        'enterOn' : 'konami-code', //timer, konami-code, click
-        'delayTime' : 1 //time before raptor attacks on timer mode
-   });
-});
-</script>
 <script>
 cheet('c a t', function() {
     document.write('<iframe src="http://adultcatfinder.com/embed/" width="320" height="430" style="position:fixed;bottom:0px;right:10px;z-index:100" frameBorder="0"></iframe>');
+});
+cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+  clippy.load('Merlin', function(agent) {
+    // Do anything with the loaded agent
+    agent.show();
+    agent.speak('Has encontrado un easter egg');
+});
 });
 </script>

@@ -26,11 +26,15 @@
     ga('send', 'pageview');
 </script>
 {% endif %} {% if page.comments != false %} {% include disqus_comments.html %} {% endif %}
-<script>
+<script type="text/javascript">
+     $(window).load(function() {
+          $('.myButton').raptorize();
+     });
+</script>
 <script type="text/javascript">
    $(window).load(function() {
       $('.button').raptorize({
-        'enterOn' : 'timer', //timer, konami-code, click
+        'enterOn' : 'konami-code', //timer, konami-code, click
         'delayTime' : 1 //time before raptor attacks on timer mode
    });
 });

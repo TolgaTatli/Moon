@@ -4,33 +4,14 @@ title: Acerca de mí
 tags: [acerca, agucova, yo]
 date: 2016-03-21
 ---
+## Quien soy  
+Tengo 14 años, y son un gran aficionado a la informática, desde los 10 años empecé a aprender lenguajes de programación, scripting, principalmente. Después continué con desarrollo web, y mods/plugins para el videojuego [Minecraft](http://minecraft.net).
+Ahora mismo también he dedicado parte de mi tiempo a la seguridad informática, siendo un activo miembro de [Seguridad Informática Chile](http://hacking.cl). 
+He trabajado en varios servidores para Minecraft, en este momento en [Mythalium Network](https://mythalium.com/).
+Podrás encontrarme frecuentando mi [Github](https://github.com/agucova), [Twitter](https://twitter.com/agucova) y [Blog](https://agucova.github.io/posts/). (Envíame un tweet!)
 
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
-
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
-
-## Preview
-
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
-
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
-
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+## Algunos trabajos
+Aparte de los (numerosos) servidores en los que he estado, he hecho varias webs, normalmente por puro hobby, o práctica. 
+Por nombrar uno, [chumino.tk](http://chumino.tk).
+## Contacto
+Si tienes algún proyecto en mente, simplemente quieres hablar conmigo o algo, puedes enviarme un mail a [agustin@covarrubias.cl](mailto:agustin@covarrubias.cl).

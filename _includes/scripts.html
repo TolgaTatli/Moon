@@ -26,14 +26,16 @@
 </script>
 {% endif %} {% if page.comments != false %} {% include disqus_comments.html %} {% endif %}
 <script>
-cheet('↑ ↑ ↓ ↓ ← → ← → b a', function() {
-    $('.button').raptorize({
-      'enterOn': 'timer', //timer, konami-code, click
-      'delayTime': 1 //time before raptor attacks on timer mode
-  });
+<script type="text/javascript">
+   $(window).load(function() {
+      $('.button').raptorize({
+        'enterOn' : 'click', //timer, konami-code, click
+        'delayTime' : 5000 //time before raptor attacks on timer mode
+   });
 });
-cheet('c a t', function() {
-  document.write('<iframe src="http://adultcatfinder.com/embed/" width="320" height="430" style="position:fixed;bottom:0px;right:10px;z-index:100" frameBorder="0"></iframe>');
-});
+</script>
+    cheet('c a t', function() {
+        document.write('<iframe src="http://adultcatfinder.com/embed/" width="320" height="430" style="position:fixed;bottom:0px;right:10px;z-index:100" frameBorder="0"></iframe>');
+    });
 </script>
 <script src="https://raw.github.com/davesierra/raptorize/master/jquery.raptorize.1.0.js"></script>

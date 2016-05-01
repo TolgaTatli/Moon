@@ -58,6 +58,10 @@ steam:              agucova
 #keybase:           username
 
 # Gems
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-50420608-6'
 gems:
   - jekyll-mentions
   - jekyll-feed

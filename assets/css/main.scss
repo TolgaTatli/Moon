@@ -24,4 +24,12 @@ sitemap: false
 @import "vendor/font-awesome";
 @import "vendor/animate";
 @import "vendor/magnific-popup/magnific-popup";
-@import "print"
+@import "print";
+
+//Processed css
+{% unless site.tiled_bg %}
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+{% endunless %}

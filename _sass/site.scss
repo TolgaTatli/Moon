@@ -19,8 +19,6 @@ body {
 	background-color: $bodycolor;
 	background-position: center center;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
 	@media #{$small} {
 	    background-image: none !important;
 		background: $white;

@@ -6,8 +6,14 @@ reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo3.png'
 background:         'assets/img/placeholder-big.jpg'
+<<<<<<< HEAD
 locale:             es_ES
 url:                https://agucova.github.io
+=======
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_US
+url:                http://taylantatli.me/Moon
+>>>>>>> 5ea371d96ae96a8c250cf97b08e233d9fe3997a9
 
 # Jekyll
 enforce_ssl:        agucova.github.io
@@ -37,6 +43,7 @@ disqus_shortname:   agucova
   #ad-client:
   #ad-slot:
 #bing-verify:
+<<<<<<< HEAD
 email:              agucova@gmail.com
 twitter:            agucova
 github:             agucova
@@ -46,16 +53,30 @@ stackoverflow:      4595150/forgotten-player-agucova
 instagram:          agustin_covarrubias
 # lastfm:             agucova
 #tumblr:             username
+=======
+#email:
+twitter:            username
+facebook:           username
+github:             username
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#linkedin:          username
+#xing:              username
+instagram:          username
+#lastfm:            username
+#tumblr:            username
+>>>>>>> 5ea371d96ae96a8c250cf97b08e233d9fe3997a9
 #pinterest:         username
 #foursquare:        username
 steam:              agucova
 #dribbble:          username
-#youtube:            username
+#youtube:           username
 #soundcloud:        username
 #weibo:             username
 #flickr:            username
 #codepen:           username
 #keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
 
 # Gems
 analytics :

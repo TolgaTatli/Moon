@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Setting up Acer CB3-531-C4A5 15.6" Chromebook for development"
+title: "Setting up Acer CB3-531-C4A5 Chromebook for development"
 date: 2016-05-13
-excerpt: "Setting up Acer CB3-531-C4A5 15.6" Chromebook for development"
+excerpt: "Setting up Acer CB3-531-C4A5 Chromebook for development"
 tags: [post, chromebook, acer, CB3-531-C4A5, Intel Celeron N2830, crouton, linux, ubuntu, xenial, development]
 comments: true,
 feature: /assets/img/chromebook-ubuntu.png

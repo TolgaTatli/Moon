@@ -7,9 +7,7 @@ tags: [post, tips, tricks, phaser, javascript, code]
 comments: true
 ---
 
-I will be putting any tips & tricks I think of/that I come across for [Phaser](http://phaser.io/). 
-
-#####What is Phaser ?
+##What is Phaser ?
  
  Phaser is a fast, free and fun open source HTML5 game framework. It uses a custom build of [Pixi.js](https://github.com/GoodBoyDigital/pixi.js/) for WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and desktop apps via 3rd party tools like Cocoon, Cordova and Electron.
  
@@ -17,7 +15,7 @@ I will be putting any tips & tricks I think of/that I come across for [Phaser](h
  
  Thousands of developers worldwide use it. From indies and multi-national digital agencies to schools and Universities. Each creating their own incredible games. Grab the source and join in the fun!
 
-#####On to the Tips...
+##On to the Tips...
 
 1. When using tweens, set the value to a string instead of a number to make the tween relative to the current value.
 {% highlight javascript %}
@@ -26,6 +24,10 @@ I will be putting any tips & tricks I think of/that I come across for [Phaser](h
     text.anchor.set(0.5);
     text.alpha = 0.5;
 
-    game.add.tween(text).to( { alpha: "0.5" }, 2000, "Linear", true); //This will tween the alpha to 1 since the alpha starts at 0.5 and the value was used as a string.  
-    game.add.tween(text).to( { alpha: 0.5 }, 2000, "Linear", true); //This will do nothing, since the alpha is already 0.5.
+    //This will tween the alpha to 1 since the alpha starts at 0.5 and the value was used as a string.
+    game.add.tween(text).to( { alpha: "0.5" }, 2000, "Linear", true);
+    //This will do nothing, since the alpha is already 0.5.
+    game.add.tween(text).to( { alpha: 0.5 }, 2000, "Linear", true);
+    //This will do tween the alpha to 1, but is more verbose than just using the string.
+    game.add.tween(text).to( { alpha: text.alpha + 0.5 }, 2000, "Linear", true);
 {% endhighlight %}

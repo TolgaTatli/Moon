@@ -8,7 +8,7 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                rroylance.github.io
+url:                http://rroylance.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -42,7 +42,7 @@ email:              roylance.richard@gmail.com
 #facebook:           username
 github:             rroylance
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin:           roylance.richard@gmail.com
+linkedin:           richard-roylance-b6ab0665
 #xing:              username
 #instagram:          username
 #lastfm:            username

@@ -7,7 +7,7 @@ tags: [post, tips, tricks, phaser, javascript, code]
 comments: true
 ---
 
-##What is Phaser ?
+#### What is Phaser ?
  
  Phaser is a fast, free and fun open source HTML5 game framework. It uses a custom build of [Pixi.js](https://github.com/GoodBoyDigital/pixi.js/) for WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and desktop apps via 3rd party tools like Cocoon, Cordova and Electron.
  
@@ -15,7 +15,7 @@ comments: true
  
  Thousands of developers worldwide use it. From indies and multi-national digital agencies to schools and Universities. Each creating their own incredible games. Grab the source and join in the fun!
 
-##On to the Tips...
+#### On to the Tips...
 
 1. When using tweens, set the value to a string instead of a number to make the tween relative to the current value.
 {% highlight javascript %}

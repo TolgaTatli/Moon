@@ -17,7 +17,7 @@ comments: true
 
 #### On to the Tips...
 
-1. When using tweens, set the value to a string instead of a number to make the tween relative to the current value.
+-  When using tweens, set the value to a string instead of a number to make the tween relative to the current value.
 {% highlight javascript %}
     var style = { font: "65px Arial", fill: "#FF0000", align: "center" };
     var text = game.add.text(game.world.centerX, game.world.centerY, "PHASER !", style);
@@ -32,12 +32,12 @@ comments: true
     game.add.tween(text).to( { alpha: text.alpha + 0.5 }, 2000, "Linear", true);
 {% endhighlight %}
 
-2. When working with pixel art set roundPixels to true to prevent Phaser from rendering graphics at sub pixel locations (which causes blurring)
+- When working with pixel art set roundPixels to true to prevent Phaser from rendering graphics at sub pixel locations (which causes blurring)
 {% highlight javascript %} 
     game.renderer.renderSession.roundPixels = true;
 {% endhighlight %}
 
-3. When you need to set a property on all children in a Group, don't use a loop, simply use setAll.
+- When you need to set a property on all children in a Group, don't use a loop, simply use setAll.
 {% highlight javascript %} 
     group.setAll("property.evenSubPropertiesAreSupported", value);
 {% endhighlight %}

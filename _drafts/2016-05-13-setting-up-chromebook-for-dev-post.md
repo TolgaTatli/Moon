@@ -13,6 +13,6 @@ Back at the end of March I saw the [Acer CB3-531-C4A5 Chromebook was on sale on 
 #### Step 1: Set your Chromebook to Developer Mode
 
 1. Press and hold the **esc+refresh** keys, then press the **power** key (while still holding the other two). This will reboot your Chromebook into Recovery Mode.
-2. As soon as you see Recovery Mode pop up (the screen with the yellow exclamation point) press **Ctrl+D**. This will bring up a prompt asking if you want to turn on Developer Mode.
-3. Press Enter to continue, then give it some time. It'll pop up with a new screen for a few moments, then reboot and go through the process of enabling Developer Mode. This may take a little while (about 15 minutes or so), and will wipe your local information.
-4. When it's done, it will return to the screen with the red exclamation point. Leave it alone until it reboots into Chrome OS.
+2. As soon as you see Recovery Mode pop up (the screen with the yellow exclamation point) press **ctrl+d**. This will bring up a prompt asking if you want to turn on Developer Mode.
+3. Press **enter** to continue, then give it some time. It'll pop up with a new screen for a few moments, then reboot and go through the process of enabling Developer Mode.
+4. When it's done, it will return to the screen with the red exclamation point. Press **ctrl+d** or leave it alone for 30 seconds and it will boot into Chrome OS, now in Developer Mode.

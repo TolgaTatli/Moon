@@ -50,23 +50,19 @@ comments: true
     
     //This leaves the sprite frame, and sprite sheet ID blank;
     //Adds the sprite to the specified group.
-    var group = game.add.group();
-    var sprite = game.add.sprite(0, 0, undefined, undefined, group)
+    var sprite = game.add.sprite(0, 0, undefined, undefined, group);
 {% endhighlight %}
 
-- Destroying an object in the onComplete callback of a tween being performed on the object will cause undefined errors. You can either kill the object (does not destroy the object or remove it from memory), or use a very slight timeout before calling destroy.
+- Destroying an object in the onComplete callback of a tween being performed on the object will cause errors. You can either kill the object (does not destroy the object or remove it from memory), or use a very slight timeout before calling destroy.
 {% highlight javascript %}
-    //What does this mean? refer to the above tip!
-    var sprite = game.add.sprite(0, 0);
-    
-    //Causes the error
-    game.add.tween(sprite).to({ alpha: 0 }, 1000).onComplete.addOnce(sprite.destroy, this);
+    //Causes errors
+    game.add.tween(sprite).to({ alpha: 0 }, 1000, 'Linear', true).onComplete.addOnce(sprite.destroy, this);
     
     //Kill method       
-    game.add.tween(sprite).to({ alpha: 0 }, 1000).onComplete.addOnce(sprite.kill, this);
+    game.add.tween(sprite).to({ alpha: 0 }, 1000, 'Linear', true).onComplete.addOnce(sprite.kill, this);
     
     //Timeout method       
-    game.add.tween(sprite).to({ alpha: 0 }, 1000).onComplete.addOnce(function () {
+    game.add.tween(sprite).to({ alpha: 0 }, 1000, 'Linear', true).onComplete.addOnce(function () {
         sprite.exists = false;
         setTimeout(sprite.destroy, 10);
     }, this);

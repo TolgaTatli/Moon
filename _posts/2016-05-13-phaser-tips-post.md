@@ -7,7 +7,7 @@ tags: [post, tips, tricks, phaser, javascript, code]
 comments: true
 ---
 
-#### What is Phaser ?
+#### What is Phaser?
  
  Phaser is a fast, free and fun open source HTML5 game framework. It uses a custom build of [Pixi.js](https://github.com/GoodBoyDigital/pixi.js/) for WebGL and Canvas rendering across desktop and mobile web browsers. Games can be compiled to iOS, Android and desktop apps via 3rd party tools like Cocoon, Cordova and Electron.
  
@@ -20,7 +20,7 @@ comments: true
 -  When using tweens, set the value to a string instead of a number to make the tween relative to the current value.
 {% highlight javascript %}
     var style = { font: "65px Arial", fill: "#FF0000", align: "center" };
-    var text = game.add.text(game.world.centerX, game.world.centerY, "PHASER !", style);
+    var text = game.add.text(game.world.centerX, game.world.centerY, "PHASER!", style);
     text.anchor.set(0.5);
     text.alpha = 0.5;
 
@@ -40,4 +40,34 @@ comments: true
 - When you need to set a property on all children in a Group, don't use a loop, simply use setAll.
 {% highlight javascript %} 
     group.setAll("property.evenSubPropertiesAreSupported", value);
+{% endhighlight %}
+
+- Need the benefits of using a sprite as a container and a group just wont cut it? Use a blank sprite!
+{% highlight javascript %}
+    //This leaves the sprite frame, sprite sheet ID, and parent group blank;
+    //Adding the sprite to the world.
+    var sprite = game.add.sprite(0, 0);
+    
+    //This leaves the sprite frame, and sprite sheet ID blank;
+    //Adds the sprite to the specified group.
+    var group = game.add.group();
+    var sprite = game.add.sprite(0, 0, undefined, undefined, group)
+{% endhighlight %}
+
+- Destroying an object in the onComplete callback of a tween being performed on the object will cause undefined errors. You can either kill the object (does not destroy the object or remove it from memory), or use a very slight timeout before calling destroy.
+{% highlight javascript %}
+    //What does this mean? refer to the above tip!
+    var sprite = game.add.sprite(0, 0);
+    
+    //Causes the error
+    game.add.tween(sprite).to({ alpha: 0 }, 1000).onComplete.addOnce(sprite.destroy, this);
+    
+    //Kill method       
+    game.add.tween(sprite).to({ alpha: 0 }, 1000).onComplete.addOnce(sprite.kill, this);
+    
+    //Timeout method       
+    game.add.tween(sprite).to({ alpha: 0 }, 1000).onComplete.addOnce(function () {
+        sprite.exists = false;
+        setTimeout(sprite.destroy, 10);
+    }, this);
 {% endhighlight %}

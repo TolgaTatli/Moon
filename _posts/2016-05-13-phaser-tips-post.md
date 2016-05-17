@@ -53,7 +53,7 @@ comments: true
     var sprite = game.add.sprite(0, 0, undefined, undefined, group);
 {% endhighlight %}
 
-- Destroying an object in the onComplete callback of a tween being performed on the object will cause errors. You can either kill the object (does not destroy the object or remove it from memory), or use a very slight timeout before calling destroy.
+- Destroying an object in the onComplete callback of a tween being performed on the object will cause errors. You can either kill the object (does not destroy the object or remove it from memory), or delay the destroy call by one frame.
 {% highlight javascript %}
     //Causes errors
     game.add.tween(sprite).to({ alpha: 0 }, 1000, 'Linear', true).onComplete.addOnce(sprite.destroy, this);
@@ -64,6 +64,6 @@ comments: true
     //Timeout method       
     game.add.tween(sprite).to({ alpha: 0 }, 1000, 'Linear', true).onComplete.addOnce(function () {
         sprite.exists = false;
-        setTimeout(sprite.destroy, 10);
+        setTimeout(sprite.destroy, 0);
     }, this);
 {% endhighlight %}

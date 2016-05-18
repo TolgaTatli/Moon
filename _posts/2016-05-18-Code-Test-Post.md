@@ -7,6 +7,11 @@ tags: [sample post, readability, test]
 comments: true
 ---
 
+~~~
+markdown: kramdown
+mathjax: true
+~~~
+
 Test code below:
 
 {% highlight Python %}
@@ -40,3 +45,5 @@ Test table below:
 |Draymond Green|PF|GSW	|125.660|	42|	0|
 |LaMarcus Aldridge|PF|SAS|	102.900	|36|	0|
 |Klay Thompson|SG|GSW|	100.940|	36|	0|
+
+\\[ \frac{1}{n^{2}} \\]

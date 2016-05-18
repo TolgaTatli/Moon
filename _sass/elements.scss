@@ -20,7 +20,7 @@
 .btn {
 	padding: 10px 18px;
 	@include font-rem(14);
-	margin: 40px auto;
+	margin: 4px auto;
 	@extend %btnextend;
 	&.btn-success {
       background-color: $success;

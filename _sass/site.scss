@@ -72,8 +72,8 @@ body {
 .container {
 	width: 36rem;
 	max-width: 550px;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
 	@include center-block();
 	background-color: rgba(255, 255, 255, .4);
 	opacity: .4;

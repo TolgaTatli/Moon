@@ -46,4 +46,6 @@ Test table below:
 |LaMarcus Aldridge|PF|SAS|	102.900	|36|	0|
 |Klay Thompson|SG|GSW|	100.940|	36|	0|
 
+Test formula below:
+
 \\[ y_x = \alpha + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 \\]

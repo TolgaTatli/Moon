@@ -75,8 +75,7 @@ body {
 	padding-right: 150px;
 	padding-left: 150px;
 	@include center-block();
-	background-color: rgba(255, 255, 255, .6);
-	opacity: .4;
+	background-color: rgba(13, 29, 38, .6);
 	color: $color_shark;
 	z-index: 1;
 	border-radius: 3px;

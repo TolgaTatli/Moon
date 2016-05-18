@@ -33,10 +33,10 @@ if __name__ == '__main__':
 
 Test table below:
 
-|Player|Position|Tm|	Output|	Salary|	Opponent|	Status|	Injury|	Date|	Returns|
-|:-----|:------:|::||:-------:|:------|:-------:|:-------:|:------|:---:|:--------:|
-|Paul George|SF|IND	|139.900|	45|	PHI	|0|	0|	0|	0|
-|LeBron James|SF|CLE|	125.825	|52	|DEN|	0|	0|	0|	0|
-|Draymond Green|PF|GSW	|125.660|	42|	0|	0|	0|	0|	0|
-|LaMarcus Aldridge|PF|SAS|	102.900	|36|	0|	0|	0|	0|	0|
-|Klay Thompson|SG|GSW|	100.940|	36|	0|	0|	0|	0|	0|
+|Player|Position|Tm|	Output|	Salary|	Opponent|
+|:-----|:------:|::||:-------:|:------|:-------:|
+|Paul George|SF|IND	|139.900|	45|	PHI|
+|LeBron James|SF|CLE|	125.825	|52	|DEN|
+|Draymond Green|PF|GSW	|125.660|	42|	0|
+|LaMarcus Aldridge|PF|SAS|	102.900	|36|	0|
+|Klay Thompson|SG|GSW|	100.940|	36|	0|

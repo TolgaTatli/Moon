@@ -10,6 +10,8 @@ layout: compress
 
 <head>
     {% include head.html %}
+    
+<!--I put this here.-->
     <!-- Look the author details up from the site config. -->
 {% assign author = site.data.authors[page.author] %}
 
@@ -20,6 +22,8 @@ layout: compress
         Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
     </span>
 {% endif %}
+<!--This is where it ends.-->
+
 </head>
 <body>
     {% include nav.html %}

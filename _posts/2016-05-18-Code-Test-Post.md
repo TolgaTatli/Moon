@@ -46,4 +46,4 @@ Test table below:
 |LaMarcus Aldridge|PF|SAS|	102.900	|36|	0|
 |Klay Thompson|SG|GSW|	100.940|	36|	0|
 
-\\[ \frac{1}{n^{2}} \\]
+\\[ y_x = \alpha + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 \\]

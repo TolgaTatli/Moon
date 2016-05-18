@@ -11,18 +11,7 @@ layout: compress
 <head>
     {% include head.html %}
     
-<!--I put this here.-->
-    <!-- Look the author details up from the site config. -->
-{% assign author = site.data.authors[page.author] %}
 
-<!-- Output author details if some exist. -->
-{% if author %}
-    <span>
-        <!-- Personal Info. -->
-        Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
-    </span>
-{% endif %}
-<!--This is where it ends.-->
 
 </head>
 <body>
@@ -33,6 +22,23 @@ layout: compress
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
+                    
+                    
+                    <!--I put this here.-->
+                        <!-- Look the author details up from the site config. -->
+                        {% assign author = site.data.authors[page.author] %}
+                    
+                    <!-- Output author details if some exist. -->
+                        {% if author %}
+                            <span>
+                                <!-- Personal Info. -->
+                                Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+                            </span>
+                        {% endif %}
+                    <!--This is where it ends.-->
+                    
+                    
+                    
                     <h4>{{ page.date | date_to_string }}</h4>
                     {% if site.reading_time %}
                     <p class="reading-time">

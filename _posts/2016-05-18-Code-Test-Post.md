@@ -33,7 +33,7 @@ if __name__ == '__main__':
 Test table below:
 
 |Player|Position|Tm|	Output|	Salary|	Opponent|
-|:-----|:------:|::||:-------:|:------|-------:|
+|:-----|:------:|::||:-------:|:------:|-------:|
 |Paul George|SF|IND	|139.900|	45|	PHI|
 |LeBron James|SF|CLE|	125.825	|52	|DEN|
 |Draymond Green|PF|GSW	|125.660|	42|	0|

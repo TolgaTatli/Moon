@@ -7,10 +7,9 @@ tags: [sample post, readability, test]
 comments: true
 ---
 
-~~~
 markdown: kramdown
 mathjax: true
-~~~
+
 
 Test code below:
 

@@ -5,6 +5,7 @@ date: 2012-05-16
 excerpt: "My first post!"
 tags: [sample post, readability, test]
 comments: true
+author: james_fung
 ---
 Test code below:
 

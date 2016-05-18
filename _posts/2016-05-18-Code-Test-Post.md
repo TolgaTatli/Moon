@@ -7,7 +7,7 @@ tags: [sample post, readability, test]
 comments: true
 ---
 
-Test post!
+Test code below:
 
 {% highlight Python %}
 import pandas as pd
@@ -31,6 +31,7 @@ if __name__ == '__main__':
     merge()
 {% endhighlight %}
 
+Test table below:
 
 |Player|Position|Tm|	Output|	Salary|	Opponent|	Status|	Injury|	Date|	Returns|
 |:-----|:------:|::||:-------:|:------|:-------:|:-------:|:------|:---:|:--------:|

@@ -9,7 +9,7 @@ comments: true
 
 Test post!
 
-{% highlight html %}
+{% highlight Python %}
 import pandas as pd
 import sys
 import numpy as np

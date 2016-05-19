@@ -70,17 +70,17 @@ body {
 	align-items: center;
 }
 .container {
-	width: 36rem;
-	max-width: 550px;
-	padding-right: 15px;
-	padding-left: 15px;
+	width: 360rem;
+	max-width: 750px;
+	padding-right: 150px;
+	padding-left: 150px;
 	@include center-block();
-	background-color: $white;
+	background-color: rgba(13, 29, 38, .6);
 	color: $color_shark;
 	z-index: 1;
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
-	@include transition(.5s);
+	@include transition(.100s);
 	@media #{$small} {
 		width: 100%;
 	    box-shadow: none;

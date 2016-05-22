@@ -3,7 +3,7 @@ layout: post
 title: 'Setting up Acer CB3-531-C4A5 Chromebook for development'
 date: 2016-05-13
 excerpt: 'Setting up Acer CB3-531-C4A5 Chromebook for development'
-tags: [post, chromebook, acer, CB3-531-C4A5, Intel Celeron N2830, crouton, linux, ubuntu, xenial, development]
+tags: [post, chromebook, acer, CB3-531-C4A5, Intel Celeron N2830, crouton, linux, ubuntu, xenial, development, tutorial, sublime text, github, terminal]
 comments: true,
 feature: /assets/img/chromebook-ubuntu.jpg
 ---
@@ -20,7 +20,7 @@ Back at the end of March I saw the [Acer CB3-531-C4A5 Chromebook was on sale on 
 #### Step 2: Install crouton extension ####
 
 1. Navigate to [crouton integration Extension @ Chrome Webstore](https://goo.gl/OVQOEt)
-2. Click 'ADD TO CHROME' button in the top left of the popup
+2. Click '+ ADD TO CHROME' button in the top left of the popup
 3. Click 'Add extension' in the next popup
 4. After a few seconds you should see a new page open up saying 'Thank you for installing the crouton extension!'
 5. You can now close those tabs and confirm that the extension is running by looking for the C icon in the top right of Chrome. 
@@ -28,9 +28,20 @@ Back at the end of March I saw the [Acer CB3-531-C4A5 Chromebook was on sale on 
 The crouton integration extension is now installed and we can move on to actually installing Ubuntu.
 
 {% capture images %}
-	assets/img/step2.1.png
-	assets/img/step2.2.png
-	assets/img/step2.3.png
-	assets/img/step2.4.png
+	../assets/img/step2-1.png
+	../assets/img/step2-2.png
+	../assets/img/step2-3.png
+	../assets/img/step2-4.png
 {% endcapture %}
-{% include gallery images=images caption='' cols=4 %}
+{% include gallery images=images caption='' cols=2 %}
+
+##### Note: From this point on I assume that you haven't changed your default download location/ your crouton installer script is located in Downloads #####
+
+#### Step 3: Download crouton ####
+
+1. Navigate to [crouton download link](https://goo.gl/fd3zc) which will save the crouton installer script to your Downloads folder.
+
+{% capture images %}
+	../assets/img/step3.png
+{% endcapture %}
+{% include gallery images=images caption='' cols=1 %}

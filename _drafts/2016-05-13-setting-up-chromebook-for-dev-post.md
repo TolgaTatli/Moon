@@ -3,7 +3,7 @@ layout: post
 title: 'Setting up Acer CB3-531-C4A5 Chromebook for development'
 date: 2016-05-13
 excerpt: 'Setting up Acer CB3-531-C4A5 Chromebook for development'
-tags: [post, chromebook, acer, CB3-531-C4A5, Intel Celeron N2830, crouton, linux, ubuntu, xenial, development, tutorial, sublime text, github, terminal]
+tags: [post, chromebook, acer, CB3-531-C4A5, Intel Celeron N2830, crouton, linux, ubuntu, xenial, development, tutorial, sublime text, github, terminal, shell, crosh, developer mode]
 comments: true,
 feature: /assets/img/chromebook-ubuntu.jpg
 ---
@@ -37,6 +37,8 @@ The crouton integration extension is now installed and we can move on to actuall
 
 ##### Note: From this point on I assume that you haven't changed your default download location/ your crouton installer script is located in Downloads #####
 
+##### Note 2: I recommend having a USB keyboard and mouse handy; as once crouton nears completion your Chromebooks keyboard and touchpad may be disabled due to a recent bug in ChromeOS. Plugging in the USB keyboard and mouse once your input is locked will allow you to complete the installation; at which point you can restart your Chromebook and input will be re-enabled. #####
+
 #### Step 3: Download crouton ####
 
 1. Navigate to [crouton download link](https://goo.gl/fd3zc) which will save the crouton installer script to your Downloads folder.
@@ -45,3 +47,26 @@ The crouton integration extension is now installed and we can move on to actuall
 	../assets/img/step3.png
 {% endcapture %}
 {% include gallery images=images caption='' cols=1 %}
+
+#### Step 4: Install Ubuntu #####
+
+1. Anywhere inside ChromeOS press **ctrl+alt+t**; this opens up a crosh shell (Chrome OS developer shell).
+2. Once the crosh shell is open type **'shell'** to get the shell prompt.
+3. Next it's time to start the installation of Ubuntu; type the command **'sudo sh ~/Downloads/crouton -r xenial -t xfce,xiwi'** and hit enter to start the process.
+	* The **'-r'** in the command specifies what distribution you want to install. By default crouton will install an older LTS version, we want the latest and greatest.
+	* The **'-t'** in the command specifies what targets to install; xfce is the desktop envioronment and xiwi is what allows us to run the Ubuntu desktop or applications in a window within ChromeOS.
+4. The installation will take a while; once it is done downloading and installing things it will prompt you for a username to use for Ubuntu. Enter whatever you want that to be and hit **enter**.
+5. You now need to enter your password for Ubuntu; note that you can't not have a password, you must set something.
+6. Give it another minute and once you see 'chronos@localhost / $' (the only green in the entire process) you're all done and ready to use Ubuntu on your Chromebook!
+
+{% capture images %}
+	../assets/img/step4-1.png
+	../assets/img/step4-2.png
+	../assets/img/step4-3.png
+	../assets/img/step4-4.png
+	../assets/img/step4-5.png
+	../assets/img/step4-6.png
+	../assets/img/step4-7.png
+	../assets/img/step4-8.png
+{% endcapture %}
+{% include gallery images=images caption='' cols=3 %}

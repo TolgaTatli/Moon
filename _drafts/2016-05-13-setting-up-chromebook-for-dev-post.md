@@ -23,7 +23,7 @@ Back at the end of March I saw the [Acer CB3-531-C4A5 Chromebook was on sale on 
 2. Click '+ ADD TO CHROME' button in the top left of the popup
 3. Click 'Add extension' in the next popup
 4. After a few seconds you should see a new page open up saying 'Thank you for installing the crouton extension!'
-5. You can now close those tabs and confirm that the extension is running by looking for the C icon in the top right of Chrome. 
+5. You can now close those tabs and confirm that the extension is running by looking for the **C icon** in the top right of Chrome. 
 
 The crouton integration extension is now installed and we can move on to actually installing Ubuntu.
 
@@ -70,3 +70,38 @@ The crouton integration extension is now installed and we can move on to actuall
 	../assets/img/step4-8.png
 {% endcapture %}
 {% include gallery images=images caption='' cols=3 %}
+
+#### Step 5: Setup Ubuntu ####
+1. Enter the command **'sudo startxfce4'**; this will start the xfce desktop environment that we installed.
+	* You will need to open up the crosh shell, type **'shell'** and then **'sudo startxfce4'** everytime you reboot your Chromebook.
+2. After a second or two Ubuntu should now start up fullscreen; click **'Use default config'** on the popup that appears and wait until the desktop fully loads.
+3. You can now click the **fullscreen button on your Chromebook keybaord to put Ubuntu in windowed mode**
+4. While in windowed mode, or minimized, we can now confirm that the **crouton integration extension** is functioning by looking at the **C icon** in Chrome; there should be a 1 badge and clicking on it should show Chrome OS and xenial.
+
+{% capture images %}
+	../assets/img/step5-1.png
+	../assets/img/step5-2.png
+	../assets/img/step5-3.png
+	../assets/img/step5-4.png
+{% endcapture %}
+{% include gallery images=images caption='' cols=2 %}
+
+#### Step 6: Setup Git ####
+1. In Ubuntu open up a terminal by clicking the icon on the dock on the bottom of the screen.
+2. We are going to use apt to download and install git; first you need to run the command **'sudo apt-get update'** to update the list of available packages. You will need to type the password you set back in the crouton setup to run the command using sudo (which is necessary).
+3. Once that completes type the command **'sudo apt-get install git-all'**; you do not need your password this time because you already authenticated this session in the update command.
+4. Once that completes you now have git cli installed and almost ready to use.
+5. Lastly you need to set your email and name in the git config; run the command **'git config --global user.email 'your@email.com''** to set your email.
+6. Now run the command **'git config --global user.name 'Name''** to set your name. You are now ready to use git to your hearts content.
+
+{% capture images %}
+	../assets/img/step6-1.png
+	../assets/img/step6-2.png
+	../assets/img/step6-3.png
+	../assets/img/step6-4.png
+	../assets/img/step6-5.png
+	../assets/img/step6-6.png
+	../assets/img/step6-7.png
+{% endcapture %}
+{% include gallery images=images caption='' cols=2 %}
+

@@ -9,7 +9,7 @@ comments: true
 
 ##### Do you have a tip you'd like added ? Post in the comments below or [send me an email](mailto:roylance.richard+phasertips@gmail.com?Subject=Phaser%20Tip%20Suggestion "EMAIL ME!").
 
-=====
+---
 
 #### What is Phaser?
 

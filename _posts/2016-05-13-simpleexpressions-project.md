@@ -3,7 +3,7 @@ layout: post
 title: "Simple Expression Solver"
 date: 2016-05-13
 excerpt: "Simple Adobe Brackets extension to solve expressions."
-tags: [post, adobe, brackets, extension]
+tags: [project, adobe, brackets, extension]
 project: true
 comments: true
 ---

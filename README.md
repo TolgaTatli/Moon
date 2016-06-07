@@ -1,4 +1,4 @@
-# Moon Jekyll Theme
+# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://paypal.me/taylantatli)
     
 ######(If you like this theme or using it, please give a :star: for motivation.)
 

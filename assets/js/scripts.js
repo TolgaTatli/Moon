@@ -17,7 +17,7 @@ $(function() {
 
 // delete projects
 $(function(){
-   $(".dl-menu dl-menuopen").lastChild.css("display","none"); 
+   $(".dl-menu dl-menuopen").lastChild.hide(); 
 });
 
 // All others

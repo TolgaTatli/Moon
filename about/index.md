@@ -6,7 +6,9 @@ date: 2016-06-14
 comments: false
 ---
     
-<center><b>492262927@qq.com</b> <b>15926382655<b/> <b>中南民族大学计科院在校生</b> <b>2017年毕业<b/></center><br/>
+<center><b>492262927@qq.com</b> <b>15926382655<b/> <b>中南民族大学计科院在校生</b> <b>2017年毕业<b/></center>
+
+
 
 ## 技能
 * HTML/CSS/JS/jquery
@@ -16,8 +18,9 @@ comments: false
 * ajax实现简单应用
 * 更多技能挖掘中......
 
-## 项目经验
 
+
+## 项目经验
 * 移动web app开发 	
 {% include gallery images=images caption="开发移动web APP网页  	2016.05-至今" cols=2 %}  
 为某项目组微信公众号开发移动端网页。 
@@ -27,6 +30,8 @@ comments: false
 3. 用户可选择附近的商家在线提交订单，收藏、评论等功能 
 目前正处于项目前期，已做好商家详情、商家列表页面。 
 Github项目地址: https://github.com/lomolife/99IPet
+
+
 
 * 大创（国家级） 	
 {% include gallery images=images caption="负责项目网站开发  2014.12-2016.03" cols=2 %}   
@@ -39,6 +44,8 @@ Github项目地址: https://github.com/lomolife/99IPet
 5.使用高德地图JSAPI实时返回经度纬度等信息. 
 Github项目地址: https://github.com/lomolife/dachuang_gcxw15011
 
+
+
 * 毕业生专题网
 {% include gallery images=images caption="网站整体策划  2014.05-2014.06" cols=2 %}
 目的：在本校互联网团队（比特工场）中为了提高自身能力. 
@@ -46,6 +53,8 @@ Github项目地址: https://github.com/lomolife/dachuang_gcxw15011
 2. 将网站分为四个大板块：首页，毕业微话题，毕业秀，优秀毕业生。 
 3. 由于做出来不理想，并没有上线。 
 （当时在团队中的身份是产品组的一名成员）
+
+
 
 
 ## 作品展示
@@ -58,8 +67,10 @@ Github项目地址: https://github.com/lomolife/dachuang_gcxw15011
 
 [网址](http://gcxw.sinaapp.com).
 
-## 自我评价
 
+
+
+## 自我评价
 * 大一下学期加入学校的学生互联网团队的沉淀：
 1.在做项目过程中，与学校资讯集团旗下的各个社团都有一定沟通，在这个过程中提升了我的沟通交流能力，了解了互联网产品。
 2.在团队中认识一些能力很强的人，从他们身上我找到了适合我的学习技巧。
@@ -72,6 +83,8 @@ Github项目地址: https://github.com/lomolife/dachuang_gcxw15011
 1.接触和使用移动端的前端框架比如腾讯手Q的frozenui，现在正在做的项目的ui就是用它搭建的。
 2.理解了ajax异步加载，能运用在开发过程中需要的地方。
 3.理解了标签语义化、前端性能优化。
+
+
 
 ## 期望工作
 <b>web前端开发实习生</b> 

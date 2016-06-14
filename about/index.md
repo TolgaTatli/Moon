@@ -63,7 +63,7 @@ Github项目地址: https://github.com/lomolife/dachuang_gcxw15011
    https://raw.githubusercontent.com/lomolife/lomolife.github.io/master/assets/img/zuop.png
    https://raw.githubusercontent.com/lomolife/lomolife.github.io/master/assets/img/zp.png
 {% endcapture %}
-{% include gallery images=images caption="自行车多动能监测系统截图&webapp截图" cols=2 %}
+{% include gallery images=images caption="自行车多动能监测系统截图、webapp截图" cols=2 %}
 
 [网址](http://gcxw.sinaapp.com).
 

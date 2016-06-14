@@ -6,7 +6,7 @@ date: 2016-06-14
 comments: false
 ---
     
-<center><b>492262927@qq.com</b>,15926382655,中南民族大学计科院在校生,2017年毕业</center>
+<center><b>492262927@qq.com,15926382655,中南民族大学计科院在校生,2017年毕业</b></center>
 
 
 
@@ -15,13 +15,13 @@ comments: false
 * phpmyadmin
 * git项目管理
 * PHP与数据库简单交互
-* ajax实现简单应用
+* ajax实现前后台简单交互
 * 更多技能挖掘中......
 
 
 
 ## 项目经验
-* 移动web app开发 	
+### 移动web app开发 	
 {% include caption="开发移动web APP网页  	2016.05-至今" cols=2 %}  
 为某项目组微信公众号开发移动端网页。 
 描述： 
@@ -33,7 +33,7 @@ Github项目地址: https://github.com/lomolife/99IPet
 
 
 
-* 大创（国家级） 	
+### 大创（国家级） 	
 {% include caption="负责项目网站开发  2014.12-2016.03" cols=2 %}   
 自行车多动能监测系统 
 我主要做： 
@@ -46,7 +46,7 @@ Github项目地址: https://github.com/lomolife/dachuang_gcxw15011
 
 
 
-* 毕业生专题网
+### 毕业生专题网
 {% include caption="网站整体策划  2014.05-2014.06" cols=2 %}
 目的：在本校互联网团队（比特工场）中为了提高自身能力. 
 1. 该网站为迎合毕业季的来临，以毕业生群体为出发点。 
@@ -63,7 +63,7 @@ Github项目地址: https://github.com/lomolife/dachuang_gcxw15011
    https://raw.githubusercontent.com/lomolife/lomolife.github.io/master/assets/img/zuop.png
    https://raw.githubusercontent.com/lomolife/lomolife.github.io/master/assets/img/zp.png
 {% endcapture %}
-{% include gallery images=images caption="自行车多动能监测系统截图" cols=2 %}
+{% include gallery images=images caption="自行车多动能监测系统截图&webapp截图" cols=2 %}
 
 [网址](http://gcxw.sinaapp.com).
 

@@ -15,6 +15,11 @@ $(function() {
   $(".content").fitVids();
 });
 
+// delete projects
+$(function(){
+   $(".dl-menu dl-menuopen").lastChild.css("display","none"); 
+});
+
 // All others
 $(document).ready(function() {
     // zoom in/zoom out animations

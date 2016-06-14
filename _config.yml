@@ -5,7 +5,7 @@ description:        "Yejunhan's blog."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/avatar.jpg'
-background:         'assets/img/7758832526_cc8f681e48_b.jpg'
+background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                http://lomolife.github.io
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+#disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.

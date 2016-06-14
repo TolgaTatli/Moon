@@ -22,7 +22,7 @@ comments: false
 
 ## 项目经验
 * 移动web app开发 	
-{% include gallery images=images caption="开发移动web APP网页  	2016.05-至今" cols=2 %}  
+{% include caption="开发移动web APP网页  	2016.05-至今" cols=2 %}  
 为某项目组微信公众号开发移动端网页。 
 描述： 
 1. 使用frozenui快速的搭建前端框架，页面交互用到轮播图的JS组件、选项卡组件，其余页面交互如页面的点击事件的绑定原生JS来实现，页面布局用媒体查询来兼容不同尺寸的手机屏幕。
@@ -34,7 +34,7 @@ Github项目地址: https://github.com/lomolife/99IPet
 
 
 * 大创（国家级） 	
-{% include gallery images=images caption="负责项目网站开发  2014.12-2016.03" cols=2 %}   
+{% include caption="负责项目网站开发  2014.12-2016.03" cols=2 %}   
 自行车多动能监测系统 
 我主要做： 
 1.使用HTML+CSS+JS项目官网静态页面的代码的编写. 
@@ -47,7 +47,7 @@ Github项目地址: https://github.com/lomolife/dachuang_gcxw15011
 
 
 * 毕业生专题网
-{% include gallery images=images caption="网站整体策划  2014.05-2014.06" cols=2 %}
+{% include caption="网站整体策划  2014.05-2014.06" cols=2 %}
 目的：在本校互联网团队（比特工场）中为了提高自身能力. 
 1. 该网站为迎合毕业季的来临，以毕业生群体为出发点。 
 2. 将网站分为四个大板块：首页，毕业微话题，毕业秀，优秀毕业生。 

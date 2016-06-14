@@ -1,14 +1,14 @@
 # Site
-title:              Yejunhan的博客
+title:              Yejunhan's blog
 bio:                'stay hungry stay foolish'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+description:        "Yejunhan's blog."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                http://taylantatli.me/Moon
+url:                http://lomolife.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -40,7 +40,7 @@ disqus_shortname:   taylantatli
 #email:
 twitter:            username
 facebook:           username
-github:             username
+github:             lomolife
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
@@ -53,7 +53,7 @@ steam:              username
 #dribbble:          username
 #youtube:           username
 #soundcloud:        username
-#weibo:             username
+weibo:              u/5111888003?refer_flag=1005055010_&is_all=1
 #flickr:            username
 #codepen:           username
 #keybase:           username

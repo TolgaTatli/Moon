@@ -6,7 +6,7 @@ date: 2016-06-14
 comments: false
 ---
     
-<center><b>492262927@qq.com</b> <b>15926382655<b/> <b>中南民族大学计科院在校生</b> <b>2017年毕业<b/></center>
+<center><b>492262927@qq.com</b> <b>15926382655<b/> <b>中南民族大学计科院在校生</b> <b>2017年毕业<b/></center><br/>
 
 ## 技能
 * HTML/CSS/JS/jquery

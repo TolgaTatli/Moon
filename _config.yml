@@ -5,8 +5,8 @@ description:        "Yejunhan's blog."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+background:         'assets/img/7758832526_cc8f681e48_b.jpg'
+tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                http://lomolife.github.io
 

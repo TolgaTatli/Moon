@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: Upcoming Concerts
+title: Termine
 excerpt: "Overview"
 comments: false
 ---

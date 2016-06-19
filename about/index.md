@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the BBO
+title: Über das BBO
 tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false

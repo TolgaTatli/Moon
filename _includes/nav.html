@@ -57,7 +57,7 @@
                         <a href="http://steamcommunity.com/id/{{ site.steam }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-steam-square"></i> Steam</a>
                     </li>{% endif %}
                     {% if site.youtube %}<li>
-                        <a href="https://youtube.com/user/{{ site.youtube }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-youtube-square"></i> Youtube</a>
+                        <a href="https://youtube.com/channel/{{ site.youtube }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-youtube-square"></i> Youtube</a>
                     </li>{% endif %}
                     {% if site.soundcloud %}<li>
                         <a href="http://soundcloud.com/{{ site.soundcloud }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-soundcloud"></i> SoundCloud</a>
@@ -83,10 +83,10 @@
 				</ul><!-- /.dl-submenu -->
 			</li>
 			<li>
-				<a href="#">Posts</a>
+				<a href="#">Concerts</a>
 				<ul class="dl-submenu">
-					<li><a href="{{ site.url }}/posts/">All Posts</a></li>
-					<li><a href="{{ site.url }}/tags/">All Tags</a></li>
+					<li><a href="{{ site.url }}/concerts/">Upcoming Concerts</a></li>
+					<li><a href="{{ site.url }}/tags/">Categories</a></li>
 				</ul>
 			</li>
 			{% for link in site.data.navigation %}

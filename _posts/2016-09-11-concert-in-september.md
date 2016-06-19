@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Concert, 11. September 2016, Beeskow"
+title:  "Konzert, 11. September 2016, Beeskow"
 date:   2016-04-03
-excerpt: "Something"
+excerpt: "Herzliche Einladung zum nächstem BBO Konzert außerhalb von Berlin"
 tag:
 - concert
 - brandenburg

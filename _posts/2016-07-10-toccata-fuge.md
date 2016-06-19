@@ -1,43 +1,45 @@
 ---
 layout: post
-title:  "Markdown Syntax"
-date:   2016-03-15
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+title:  "Toccata & Fuge"
+date:   2016-07-10
+excerpt: "Das Berliner Blockflöten Orchester spielt berühmte Orgelwerke"
 tag:
-- markdown 
-- syntax
-- sample
-- test
-- jekyll
+- concert 
+- berlin
 comments: true
 ---
 
 ## HTML Elements
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
+Aus dem Programm
 
-# Heading 1
+Sämtlicher Werke des Programms wurden für Blockflötenorchester arrangiert von Simon Borutzki
 
-## Heading 2
+Johann Sebastian Bach (1685-1750)
+Präludium & Fuge C-Dur BWV 553
+Orgel-Triosonate C-Dur BWV 529 
+Präludium d-Moll BWV 899 
+Dorische Toccata BWV 538
+Fuge g-Moll BWV 578
 
-### Heading 3
+César Franck (1822-1890) 
+Andantino 1857
 
-#### Heading 4
+Luigi Cherubini (1760-1824)
+Fuga
 
-##### Heading 5
+Alfred Lebeau (1835-1906)
+Aubade Op. 35
 
-###### Heading 6
+Johann Sebastian Bach (1685-1750)
+Concerto a-Moll BWV 593 nach Vivaldi 
+Toccata & Fuge d-Moll BWV 565
 
-### Body text
+Louis James Alfred Lefébure-Wély (1817-1869) 
+Boléro de concert 1865
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
-
-![Smithsonian Image](https://mmistakes.github.io/minimal-mistakes/images/3953273590_704e3899d5_m.jpg)
+![Smithsonian Image](https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/13076675_1006031096158650_9111887476471345065_n.jpg?oh=781eb2f9be3be4ad50ae63758e9f617a&oe=57D9395E)
 {: .image-right}
-
-*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
-
-HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
 
 ### Blockquotes
 

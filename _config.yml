@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
-reading_time:       true
+title:              'Berliner Blockflöten Orchester'
+bio:                'an der Musikschule Neukölln'
+description:        ""
+reading_time:       false
 words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
+logo:               'assets/img/bbo-logo.png'
+background:         'assets/img/flute-background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                http://taylantatli.me/Moon
+url:                http://localhost:4000/
 
 # Jekyll
 permalink:          /:title/
@@ -36,29 +36,9 @@ disqus_shortname:   taylantatli
   #verify:
   #ad-client:
   #ad-slot:
-#bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github:             username
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-instagram:          username
-#lastfm:            username
-#tumblr:            username
-#pinterest:         username
-#foursquare:        username
-steam:              username
-#dribbble:          username
-#youtube:           username
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
+email:              a@a.com
+facebook:           Berliner-Blockflöten-Orchester-BBO-539437959484635
+youtube:            UCZqZoQhc6dwRziq2KbA0Ung
 
 # Gems
 gems:

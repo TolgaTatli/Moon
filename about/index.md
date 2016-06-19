@@ -19,4 +19,6 @@ Das BBO Orchester
 
 ## Auszeichnungen
 
-* 2016 Preisträger des ...
+* Preisträger des <a href="https://www.musikrat.de/dow/startseite/">Deutschen Orchesterwettbewerbs</a> 2016 mit dem Prädikat _mit hervorragendem Erfolg teilgenommen_
+
+Copyright 2016 Berliner Blockflöten Orchester <a href="https://www.facebook.com/Berliner-Blockfl%C3%B6ten-Orchester-BBO-539437959484635/info?tab=page_info">Impressum</a>

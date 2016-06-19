@@ -8,7 +8,7 @@ logo:               'assets/img/bbo-logo.png'
 background:         'assets/img/flute-background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                goodpilotfish.github.io
+url:                ""
 
 # Jekyll
 permalink:          /:title/

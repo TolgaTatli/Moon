@@ -1,4 +1,6 @@
 # Site navigation links
 
-- title: Projects
-  url: /projects/
+- title: Media
+  url: /media/
+- title: Mitmachen
+  url: /mitmachen/

@@ -1,37 +1,26 @@
 ---
 layout: page
-title: About the Theme
+title: Über das BBO
 tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+## Wer sind wir
+Das Berliner Blockflöten Orchester – an der Musikschule „Paul Hindemith“ Neukölln ist ein ambitioniertes Laienensemble, das in wöchentlichen Proben anspruchsvolle Werke aller Epochen und Stilrichtungen in chorischer Besetzung (von Sopranino bis Subbass) erarbeitet und in regelmäßigen Konzerten präsentiert.
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+Sehr versierte Spieler/innen übernehmen dabei auch solistische Aufgaben. Unter der Leitung des Blockflötisten Simon Borutzki probt das Ensemble jeden Donnerstag von 19.00 - 21.15 Uhr in der Musikschule Neukölln, Boddinstraße 34, 12052 Berlin.
 
-## Preview
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TH8XYCMYYmA" frameborder="0" allowfullscreen></iframe>
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+Konzertausschnitte sind auf unserem <a href="https://www.youtube.com/watch?v=TH8XYCMYYmA"><b>Youtube Kannal</b></a> verfügbar.
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+Viel Vergnügen!
 
-## Getting Started
+Das BBO Orchester
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+## Auszeichnungen
+
+* Preisträger des <a href="https://www.musikrat.de/dow/startseite/">Deutschen Orchesterwettbewerbs</a> 2016 mit dem Prädikat _mit hervorragendem Erfolg teilgenommen_
+
+Copyright 2016 Berliner Blockflöten Orchester <a href="https://www.facebook.com/Berliner-Blockfl%C3%B6ten-Orchester-BBO-539437959484635/info?tab=page_info">Impressum</a>

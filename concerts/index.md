@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: All Concerts
-excerpt: "Upcoming concerts"
+title: Upcoming Concerts
+excerpt: "Overview"
 comments: false
 ---

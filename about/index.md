@@ -11,6 +11,8 @@ Das Berliner Blockflöten Orchester – an der Musikschule „Paul Hindemith“ 
 
 Sehr versierte Spieler/innen übernehmen dabei auch solistische Aufgaben. Unter der Leitung des Blockflötisten Simon Borutzki probt das Ensemble jeden Donnerstag von 19.00 - 21.15 Uhr in der Musikschule Neukölln, Boddinstraße 34, 12052 Berlin.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TH8XYCMYYmA" frameborder="0" allowfullscreen></iframe>
+
 Konzertausschnitte sind auf unserem <a href="https://www.youtube.com/watch?v=TH8XYCMYYmA"><b>Youtube Kannal</b></a> verfügbar.
 
 Viel Vergnügen!

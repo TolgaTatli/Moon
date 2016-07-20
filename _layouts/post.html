@@ -31,7 +31,22 @@ layout: compress
                     {% endif %}
                         <i class="fa fa-chevron-left"></i>
                     </a>
+
+                    <!-- REVIEW FIXME messed up display of heroku icon -->
+                    <span>
+                      <div class='social-btn'>
+                        <a class = 'fa fa-fw heroku-icon' href = "{page.heroku-link}"></a>
+                      </div>
+
+                      <!-- <a class = 'heroku-icon' href = "{page.heroku-link}">View on Heroku</a> -->
+                      <div class='social-btn'>
+                        <a href = "{{page.github-link}}" class="fa fa-fw fa-github"></a>
+                      </div>
+                    </span>
                 </div>
+
+
+
                 {{ content }}
                 <div class="entry-meta">
                 {% include meta.html %}

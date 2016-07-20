@@ -246,3 +246,12 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+// REVIEW how to put this into custom scss file?
+// REVIEW adjust to align better
+
+.heroku-icon{
+  content: url('/assets/img/heroku_icon.png');
+  height: 19px;
+  width: 19px;
+}

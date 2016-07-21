@@ -17,6 +17,8 @@ Web development is an interesting world of open source collaboration and franken
 
 Inspiration: Google Office Suite, Atom, OnLive, ....?
 
+- Thinking back, the part I most enjoyed about game development was the *creation* of the mechanics, digging into the code, and solving problems. By comparison, the development of stories or gameplay scenarios never quite gripped me in the same way. It seems my nature gravitates more toward the technical side of things, with an interest in games mechanics-heavy games rather more experiential ones.
+
 Game
 - BS in Game Design from Champlain College
 - Lead Designer and Project Manager for Terrachanics

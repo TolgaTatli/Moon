@@ -29,18 +29,19 @@ layout: compress
                     {% else %}
                     <a class="btn zoombtn" href="{{site.url}}/posts/">
                     {% endif %}
-                        <i class="fa fa-chevron-left"></i>
+                        <i class="fa fa-chevron-left" style='font-size: 1.5rem'></i>
                     </a>
 
                     <!-- REVIEW FIXME messed up display of heroku icon -->
                     <span>
                       <div class='social-btn'>
-                        <a class = 'fa fa-fw heroku-icon' href = "{page.heroku-link}"></a>
+                        <!-- <a class = 'fa fa-fw heroku-icon' href = "{page.heroku-link}"></a> -->
+                        <a class = 'fa fa-fw fa-globe' style='font-size: 1.5rem' href = "{page.heroku-link}"></a>
                       </div>
 
                       <!-- <a class = 'heroku-icon' href = "{page.heroku-link}">View on Heroku</a> -->
                       <div class='social-btn'>
-                        <a href = "{{page.github-link}}" class="fa fa-fw fa-github"></a>
+                        <a href = "{{page.github-link}}" style='font-size: 1.5rem' class="fa fa-fw fa-github"></a>
                       </div>
                     </span>
                 </div>

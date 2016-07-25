@@ -12,6 +12,8 @@ Glen Cooney is a Fullstack Developer with a background in Game Development.
 Web
 - Completed Bloc's Fullstack Developer Track
 - Versed in Angular and Rails Frameworks
+-Usability, neural networks, streaming/compression
+
 
 Web development is an interesting world of open source collaboration and frankensteinian code. A bit less polished than traditional CS, with fundamentally different paradigms for organizing code, it is diverse and challenging. Not unlike with games, it deals with creating interactive experiences with users and blends creative and technical skills in fascinating ways. Moreover, given the breadth of open source code it challenges one's researching skills to seek out the best and most relevant resources for the task at hand.
 

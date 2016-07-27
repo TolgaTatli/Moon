@@ -21,18 +21,15 @@ layout: compress
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
-                <div class="post-list">
-                    {% for post in site.posts %}
-                        {% if post.project == null %}
-                    <ul>
-                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                            <p>{{ post.excerpt }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
-                        </li>
-                    </ul>
-                        {% endif %}
-                    {% endfor %}
+                <div class="input-box">
+                  <form action="https://getsimpleform.com/messages?form_api_token=f994b615dd47add56e46e58e0a26689b" method="post">
+                    <!-- <input type='hidden' name='redirect_to' value='full-url/thank-you/' /> -->
+                    <input type='hidden' name='redirect_to' value="{{ site.url }}/thank-you" />
+                    <input type='text' name='name' placeholder='Your Full Name' />
+                    <input type='email' name='email' placeholder='Your E-mail Address' />
+                    <textarea name='message' placeholder='Write your message ...'></textarea>
+                    <input type='submit' value='Send Message' />
+                  </form>
                 </div>
             </div>
         </div>

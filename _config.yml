@@ -1,14 +1,16 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Glen Cooney
+bio:                'Coder and Decoder of Web, Game, and Social Systems'
+description:        "Welcome to my official portfolio site"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                http://taylantatli.me/Moon
+# url:              http://glencooney.com
+url:                http://127.0.0.1:4000/
+# port: 3000
 
 # Jekyll
 permalink:          /:title/
@@ -26,7 +28,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+# disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -37,19 +39,20 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github:             username
+email:              glen@glencooney.com
+twitter:            transplanar
+# facebook:           glen.cooney
+github:             transplanar
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+stackoverflow:      5031910/glen-cooney
+linkedin:          glencooney
 #xing:              username
-instagram:          username
+# instagram:          username
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
-steam:              username
+# steam:              76561197982713939
 #dribbble:          username
 #youtube:           username
 #soundcloud:        username

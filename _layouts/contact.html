@@ -1,0 +1,41 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include nav.html %}
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="wrapper animated fadeIn">
+            <div class="content">
+                <div class="post-title">
+                    <h1>{{ page.title }}</h1>
+                    <a class="btn zoombtn" href="{{site.url}}">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </div>
+                <div class="input-box">
+                  <form action="https://getsimpleform.com/messages?form_api_token=f994b615dd47add56e46e58e0a26689b" method="post">
+                    <!-- <input type='hidden' name='redirect_to' value='full-url/thank-you/' /> -->
+                    <input type='hidden' name='redirect_to' value="{{ site.url }}/thank-you" />
+                    <input type='text' name='name' placeholder='Your Full Name' />
+                    <input type='email' name='email' placeholder='Your E-mail Address' />
+                    <textarea name='message' placeholder='Write your message ...'></textarea>
+                    <input type='submit' value='Send Message' />
+                  </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% include scripts.html %}
+    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
+    <script type="text/javascript">(new WOW).init();</script>
+</body>
+</html>

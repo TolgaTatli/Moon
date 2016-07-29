@@ -90,12 +90,12 @@
 				</ul>
 			</li>
 			{% for link in site.data.navigation %}
-		    {% if link.url contains 'http' %}
-		        {% assign domain = '' %}
-		        {% else %}
-		        {% assign domain = site.url %}
-		    {% endif %}
-		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
+<!--             {% if link.url contains 'http' %}
+    {% assign domain = '' %}
+    {% else %}
+    {% assign domain = site.url %}
+{% endif %} -->
+		    <li><a href="{{ link.url }}" {% if link.url contains 'http' or link.url contains 'https' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
 		  {% endfor %}
 		</ul><!-- /.dl-menu -->
 	</nav><!-- /.dl-menuwrapper -->

@@ -3,6 +3,7 @@ layout: page
 title: Acerca de mí
 tags: [acerca, agucova, yo]
 date: 2016-03-21
+comments: false
 ---
 ## Quien soy  
 Tengo 14 años, y son un gran aficionado a la informática, desde los 10 años empecé a aprender lenguajes de programación, scripting, principalmente. Después continué con desarrollo web, y mods/plugins para el videojuego [Minecraft](http://minecraft.net).

@@ -1,3 +1,32 @@
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="{{ site.url }}/assets/js/jquery.dlmenu.min.js"></script>
+<script src="{{ site.url }}/assets/js/jquery.goup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+<script src="{{ site.url }}/assets/js/scripts.js"></script>
+<script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.raptorize.1.0.js"></script>
+<script src="assets/js/clippy.min.js"></script>
+{% endif %} {% if page.comments != false %} {% include disqus_comments.html %} {% endif %}
+<script>
+cheet('c a t', function() {
+    document.write('<iframe src="http://adultcatfinder.com/embed/" width="320" height="430" style="position:fixed;bottom:0px;right:10px;z-index:100" frameBorder="0"></iframe>');
+});
+cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
+  clippy.load('Clippy', function(agent) {
+    agent.show();
+    agent.speak('Has encontrado un easter egg)');
+    agent.speak('Como lo hiciste? Enviame un tweet');
+});
+});
+  </script>
+  {% if site.force-https %}
+    <script>
+    // Don't force http when serving the website locally
+    if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+        </script>
     <!-- JS -->
     <script src="{{ site.url }}/assets/js/jquery-1.12.0.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.dlmenu.min.js"></script>
@@ -12,11 +41,8 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google.analytics }}', 'auto');  
+      ga('create', '{{ site.google.analytics }}', 'auto');
       ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
     </script>
-    {% endif %}
-    {% if page.comments != false %}
-        {% include disqus_comments.html %}
-    {% endif %}
+  {% endif %}

@@ -6,7 +6,7 @@ date: 2016-03-21
 comments: false
 ---
 ## Quien soy  
-Tengo 14 años, y son un gran aficionado a la informática, desde los 10 años empecé a aprender lenguajes de programación, scripting, principalmente. Después continué con desarrollo web, y mods/plugins para el videojuego [Minecraft](http://minecraft.net).
+Tengo 15 años, y son un gran aficionado a la informática, desde los 10 años empecé a aprender lenguajes de programación, scripting, principalmente. Después continué con desarrollo web, y mods/plugins para el videojuego [Minecraft](http://minecraft.net).
 Ahora mismo también he dedicado parte de mi tiempo a la seguridad informática, siendo un activo miembro de [Seguridad Informática Chile](http://hacking.cl).
 He trabajado en varios servidores para Minecraft, en este momento en [Mythalium Network](https://mythalium.com/).
 Podrás encontrarme frecuentando mi [Github](https://github.com/agucova), [Twitter](https://twitter.com/agucova) y [Blog](https://agucova.github.io/posts/). (Envíame un tweet!)

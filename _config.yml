@@ -11,7 +11,7 @@ locale:             en_US
 url:                https://jldelda.github.io/Moon/
 
 # Jekyll
-permalink:          /:title/
+permalink:          pretty
 markdown:           kramdown
 highlighter:        rouge
 kramdown:

@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              'Jessica Temporal'
+bio:                "Python Developer, on pursuit of BSc in Biomedical Informatics. Loves to write beautiful code, and in her free time cultivates red curls and adds movie trailers to the never ending 'to watch' movie collection."
+description:        "Jessica's personal page"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                http://taylantatli.me/Moon
+#url:                http://taylantatli.me/Moon
 
 # Jekyll
 permalink:          /:title/
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+#disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -37,19 +37,19 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github:             username
+email:              jessicatemporal@gmail.com
+twitter:            jesstemporal
+facebook:           jetemporal
+github:             jtemporal
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:           jessicatemporal
 #xing:              username
-instagram:          username
+instagram:          jesstemporal
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:              username
 #dribbble:          username
 #youtube:           username
 #soundcloud:        username

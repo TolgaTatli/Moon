@@ -1,6 +1,6 @@
 # Site
 title:              'Jessica Temporal'
-bio:                "Python Developer, on pursuit of BSc in Biomedical Informatics. Loves to write beautiful code, and in her free time cultivates red curls and adds movie trailers to the never ending 'to watch' movie collection."
+bio:                "Python Developer, on pursuit of BSc in Biomedical Informatics."
 description:        "Jessica's personal page"
 reading_time:       true
 words_per_minute:   200
@@ -8,7 +8,7 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-#url:                http://taylantatli.me/Moon
+url:                https://jtemporal.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -38,13 +38,13 @@ sass:
   #ad-slot:
 #bing-verify:
 email:              jessicatemporal@gmail.com
-twitter:            jesstemporal
-facebook:           jetemporal
+# twitter:            jesstemporal
+# facebook:           jetemporal
 github:             jtemporal
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 linkedin:           jessicatemporal
 #xing:              username
-instagram:          jesstemporal
+#instagram:          jesstemporal
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username

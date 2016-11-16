@@ -33,18 +33,65 @@ layout: compress
                   <hr class="hr-line">
                   <h3 class="title">
                          <a class="btn zoombtn" href="{{ site.url }}/about">
-                         About
+                         Acerca
                          </a>
                          <a class="btn zoombtn" href="{{ site.url }}/posts">
                          Posts
                          </a>
                          <a class="btn zoombtn" href="{{ site.url }}/projects">
-                         Projects
+                         Proyectos
                          </a>
                  </h3>
             </div>
         </div>
     </header>
     {% include scripts.html %}
+    <ul id="social_side_links">
+  <li><a style="background-color: #ffffff;" href="https://pgp.mit.edu/pks/lookup?op=get&search=0x8401A9280AFE60FB" target="_blank"><img src="assets/img/icon-fingerprint.png" alt="PGP" /></a></li>
+</ul>
+<style>
+#social_side_links {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 99;
+}
+
+#social_side_links li a {display: block;}
+
+#social_side_links li a img {
+  display: block;
+  max-width:40px;
+  padding: 10px;
+  -webkit-transition:  background .2s ease-in-out;
+  -moz-transition:  background .2s ease-in-out;
+  -o-transition:  background .2s ease-in-out;
+  transition:  background .2s ease-in-out;
+}
+
+#social_side_links li a:hover img {background: rgba(0, 0, 0, .2);}
+
+/* Demo Text */
+.demo-text {
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 43px;
+  color: #444;
+  padding: 10px;
+}
+  .demo-text--special {
+    background-color:#A79C8E;
+     color: #fff;
+     padding: 30px;
+  }
+
+  .demo-text--small {
+    font-size: 23px;
+     line-height: 37px;
+  }
+  </style>
 </body>
 </html>

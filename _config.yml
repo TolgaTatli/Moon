@@ -5,7 +5,7 @@ description:        "Mi blog, y página web."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo3.png'
-background:         'assets/img/placeholder-big.jpg'
+background:         'https://source.unsplash.com/qkEdBIOwT8E/1920x1080'
 locale:             es_ES
 url:                https://agucova.github.io
 

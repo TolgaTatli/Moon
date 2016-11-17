@@ -36,7 +36,7 @@ GEM
     jekyll-sitemap (0.10.0)
     jekyll-watch (1.4.0)
       listen (~> 3.0, < 3.1)
-    json (1.8.1)
+    json (1.8.3)
     kramdown (1.10.0)
     liquid (3.0.6)
     listen (3.0.7)

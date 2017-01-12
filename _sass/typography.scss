@@ -25,6 +25,16 @@
 		font-weight: bold;
 	}
 }
+.sub-title {
+	color: #8c8b8b;
+	font-size: 50%;
+	> hr {
+		margin-top: 1em;
+		max-width: 10em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 .post-title {
 	text-align: center;
 	font-weight: bold;

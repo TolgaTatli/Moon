@@ -10,9 +10,9 @@ comments: true
 
 # Phaser NPM Webpack TypeScript Starter Project (catchy name, isn't it?)
 
-#####Hit the ground running and make some great games!
+##### Hit the ground running and make some great games!
 
-######If you use this template/starter project in any capacity; I'd love to hear about your experience with it. Whether you continued with it or decided not too (I really want to hear why you made your decision).
+###### If you use this template/starter project in any capacity; I'd love to hear about your experience with it. Whether you continued with it or decided not too (I really want to hear why you made your decision).
 
 # Setup
 To use this you’ll need to install a few things before you have a working copy of the project. But once you have node.js installed it only takes a few seconds and a couple commands to get going.

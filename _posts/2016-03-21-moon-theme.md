@@ -37,7 +37,7 @@ That's all.
 	https://cloud.githubusercontent.com/assets/754514/14509717/61ad05ae-01d6-11e6-85ae-5a817dd8763b.png
 	https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png
 {% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=3 %}
+{% include gallery.html images=images caption="Screenshots of Moon Theme" cols=3 %}
 
 ---
 
@@ -45,8 +45,8 @@ That's all.
 	https://cloud.githubusercontent.com/assets/754514/14509718/61b09a20-01d6-11e6-8da1-4202ae4d83cd.png
 	https://cloud.githubusercontent.com/assets/754514/14509715/61aa9d00-01d6-11e6-81a6-c6837edf2e84.png
 {% endcapture %}
-{% include gallery images=images caption="Moon Theme on Small Screen Size" cols=2 %}      
-      
+{% include gallery.html images=images caption="Moon Theme on Small Screen Size" cols=2 %}      
+
 See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.      
 
 ## Site Setup

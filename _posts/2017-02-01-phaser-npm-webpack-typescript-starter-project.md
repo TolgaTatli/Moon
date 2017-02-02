@@ -10,7 +10,7 @@ comments: true
 
 # Phaser NPM Webpack TypeScript Starter Project (catchy name, isn't it?)
 
-https://github.com/rroylance/phaser-npm-webpack-typescript-starter-project
+[Link to GitHub Repo!][repo]
 
 ##### Hit the ground running and make some great games!
 
@@ -90,5 +90,8 @@ If you have any requests or suggestion for the project please let me know via [G
 
 If you would like to have some of your code included; whether a new feature, a cleaned up feature, a bugfix, or whatever. Please open up a [Pull Request][pulls]!
 
+[Link to GitHub Repo!][repo]
+
+[repo]: https://github.com/rroylance/phaser-npm-webpack-typescript-starter-project
 [issues]: https://github.com/rroylance/phaser-npm-webpack-typescript-starter-project/issues
 [pulls]: https://github.com/rroylance/phaser-npm-webpack-typescript-starter-project/pulls

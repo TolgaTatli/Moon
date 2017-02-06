@@ -14,7 +14,31 @@ comments: true
 
 ##### Hit the ground running and make some great games!
 
-###### If you use this template/starter project in any capacity; I'd love to hear about your experience with it. Whether you continued with it or decided not too (I really want to hear why you made your decision).
+###### If you use this template/starter project in any capacity; I'd love to hear about your experience with it. Whether you continued with it or decided not to (I really want to hear why you made your decision).
+
+# Features
+
+- Phaser-CE 2.7.3 (npm module, no having to download the library seperatley...)
+- TypeScript + TSLint
+- 3 States (Boot, Preloader, Title) showing transition between states and where some things should be done and how a TypeScript state looks
+- Google Web Font loader
+- Webpack
+- Seperate Development and Distribution builds
+- Live server (builds and reloads the browser on changes)
+- Setting up the game size and scaling through a script that does it all for you
+  - Automatic template background
+  - Sets up the size the game so that it is scaled only when absolutley necessary 
+  - Refer to src/utils/utils.ts for an explanation on the background_template and the sizing/scaling style
+
+### Features coming soon
+
+- Webpack asset manifest integration
+- Yeoman Generator
+
+### Features coming eventually (aka when I need it... sooner if there is a demand for it)
+
+- Analytics integration
+- Cordova integration for iOS and Android builds
 
 # Setup
 To use this you’ll need to install a few things before you have a working copy of the project. But once you have node.js installed it only takes a few seconds and a couple commands to get going.
@@ -86,7 +110,7 @@ This will run a script that will generate a template background showing the safe
 
 If you do not want the default 800 x 500, run the following and all will be updated;
 
- **DO NOT MODIFY THE (DEFAULT|MAX)\_GAME\_(WIDTH|HEIGHT) PLUGINS DEFINED IN THE WEBPACK CONFIGS, OR THIS WILL NOT WORK**
+ **DO NOT MODIFY THE GAME_WIDTH, GAME_HEIGHT PLUGINS DEFINED IN THE WEBPACK CONFIGS, OR THIS WILL NOT WORK**
 
 ```node ./scripts/setupGameSize --width [whatever width you want] --height [whatever height you want] [--no-png]```
 

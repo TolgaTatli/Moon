@@ -74,6 +74,24 @@ This will build the game with a few caveats;
 - The compile time flag, DEBUG, set to false; allowing you to include or not include certain code depending on if it's DEBUG build or not.
 - The resulting game.min.js will be minified and will not include source maps
 
+## Change the game size and generate a template background
+
+Note: This is automatically run after running npm install, however you may want to run it again (if you deleted the background.png and want it back, or if you want to change the game size from the default).
+
+Run:
+
+```npm run setupGameSize```
+
+This will run a script that will generate a template background showing the safe and decoration area of your game when it is sized or scaled for different devices as well as updating a couple global values in the webpack configs so that the game knows about the new size when built.
+
+If you do not want the default 800 x 500, run the following and all will be updated;
+
+ **DO NOT MODIFY THE (DEFAULT|MAX)\_GAME\_(WIDTH|HEIGHT) PLUGINS DEFINED IN THE WEBPACK CONFIGS, OR THIS WILL NOT WORK**
+
+```node ./scripts/setupGameSize --width [whatever width you want] --height [whatever height you want] [--no-png]```
+
+You can either provide the width **and** height and as long as they result in an aspect ratio of what's set in the script (default 1.6 or 16:10), or you can provide the width **or** height and the one you didn't provide will be calculated for you. If you do not want the background to be created just add the flag --no-png (not putting this will let the background generate).
+
 ## Bugs/Issues?
 
 If you have any issues please let me know via [GitHub Issues][issues]!

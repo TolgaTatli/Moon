@@ -25,6 +25,7 @@ comments: true
 - Webpack
 - Seperate Development and Distribution builds
 - Live server (builds and reloads the browser on changes)
+- No hassle asset management requiring no code, on your part, to load and parse assets
 - Setting up the game size and scaling through a script that does it all for you
   - Automatic template background
   - Sets up the size the game so that it is scaled only when absolutley necessary 
@@ -32,7 +33,7 @@ comments: true
 
 ### Features coming soon
 
-- Webpack asset manifest integration
+- Multiple resolution asset loader (@2x, @3x, etc...)
 - Yeoman Generator
 
 ### Features coming eventually (aka when I need it... sooner if there is a demand for it)
@@ -43,7 +44,13 @@ comments: true
 # Setup
 To use this you’ll need to install a few things before you have a working copy of the project. But once you have node.js installed it only takes a few seconds and a couple commands to get going.
 
-## 1. Clone this repo:
+## 1. Download or Clone this repo:
+
+##### 1.1 Download
+
+Download the latest zip/tar.gz from [GitHub Releases][releases], extract it to where you want your project to be.
+
+##### 1.2 Clone
 
 Navigate into your workspace directory.
 
@@ -98,6 +105,40 @@ This will build the game with a few caveats;
 - The compile time flag, DEBUG, set to false; allowing you to include or not include certain code depending on if it's DEBUG build or not.
 - The resulting game.min.js will be minified and will not include source maps
 
+## Generate Assets Class
+
+This project will manage your assets for you! All you need to do is drop your assets in assets/ (subdirectories do not matter) and run (you need to run this manually if you change assets while the server is running, otherwise it's run automatically when running a build);
+
+```npm run assets```
+
+src/assets.ts will be generated which contains sections for all your asset types (the generator is smart enough to distinguish what assets are what !) and classes for every asset. 
+
+No need to remember keys anymore, which means no more typos resulting in asset not found errors; just use, for example, Assets.Images.ImagesBackgroundTemplate.getName(). This also allows the compiler to warn you if you are trying to use an asset that doesn't exist before you even have to run the game.
+
+The preloader will use this class to load everything, **you don't have to do anything in code to get your assets loading and available**!
+
+Currently supports the following (if you need a new extension or find an issue with one of your assets not exporting correctly, just let me know);
+
+- Images:
+  - bmp, gif, jpg, jpeg, png, webp
+- Atlases
+  - bmp, gif, jpg, jpeg, png, webp
+  - json (the loader figures out if it's a JSONArray or JSONHash, no need to remember or care), xml
+- Audio
+  - aac, flac, mp3, mp4, ogg, wav, webm
+  - json
+- JSON
+  - json
+- XML
+  - xml
+- Text
+  - txt
+  
+Not currently supported;
+
+- Fonts (Bitmap or Local) *Use google webfonts for now (add what fonts you need in app.ts)
+  - Bitmap font will actually get recognized as an atlas at the moment, this will not load properly
+
 ## Change the game size and generate a template background
 
 Note: This is automatically run after running npm install, however you may want to run it again (if you deleted the background.png and want it back, or if you want to change the game size from the default).
@@ -108,9 +149,9 @@ Run:
 
 This will run a script that will generate a template background showing the safe and decoration area of your game when it is sized or scaled for different devices as well as updating a couple global values in the webpack configs so that the game knows about the new size when built.
 
-If you do not want the default 800 x 500, run the following and all will be updated;
+If you do not want the default 800 x 500, run the following and all will be updated.
 
- **DO NOT MODIFY THE GAME_WIDTH, GAME_HEIGHT PLUGINS DEFINED IN THE WEBPACK CONFIGS, OR THIS WILL NOT WORK**
+**DO NOT MODIFY THE (DEFAULT|MAX)\_GAME\_(WIDTH|HEIGHT) PLUGINS DEFINED IN THE WEBPACK CONFIGS, OR THIS WILL NOT WORK**;
 
 ```node ./scripts/setupGameSize --width [whatever width you want] --height [whatever height you want] [--no-png]```
 
@@ -133,3 +174,4 @@ If you would like to have some of your code included; whether a new feature, a c
 [repo]: https://github.com/rroylance/phaser-npm-webpack-typescript-starter-project
 [issues]: https://github.com/rroylance/phaser-npm-webpack-typescript-starter-project/issues
 [pulls]: https://github.com/rroylance/phaser-npm-webpack-typescript-starter-project/pulls
+[releases]: https://github.com/rroylance/phaser-npm-webpack-typescript-starter-project/releases

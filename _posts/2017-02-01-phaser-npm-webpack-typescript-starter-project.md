@@ -127,6 +127,9 @@ Currently supports the following (if you need a new extension or find an issue w
 - Audio
   - aac, flac, mp3, mp4, ogg, wav, webm
   - json
+- Bitmap Font 
+  - bmp, gif, jpg, jpeg, png, webp 
+  - xml, fnt 
 - JSON
   - json
 - XML
@@ -136,8 +139,7 @@ Currently supports the following (if you need a new extension or find an issue w
   
 Not currently supported;
 
-- Fonts (Bitmap or Local) *Use google webfonts for now (add what fonts you need in app.ts)
-  - Bitmap font will actually get recognized as an atlas at the moment, this will not load properly
+- Local fonts *Use google webfonts (add what fonts you need in app.ts) or Bitmap Fonts for now 
 
 ## Change the game size and generate a template background
 

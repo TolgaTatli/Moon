@@ -18,17 +18,18 @@ comments: true
 
 # Features
 
-- Phaser-CE 2.7.3 (npm module, no having to download the library seperatley...)
+- Phaser-CE 2.7.3 (npm module, no having to download the library separately...)
 - TypeScript + TSLint
 - 3 States (Boot, Preloader, Title) showing transition between states and where some things should be done and how a TypeScript state looks
 - Google Web Font loader
 - Webpack
-- Seperate Development and Distribution builds
+- Separate Development and Distribution builds
 - Live server (builds and reloads the browser on changes)
 - No hassle asset management requiring no code, on your part, to load and parse assets
+  - Assets are required and hashed via webpack, you can now guarantee that when you push an update, everyone will get the new files and not cached ones
 - Setting up the game size and scaling through a script that does it all for you
   - Automatic template background
-  - Sets up the size the game so that it is scaled only when absolutley necessary 
+  - Sets up the size the game so that it is scaled only when absolutely necessary 
   - Refer to src/utils/utils.ts for an explanation on the background_template and the sizing/scaling style
 
 ### Features coming soon
@@ -125,7 +126,7 @@ Currently supports the following (if you need a new extension or find an issue w
   - bmp, gif, jpg, jpeg, png, webp
   - json (the loader figures out if it's a JSONArray or JSONHash, no need to remember or care), xml
 - Audio
-  - aac, flac, mp3, mp4, ogg, wav, webm
+  - aac, ac3, caf, flac, mp3, mp4, ogg, wav, webm
   - json
 - Bitmap Font 
   - bmp, gif, jpg, jpeg, png, webp 

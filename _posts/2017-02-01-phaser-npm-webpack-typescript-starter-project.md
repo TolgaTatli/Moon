@@ -27,6 +27,7 @@ comments: true
 - Live server (builds and reloads the browser on changes)
 - No hassle asset management requiring no code, on your part, to load and parse assets
   - Assets are required and hashed via webpack, you can now guarantee that when you push an update, everyone will get the new files and not cached ones
+  - Assets class created automatically allowing you to access all the assets and their frames and sprites (in the case of Atlases and Audiosprites) in a compiler validating way!
 - Setting up the game size and scaling through a script that does it all for you
   - Automatic template background
   - Sets up the size the game so that it is scaled only when absolutely necessary 
@@ -112,11 +113,11 @@ This project will manage your assets for you! All you need to do is drop your as
 
 ```npm run assets```
 
-src/assets.ts will be generated which contains sections for all your asset types (the generator is smart enough to distinguish what assets are what !) and classes for every asset. 
+src/assets.ts will be generated which contains sections for all your asset types (the generator is smart enough to distinguish what assets are what !) and classes for every asset, it will also generate an enum containing every frame and sprite in Atlases and AudioSprites respectively! 
 
-No need to remember keys anymore, which means no more typos resulting in asset not found errors; just use, for example, Assets.Images.ImagesBackgroundTemplate.getName(). This also allows the compiler to warn you if you are trying to use an asset that doesn't exist before you even have to run the game.
+No need to remember keys, frames, or sprites anymore; which means no more typos resulting in asset not found errors. Just use, for example, Assets.Images.ImagesBackgroundTemplate.getName() or Assets.Audiosprites.AudiospritesSfx.Sprites.Laser1. This also allows the compiler to warn you if you are trying to use an asset that doesn't exist!
 
-The preloader will use this class to load everything, **you don't have to do anything in code to get your assets loading and available**!
+The preloader will use this class to load everything, **you don't have to do anything in code to get your assets loading and available (except for any assets you need for your loading screen...)**!
 
 Currently supports the following (if you need a new extension or find an issue with one of your assets not exporting correctly, just let me know);
 

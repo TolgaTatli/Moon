@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Richard Roylance
+bio:                'Richard Roylance'
+description:        "Richard Roylance"
 reading_time:       true
-words_per_minute:   200
+words_per_minute:   100
 logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
+background:         'assets/img/background-1.jpeg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://taylantatli.github.io/Moon
+url:                http://rroylance.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -26,31 +26,31 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   rroylance
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
+google:
   #plus:            #username
-  #analytics:
+  analytics:        UA-77747006-1
   #verify:
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+email:              roylance.richard@gmail.com
+#twitter:            username
+#facebook:           username
+github-url:         rroylance
+stackoverflow:      2761883/richard-roylance
+linkedin:           richard-roylance-b6ab0665
 #xing:              username
-instagram:          username
-#lastfm:            username
+#instagram:          username
+#lastfm:             username
 #tumblr:            username
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+steam:              imheretodothedevilswork
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel

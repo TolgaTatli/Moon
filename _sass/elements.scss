@@ -124,7 +124,9 @@ img {
 	width: 150px;
 }
 .author-photo {
-    background-color: $white;
+    background-color: 0 12px 24px rgba($black,0.4);
+    -webkit-filter: invert(1);
+   filter: invert(1);
 }
 .image-right {
     float: right;

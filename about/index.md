@@ -5,8 +5,6 @@ tags: [about]
 date: 2017-03-28
 comments: false
 ---
-    
-# CALVIN'S VITA
 
 ## BIOGRAPHY
 I earned my master degree in the University of Hong Kong, major in DATA JOURNALISM. And now work in China Business Network  DTimes as a data editor and journalist. <br>

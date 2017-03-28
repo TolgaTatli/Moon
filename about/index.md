@@ -9,18 +9,18 @@ comments: false
 # CALVIN'S VITA
 
 ## BIOGRAPHY
-I earned my master degree in the University of Hong Kong, major in DATA JOURNALISM. And now work in Shanghai Media Group DT Times as a data editor and journalist. </p>
+I earned my master degree in the University of Hong Kong, major in DATA JOURNALISM. And now work in Shanghai Media Group DT Times as a data editor and journalist. <p>
 
-I love coding and writing. Just began my `hello world` life. In my spare time, I am fond of reading history books and working out. Sometimes I will play some guitar and take some photographs.</p>
+I love coding and writing. Just began my `hello world` life. In my spare time, I am fond of reading history books and working out. Sometimes I will play some guitar and take some photographs.<p>
 
 Nice to meet you, pal.
 
 
 
 ## EDUCATION
-**Master of Journalism in Data Journalism**, The University of Hong Kong, 2015</p>
-**Bachelor of Art in Media English**, The University of International Business and Economics, 2011</p>
-**Bachelor of Law in International Politics**, The University of International Business and Economics, 2011</p>
+**Master of Journalism in Data Journalism**, The University of Hong Kong, 2015<p>
+**Bachelor of Art in Media English**, The University of International Business and Economics, 2011<p>
+**Bachelor of Law in International Politics**, The University of International Business and Economics, 2011<p>
 
 
 ## EXPERIENCE
@@ -44,7 +44,8 @@ Nice to meet you, pal.
 * Launch a content analysis project based on Weiboscope database, which focused on the Weibo’s censorship in Pu Zhiqiang’s case.
 * Use **R** and **SPSS** to do some primary social media analysis. i.e. sentimental analysis, social network analysis and social media performance. <br>
 
-#### Tencent, OMG Technology Section, Intern Journallist, 2015 * Cover Internet start-ups in China and report their financial status, business modes and corporation strategies.
+#### Tencent, OMG Technology Section, Intern Journallist, 2015 
+* Cover Internet start-ups in China and report their financial status, business modes and corporation strategies.
 * Use **E-charts**, **PS** and **AI** to produce infographics and charts in reports.
 * Shoot and post-edit an episode of 402，000-hit Internet video *Tech Show*.
 

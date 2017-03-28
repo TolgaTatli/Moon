@@ -21,7 +21,14 @@ To modify styling and highlight colors edit `/assets/css/syntax.css`.
     margin: 0 -240px 0 0;
     width: 100%;
 }
+
+~~~
+this is the container of inputting codes. 
+~~~
+
+
 {% endhighlight %}
+
 
 {% highlight html %}
 {% raw %}
@@ -70,6 +77,9 @@ end
     </nav><!-- /.pagination -->
     {% endraw %}
 
+~~~
+
+~~~
 
 ### Fenced Code Blocks
 

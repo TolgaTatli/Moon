@@ -9,7 +9,7 @@ comments: false
 # CALVIN'S VITA
 
 ## BIOGRAPHY
-I earned my master degree in the University of Hong Kong, major in DATA JOURNALISM. And now work in Shanghai Media Group DT Times as a data editor and journalist. <p>
+I earned my master degree in the University of Hong Kong, major in DATA JOURNALISM. And now work in China Business Network  DTimes as a data editor and journalist. <p>
 
 I love coding and writing. Just began my `hello world` life. In my spare time, I am fond of reading history books and working out. Sometimes I will play some guitar and take some photographs.<p>
 

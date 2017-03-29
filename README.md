@@ -1,14 +1,14 @@
-# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
-## `Sorry guys but there will be no update until I buy a new laptop.`
-    
-######(If you like this theme or using it, please give a :star: for motivation.)
+# Moon Jekyll Theme 
+
+### This fork adds to Moon theme an infinite scroll background image in home.
+##### This feature can be activated by _config.yml
 
 **[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
 
 ## Features
 * Minimal, you can focus on your content
 * Responsive
+* Infinite Scroll Background Layer
 * Disqus integration
 * Syntax highlighting
 * Optional post image
@@ -25,6 +25,11 @@
 
 See a [live version of Moon](https://taylantatli.github.io/Moon) hosted on GitHub.
 
+## Preview with scroll background image
+
+The background scroll is implemented merging the background of [HTML5UP Aerial theme](https://html5up.net/aerial) with Moon Theme. 
+
+[![Example](https://img.youtube.com/vi/O_t78HIKoio/0.jpg)](https://www.youtube.com/watch?v=O_t78HIKoio)
 ## Getting Started
 
 To learn how to install and use this theme check out the [Setup Guide](https://taylantatli.github.io/Moon/moon-theme/) for more information.

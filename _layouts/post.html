@@ -10,6 +10,9 @@ layout: compress
     {% include head.html %}
 </head>
 <body>
+    {% if site.addScrollOnPostPage == true %}
+        <div id="bg" style="background: url({{ site.url }}/{{ site.scrollImage }}) bottom left;"></div>
+    {% endif %}
     {% include nav.html %}
     <!-- Header -->
     <header class="header" role="banner">

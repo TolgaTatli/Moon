@@ -106,24 +106,22 @@ Set your disqus shortname in `_config.yml` to use comments.
 
 ### Navigation Links
 
-To set what links appear in the top navigation edit `_data/navigation.yml`. Use the following format to set the URL and title for as many links as you'd like. *External links will open in a new window.*
+By default a link to `Home`, `About` and `Posts` will appear in the navigation bar.
+
+If you want to add additional links (underneath these three entries) you can edit `_data/navigation.yml`. Use the following format to set the URL and title for as many links as you'd like. *External links will open in a new window.*
 
 {% highlight yaml %}
-- title: Home
-  url: /
-
 - title: Blog
   url: /blog/
 
 - title: Projects
   url: /projects/
 
-- title: About
-  url: /about/
-
 - title: Moon
   url: http://taylantatli.me/Moon
 {% endhighlight %}
+
+If you want to adjust the default entries take a look at `_includes/nav.html`. (This step is a little more advanced, but hopefully not too challenging!)
 
 ---
 

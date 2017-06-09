@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Kopi
+bio:                'Coffee delivered daily.'
+description:        "Kopi is a monthly subscription service which delivers freshly prepared coffee in tumblers on a daily basis."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://taylantatli.github.io/Moon
+url:                https://kopi.github.io/
 
 # Jekyll
 permalink:          /:title/
@@ -26,31 +26,31 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   Kopi
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
-  #plus:            #username
-  #analytics:
+google:
+  plus:             100188583768021555737
+  analytics:        UA-100326922-1 
   #verify:
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
+email:              contact@kopi.cafe
+twitter:            kopimtl
+facebook:           kopimtl
+github-url:         https://github.com/Kopi/
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:           kopi.mtl
 #xing:              username
-instagram:          username
+instagram:          kopimtl
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:             username
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel

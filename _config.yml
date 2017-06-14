@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Renato Araujo
+bio:                'Passioned Software Developer from Recife/PE'
+description:        'Passioned Software Developer from Recife/PE'
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/profile.jpg'
 background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
-url:                https://taylantatli.github.io/Moon
+tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             pt_BR
+url:                araujo.pw
 
 # Jekyll
 permalink:          /:title/
@@ -25,8 +25,12 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
+# Github
+github:
+  url:              renatojoa.github.io
+
 # Comments
-disqus_shortname:   taylantatli
+# disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -37,20 +41,20 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
+email:              renatojoa@gmail.com
+twitter:            renatojoa
+facebook:           renatojoa
+github-url:         renatojoa
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:          renatojoa
 #xing:              username
-instagram:          username
+#instagram:          username
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+steam:              renatojoa
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel

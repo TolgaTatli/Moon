@@ -6,7 +6,7 @@ Parameters:
     MaxLength: 63
 
 Resources:
-  RootBucket:
+  WebBucket:
     Type: AWS::S3::Bucket
     Properties:
       AccessControl: PublicRead
@@ -15,19 +15,10 @@ Resources:
         IndexDocument: index.html
         ErrorDocument: error.html
 
-  WebBucket:
-    Type: AWS::S3::Bucket
-    Properties:
-      AccessControl: PublicRead
-      BucketName: !Join [ '.', [ 'www', !Ref BucketName ] ]
-      WebsiteConfiguration:
-        RedirectAllRequestsTo:
-          HostName: 'alejandroandr.eu'
-
-  RootBucketPolicy:
+  WebBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
-      Bucket: !Ref RootBucket
+      Bucket: !Ref WebBucket
       PolicyDocument:
         Statement:
           - Action: s3:GetObject
@@ -35,9 +26,9 @@ Resources:
             Sid: PublicReadForGetBucketObjects
             Principal:
               AWS: '*'
-            Resource: !Join ['/', [ !Join [':::', [ 'arn:aws:s3', !Ref RootBucket ] ], '*' ] ]
+            Resource: !Join ['/', [ !Join [':::', [ 'arn:aws:s3', !Ref WebBucket ] ], '*' ] ]
 
-  RootBucketUploader:
+  WebBucketUploader:
     Type: AWS::IAM::User
     Properties:
       UserName: !Join ['-', [ !Ref BucketName, 'uploader'] ]
@@ -56,17 +47,17 @@ Resources:
   RootUploaderAccessKey:
     Type: AWS::IAM::AccessKey
     Properties:
-      UserName: !Ref RootBucketUploader
+      UserName: !Ref WebBucketUploader
 
 Outputs:
-  RootBucketAccessKey:
+  WebBucketAccessKey:
     Value: !Ref RootUploaderAccessKey
     Description: 'Access key (to be consumed by Travis-CI)'
 
-  RootBucketSecretKey:
+  WebBucketSecretKey:
     Value: !GetAtt RootUploaderAccessKey.SecretAccessKey
     Description: 'Secret key (to be consumed by Travis-CI)'
 
   WebsiteURL:
-    Value: !GetAtt RootBucket.WebsiteURL
+    Value: !GetAtt WebBucket.WebsiteURL
     Description: S3 URL for the website

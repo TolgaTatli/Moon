@@ -1,0 +1,72 @@
+Parameters:
+  BucketName:
+    Description: Name of the bucket (must be a valid root DNS name)
+    Type: String
+    MinLength: 3
+    MaxLength: 63
+
+Resources:
+  RootBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: !Ref BucketName
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+
+  WebBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: !Join [ '.', [ 'www', !Ref BucketName ] ]
+      WebsiteConfiguration:
+        RedirectAllRequestsTo:
+          HostName: 'alejandroandr.eu'
+
+  RootBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref RootBucket
+      PolicyDocument:
+        Statement:
+          - Action: s3:GetObject
+            Effect: Allow
+            Sid: PublicReadForGetBucketObjects
+            Principal:
+              AWS: '*'
+            Resource: !Join ['/', [ !Join [':::', [ 'arn:aws:s3', !Ref RootBucket ] ], '*' ] ]
+
+  RootBucketUploader:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: !Join ['-', [ !Ref BucketName, 'uploader'] ]
+      Policies:
+        - PolicyName: BucketUpdatePolicy
+          PolicyDocument:
+            Version: 2008-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:*
+                Resource:
+                  - !Join [':::', [ 'arn:aws:s3', !Ref WebBucket ] ]
+                  - !Join ['/', [ !Join [':::', [ 'arn:aws:s3', !Ref WebBucket ] ], '*' ] ]
+
+  RootUploaderAccessKey:
+    Type: AWS::IAM::AccessKey
+    Properties:
+      UserName: !Ref RootBucketUploader
+
+Outputs:
+  RootBucketAccessKey:
+    Value: !Ref RootUploaderAccessKey
+    Description: 'Access key (to be consumed by Travis-CI)'
+
+  RootBucketSecretKey:
+    Value: !GetAtt RootUploaderAccessKey.SecretAccessKey
+    Description: 'Secret key (to be consumed by Travis-CI)'
+
+  WebsiteURL:
+    Value: !GetAtt RootBucket.WebsiteURL
+    Description: S3 URL for the website

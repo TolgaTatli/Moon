@@ -1,37 +1,17 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About
+tags: [about]
+date: 2017-08-24
 comments: false
 ---
-    
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+Welcome to my personal website. In it you will find an evolving stream of thoughts and experiences on information security, as well as the projects I get involved in over time. Hopefully by maintaining this blog I can help someone who like me is starting in this exciting field.
 
-## Preview
+I am currently based in Barcelona (thus the background of this site) and recently landed a security-related job at [Proficio](https://www.proficio.com). I decided it was the right time to make the switch after almost 4 years working as a GNU/Linux System Engineer. 
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+As of now I work as a SOC Analyst but my mid-term goal is to become a malware analyst. I find it truly fascinating and challenging at the sime time, how those pieces of code work and propagate across networks.
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+Stay tuned!
 
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+*-Alejandro*

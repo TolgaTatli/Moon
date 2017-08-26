@@ -15,6 +15,38 @@ Resources:
         IndexDocument: index.html
         ErrorDocument: error.html
 
+  LogBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: LogDeliveryWrite
+      BucketName: !Join [ '-', [ !Ref BucketName, 'logs' ] ]
+
+  WebDistribution:
+    Type: "AWS::CloudFront::Distribution"
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - !Join [ '.', [ 'www', !Ref BucketName ] ]
+        DefaultCacheBehavior:
+          Compress: 'true'
+          ForwardedValues:
+            QueryString: 'false'
+          TargetOriginId: !Join [ '-', [ !Ref BucketName, 'origin' ] ]
+          ViewerProtocolPolicy: 'redirect-to-https'
+        DefaultRootObject: 'index.html'
+        Enabled: 'true'
+        Logging:
+          Bucket: !GetAtt LogBucket.DomainName
+          IncludeCookies: 'false'
+          Prefix: !Ref BucketName
+        Origins:
+          - Id: !Join ['-', [ !Ref BucketName, 'origin' ] ]
+            DomainName: !GetAtt WebBucket.DomainName
+            S3OriginConfig:
+              OriginAccessIdentity: ''
+        ViewerCertificate:
+          CloudFrontDefaultCertificate: 'true'
+
   WebBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
@@ -26,7 +58,7 @@ Resources:
             Sid: PublicReadForGetBucketObjects
             Principal:
               AWS: '*'
-            Resource: !Join ['/', [ !Join [':::', [ 'arn:aws:s3', !Ref WebBucket ] ], '*' ] ]
+            Resource: !Join [ '/', [ !Join [ ':::', [ 'arn:aws:s3', !Ref WebBucket ] ], '*' ] ]
 
   WebBucketUploader:
     Type: AWS::IAM::User
@@ -41,8 +73,8 @@ Resources:
                 Action:
                   - s3:*
                 Resource:
-                  - !Join [':::', [ 'arn:aws:s3', !Ref WebBucket ] ]
-                  - !Join ['/', [ !Join [':::', [ 'arn:aws:s3', !Ref WebBucket ] ], '*' ] ]
+                  - !Join [ ':::', [ 'arn:aws:s3', !Ref WebBucket ] ]
+                  - !Join [ '/', [ !Join [':::', [ 'arn:aws:s3', !Ref WebBucket ] ], '*' ] ]
 
   RootUploaderAccessKey:
     Type: AWS::IAM::AccessKey

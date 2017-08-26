@@ -1,0 +1,24 @@
+language: ruby
+cache:
+  - bundler
+  - pip
+install:
+  - bundle install --path vendor/bundle
+  - pip install awscli
+script:
+  - bundle exec rake build
+deploy:
+  # Deploy to Amazon S3 only if the commit is in the `master` branch.
+  access_key_id: $AWS_ACCESS_KEY_ID
+  bucket: $AWS_S3_BUCKET
+  local_dir: _site
+  on:
+    branch: master
+  provider: s3
+  region: $AWS_DEFAULT_REGION
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  skip_cleanup: true
+after_deploy:
+  # Allow `awscli` to invalidate every object in the targeted CloudFront distribution.
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"

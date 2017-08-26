@@ -1,0 +1,95 @@
+Parameters:
+  BucketName:
+    Description: Name of the bucket (must be a valid root DNS name)
+    Type: String
+    MinLength: 3
+    MaxLength: 63
+
+Resources:
+  WebBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: !Ref BucketName
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+
+  LogBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: LogDeliveryWrite
+      BucketName: !Join [ '-', [ !Ref BucketName, 'logs' ] ]
+
+  WebDistribution:
+    Type: "AWS::CloudFront::Distribution"
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - !Join [ '.', [ 'www', !Ref BucketName ] ]
+        DefaultCacheBehavior:
+          Compress: 'true'
+          ForwardedValues:
+            QueryString: 'false'
+          TargetOriginId: !Join [ '-', [ !Ref BucketName, 'origin' ] ]
+          ViewerProtocolPolicy: 'redirect-to-https'
+        DefaultRootObject: 'index.html'
+        Enabled: 'true'
+        Logging:
+          Bucket: !GetAtt LogBucket.DomainName
+          IncludeCookies: 'false'
+          Prefix: !Ref BucketName
+        Origins:
+          - Id: !Join ['-', [ !Ref BucketName, 'origin' ] ]
+            DomainName: !GetAtt WebBucket.DomainName
+            S3OriginConfig:
+              OriginAccessIdentity: ''
+        ViewerCertificate:
+          CloudFrontDefaultCertificate: 'true'
+
+  WebBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref WebBucket
+      PolicyDocument:
+        Statement:
+          - Action: s3:GetObject
+            Effect: Allow
+            Sid: PublicReadForGetBucketObjects
+            Principal:
+              AWS: '*'
+            Resource: !Join [ '/', [ !Join [ ':::', [ 'arn:aws:s3', !Ref WebBucket ] ], '*' ] ]
+
+  WebBucketUploader:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: !Join ['-', [ !Ref BucketName, 'uploader'] ]
+      Policies:
+        - PolicyName: BucketUpdatePolicy
+          PolicyDocument:
+            Version: 2008-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:*
+                Resource:
+                  - !Join [ ':::', [ 'arn:aws:s3', !Ref WebBucket ] ]
+                  - !Join [ '/', [ !Join [':::', [ 'arn:aws:s3', !Ref WebBucket ] ], '*' ] ]
+
+  RootUploaderAccessKey:
+    Type: AWS::IAM::AccessKey
+    Properties:
+      UserName: !Ref WebBucketUploader
+
+Outputs:
+  WebBucketAccessKey:
+    Value: !Ref RootUploaderAccessKey
+    Description: 'Access key (to be consumed by Travis-CI)'
+
+  WebBucketSecretKey:
+    Value: !GetAtt RootUploaderAccessKey.SecretAccessKey
+    Description: 'Secret key (to be consumed by Travis-CI)'
+
+  WebsiteURL:
+    Value: !GetAtt WebBucket.WebsiteURL
+    Description: S3 URL for the website

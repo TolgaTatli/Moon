@@ -1,0 +1,17 @@
+language: ruby
+branches:
+  only: master
+cache:
+  - bundler
+install:
+  - bundle install --path vendor/bundle
+script:
+  - bundle exec rake build
+deploy:
+  access_key_id: $AWS_ACCESS_KEY_ID
+  bucket: $AWS_S3_BUCKET
+  local_dir: _site
+  provider: s3
+  region: $AWS_DEFAULT_REGION
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  skip_cleanup: true

@@ -1,37 +1,29 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About Me
+tags: [Introduction]
+date: 2017-04-16
 comments: false
 ---
-    
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+# Me
 
-## Preview
+目前是一名前端工程师，计划往前端数据可视化方向发展。
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+# Doing
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+## Books
 
-## Getting Started
+**《深入React技术栈》**
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+2017年10月31日前看完，并且能写一篇文章谈一下React。
+
+## 线上课程
+
+**[数据分析入门](https://cn.udacity.com/course/data-analyst-nanodegree--nd002-cn-basic)**
+
+2017年12月31日前完成学习，实践部分要好好做。最后结合大作业，至少写两篇文章谈谈数据分析。
+
+# Done
+
+暂未整理。

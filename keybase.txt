@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/dragosdutu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dutzu.net
+  * I am dragosdutu (https://keybase.io/dragosdutu) on keybase.
+  * I have a public key ASAMkdl3Z5DcZc9G0X592loyg6_vTKoGAhnj6ZeMkYgaGAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101904750f43acb5fec8c2d954005a9d744774ff91a9a1385bf156185138c366bc90a",
+            "host": "keybase.io",
+            "kid": "01200c91d9776790dc65cf46d17e7dda5a3283afef4caa060219e3e9978c91881a180a",
+            "uid": "76b99b1b8166ac7d9b87b0fb50866119",
+            "username": "dragosdutu"
+        },
+        "merkle_root": {
+            "ctime": 1497910821,
+            "hash": "89ab64ae5be54ef6e6d88b710fc5ca952eb29ee384d8d51feed244daadc11df06f919dabbff288073d342369f81500a2f613a793c7dc8493d24947d56b74527a",
+            "hash_meta": "bf10a713e55434c70235ab9a91ced0e6a8b1b2e046607f7bc46c81cf0d04541b",
+            "seqno": 1181176
+        },
+        "service": {
+            "hostname": "dutzu.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.24"
+    },
+    "ctime": 1497910866,
+    "expire_in": 504576000,
+    "prev": "bd62765f2a9d6fc5de682d052adde44dd077aaa95658b084cf9a67e5e07fa449",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgDJHZd2eQ3GXPRtF+fdpaMoOv70yqBgIZ4+mXjJGIGhgKp3BheWxvYWTFA0N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxOTA0NzUwZjQzYWNiNWZlYzhjMmQ5NTQwMDVhOWQ3NDQ3NzRmZjkxYTlhMTM4NWJmMTU2MTg1MTM4YzM2NmJjOTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMGM5MWQ5Nzc2NzkwZGM2NWNmNDZkMTdlN2RkYTVhMzI4M2FmZWY0Y2FhMDYwMjE5ZTNlOTk3OGM5MTg4MWExODBhIiwidWlkIjoiNzZiOTliMWI4MTY2YWM3ZDliODdiMGZiNTA4NjYxMTkiLCJ1c2VybmFtZSI6ImRyYWdvc2R1dHUifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTc5MTA4MjEsImhhc2giOiI4OWFiNjRhZTViZTU0ZWY2ZTZkODhiNzEwZmM1Y2E5NTJlYjI5ZWUzODRkOGQ1MWZlZWQyNDRkYWFkYzExZGYwNmY5MTlkYWJiZmYyODgwNzNkMzQyMzY5ZjgxNTAwYTJmNjEzYTc5M2M3ZGM4NDkzZDI0OTQ3ZDU2Yjc0NTI3YSIsImhhc2hfbWV0YSI6ImJmMTBhNzEzZTU1NDM0YzcwMjM1YWI5YTkxY2VkMGU2YThiMWIyZTA0NjYwN2Y3YmM0NmM4MWNmMGQwNDU0MWIiLCJzZXFubyI6MTE4MTE3Nn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJkdXR6dS5uZXQiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI0In0sImN0aW1lIjoxNDk3OTEwODY2LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImJkNjI3NjVmMmE5ZDZmYzVkZTY4MmQwNTJhZGRlNDRkZDA3N2FhYTk1NjU4YjA4NGNmOWE2N2U1ZTA3ZmE0NDkiLCJzZXFubyI6MTMsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAEOBY3baD4d271K5FKYw5lZdZ1HTO/+hT6KbubRZ6mIKH548oZE8gAPDCNdcWVXdxASAyBcWHu3/fzFmrNKFrAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIzxzJ+Ew78XgletadYZpyQr0X7cQqbOA10SkXpE/44wo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dragosdutu
+
+==================================================================

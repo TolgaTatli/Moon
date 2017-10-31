@@ -55,3 +55,13 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 });
+
+// Safari back-button fix
+window.onpageshow = function(event) {
+    if ($(".container").hasClass('fadeOut')) {
+        $(".container").removeClass("fadeOut").addClass("fadeIn");
+    }
+    if ($(".wrapper").hasClass('fadeOut')) {
+        $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
+    }
+}

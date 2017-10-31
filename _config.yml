@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Dutzu
+bio:                'Dragoș DUȚU is a communication specialist interested in millennials, branding and events' 
+description:        "Dragoș DUȚU is a communication specialist interested in millennials, branding and events"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
+logo:               'assets/img/dutzu-color_logo.svg'
+background:         'assets/img/site-bg.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://taylantatli.github.io/Moon
+url:                https://www.dutzu.eu
 
 # Jekyll
 permalink:          /:title/
@@ -20,50 +20,50 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-mathjax:            true
+mathjax:            false
 sass:
   sass_dir:         _sass
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+#disqus_shortname:   
 
 # Social
 # if you don't have any of social below, comment the line.
 #google:
   #plus:            #username
-  #analytics:
-  #verify:
+  #analytics:       
+  #verify:           TNSVuy3WIRev5COE5r8O1Zf9W5-H2aeuA64oM1-h77c   
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
+email:              dragos@dutzu.eu
+twitter:            dragosdutu
+#facebook:          username
+#github-url:        username
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:           dragosdutu
 #xing:              username
-instagram:          username
+instagram:          dragosdutu
 #lastfm:            username
 #tumblr:            username
-#medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:              username
 #dribbble:          username
 #youtube:           username
-#youtube-channel:   channel
 #soundcloud:        username
 #weibo:             username
 #flickr:            username
 #codepen:           username
-#keybase:           username
+#telegram:          username
+keybase:            dragosdutu
 #xmpp:              username@server.com
 #hackernews:        username
+#spotify:           username
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap

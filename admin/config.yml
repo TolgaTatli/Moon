@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: dutzu-ro/dutzu-ro.github.io
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "assets/img/uploads" # Media files will be stored in the repo under images/uploads
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
+    folder: "_posts/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "feature", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: Tags, name: tags, widget: list, default: ['term_1', 'term_2', 'term_3']}
+  - name: "projects" # Used in routes, e.g., /admin/collections/blog
+    label: "Projects" # Used in the UI
+    folder: "_posts/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Project", name: "project", widget: "hidden", default: "true"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "feature", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: Tags, name: tags, widget: list, default: ['term_1', 'term_2', 'term_3']}
+
+      

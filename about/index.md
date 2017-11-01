@@ -7,7 +7,7 @@ comments: false
 ---
     
 
-<img src="assets/img/dragos-dutu_transparency.png" style="float: right;" />
+<img src="/assets/img/dragos-dutu_transparency.png" style="float: right;" />
 
 <b>Dutzu</b> (Dragoș DUȚU) is a Transylvanian-born <b>communication specialist</b> based in Gent, Belgium. He brings people-centered solutions that improve communication. Finds the opportunity in problems and provides creative, long-term approaches for solving them.
 
@@ -29,35 +29,35 @@ A list view of his featured projects is available [here](/projects/).
 <table id="Table_01" width="690" height="504" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td colspan="4">
-			<img src="assets/img/projects/projects_01.gif" width="690" height="33" alt=""></td>
+			<img src="/assets/img/projects/projects_01.gif" width="690" height="33" alt=""></td>
 	</tr>
 	<tr>
 		<td rowspan="3">
-			<img src="assets/img/projects/projects_02.gif" width="29" height="471" alt=""></td>
+			<img src="/assets/img/projects/projects_02.gif" width="29" height="471" alt=""></td>
 		<td>
 			<a href="/uaic/">
-				<img src="assets/img/projects/uaic.gif" width="314" height="167" border="0" alt=""></a></td>
+				<img src="/assets/img/projects/uaic.gif" width="314" height="167" border="0" alt=""></a></td>
 		<td>
 			<a href="/360UAIC/">
-				<img src="assets/img/projects/360UAIC.gif" width="323" height="167" border="0" alt=""></a></td>
+				<img src="/assets/img/projects/360UAIC.gif" width="323" height="167" border="0" alt=""></a></td>
 		<td rowspan="3">
-			<img src="assets/img/projects/projects_05.gif" width="24" height="471" alt=""></td>
+			<img src="/assets/img/projects/projects_05.gif" width="24" height="471" alt=""></td>
 	</tr>
 	<tr>
 		<td>
 			<a href="/ern-2014/">
-				<img src="assets/img/projects/ERN.gif" width="314" height="160" border="0" alt=""></a></td>
+				<img src="/assets/img/projects/ERN.gif" width="314" height="160" border="0" alt=""></a></td>
 		<td>
 			<a href="/filit/">
-				<img src="assets/img/projects/FILIT.gif" width="323" height="160" border="0" alt=""></a></td>
+				<img src="/assets/img/projects/FILIT.gif" width="323" height="160" border="0" alt=""></a></td>
 	</tr>
 	<tr>
 		<td>
             <a href="/icpam/">
-                <img src="assets/img/projects/projects_08.gif" width="314" height="144" alt=""></a></td>
+                <img src="/assets/img/projects/projects_08.gif" width="314" height="144" alt=""></a></td>
 		<td>
 			<a href="/icpam/">
-				<img src="assets/img/projects/ICPAM.png" width="323" height="144" border="0" alt=""></a></td>
+				<img src="/assets/img/projects/ICPAM.png" width="323" height="144" border="0" alt=""></a></td>
 	</tr>
 </table>
 <!-- End Save for Web Slices -->

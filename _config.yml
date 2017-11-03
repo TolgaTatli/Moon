@@ -1,7 +1,7 @@
 # Site
 title:              Technical Articles - Sc56
-bio:                '需要个地方记录自己的生活。'
-description:        "？？？"
+bio:                '这个是bio'
+description:        "这个是des"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -27,7 +27,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   scott
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -53,8 +53,8 @@ disqus_shortname:   taylantatli
 #foursquare:        username
 #steam:              username
 #dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
+youtube:           username
+youtube-channel:   channel
 #soundcloud:        username
 #weibo:             username
 #flickr:            username

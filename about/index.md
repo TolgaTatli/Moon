@@ -67,4 +67,4 @@ A list view of his featured projects is available [here](/projects/).
 You can also view his [LinkedIn profile](https://linkedin.com/in/dragosdutu) or download the [C.V.](/assets/img/DragosDUTU-web_résumé-EN.pdf).
 ## Contact
 
-Dragos can be contacted via [e-mail](mailto:dragos@dutzu.eu), [LinkedIn](https://linkedin.com/in/dragosdutu), [Telegram](https://t.me/dragosdutu) or [skype](https://is.gd/calldragos). His PGP keys are [available on keybase](https://keybase.io/dragosdutu).
+Dragos can be contacted via [e-mail](mailto:dragos@dutzu.net), [LinkedIn](https://linkedin.com/in/dragosdutu), [Telegram](https://t.me/dragosdutu) or [skype](https://is.gd/calldragos). His PGP keys are [available on keybase](https://keybase.io/dragosdutu).

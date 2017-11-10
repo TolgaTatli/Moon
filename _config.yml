@@ -1,6 +1,6 @@
 # Site
 title:              Dutzu
-bio:                'Dragoș DUȚU is a communication specialist interested in millennials, branding and events' 
+bio:                'Dragoș DUȚU is a communication specialist interested in millennials, branding and events'
 description:        "Dragoș DUȚU is a communication specialist interested in millennials, branding and events"
 reading_time:       true
 words_per_minute:   200
@@ -26,14 +26,14 @@ sass:
   style:            compressed
 
 # Comments
-#disqus_shortname:   
+#disqus_shortname:
 
 # Social
 # if you don't have any of social below, comment the line.
 #google:
   #plus:            #username
-  #analytics:       
-  #verify:           TNSVuy3WIRev5COE5r8O1Zf9W5-H2aeuA64oM1-h77c   
+  analytics:        UA-109524666-1
+  #verify:
   #ad-client:
   #ad-slot:
 #bing-verify:
@@ -49,7 +49,7 @@ instagram:          dragosdutu
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
-#steam:              username
+#steam:             username
 #dribbble:          username
 #youtube:           username
 #soundcloud:        username

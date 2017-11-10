@@ -10,7 +10,6 @@ tag:
 - dutzudizertează
 comments: false
 ---
-<center><a href="https://goo.gl/forms/cnav9TKqpXnLyI493" class="btn btn-danger">Completează chestionarul</a></center><br /><br /><br />
 ## Rezultate parțiale
 
 **Atenție!** Aceste rezultate au fost extrase automat, nu sunt filtrate, nu au valoare științitică și nici marjă de eroare calculată, pondere din toți respondenții. Ele exprimă orientativ brandul preferat; dar nu pot fi considerate relevante până la închiderea sondajului.
@@ -18,9 +17,9 @@ comments: false
 
 {% capture images %}
 	/assets/img/dizerteaza/rp/1.png
- 	/assets/img/dizerteaza/rp/2.png 
+ 	/assets/img/dizerteaza/rp/2.png
  	/assets/img/dizerteaza/rp/3.png
  	/assets/img/dizerteaza/rp/4.png
- 	/assets/img/dizerteaza/rp/5.png 
+ 	/assets/img/dizerteaza/rp/5.png
 {% endcapture %}
-{% include gallery images=images caption="Rezultate partiale" cols=3 %}
+{% include gallery images=images caption="Branduri preferate din rezultatele partiale" cols=3 %}

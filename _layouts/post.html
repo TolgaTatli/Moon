@@ -37,7 +37,11 @@ layout: compress
                 {% include meta.html %}
                 </div>
             </div>
-        <center><img src="/assets/img/dutzu-logo_100px.png"></center>
+            <center>
+              <a href="{{ site.url }}">
+                <img src="/assets/img/dutzu-color_logo.svg" class="img-circle zoombtn animated rotateIn">
+              </a>
+            </center>
         </div>
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
     </header>

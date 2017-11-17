@@ -3,7 +3,7 @@ layout: post
 title:  "Rezultate partiale studiu [RO]"
 date:   2017-08-31
 excerpt: "Rezultate parțiale studiu"
-feature: assets/img/feature-rp.jpg
+feature: assets/img/features/feature-rp.jpg
 tag:
 - rezultate partiale dutzu
 - dutzudizerteaza

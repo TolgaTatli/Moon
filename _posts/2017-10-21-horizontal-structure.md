@@ -3,11 +3,12 @@ layout: post
 title:  "Horizontal structure micro-series "
 date:  2017-10-21
 excerpt: "Horizontal structure is collection of photography micro-series inspired by the Instagram grid."
-feature: assets/img/feature-hs.jpg
+feature: assets/img/features/feature-hs.jpg
 tag:
 - horizontal structure
 - photography micro-series
 - dutzu
+- photography
 comments: false
 ---
 

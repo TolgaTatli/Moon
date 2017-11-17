@@ -12,11 +12,23 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google.analytics }}', 'auto');  
+      ga('create', '{{ site.google.analytics }}', 'auto');
       ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
     </script>
-    {% endif %}
+{% endif %}
     {% if page.comments != false %}
         {% include disqus_comments.html %}
     {% endif %}
+    <!-- CMS Identity loader -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                        });
+                    }
+                });
+        }
+        </script>

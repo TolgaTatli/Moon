@@ -22,7 +22,7 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
+                    {% for post in site.posts %}
                         {% if post.project %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
@@ -35,6 +35,11 @@ layout: compress
                     {% endfor %}
                 </div>
             </div>
+            <center>
+              <a href="{{ site.url }}">
+                <img src="/assets/img/dutzu-color_logo.svg" class="img-circle zoombtn animated rotateIn">
+              </a>
+            </center>
         </div>
     </header>
     {% include scripts.html %}

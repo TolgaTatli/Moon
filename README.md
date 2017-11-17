@@ -1,30 +1,16 @@
-# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
-## `Sorry guys but there will be no update until I buy a new laptop.`
-    
-######(If you like this theme or using it, please give a :star: for motivation.)
+# Dutzu's website
 
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+Dutzu's website is based on a [theme](https://github.com/TaylanTatli/Moon) by [Taylan Tatlı](https://github.com/TaylanTatli/), used under MIT [license](LICENSE).
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+# Powered by
 
-## Preview
+The website is powered by Jekyll + Github pages and is served by Netlify.  
 
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
+#Copyright
 
-See a [live version of Moon](https://taylantatli.github.io/Moon) hosted on GitHub.
-
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](https://taylantatli.github.io/Moon/moon-theme/) for more information.
+All images are copyrighted to Dragos DUTU, with the exception of the logos belonging to:
+* the International Conference on Physics of Advanced Materials,
+* the International Festival of Literature and Translation Iași,
+* the European Researchers' Night Iași,
+* the Advanced Experimental and Theoretical Research Center in Condensed Matter Physics,
+* Alexandru Ioan Cuza University of Iași.

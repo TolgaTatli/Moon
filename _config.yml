@@ -4,7 +4,7 @@ bio:                'Master student in computer engineering at ULiege.'
 description:        "General technology and Science enthusiast, always eager to tackle a new and interesting challenge."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/Profile_picture.jpg'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US

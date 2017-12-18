@@ -1,0 +1,233 @@
+---
+title: "Plotly in R"
+author: "NOWHERE"
+date: "July 13, 2017"
+output: 
+ slidy_presentation:
+  font_adjustmen: -1
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+Plotly is more than an r package and in fact, it is a general [data visualization platform](https://plot.ly/).
+
+Today, let's focus on its r lib-- [plotly](https://plot.ly/r/).
+
+To get our hands dirty, we need to download the package in r.
+
+```{r download, echo=TRUE, message=FALSE, warning=FALSE}
+if(!require(plotly)) {
+      install.packages("plotly")
+      # or download from github
+      # devtools::install_github("ropensci/plotly")
+}
+# load library
+library(plotly)
+```
+
+## Main Function
+
+In plotly, the main function is `plot_ly`.
+
+```{r comment="", echo=FALSE}
+args(plot_ly)
+```
+
+- data: A data frame (optional) or SharedData object.    
+- ...: These arguments are documented at https://plot.ly/r/reference/ Note that acceptable arguments depend on the value of type.    
+- type: A character string describing the type of trace.    
+- color: A formula containing a name or expression. Values are scaled and mapped to color codes based on the value of colors and alpha. To avoid scaling, wrap with I(), and provide value(s) that can be converted to rgb color codes by col2rgb().    
+- colors: Either a colorbrewer2.org palette name (e.g. "YlOrRd" or "Blues"), or a vector of colors to interpolate in hexadecimal "#RRGGBB" format, or a color interpolation function like colorRamp().    
+- alpha: A number between 0 and 1 specifying the alpha channel applied to color.    
+- symbol: A formula containing a name or expression. Values are scaled and mapped to symbols based on the value of symbols. To avoid scaling, wrap with I(), and provide valid pch() values and/or valid plotly symbol(s) as a strin.    
+- symbols: A character vector of symbol types. Either valid pch or plotly symbol codes may be supplied.    
+
+## Main Function (cont'd)
+
+- size: A formula containing a name or expression yielding a numeric vector. Values are scaled according to the range specified in sizes.    
+- sizes: A numeric vector of length 2 used to scale sizes to pixels.    
+- linetype: A formula containing a name or expression. Values are scaled and mapped to linetypes based on the value of linetypes. To avoid scaling, wrap with I().    
+- linetypes: A character vector of line types. Either valid par (lty) or plotly dash codes may be supplied.    
+- split: A formula containing a name or expression. Similar to group_by(), but ensures at least one trace for each unique value. This replaces the functionality of the (now deprecated) group argument.    
+- frame:  A formula containing a name or expression. The resulting value is used to split data into frames, and then animated.    
+- width: Width in pixels (optional, defaults to automatic sizing).    
+- height: Height in pixels (optional, defaults to automatic sizing).    
+- source: a character string of length 1. Match the value of this string with the source argument in event_data() to retrieve the event data corresponding to a specific plot (shiny apps can have multiple plots).    
+
+## Examples
+
+I will demonstrate several examples here to show what plotly can do for us with r. You can also access this [cheatsheet](https://images.plot.ly/plotly-documentation/images/r_cheat_sheet.pdf) to plot with plotly quickly.
+
+First, let's generate some sample data.
+
+```{r message=FALSE,warning=FALSE, echo=TRUE}
+set.seed(123)
+x <- runif(n = 100, min = 1, max = 100)
+y <- runif(n = 100, min = 1, max = 100)
+y_new <- runif(n = 100, min = 1, max = 100)
+library(dplyr)
+```
+
+****
+
+- Line Plots
+      
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (x = x, y = x+4, type = 'scatter' ,mode = 'lines')
+```
+
+****
+
+- Scatter Plots
+
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (x = x, y = y,  type = 'scatter' ,mode = 'markers')
+```
+
+****
+
+- Bar Charts
+
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (x = c(1, 2, 3), y = c(5, 6, 7),  type = 'bar')
+```
+
+****
+
+- Bubble Charts
+
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (x = x, y = y, type = 'scatter' ,mode = 'markers', 
+         size = runif(n = 100, min = 1, max = 10),
+         marker = list(color = sample(c("red","green","orange","pink","blue"),
+                                      size = 100,replace = TRUE)))
+```
+
+****
+
+- Heatmaps
+
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (z = volcano, type="heatmap")
+```
+
+****
+
+- Area Plots
+
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (x =  x[order(x)] , y =(x[order(x)])^3, type = "scatter", 
+         mode = "lines", fill = "tozeroy")
+```
+
+****
+
+- Histograms
+
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (x =  rnorm(n = 100000,mean = 0,sd = 1) , type="histogram")
+```
+
+****
+
+- Box Plots
+
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (y =  rnorm(n = 100,mean = 0,sd = 1) , type="box") %>% 
+      add_trace(y=rnorm(n=100,mean = 0,sd = 2)) %>% 
+      add_trace(y=rnorm(n=100,mean = 0,sd = 4)) %>% 
+      add_trace(y=rnorm(n=100,mean = 0,sd = 3)) %>% 
+      add_trace(y=rnorm(n=100,mean = 0,sd = 5))
+```
+
+****
+
+- 2D Histogram
+
+```{r echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (x = rnorm(n = 100000,mean = 0,sd = 1), y = rnorm(n = 100000,mean = 0,sd = 1),
+         type="histogram2d")
+```
+
+****
+
+- Bubble Maps
+
+```{r cache=TRUE,echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+locs <- ggmap::geocode(location = c("Beijing, China", "London, England, United Kingdom", 
+                                    "New York, NY, United States"))
+plot_ly (lon = locs$lon, lat = locs$lat, type = 'scattergeo', mode = "markers",
+         marker = list(color = c("red", "salmon", "green"), size = c( 30, 40 ,50)))
+```
+
+****
+
+- Choropleth Map
+
+```{r cache=TRUE,echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (type = 'choropleth',locations = c('AZ','PA','CA'), locationmode = 'USA-states',
+         colorscale = 'Viridis', z = c(10, 20 ,30)) %>% layout(geo = list(scopre = 'usa'))
+```
+
+****
+
+- Scatter Map
+
+```{r cache=TRUE,echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (type = 'scattergeo', mode = "markers", lon = locs$lon, lat = locs$lat,
+         text =c("Beijing, China", "London, England, United Kingdom", 
+                 "New York, NY, United States"),
+         marker = list(color = c("red", "salmon", "green"), size = c( 30, 40 ,50)))
+```
+
+****
+
+- 3D Surface Plots
+
+```{r cache=TRUE,echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (type = 'surface',z= ~volcano)
+```
+
+****
+
+- 3D Line Plots
+
+```{r cache=TRUE,echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (type = 'scatter3d', x = c(9, 8, 5, 1), y = c(1, 2, 4, 8), 
+         z = c(11, 8, 15, 3), mode = "lines")
+```
+
+****
+
+- 3D Scatter Plots
+
+```{r cache=TRUE,echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (type = 'scatter3d', x = x, y = y, z = runif(100, 0, 100), 
+         mode = 'markers', size = runif(n = 100, min = 1, max = 10), 
+         marker = list(color = sample(c("red","green","orange"),size = 100,replace = TRUE)))
+```
+
+****
+
+- Axes
+
+```{r cache=TRUE,echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+axis_template <- list(showgrid = F, zeroline = F, nticks = 20, 
+                      showline = T, title = "AXIS", mirror = "all")
+plot_ly (x =x, y = y, type = "scatter", mode = "markers") %>% 
+      layout(xaxis = axis_template, yaxis = axis_template)
+```
+
+****
+
+- Lengends
+
+```{r cache=TRUE,echo=TRUE,warning=FALSE,message=FALSE,fig.width=5,fig.align='center',fig.height=4}
+plot_ly (x =x, y = y, type = "scatter", mode = "markers", name = "1") %>% 
+      add_trace(x = x, y = y_new, name = "2") %>%
+      layout(legend = list( x = 1, y = 1, bgcolor = "white"))
+```

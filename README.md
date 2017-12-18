@@ -1,30 +1,17 @@
-# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
-## `Sorry guys but there will be no update until I buy a new laptop.`
-    
-######(If you like this theme or using it, please give a :star: for motivation.)
+Hi, 
 
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+   welcome to **NOWHERE**. 
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+   This is my personal blog. 
 
-## Preview
+   I will post what I learnt and what I want to share on this blog aperiodically. 
 
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
+   Most of posts will be about the programing skills related to R, Java and Scala. The majority of topics will cover from big data, data mining, researches on building user profiles, and how to make marketing/business analyzing models. 
 
-See a [live version of Moon](https://taylantatli.github.io/Moon) hosted on GitHub.
+   If you have any quesitons or suggestions about the content I released, you are all welcome to post your opinions below my every post, and you could send an email to<a href="mailto:no_wheree@outlook.com"> me.</a>
 
-## Getting Started
+*Special thanks to [Michael Rose](https://github.com/mmistakes) and his convenient Jekyll theme [HPSTR](https://github.com/mmistakes/hpstr-jekyll-theme)*.
 
-To learn how to install and use this theme check out the [Setup Guide](https://taylantatli.github.io/Moon/moon-theme/) for more information.
+Best,    
+NOWHERE    
+2017-05-22    

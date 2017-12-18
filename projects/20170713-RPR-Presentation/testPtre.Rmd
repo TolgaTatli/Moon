@@ -1,0 +1,39 @@
+---
+title: "testPresentation"
+author: "JackHo"
+date: "July 13, 2017"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+```{r echo=FALSE}
+library(leaflet)
+
+```
+## Slide with Plot
+
+```{r pressure}
+leaflet() %>% addTiles() %>% fitBounds(0, 40, 10, 50) %>% setView(-93.65, 42.0285, zoom = 17) %>% addPopups(-93.65, 42.0285, 'Here is the <b>Department of Statistics</b>, ISU') %>% addMarkers(rnorm(10, -93.65, .01), rnorm(10, 42.0285, .01))
+```
+

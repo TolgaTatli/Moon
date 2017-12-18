@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "20170623_0704_0705-PRP-caret-in-R-for-ML", "20170623_0704_0705-PRP-caret-in-R-for-ML.rxproj", "{FB4EAB6C-953D-4D4E-A8FA-068C553DBC95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB4EAB6C-953D-4D4E-A8FA-068C553DBC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4EAB6C-953D-4D4E-A8FA-068C553DBC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4EAB6C-953D-4D4E-A8FA-068C553DBC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4EAB6C-953D-4D4E-A8FA-068C553DBC95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

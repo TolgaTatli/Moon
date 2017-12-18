@@ -1,0 +1,13 @@
+Version: 1.0
+
+RestoreWorkspace: Default
+SaveWorkspace: Default
+AlwaysSaveHistory: Default
+
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 6
+Encoding: GB18030
+
+RnwWeave: knitr
+LaTeX: pdfLaTeX

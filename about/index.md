@@ -6,8 +6,8 @@ date: 2017-12-02
 comments: false
 ---
 
-Currently pursuing a Master's degree at ULiège (Belgium) in computer 
-engineering where I am following the "Intelligent Systems" specialisation.
+Currently pursuing a Master's degree in computer engineering at ULiège 
+(Belgium) where I am following the "Intelligent Systems" specialisation.
 My fields of interest are artificial intelligence, natural language processing,
 and computer vision. More specifically, I like to tinker with machine learning 
 techniques and apply them to various problems.

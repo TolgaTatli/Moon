@@ -6,10 +6,11 @@ date: 2017-12-02
 comments: false
 ---
 
-Currently a Master student at ULiège (Belgium) in computer engineering where I
-am following the "Intelligent Systems" specialisation.
+Currently pursuing a Master's degree at ULiège (Belgium) in computer 
+engineering where I am following the "Intelligent Systems" specialisation.
 My fields of interest are artificial intelligence, natural language processing,
-and computer vision.
+and computer vision. More specifically, I like to tinker with machine learning 
+techniques and apply them to various problems.
 
-I like to crack a few jokes from time to time so expect some serious and silly 
-posts.
+I also like to crack a joke from time to time so expect some serious and less 
+serious posts.

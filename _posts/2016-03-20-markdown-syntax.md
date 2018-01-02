@@ -4,7 +4,7 @@ title:  "Markdown Syntax"
 date:   2016-03-15
 excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 tag:
-- markdown 
+- markdown
 - syntax
 - sample
 - test
@@ -90,11 +90,22 @@ Make any link standout more when applying the `.btn` class.
 <a href="#" class="btn btn-success">Success Button</a>
 {% endhighlight %}
 
-<div markdown="0"><a href="#" class="btn">Primary Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-success">Success Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-warning">Warning Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-danger">Danger Button</a></div>
-<div markdown="0"><a href="#" class="btn btn-info">Info Button</a></div>
+<div markdown="0">
+<a href="#" class="btn">Primary Button</a>
+</div>
+
+<div markdown="0">
+<a href="#" class="btn btn-success">Success Button</a>
+</div>
+<div markdown="0">
+<a href="#" class="btn btn-warning">Warning Button</a>
+</div>
+<div markdown="0">
+<a href="#" class="btn btn-danger">Danger Button</a>
+</div>
+<div markdown="0">
+<a href="#" class="btn btn-info">Info Button</a>
+</div>
 
 ## KBD
 

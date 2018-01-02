@@ -1,10 +1,10 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Sseon Blog
+bio:                '신입 개발자가 되려 용쓰는'
+description:        "내가 스스로 공부하고 진행한 프로젝트 설명 블로그(결국 내 공부 블로그)"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'https://avatars2.githubusercontent.com/u/24274424?s=460&v=4'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US

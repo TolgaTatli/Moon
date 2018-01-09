@@ -10,7 +10,16 @@ layout: compress
     {% include head.html %}
 </head>
 <body>
+    {% if site.enableScrollBackground == true %}
+        <div id="bg" style="background: url({{ site.scrollImage }}) bottom left;"></div>
+        {% if site.enableOverlay == true %}
+        <div id="overlay" style="
+        background-image: url('assets/img/overlay-pattern.png'), url('assets/img/overlay.svg');"></div>
+        {% endif %}
+    {% endif %}
+    <!-- FINE BG -->
     {% include nav.html %}
+    
     <!-- Header -->
     <header class="header flex" role="banner">
         <div class="container animated fadeIn">

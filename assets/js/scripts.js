@@ -16,7 +16,7 @@ $(function() {
 });
 
 // All others
-$(document).ready(function() {
+window.onpageshow(function() {
     // zoom in/zoom out animations
     if ($(".container").hasClass('fadeOut')) {
         $(".container").removeClass("fadeOut").addClass("fadeIn");

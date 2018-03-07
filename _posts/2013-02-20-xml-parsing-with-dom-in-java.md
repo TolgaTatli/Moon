@@ -6,6 +6,7 @@ categories: Programming
 tags: Java XML
 comments: true
 feature: /assets/img/XML_Parsing_with_DOM_in_Java.png
+image: "/assets/img/XML_Parsing_with_DOM_in_Java.png"
 ---
 In my blog [XML Parsing with DOM in C++](/articles/2013-01/xml-parsing-with-dom-in-cpp){:target="_blank"}, I used the Xerces-C++ XML Parser as the foundation for the XML parsing API. The classes from that article are also useful for and can be implemented in Java. The difference is Java includes support for XML parsing with both the SAX and DOM models.
 

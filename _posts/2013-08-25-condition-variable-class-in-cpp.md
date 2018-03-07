@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++ Threads
 comments: true
 feature: /assets/img/Condition_Variable_Class_in_C++.png
+image: "/assets/img/Condition_Variable_Class_in_C++.png"
 ---
 Condition variables are used in conjunction with mutexes by one thread to signal other threads that it has changed the state of a given variable. Synchronizing threads with the standard Pthreads functions is straightforward, but wrapping these calls in C++ classes makes them all the easier to use.
 

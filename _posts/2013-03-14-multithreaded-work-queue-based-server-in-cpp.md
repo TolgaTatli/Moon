@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++ Threads
 comments: true
 feature: /assets/img/Multithreaded_Work_Queue_Based_Server_in_C++.png
+image: "/assets/img/Multithreaded_Work_Queue_Based_Server_in_C++.png"
 ---
 Creating a multithreaded TCP/IP protocol based server requires the capabilities to handle network communication, multithreading and transferring data between threads.
 

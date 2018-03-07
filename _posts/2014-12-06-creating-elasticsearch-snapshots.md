@@ -6,6 +6,7 @@ categories: Tutorials
 tags: Elasticsearch
 comments: true
 feature: /assets/img/Creating_Elasticsearch_Snapshots.png
+image: "/assets/img/Creating_Elasticsearch_Snapshots.png"
 ---
 Benjamin Franklin once wrote “…in this world nothing can be said to be certain, except death and taxes”. In this computerized world of ours, I would add having to backup your data to free up disk space to that list of eventualities.
 

@@ -6,6 +6,7 @@ categories: Tutorials
 tags: Java REST
 comments: true
 feature: /assets/img/RESTful_Web_Services_with_Jersey.png
+image: "/assets/img/RESTful_Web_Services_with_Jersey.png"
 ---
 Although Eclipse is commonly used for Java web service programming, it can be challenging to configure and use for testing. Luckily Eclipse is not the only IDE game in town.
 

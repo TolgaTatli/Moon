@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++ Threads
 comments: true
 feature: /assets/img/Mutex_Class_in_C++.png
+image: "/assets/img/Mutex_Class_in_C++.png"
 ---
 When multiple threads want to synchronize access to a shared resource they use mutexes and condition variables. A mutex enables a thread to block other threads from accessing a shared resource, while a condition variable is used by a thread to make itself wait for the state of a resource to be changed by other threads.
 

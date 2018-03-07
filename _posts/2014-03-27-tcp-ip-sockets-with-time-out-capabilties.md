@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++ Network Sockets
 comments: true
 feature: /assets/img/TCPIP_Sockets_with_Time_Out_Capabilities.png
+image: "/assets/img/TCPIP_Sockets_with_Time_Out_Capabilities.png"
 ---
 Recently I had a question from one of my readers about how to close connections on a server when there are no requests received after a certain period of time.  The question was asked with regard to the `tcpsockets` classes I covered in my blog [TCP Network Programming Design Patterns in C++](/articles/2013-02/tcp-ip-network-programming-design-patterns-in-cpp){:target="_blank"}, none of which support time out capabilities.
 

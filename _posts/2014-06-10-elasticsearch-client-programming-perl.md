@@ -6,6 +6,7 @@ categories: Programming
 tags: Elasticsearch Perl
 comments: true
 feature: /assets/img/Elasticsearch_Client_Programming_Perl.png
+image: "/assets/img/Elasticsearch_Client_Programming_Perl.png"
 ---
 Since creating a log management system for the [OSSEC HIDS with Elasticsearch](/articles/2013-11/ossec-log-management-with-elasticsearch){:target="_blank"}, I have been busy applying this useful search technology in other projects. Elasticsearch is a marvelous system for ingesting streaming data that gets indexed on the fly and quickly searching your data.
 

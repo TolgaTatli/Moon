@@ -6,6 +6,7 @@ categories: Tutorials
 tags: Elasticsearch Logstash OSSEC
 comments: true
 feature: /assets/img/Improved_OSSEC_Log_Parsing_with_Logstash.png
+image: "/assets/img/Improved_OSSEC_Log_Parsing_with_Logstash.png"
 ---
 The ELK stack (Elasticsearch-Logstash-Kibana) provides a cost effective alternative to commercial SIEMs for ingesting and managing OSSEC alert logs. Previously I wrote a blog – [OSSEC Log Management with Elasticsearch](/articles/2013-11/ossec-log-management-with-elasticsearch){:target="_blank"} – that discusses the design of an ELK based log system.
 

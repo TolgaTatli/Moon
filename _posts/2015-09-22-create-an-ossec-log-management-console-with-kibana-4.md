@@ -5,7 +5,7 @@ date:   2015-09-22 12:40:37
 categories: Tutorials
 tags: Elasticsearch Kibana OSSEC
 comments: true
-feature: /assets/img/Create_an_OSSEC_Log_Management_Console_with_Kibana.png
+feature: "/assets/img/Create_an_OSSEC_Log_Management_Console_with_Kibana.png"
 ---
 It’s been awhile since Kibana 4 was released, so I figured it was about time I updated my OSSEC Log Management Console to use the latest and greatest Kibana. The look and feel of Kibana has changed quite a bit, with a new data discovery mode that let’s you browse your data quickly before you create any visualizations. The visualization panels are fluidly moveable to any position, query results are displayed very rapidly and you can even embed your dashboards into static web pages with the dashboard export feature.
 

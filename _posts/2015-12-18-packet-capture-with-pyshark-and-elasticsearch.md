@@ -5,8 +5,7 @@ date:   2015-12-18 12:40:37
 categories: Programming
 tags: Elasticsearch Python Network
 comments: true
-feature: /assets/img/Packet_Capture_with_Pyshark_and_Elasticsearch.png
-image: "/assets/img/Packet_Capture_with_Pyshark_and_Elasticsearch.png"
+feature: "/assets/img/Packet_Capture_with_Pyshark_and_Elasticsearch.png"
 ---
 Network packet capture and analysis are commonly done with tools like *tcpdump*, *snort*, and *Wireshark*. These tools provide the capability to capture packets live from networks and store the captures in PCAP files for later analysis. A much better way to store packets is to index them in Elasticsearch where you can easily search for packets based on any combination of packet fields.
 

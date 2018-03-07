@@ -6,6 +6,7 @@ categories: Security
 tags: Elasticsearch OSSEC
 comments: true
 feature: /assets/img/Securing_Hadoop_with_OSSEC.png
+image: "/assets/img/Securing_Hadoop_with_OSSEC.png"
 ---
 Hadoop has built-in security facilities such as kerberos user authentication, encrypted RPC between system nodes and file encryption. While these are important features, Hadoop clusters can benefit from host intrusion detection to round out the security picture.
 

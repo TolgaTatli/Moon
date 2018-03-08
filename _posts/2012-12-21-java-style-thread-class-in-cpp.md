@@ -10,7 +10,7 @@ image: "/assets/img/Java_Style_Thread_Class_in_C++.png"
 ---
 Java provides the `Thread` class that enables developers to easily create multiple threads in Java applications. Pthreads is commonly used for multithreaded programming in C and C++, but this API is procedural and somewhat less convenient to use than Java’s object oriented thread interface.
 
-However, it is possible to mimic Java threads behaviors by wrapping Pthreads calls in a C++ class that will let you create threads *Java style*.
+However, it is possible to mimic Java thread behaviors by wrapping Pthreads calls in a C++ class that will let you create threads *Java style*.
 
 <!--more-->
 

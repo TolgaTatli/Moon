@@ -42,5 +42,6 @@ This picture shows some movers pushing an IBM 5 Mb hard drive (yes, that's right
 
 At any rate, many thanks for visiting my website. I hope you find my code projects useful.
 
+### Credits
 
-Also thanks to [Taylin Tali](https://github.com/TaylanTatli){:target="_blank"} for creating the [Moon](https://github.com/TaylanTatli/Moon){:target="_blank"} theme for Jekyll on which this websie is based.
+Also thanks to **[Taylin Tali](https://github.com/TaylanTatli){:target="_blank"}** for creating the [Moon](https://github.com/TaylanTatli/Moon){:target="_blank"} theme for Jekyll on which this website is based.

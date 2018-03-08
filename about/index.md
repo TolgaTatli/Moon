@@ -41,3 +41,6 @@ I get a kick out of writing blogs to help people understand programming and shar
 This picture shows some movers pushing an IBM 5 Mb hard drive (yes, that's right 5 **megabytes**) up a ramp in the **really** early days of computers. We've come a long haven't we?
 
 At any rate, many thanks for visiting my website. I hope you find my code projects useful.
+
+
+Also thanks to [Taylin Tali](https://github.com/TaylanTatli){:target="_blank"} for creating the [Moon]{https://github.com/TaylanTatli/Moon}{:target="_blank"} theme for Jekyll on which this websie is based.

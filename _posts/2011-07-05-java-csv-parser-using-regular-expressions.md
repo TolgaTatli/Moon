@@ -6,6 +6,7 @@ categories: Programming
 tags: Java
 comments: true
 feature: /assets/img/Java_CSV_Parser_Using_Regular_Expressions.png
+image: "/assets/img/Java_CSV_Parser_Using_Regular_Expressions.png"
 ---
 Parsing files is a real pain. You can find programming tools to help, regular expressions for example, and even languages that are built for that sort of thing, like Perl.  But sooner or later you forget how to use them, unless you have a very good long term memory, in your head that is.
 

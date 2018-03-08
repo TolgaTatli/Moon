@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++ XML
 comments: true
 feature: /assets/img/XML_Parsing_with_DOM_in_C++.png
+image: "/assets/img/XML_Parsing_with_DOM_in_C++.png"
 ---
 Having the ability to parse XML files is a requirement for a lot of applications these days. XML is a standard format for exchanging data between programs and storing configuration data.
 

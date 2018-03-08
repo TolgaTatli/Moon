@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++
 comments: true
 feature: /assets/img/Reversing_a_Linked_List.png
+image: "/assets/img/Reversing_a_Linked_List.png"
 ---
 In all my years as a software developer, reversing a singly linked list is not something I’ve had to do. But it is a commonly asked question in interviews for programming positions. Of course the easy solution to the problem is to place items in a Standard C++ collection, like a vector, then apply the `reverse()` function to the collection.
 

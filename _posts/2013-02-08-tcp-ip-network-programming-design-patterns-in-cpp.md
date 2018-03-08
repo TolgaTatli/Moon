@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++ Network Sockets
 comments: true
 feature: /assets/img/TCPIP_Network_Programming_Design_Pattens_in_C++.png
+image: "/assets/img/TCPIP_Network_Programming_Design_Pattens_in_C++.png"
 ---
 Network programming with the BSD Sockets API involves making a series of boilerplate calls to several operating system level functions every time you want to create connections and transfer data over TCP/IP networks. This process can be both cumbersome and error prone.
 

@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++ Threads
 comments: true
 feature: /assets/img/Multithreaded_Work_Queue_in_C++.png
+image: "/assets/img/Multithreaded_Work_Queue_in_C++.png"
 ---
 In a previous blog [Java Style Thread Class in C++](/articles/2012-12/java-style-thread-class-in-cpp){:target="_blank"} I discussed how to develop a C++ class that enables you to create Pthread based objects that resemble Java threads. The next step to building a multithreaded application is to devise a means to distribute tasks between threads so they can be processed concurrently.
 

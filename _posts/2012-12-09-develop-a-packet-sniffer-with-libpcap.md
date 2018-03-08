@@ -6,6 +6,7 @@ categories: Programming
 tags: C/C++ Libpcap Network
 comments: true
 feature: /assets/img/Develop_a_Packet_Sniffer_with_Libpcap.png
+image: "/assets/img/Develop_a_Packet_Sniffer_with_Libpcap.png"
 ---
 Libpcap is an open source C library that provides an API for capturing packets directly from the datalink layer of Unix derived operating systems. It is used by popular packet capture applications such as tcpdump and snort that enables them to run on just about any flavor of Unix.
 

@@ -8,7 +8,7 @@ comments: true
 feature: /assets/img/Elasticsearch_Client_Programming_Python.png
 image: "/assets/img/Elasticsearch_Client_Programming_Python.png"
 ---
-The [first article](/articles/2014-06/elasticsearch-client-programming-perl){:target="_blank"} in this two part series focused on developing Elasticsearch clients with Perl. Elasticsearch also has an excellent Python library which lets you search for and analyze your data with one of the many mathematics and machine learning libraries available for Python.
+The [first article](/elasticsearch-client-programming-perl){:target="_blank"} in this two part series focused on developing Elasticsearch clients with Perl. Elasticsearch also has an excellent Python library which lets you search for and analyze your data with one of the many mathematics and machine learning libraries available for Python.
 
 In this article I’ll cover how to create an Elasticsearch client using Python that has the same capabilities as the Perl client from the part 1 article.
 

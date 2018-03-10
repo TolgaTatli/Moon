@@ -8,7 +8,7 @@ comments: true
 feature: /assets/img/XML_Creation_with_DOM_in_Java.png
 image: "/assets/img/XML_Creation_with_DOM_in_Java.png"
 ---
-Awhile back I wrote a blog about [parsing XML documents](/articles/2013-02/xml-parsing-with-dom-in-java){:target="_blank"} with the DOM facilities provided by Java. As it turns out you can use the same API to programmatically create an XML document.
+Awhile back I wrote a blog about [parsing XML documents](/xml-parsing-with-dom-in-java){:target="_blank"} with the DOM facilities provided by Java. As it turns out you can use the same API to programmatically create an XML document.
 
 So I’ve dusted off the old `XmlDomDocument` class and added some methods that make it easy to build an XML document from scratch.
 

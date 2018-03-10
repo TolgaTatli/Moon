@@ -8,7 +8,7 @@ comments: true
 feature: /assets/img/Elasticsearch_Client_Programming_Perl.png
 image: "/assets/img/Elasticsearch_Client_Programming_Perl.png"
 ---
-Since creating a log management system for the [OSSEC HIDS with Elasticsearch](/articles/2013-11/ossec-log-management-with-elasticsearch){:target="_blank"}, I have been busy applying this useful search technology in other projects. Elasticsearch is a marvelous system for ingesting streaming data that gets indexed on the fly and quickly searching your data.
+Since creating a log management system for the [OSSEC HIDS with Elasticsearch](/ossec-log-management-with-elasticsearch){:target="_blank"}, I have been busy applying this useful search technology in other projects. Elasticsearch is a marvelous system for ingesting streaming data that gets indexed on the fly and quickly searching your data.
 
 The Elasticsearch community provides client libraries that expose their search API in several popular languages, including Perl and Python. This article is the first of a two part series where I show you how to write an Elasticsearch search client application in both of these languages, starting with Perl.
 

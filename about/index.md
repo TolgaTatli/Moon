@@ -44,6 +44,6 @@ At any rate, many thanks for visiting my website. I hope you find my code projec
 
 ### Acknowledgements
 
-This website is made posssible by [Github](https://github.com){:target="blank"} and it's support for [Jekyll](https://jekyllrb.com/){:target="blank"}.  
+This website is made possible by [Github](https://github.com){:target="blank"} and it's support for [Jekyll](https://jekyllrb.com/){:target="blank"}.  
 
 Special thanks to **[Taylin Tali](https://github.com/TaylanTatli){:target="_blank"}** for creating the **[Moon](https://github.com/TaylanTatli/Moon){:target="_blank"}** theme for Jekyll which I used to build [vichargrave.github.io](https://vichargrave.github.io){:target="blank"}. 

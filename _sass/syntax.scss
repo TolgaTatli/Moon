@@ -3,7 +3,7 @@ pre.highlight {
 }
 
 .highlight {
-	background-color: #49483e;
+	background-color: #3d3d34;
 	font-family: $font2;
 	@include font-size(14);
 	color: #f8f8f2;
@@ -13,7 +13,7 @@ pre.highlight {
 		margin: 0;
 		padding: 1em;
 	}
-	.lineno            { padding-right: 20px; color: #000000;}
+	.lineno            { padding-right: 20px; color: #3d3d34;}
 	.hll               { background-color: #3d3d34}
 	.c                 { color: #75715e }                            /* Comment                     */
 	.err               { color: #960050; background-color: #1e0010 } /* Error                       */

@@ -124,7 +124,7 @@ int Thread::start()
 }
 {% endhighlight %}
 
-Pthread functions return 0 when they are successful and an integer > `0` when they fail. When the call to `pthread_create()` returns we check the return code. If it is `0` that means the thread was successful so set the `m_running` flag to 1. The thread m_tid member variable is set to the thread ID which is used subsequent Pthread function calls.
+Pthread functions return 0 when they are successful and an integer > `0` when they fail. When the call to `pthread_create()` returns we check the return code. If it is `0` that means the thread was successful so set the `m_running` flag to 1. The thread `m_tid` member variable is set to the thread ID which is used subsequent Pthread function calls.
 
 #### Run Method
 

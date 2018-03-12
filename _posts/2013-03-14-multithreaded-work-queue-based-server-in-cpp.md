@@ -18,9 +18,9 @@ I have described how to build C++ components to handle this functionality in pre
 
 The core server functionality that I’ll use in this project come from source code presented in the following previous articles of mine. Note you can get the source code for the articles on Github.
 
-- Network I/O – [TCP/IP Network Programming Design Patterns in C++](/articles/2013-02/tcp-ip-network-programming-design-patterns-in-cpp){:target="_blank"}
-- Multithreading – [Java Style Thread Class in C++](/articles/2012-12/java-style-thread-class-in-cpp){:target="_blank"}
-- Inter-thread data transfer – [Multithreaded Work Queue in C++](/articles/2013-01/multithreaded-work-queue-in-cpp){:target="_blank"}
+- Network I/O – [TCP/IP Network Programming Design Patterns in C++](/tcp-ip-network-programming-design-patterns-in-cpp){:target="_blank"}
+- Multithreading – [Java Style Thread Class in C++](/java-style-thread-class-in-cpp){:target="_blank"}
+- Inter-thread data transfer – [Multithreaded Work Queue in C++](/multithreaded-work-queue-in-cpp){:target="_blank"}
 
 ### Server Structure
 

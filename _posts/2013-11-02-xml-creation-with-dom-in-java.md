@@ -127,6 +127,8 @@ The test program will create an XML document having the same content as the `boo
 The test program will just build on the `ParseTest` class I used in my previous blog.
 
 {% highlight java linenos %}
+package com.example;
+
 public class ParseTest {
     public static void main(String[] args) {
         ParseTest test = new ParseTest();

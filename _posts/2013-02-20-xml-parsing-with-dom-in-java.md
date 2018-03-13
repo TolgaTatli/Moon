@@ -126,7 +126,7 @@ public class XmlDomDocument {
 The `ParseTest` class parses the *bookstore.xml* file then prints out the attribute and child values for each book.
 
 {% highlight java  %}
-package com.vichargrave;
+package com.example;
 
 public class ParseTest {
     public static void main(String[] args) {

@@ -158,7 +158,7 @@ The `@Consumes` annotation specifies that the POST handler accepts requests cont
 If your server is still running from previous testing, NetBeans will automatically deploy the service in your test environment and restart Tomcat.  Otherwise run the project again. You can test the web service by sending it a file from your system with the curl command as follows.
 
 {% highlight bash %}
-$ curl localhost:8080/getsomerest/webresources/service --data "Hello World!"
+$ curl http://localhost:8080/getsomerest/webresources/service --data "Hello World!"
 {% endhighlight %}
 
 The POST handler should return `Hello World!`.

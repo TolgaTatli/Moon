@@ -45,7 +45,7 @@ The next step involves connecting Kibana to your Elasticsearch data so queries c
 
 ![](/assets/img/configure-an-index-pattern.png){: .image-left-justify}
 
-Kibana will automatically search for what look like time series indices in your cluster then display them in this screen. You then choose the one you want and identify the time field. In this example I’m using the logstash index naming convention and @timestamp. When you are happy with you choice click on Create when you are done.
+Kibana will automatically search for what look like time series indices in your cluster then display them in this screen. You then choose the one you want and identify the time field. In this example I’m using the logstash index naming convention and `@timestamp`. When you are happy with you choice click on **Create** when you are done.
 
 ### Create OSSEC Visualizations
 

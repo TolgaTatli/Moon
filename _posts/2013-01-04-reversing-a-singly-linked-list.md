@@ -93,7 +93,7 @@ Now the function you have been waiting for. The trick to this algorithm is you n
 2. `head` - Initially contains the original head of the list but will then be set to the pointer to the next item in the list until the `NULL` pointer is encountered.
 3. `cursor` - Initially is set to `NULL` but then tracks the new head of the list. At the end of the list, `head` equals `NULL` and the value of `cursor` is returned to the caller.
 
-{% highlight c linenos %}
+{% highlight c %}
 node_t* reverseList(node_t* head)
 {
     node_t* cursor = NULL;
@@ -109,7 +109,7 @@ node_t* reverseList(node_t* head)
 }
 {% endhighlight %}
 
-**[Lines 8-9]** The reversal step occurs when `head->m_next` is set to the value contained in cursor which always contains the pointer to the previous item in the list. When the function reaches the end of the list the new head pointer is returned in cursor.
+The reversal step occurs when `head->m_next` is set to the value contained in cursor which always contains the pointer to the previous item in the list. When the function reaches the end of the list the new head pointer is returned in cursor.
 
 ### Test Application
 

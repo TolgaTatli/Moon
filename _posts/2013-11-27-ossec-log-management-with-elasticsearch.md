@@ -173,7 +173,7 @@ To get specific alerts, you enter a query string for one of the OSSEC fields, su
 
 ![](/assets/img/Logstash-search.png){: .image-left-justify}
 
-The alerts fields are displayed in the panel below **EVENTS OVER TIME**. You select the fields you want to see by clicking on the checkboxes for the fields you want to display in the Fields list shown in the lower left hand corner of the illustration. In this case, I've selected @timestamp, Alert_level, Rule, Description and Details.
+The alerts fields are displayed in the panel below **EVENTS OVER TIME**. You select the fields you want to see by clicking on the checkboxes for the fields you want to display in the Fields list shown in the lower left hand corner of the illustration. In this case, I've selected `@timestamp`, Alert_level, Rule, Description and Details.
 
 As new alerts are stored in Elasticsearch, they will appear in the Kibana console if your refresh the screen in your browser. Alternatively you can have the console refresh automatically by clicking the time scale menu item, which is labeled **a day ago to a few seconds ago**, then select **Auto-refresh >** and one of the several refresh times ranging from seconds to 1 day. The panels will then refresh at every interval you specified and you should see new alerts pop up on the screen, assuming those OSSEC alerts are generated on your OSSEC agent systems.
 

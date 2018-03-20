@@ -4,7 +4,7 @@ bio:                'Intento de programador. Algo de seguridad informática'
 description:        "Mi blog, y página web."
 reading_time:       true
 words_per_minute:   200
-<<<<<<< HEAD
+
 logo:               'assets/img/logo3.png'
 background:         'https://source.unsplash.com/qkEdBIOwT8E/1920x1080'
 locale:             es_ES

@@ -12,7 +12,7 @@ url:                https://agucova.me
 tiled_bg: false
 
 # Jekyll
-enforce_ssl:        agucova.github.io
+# enforce_ssl:        agucova.github.io
 permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge

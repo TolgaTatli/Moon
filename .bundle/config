@@ -1,0 +1,3 @@
+---
+BUNDLE_PATH: "/srv/users/serverpilot/.gem"
+BUNDLE_DISABLE_SHARED_GEMS: "true"

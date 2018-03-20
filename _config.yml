@@ -4,13 +4,17 @@ bio:                'Un estudiante apasionado por la informática y la ciencia.'
 description:        "Mi blog y web."
 reading_time:       true
 words_per_minute:   200
+
 logo:               'assets/img/logo3.png'
 background:         'https://source.unsplash.com/random/1920x1080'
 locale:             es_ES
+<<<<<<< HEAD
 url:                https://agucova.me/
 
 # Jekyll
 enforce_ssl:        agucova.me
+tiled_bg: false
+
 permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge
@@ -39,7 +43,7 @@ disqus_shortname:   agucova
 #bing-verify:
 email:              agucova@gmail.com
 twitter:            agucova
-github:             agucova
+github-url:             agucova
 stackoverflow:      4595150/forgotten-player-agucova
 #linkedin:           username
 #xing:              username
@@ -51,6 +55,7 @@ instagram:          agustin_covarrubias
 #steam:              agucova
 #dribbble:          username
 #youtube:           username
+#youtube-channel:   channel
 #soundcloud:        username
 #weibo:             username
 #flickr:            username

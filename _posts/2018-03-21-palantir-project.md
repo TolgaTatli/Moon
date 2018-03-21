@@ -13,13 +13,13 @@ comments: true
 ---
 
 <center>
-  <bold>Palantir</bold>: a magical artifact from J.R.R. Tolkien's legendarium.
+  <b>Palantir</b>: a magical artifact from J.R.R. Tolkien's legendarium.
   It is used both for communication and seeing events in other parts of the world.
   
-  "<italic>One palantir to rule them all.</italic>"
+  "<i>One palantir to rule them all.</i>"
 </center>
 
-The <bold>Palantir Project</bold> is a personal experiment, conducted in partnership
+The <b>Palantir Project</b> is a personal experiment, conducted in partnership
 with [Norman Marlier](https://normanmarlier.github.io), whose ultimate objective is to 
 develop a modular smart home virtual assistant ecosystem. The system should be able 
 in the end to monitor sensors, cameras and other devices to inform its users about 

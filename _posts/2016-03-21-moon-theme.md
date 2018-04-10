@@ -12,7 +12,7 @@ tag:
 - theme
 comments: true
 ---
-
+categories: [webhacking.kr]
 ![Moon Homepage](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
     
 <center><b>Moon</b> is a minimal, one column jekyll theme.</center>
@@ -50,7 +50,7 @@ That's all.
 See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.      
 
 ## Site Setup
-A quick checklist of the files youâ€™ll want to edit to get up and running.    
+A quick checklist of the files you?™ll want to edit to get up and running.    
 
 ### Site Wide Configuration
 `_config.yml` is your friend. Open it up and personalize it. Most variables are self explanatory but here's an explanation of each if needed:

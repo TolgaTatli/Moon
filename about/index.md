@@ -8,7 +8,7 @@ permalink: /about/
 
 Welcome to my website which is the companion to my code contributions on [Github](https://github.com/vichargrave){:target="_blank"}. I write blogs describing my code and system designs that I've used in the hope that they will help people with their own development projects.
 
-I have been coding for many years with C, C++, Java, and most recently Python. My technical interests include security, data analytics and distributed systems. Currently I'm working as a Staff Engineer at [VWmare](https://vmware.com){:target="_blank"} helping bring the power of behavior analytics to the [Workspace One platform](https://www.vmware.com/products/workspace-one.html){:target="_blank"}.
+I have been coding for many years with C, C++, Java, and most recently Python. My technical interests include security, data analytics and distributed systems. Currently I'm working as a Staff Engineer at [VWmare](https://vmware.com){:target="_blank"} helping bring the power of behavior analytics to the [Workspace ONE platform](https://www.vmware.com/products/workspace-one.html){:target="_blank"}.
 
 When I'm not slaving away over a hot keyboard - yes I do have a life outside technology - I like spending time with my family, cooking, going to theater and movies. My family and I are cat lovers and spend time fostering semi-feral cats for future adoption - more on that later.
 

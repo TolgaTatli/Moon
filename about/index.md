@@ -46,4 +46,4 @@ At any rate, many thanks for visiting my website. I hope you find my code projec
 
 Thanks to [Github](https://github.com){:target="blank"} for providing free website hosting with support for the [Jekyll](https://jekyllrb.com/){:target="blank"} framework.  
 
-Special thanks to **[Taylin Tali](https://github.com/TaylanTatli){:target="_blank"}** for creating the **[Moon](https://github.com/TaylanTatli/Moon){:target="_blank"}** theme which I adapted for my website..
+Special thanks to **[Taylin Tali](https://github.com/TaylanTatli){:target="_blank"}** for creating the **[Moon](https://github.com/TaylanTatli/Moon){:target="_blank"}** theme which I adapted for my website.

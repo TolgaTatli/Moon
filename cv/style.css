@@ -1,0 +1,95 @@
+        canvas {
+            position: fixed !important;
+        }
+        
+        body {
+            display: block;
+            font-family: monospace;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: #23241f;
+            color: #a6e22e;
+        }
+        
+        div {}
+        
+        .section {
+            background: rgba(22, 22, 19, 0.9);
+            border: 2px dashed pink;
+            box-shadow: 5px 5px 5px #000000;
+            padding: 1em;
+        }
+        
+        .altbaslik {
+            color: #e6db74;
+        }
+        
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .baslik {
+            font-size: 1.5em;
+        }
+        
+        .baslik::before {
+            color: white;
+            content: ">>> ";
+        }
+        
+        header {
+            display: flex;
+            justify-content: center;
+            font-size: 1em;
+        }
+        
+        #head {
+            background: rgba(22, 22, 19, 0.95);
+        }
+        
+        .a {
+            color: #66d9ef;
+        }
+        
+        .a::before {
+            color: white;
+            content: "[";
+        }
+        
+        .a::after {
+            color: white;
+            content: "]: ";
+        }
+        
+        .b {
+            color: #ae81ff;
+        }
+        
+        a.b:hover {
+            text-decoration-style: wavy;
+            text-decoration-color: magenta;
+        }
+        
+        .c {
+            color: #f92672;
+        }
+        /*# sourceMappingURL=style.css.map */
+        
+        a.a1 {
+            color: #e6db74;
+        }
+        
+        a.a1:hover {
+            color: #c9bf65;
+        }
+        
+        a.a2 {
+            color: #75715e;
+        }
+        
+        a.a2:hover {
+            color: #a8a284;
+        }

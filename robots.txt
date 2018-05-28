@@ -1,6 +1,3 @@
 User-agent: Twitterbot
-Disallow: *
-Allow: /asssets/img/*
-
 User-agent: *
 Disallow:

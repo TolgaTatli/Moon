@@ -1,3 +1,6 @@
-# Allow crawling of all content
+User-agent: Twitterbot
+Disallow: *
+Allow: /asssets/img/*
+
 User-agent: *
 Disallow:

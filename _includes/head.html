@@ -6,7 +6,7 @@
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     <!-- Twitter Cards -->
     {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{{ feature }}">
     {% else %}<meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}">{% endif %}

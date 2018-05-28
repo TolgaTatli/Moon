@@ -5,11 +5,11 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     <!-- Twitter Cards -->
-    <!-- {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %} -->
-    <meta name="twitter:card" content="summary_large_image">
+    {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="{{ feature }}">
-    <!-- {% else %}<meta name="twitter:card" content="summary"> -->
-    <!-- <meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}">{% endif %} -->
+    {% else %}<meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}">{% endif %}
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     {% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">

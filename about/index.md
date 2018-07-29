@@ -6,10 +6,9 @@ date: 2018-07-29
 comments: false
 ---
 
-<center><b>slow but steady<b/></center>
-
+slow but steady
 
 ## YOUNG OH
 
 
-가봅시다
+

@@ -6,9 +6,9 @@ date: 2018-07-29
 comments: false
 ---
 
-slow but steady
+<center><b>slow but steady</b></center>
 
 ## YOUNG OH
-
-
+* dureng5@gmail.com
+* <a href="https://github.com/younggeun0">github page</a>
 

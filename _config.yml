@@ -1,7 +1,7 @@
 # Site
 title:              forever young
 bio:                'Young\'s github pages'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+description:        "younggeun0 github pages"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -20,13 +20,13 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-mathjax:            true
+mathjax:            false
 sass:
   sass_dir:         _sass
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+#disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.

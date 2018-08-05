@@ -12,13 +12,11 @@ The [first article](/elasticsearch-client-programming-perl){:target="_blank"} in
 
 In this article I’ll cover how to create an Elasticsearch client using Python that has the same capabilities as the Perl client from the part 1 article.
 
-<!--more-->
-
-### Got Anaconda Python?
+## Got Anaconda Python?
 
 There are many ways to get Python on your system, if you don’t have it already. It usually comes pre-installed on Linux systems. But I’ve developed a fondness for Anaconda Python provided by Continuum Analytics. Anaconda Python comes complete with a large set of libraries, including specialized machine learning modules such as NumPym, SciPy, scikit-image, scikit-learn, etc. Since I work with a machine learning group, I find this aspect of Anaconda Python particularly appealing. You can download Anaconda Python here.
 
-### Install PyDev Plug-in for Eclipse
+## Install PyDev Plug-in for Eclipse
 
 Even if you are an expert wth Python, I highly recommend writing your first Elasticsearch client using the Eclipse IDE, which has a Python development plug-in that helps you not only step through your code but also see how Elasticsearch JSON is mapped to Python data structures. If you don’t have a Perl environment for Eclipse then follow the steps in this section to install one.
 
@@ -40,7 +38,7 @@ To add the Elasticsearch client library for Python on either Linux, Windows or M
 pip install Elasticsearch
 {% endhighlight %}
 
-### Connecting to Elasticsearch
+## Connecting to Elasticsearch
 
 Let’s say we have an Elasticsearch cluster comprised of indices that contain data collected from Twitter’s 1% sample feed. The tweets are collected in a new index each day.  The format of the index name is `tweets-yyyy-mm-dd`. The server nodes that are exposed to clients is 10.1.1.1 and 10.1.1.2 .
 
@@ -70,7 +68,7 @@ es = Elasticsearch(['10.1.1.1:9200','10.1.1.2:9200'])
 
 **Line [7]** Create an Elasticsearch client object. Specify the IP addresses and default Elasticsearch ports of the nodes to which the client will attempt to connect.
 
-### Do an Elasticsearch Query
+## Do an Elasticsearch Query
 
 Tweets are structured in JSON format as specified in [Twitter’s documentation](https://dev.twitter.com/docs/platform-objects/tweets){:target="_blank"}. The fields that will be retrieved from Elasticsearch include the Twitter user ID string, the date the tweet was created and the expanded URL – after *unshortening* – that was sent in the text of the tweet. Let’s take a look how that data will appear in an index.
 
@@ -132,7 +130,7 @@ rs = es.search(index=['tweets-2014-04-12','tweets-2014-04-13'],
 
 **[Lines 5-10]** The type of query and fields involved are specified in the body field. The fields array includes the tweet fields that we want in the query response. The query does a wildcard search for expanded URLs that contain the characters `*.ru`.
 
-### Retrieve the Query Results
+## Retrieve the Query Results
 
 The query results are retrieved `100` tweets at a time by successive calls to `scroll()` using the scroll ID returned from the original query.
 
@@ -159,7 +157,7 @@ while (scroll_size > 0):
 
 **[Line 9-10]** Catch any exceptions then break.
 
-### Display the Query Results
+## Display the Query Results
 
 All that’s left to do is display the entire set of tweets returned. For queries where certain fields are specified, Elasticsearch conveniently returns just the fields specified, placing them in a JSON section labeled `fields` as shown here.
 
@@ -218,7 +216,7 @@ my $rs = $es->search(
 
 **[Lines 6-10]** The type of query and fields involved are specified in the body field. The fields array includes the tweet fields that we want in the query response. The query does a wildcard search for expanded URLs that contain the characters `.ru`.
 
-### Display the Query Results
+## Display the Query Results
 
 All that’s left to do is display the entire set of tweets returned. For queries where certain fields are specified, Elasticsearch conveniently returns just the fields specified, placing them in a JSON section labeled `fields` as shown here.
 

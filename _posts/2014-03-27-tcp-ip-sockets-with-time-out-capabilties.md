@@ -12,11 +12,9 @@ Recently I had a question from one of my readers about how to close connections 
 
 Timing out on both receive and connect operations are common use cases. So in this article I’ll update my tcpsockets classes to provide these capabilities.
 
-<!--more-->
+## Receive Time Outs
 
-### Receive Time Outs
-
-#### Updated TCPStream Header
+### Updated TCPStream Header
 
 To handle receive time outs, I’ve added the private `waitForReadEvent()` – line 26 below – method to the `TCPStream` class which is called by the `receive()` method. The receive time out is specified with an additional time out argument that contains the desired time out in seconds – line 14 below. Setting the time out argument to `0` in the header indicates that this is an optional parameter and if not supplied by the caller, the value of `0` will be used. As you’ll see later, a time out of `0` means that the receive operation will call `waitForReadEvent()`.
 
@@ -56,7 +54,7 @@ class TCPStream
 
 **[Lines 20-22]** Define TCPStream class specific values that correspond to three connection results, closure, reset or other error and time out. The connectionTimeOut value is used in the `receive()` method.
 
-#### Updated TCPStream Class
+### Updated TCPStream Class
 
 The `select()` system call enables programs to detect when data is available to receive and whether connections have completed on one ore more sockets. The function can also set limits for the amount time that they will wait for either type of network event to be detected. The `waitForReadEvent()` method encapsulates the `select()` functionality.
 
@@ -99,9 +97,9 @@ ssize_t TCPStream::receive(char* buffer, size_t len, int timeout)
 
 **[Lines 5-8]** Otherwise `waitForEvent()` is called for the connected socket descriptor with the specified time out in seconds. If true is returned then `read()` is called otherwise `connectionTimeOut` is returned.
 
-### Connect Time Outs
+## Connect Time Outs
 
-#### Updated TCPConnector Header
+### Updated TCPConnector Header
 
 To handle connection time outs, I’ve added another `connect()` method to the `TCPConnector` class – line 5 below – that accepts a time out value in seconds.
 
@@ -117,7 +115,7 @@ class TCPConnector
 };
 {% endhighlight %}
 
-#### Updated TCPConnector Class
+### Updated TCPConnector Class
 
 Once again the `select() f`unction is used to implement connect time outs. Instead of monitoring read events though, `select()` is called to check when a socket becomes writable which indicates that a connection has been established.
 
@@ -204,9 +202,9 @@ TCPStream* TCPConnector::connect(const char* server, int port, int timeout)
 
 **[Lines 56-57]** If any error during connection occurred return `NULL` otherwise return a `TCPStream` object for the socket.
 
-### Test Applications
+## Test Applications
 
-#### Server For Connect Time Outs
+### Server For Connect Time Outs
 
 To test connect time outs, I created a server that creates a listening socket, binds to an IP address and port but does not start listening for connections. This creates a situation where the client can send TCP SYN packets to the server, but the server never returns any ACKs. This causes the client TCP to retry sending SYNs then eventually time out.
 
@@ -241,7 +239,7 @@ int main(int argc, char** argv)
 }
 {% endhighlight %}
 
-#### Server For Receive Time Outs
+### Server For Receive Time Outs
 
 To test receive time outs, I created a server that listens for connections on a given IP address and TCP port, establishes connections with clients and receives requests but never sends any replies. This causes the client to time out waiting for a reply that never arrives.
 
@@ -281,7 +279,7 @@ int main(int argc, char** argv)
 }
 {%endhighlight %}
 
-#### Client That Tests Connect and Receive Time Outs
+### Client That Tests Connect and Receive Time Outs
 
 Finally I created a client that tests both connect and receive time outs. It is designed to send a message to the server then wait for a specified time out interval.
 
@@ -328,7 +326,7 @@ int main(int argc, char** argv)
 }
 {% endhighlight %}
 
-#### Get the Code and Run the Tests
+### Get the Code and Run the Tests
 
 You can the project code from Github – [https://github.com/vichargrave/tcpsockets](https://github.com/vichargrave/tcpsockets){:target="_blank"}. Build the project by running make in the tcpsockets directory. Then run the test servers and test client like this with a time out of 2 seconds, assuming you are running everything on the same system:
 

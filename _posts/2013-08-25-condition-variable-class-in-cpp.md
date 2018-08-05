@@ -12,9 +12,7 @@ Condition variables are used in conjunction with mutexes by one thread to signal
 
 In my [last article](/mutex-class-in-cpp){:target="_blank"} I showed you how to build a `Mutex` class in C++. This time around I’ll use that class to develop a C++ wrapper for condition variables.
 
-<!--more-->
-
-### Pthread Condition Variable Functions
+## Pthread Condition Variable Functions
 
 These are the standard Pthread functions that will be incorporated in the `CondVar` class.
 
@@ -41,7 +39,7 @@ Each function returns `0` if successful or an error number if it fails.
 
 Condition variables are always paired with mutexes which lock the shared resources. For an example of how these two Pthreads mechanisms can be use together, check out my blog [Multithreaded Word Queue in C++](/articles/2013-01/multithreaded-work-queue-in-cpp){:target="_blank"}.
 
-### CondVar Class
+## CondVar Class
 
 The `CondVar` class includes two private data members, a native `pthread_cond_t` variable and the `Mutex` class with which it is associated. The constructor takes a Mutex object reference argument.  The default constructor is made private to prevent calling applications from invoking it since it makes no sense to have a CondVar object with no `Mutex` object.
 
@@ -69,7 +67,7 @@ class CondVar
 
 The functions discussed in the previous section are wrapped by each method of the `CondVar` class. The `CondVar::wait()` method calls `pthread_cond_wait()` which requires access to the native `pthread_mutex_t` data member in the `Mutex` class. Recall that private access is granted by the Mutex class through a friend `CondVar` class statement.
 
-### CondVar Test Application
+## CondVar Test Application
 
 You can get the source code for this project from GitHub – [https://github.com/vichargrave/condvar.git](– https://github.com/vichargrave/condvar.git){:target="_blank"}.
 

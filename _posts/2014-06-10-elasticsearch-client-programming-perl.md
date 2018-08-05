@@ -12,9 +12,7 @@ Since creating a log management system for the [OSSEC HIDS with Elasticsearch](/
 
 The Elasticsearch community provides client libraries that expose their search API in several popular languages, including Perl and Python. This article is the first of a two part series where I show you how to write an Elasticsearch search client application in both of these languages, starting with Perl.
 
-<!--more-->
-
-### Install Eclipse for Perl
+## Install Eclipse for Perl
 
 Even if you are an expert with Perl, I highly recommend writing your first Elasticsearch client using the Eclipse IDE, which has a Perl development plug-in that helps you not only step through your code but also see how Elasticsearch JSON is mapped to Perl data structures. If you don’t have a Perl environment for Eclipse then follow the steps in this section to install one.  I’m going to assume you have an Eclipse IDE and Perl itself installed on your system.
 
@@ -38,7 +36,7 @@ pcpan Search::Elasticsearch
 
 If you are installing on Windows, just use the Perl Package Manager.
 
-### Connecting to Elasticsearch
+## Connecting to Elasticsearch
 
 Let’s say we have an Elasticsearch cluster comprised of indices that contain data collected from Twitter’s 1% sample feed. The tweets are collected in a new index each day.  The format of the index name is `tweets-yyyy-mm-dd`. The server nodes that are exposed to clients is `10.1.1.1` and `10.1.1.2`.
 
@@ -69,7 +67,7 @@ my $es = Search::Elasticsearch->new(
 
 **Lines [3-8]** Create an Elasticsearch client object. Specify the IP addresses and default Elasticsearch ports of the nodes to which the client will attempt to connect.
 
-### Do an Elasticsearch Query
+## Do an Elasticsearch Query
 
 Tweets are structured in JSON format as specified in Twitter’s documentation. The fields that will be retrieved from Elasticsearch include the Twitter user ID string, the date the tweet was created and the expanded URL – after *unshortening* – that was sent in the text of the tweet. Let’s take a look how that data will appear in an index.
 
@@ -134,7 +132,7 @@ my $rs = $es->search(
 
 **[Lines 6-10]** The type of query and fields involved are specified in the body field. The fields array includes the tweet fields that we want in the query response. The query does a wildcard search for expanded URLs that contain the characters `.ru`.
 
-### Retrieve the Query Results
+## Retrieve the Query Results
 
 The query results are retrieved `100` tweets at a time by successive calls to `scroll()` using the scroll ID returned from the original query.
 
@@ -156,7 +154,7 @@ while (1) {
 
 **[Line 6 – 8]** If `scroll()` returns 0 hits then break out of the loop. Otherwise add the current set of hits to the tweets retrieved so far and continue in the loop.
 
-### Display the Query Results
+## Display the Query Results
 
 All that’s left to do is display the entire set of tweets returned. For queries where certain fields are specified, Elasticsearch conveniently returns just the fields specified, placing them in a JSON section labeled `fields` as shown here.
 

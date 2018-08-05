@@ -12,11 +12,9 @@ Having the ability to parse XML files is a requirement for a lot of applications
 
 If you want to parse XML documents in C++ you can benefit from using an external library like the [Xerces-C++ XML Parser](http://xerces.apache.org/xerces-c/){:target="_blank"}. Xerces provides an elaborate, but somewhat complex API for navigating XML files. To simplify matters, I’ll describe a C++ class that encapsulate the Xerces calls to index and retrieve XML element values and attributes.
 
-<!--more-->
+## XML Parsing Models
 
-### XML Parsing Models
-
-#### XML Elements
+### XML Elements
 
 XML documents consistent of elements that are denoted by beginning and ending tags. XML elements are of the general form:
 
@@ -47,13 +45,13 @@ Here is an example of an XML document that is intended to represent two books co
 </bookstore>
 {% endhighlight %}
 
-#### SAX Model
+### SAX Model
 
 XML files can be parsed using two different XML models, *SAX* and *DOM* (Document Object Model). Parsing with SAX utilizes mechanisms where the XML document is traversed and as XML elements are visited the contents are passed back to the calling application.  When the beginning and ending elements of a section, e.g. the `book` sections in the example XML, are encountered, the caller is notified so it can keep track of each section and so it knows that other elements will follow.
 
 Since SAX parsing visits each element one at time, it is fast and does not make heavy demands on memory. It is also possible to process XML documents of arbitrary sizes. However, SAX requires the calling application to do all the heavy lifting when it comes to storing the XML field values.
 
-#### DOM Model
+### DOM Model
 
 With DOM parsing the entire XML document is read into memory and organized in the form of a tree as shown in the following diagram.
 
@@ -65,7 +63,7 @@ When using DOM it is possible to index through each parent and child element, so
 
 The downside of using DOM is that the size of document you can parse with it is limited by the amount of memory an application has to work with and parsing is less efficient.
 
-### Xerces Installation
+## Xerces Installation
 
 Before diving into the XML DOM parsing API, let’s go over how to install Xerces. You can get the Xerces library in binary form for various platforms, but I was built my example on MacOS so I elected to build from source.
 
@@ -80,7 +78,7 @@ Before diving into the XML DOM parsing API, let’s go over how to install Xerce
 
 This will place the Xerces headers and library in */usr/local* on your system.
 
-#### Xerces Platform Initialization
+### Xerces Platform Initialization
 
 Before we do any parsing the Xerces the platform must first be initialized, which involves the following 3 steps:
 
@@ -121,7 +119,7 @@ class XmlDomErrorHandler : public HandlerBase
 
 When an exception in thrown within the Xerces platform it will be caught here and an error message will be displayed indicating the line number of the offending code.
 
-### XmlDOMDocument Class
+## XmlDOMDocument Class
 
 The `XmlDomDocument` class encapsulates the Xerces DOM API. The class interface and definition are contained in the *XmlDomDocument.h* and *XmlDomDocument.cpp* files, respectively.  Note that the `createParser()` code in the previous section is also defined in the *XmlDomDocument.cpp* file.
 
@@ -159,7 +157,7 @@ class XmlDomDocument
 };
 {% endhighlight %}
 
-#### Constructor
+### Constructor
 
 The constructor calls `createParser()`, which is defined in the *XmlDomDocument.cpp* file and visable outside this file, to initialize the Xerces platform then `XercesDOMParser::parse()` to parse the given XML and produce a `DOMDocument` object the pointer which is stored in the m_doc member variable. The `XmlDomDocument` default and copy constructors are declared private since we only want this object created one way, with a constructor that accepts an `XmlDOMDocument` pointer and the name of the XML file to be parsed.
 
@@ -171,7 +169,7 @@ XmlDomDocument::XmlDomDocument(const char* xmlfile) : m_doc(NULL)
 }
 {% endhighlight %}
 
-#### Destructor
+### Destructor
 
 Since the `DOMDocument` is *adopted* by the `XmlDOMDocument`, we must release the memory consumed by the document when `XmlDOMDocument` is destroyed.
 
@@ -182,7 +180,7 @@ XmlDomDocument::~XmlDomDocument()
 }
 {% endhighlight %}
 
-#### Get Child Element Value
+### Get Child Element Value
 
 The `XmlDomDocument::getChildValue()` takes the name of a parent tag and the index of the parent tag in the XML file. For example, if I want to get the price of the Harry Potter book from the example XML file, the parent tag is `book`, the parent index would be `1` – like with C/C++ indexing starts from `0` – and the child tag is `price`.
 
@@ -221,7 +219,7 @@ string XmlDomDocument::getChildValue(const char* parentTag,
 
 **[Lines 16-25]** If we get a `non-NULL` child element, its value can be obtained from a call to `DOMElement::getTextContent()` which returns a ponter to an XMLString then copied to a string object and returned to the caller. Otherwise the string with a `NULL` value is returned.
 
-#### Get Child Attribute Value
+### Get Child Attribute Value
 
 Retrieving XML child attribute values is very similar to retrieving child element values, except that the attribute tag is also passed to the method. For example if we wanted the book category for the Harry Potter book, the parent tag is `bookstore`, parent index is `0`, the child tag is `book`, the child index is `1` and the attribute tag is `category`.
 
@@ -259,7 +257,7 @@ string XmlDomDocument::getChildAttribute(const char* parentTag,
 
 **[Lines 21-25]** Return the attribute value or `NULL` string if the specified child or child attribute is not found.
 
-#### Get Child Count
+### Get Child Count
 
 To get the number of elements contained under a given parent, we call `DOMDocumentElement::getElementsByName()` with the parent name, which returns a list of parent elements. We get parent element at parentIndex then call `DOMDocumentElement::getElementsByName()`, this time with the `childTag`. As before this gives us a pointer to a `DOMNodeList` from which we can get the child count directly with a call to `DOMNodeList::getLength()`.
 
@@ -277,9 +275,9 @@ int XmlDomDocument::getChildCount(const char* parentTag, int parentIndex,
 }
 {% endhighlight %}
 
-### Test Application
+## Test Application
 
-#### Code
+### Code
 
 The test application is defined in the *main.cpp* file. It uses the XML file then gets all the books their attribute and child values then prints the values to `stdout`.
 
@@ -316,7 +314,7 @@ int main(int argc, char** argv)
 }
 {% endhighlight %}
 
-#### Build and Run
+### Build and Run
 
 You can get the source code for the project from Github – [https://github.com/vichargrave/xmldom.git](https://github.com/vichargrave/xmldom.git){:target="_blank"}. To build it just cd into the project directory and type make.
 

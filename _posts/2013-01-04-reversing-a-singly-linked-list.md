@@ -12,9 +12,7 @@ In all my years as a software developer, reversing a singly linked list is not s
 
 For those of you who want or have to roll your own solution, here is an example of a simple list structure and a reverse list function.
 
-<!--more-->
-
-### Linked List Node
+## Linked List Node
 
 All the code for linked list and test application in this example is defined in a single file *rlist.cpp*. The nodes to be stored in the linked list will simply contain and integer value and a pointer to the next node in the list.
 
@@ -31,7 +29,7 @@ struct node_t
 
 The linked list to be created will be of the most basic type. There will be a head pointer and the last node will have the `m_next` member variable set to `NULL`.
 
-### Node Creation
+## Node Creation
 
 The `createNode()` function gets the integer to be storied then creates a `node_t` item to contain it and sets the next pointer to NULL.
 
@@ -48,7 +46,7 @@ node_t* createNode(int value)
 }
 {% endhighlight %}
 
-### Add a Node
+## Add a Node
 
 New nodes will be placed at the end of the linked list.  To find the end, iterate through the list items until an item with `m_next` set to `NULL` is encountered. Then set this item’s `m_next` to the new node pointer.
 
@@ -69,7 +67,7 @@ void addNode(node_t** list, int value)
 }
 {% endhighlight %}
 
-### Print the List
+## Print the List
 
 To check the items on the queue the `printList()` function iterates through the list printing the value at each node that is encountered. So we can see everything easily, all the values of a list will be displayed on one line.
 
@@ -85,7 +83,7 @@ void printList(node_t* list)
 }
 {% endhighlight %}
 
-### Reverse the List
+## Reverse the List
 
 Now the function you have been waiting for. The trick to this algorithm is you need 3 node_t pointers to accomplish the reversal.
 
@@ -111,9 +109,9 @@ node_t* reverseList(node_t* head)
 
 The reversal step occurs when `head->m_next` is set to the value contained in cursor which always contains the pointer to the previous item in the list. When the function reaches the end of the list the new head pointer is returned in cursor.
 
-### Test Application
+## Test Application
 
-#### Code
+### Code
 
 To test the reverse link list algorithm, we’ll add numbers to the linked list from 0 – 19, in order, then call `reverseList()` to reorder the numbers.
 
@@ -134,7 +132,7 @@ int main(int argc, char** argv)
 }
 {% endhighlight %}
 
-#### Build and Run
+### Build and Run
 
 You can get the source code for the project from Github – [https://github.com/vichargrave/rlist.git](https://github.com/vichargrave/rlist.git){:target="_blank"}. To build the test application just cd into the `rlist` directory then run *make*.
 

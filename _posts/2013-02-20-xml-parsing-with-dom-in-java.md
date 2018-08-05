@@ -12,9 +12,7 @@ In my blog [XML Parsing with DOM in C++](/xml-parsing-with-dom-in-cpp){:target="
 
 You can read up on the specifics of the DOM model in my previous article, so let’s dive right into the API code.
 
-<!--more-->
-
-### Input File
+## Input File
 
 First, the XML file I’ll use to test the XML parsing API is the bookstore example from before:
 
@@ -39,7 +37,7 @@ After parsing this file I want to be able to find the number of parent XML eleme
 
 In the bookstore XML example file, there are 2 parent elements with a tag of `book`.  Each book has a `category` attribute and 4 child elements with tags: `title`, `author`, `year`, and `price`.
 
-### XmlDomDocument Class
+## XmlDomDocument Class
 
 The `XmlDomDocument` class shown below encapsulates the Java DOM API calls I’ll use.
 
@@ -97,17 +95,17 @@ public class XmlDomDocument {
 }
 {% endhighlight %}
 
-#### Constructor
+### Constructor
 
 **[Lines 17-19]** The constructor uses creates a `DocumentBuilderFactory` object then a `DocumentBuilder` object to the parse the given XML file.
 
-#### Get Child Count
+### Get Child Count
 
 **[Lines 24-25]** DOM documents consists of lists of nodes, so get the NodeList with the specified parent tag by calling `Document.getElementsByTagName()` then get the parent element at the given parent index by calling `list/item()`.
 
 **[Lines 26-27]** In a similar fashion get the list of child nodes from the parent element.  The child count is simple the count of children the list which we get by the `NodeList.getLength()` method.
 
-#### Get Child Element Value
+### Get Child Element Value
 
 **[Lines 32-34]** To get the child element values, `getChildValue()` looks up the node list for the specified parent tag with a call to `Document.getElementsByName()`. Next the parent element at the given index is retrieved by calling `NodeList.item()`.
 
@@ -115,13 +113,13 @@ public class XmlDomDocument {
 
 **[Lines 35-41]** Extract the child element data and return it in a `String`.  If there is none, return a `null` `String`.
 
-#### Get Child Attribute Value
+### Get Child Attribute Value
 
 **[Lines 45-49]** The `getChildAttribute()` method works the same as `getChildValue()`, except when the child element is obtained, the child attribute value corresponding to the specified attribute tag is returned.
 
-### Test Application
+## Test Application
 
-#### Code
+### Code
 
 The `ParseTest` class parses the *bookstore.xml* file then prints out the attribute and child values for each book.
 
@@ -151,7 +149,7 @@ public class ParseTest {
 }
 {% endhighlight %}
 
-#### Build and Run
+### Build and Run
 
 You can get the code for the project at Github – [https://github.com/vichargrave/xmldom-java.git](https://github.com/vichargrave/xmldom-java.git){:target="_blank"}. You’ll need NetBeans 7.3 to build the project. After you get it follow these instructions to build and run the test application:
 

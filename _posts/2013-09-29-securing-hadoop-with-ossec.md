@@ -12,9 +12,7 @@ Hadoop has built-in security facilities such as kerberos user authentication, en
 
 That’s where a system like OSSEC comes in. Find out how I’ve applied OSSEC to monitor and detect security events in Hadoop and HBase clusters.
 
-<!--more-->
-
-### OSSEC in a Nutshell
+## OSSEC in a Nutshell
 
 OSSEC is a popular host-based intrusion detection system (HIDS) that is an open source project owned and sponsored by Trend Micro. The OSSEC customer list includes the likes of such high profile companies as NetFlix, Samsung, Apple, Barnes & Noble, NASA and others who use OSSEC to monitor system logs, do file integrity checks, look for rootkits, check for registry changes (on Windows systems) and take actions based on security events that are detected.
 
@@ -24,7 +22,7 @@ OSSEC operates as an agent-server system. Agents handle monitoring logs, files a
 
 The alerts are written to the alerts.log file where they can be picked up by other systems for archiving and analysis. OSSEC also provides the capability to send logs over syslog connections to SIEMs. For more on that see the section of this blog on Visualizing Hadoop Security Events.
 
-### OSSEC for Hadoop
+## OSSEC for Hadoop
 
 The key to adapting OSSEC for Hadoop is specifying the security events that are you interested in seeing and finding the logs that produce the relevant security information. For our cluster I started out trying to look for these events:
 
@@ -106,7 +104,7 @@ The first rule provides a genral grouping of Hadoop rules. The second looks for 
 
 The process for creating decoders and rules for HBase and Kerberos is very similar to what I’ve shown you here. For HBase you want to monitor the *hbase-hbase-master-<host>.log* file and for Kerkeros *krb5kdc.log* file.
 
-### Visualizing Hadoop Security Events
+## Visualizing Hadoop Security Events
 
 The most basic way to see OSSEC alerts is to continually tail the alerts log file. This works for testing but is pretty cumbersome in practice. OSSEC provide a simple WebUI that provides an alert console and enables you to track the files that have changed in your cluster, but lacks the capability to do any searching on alerts nor provides any dashboards to show security event trending.
 
@@ -120,7 +118,7 @@ Splunk also has the capability to scan historical log data and plot security tre
 
 ![](/assets/img/splunk-trends1.png){: .image-left-justify}
 
-### Summing Up
+## Summing Up
 
 OSSEC provides an excellent complement to the existing Hadoop and HBase security features. It helps you monitor security logs and check file integrity so you can get visibility into the security goings on of your system or cluster.
 

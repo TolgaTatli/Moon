@@ -12,11 +12,9 @@ Network programming with the BSD Sockets API involves making a series of boilerp
 
 Fortunately there is an easier way to develop network applications. By thinking in terms of design patterns, we can devise abstractions for creating connections and transferring data between network peers that encapsulate socket calls in easy to use C++ classes.
 
-<!--more-->
+## Network Programming Basics
 
-### Network Programming Basics
-
-#### Internet Model
+### Internet Model
 
 Before launching into the design patterns, let’s go over some basics of network programming with BSD Sockets.
 
@@ -34,7 +32,7 @@ Both TCP and UDP protocols live in the transport layer and add the concept of po
 
 BSD Sockets is an API to the transport layer of the Internet Protocol Stack. It supports creating both TCP and UDP network I/O.
 
-#### Socket Workflow
+### Socket Workflow
 
 To establish TCP connections the server host calls `socket()` to create a listening socket then specifies the IP address and TCP port on which the server will receive connection requests with a call to `bind()`. Calling `listen()` puts the server into listening mode which then blocks on the `accept()` waiting for incoming connections.
 
@@ -46,7 +44,7 @@ After connecting the server blocks on a call to `read()` waiting for a client re
 
 In most servers connections are accepted in one thread and a new thread or process is created to handle each connection. To keep things simple the example here describes an iterative server where each request is handled one at a time.
 
-### Network Programming Patterns
+## Network Programming Patterns
 
 The key to designing an object-oriented network programming API is to recognize that TCP/IP network programs involve three basic pattens of usage or behaviors: actively connecting to servers, passively accepting connections from clients and transferring data between network peers – in other words clients and servers.  Each behavior suggests a distinct abstraction that can be implemented in a separate class.
 
@@ -56,9 +54,9 @@ The key to designing an object-oriented network programming API is to recognize 
 
 For the code examples in this blog, each of these classes has an include file (.h) and source file (.cpp) of the same name. For example, *tcpconnector.h* and *tcpconnector.cpp* for the `TCPConnector` class.
 
-### TCPStream Class
+## TCPStream Class
 
-#### Interface
+### Interface
 
 The `TCPStream` class provides methods to send and receive data over a TCP/IP connection. It contains a connected socket descriptor and information about the peer – either client or server – in the form of the IP address and TCP port. `TCPStream` includes simple get methods that return address and port, but not the socket descriptor which is kept private. One of the advantages of programming with objects is the ability to logically group data members and methods to avoid exposing data, in this case the socket descriptor, to the calling program that it does not need to see.  Each connection is completely encapsulated in each `TCPStream` object.
 
@@ -97,7 +95,7 @@ class TCPStream
 };
 {% endhighlight %}
 
-#### Constructor
+### Constructor
 
 The constructor stores the connected socket descriptor then converts the socket information structure fields to a peer IP address string and peer TCP port. These parameters can be inspected with calls to `TCPStream::getPeerIP()` and `TCPStream::getPeerPort()`.
 
@@ -114,7 +112,7 @@ TCPStream::TCPStream(int sd, struct sockaddr_in* address) : msd(sd) {
 }
 {% endhighlight %}
 
-#### Destructor
+### Destructor
 
 The destructor simply closes the connection.
 
@@ -125,17 +123,17 @@ TCPStream::~TCPStream()
 }
 {% endhighlight %}
 
-#### Network I/O Methods
+### Network I/O Methods
 
 `TCPStream::send()` and `TCPStream::receive()` simply wrap calls to `read()` and `write()`, returning the number of bytes sent and bytes received, respectively. No additional buffering or other capabilities are added.
 
-#### Get Peer Information
+### Get Peer Information
 
 `TCPStream::getPeerIP()` and `TCPStream::getPeerPort()` return the IP address and TCP port information of the peer to which the network application, client or server, are connected. You can get the same information from the sockets `getpeername()` function but it far easier to just capture that information when the connections are established. Clients know in advance to where they are connecting and the client’s socket address is returned the `accept()` function when the server accepts a client connection – see the `TCPAcceptor::accept()` method definition. In both cases the socket address information is passed to the `TCPStream` object when it is constructed.
 
-### TCPConnector Class
+## TCPConnector Class
 
-#### Interface
+### Interface
 
 `TCPConnector` provides the `connect()` method to actively establish a connection with a server. It accepts the server port and a string containing the server host name or IP address. If successful, a pointer to a `TCPStream` object is returned to the caller.
 
@@ -153,11 +151,11 @@ class TCPConnector
 };
 {% endhighlight %}
 
-#### Constructor/Destructor
+### Constructor/Destructor
 
 The `TCPConnector` class does not use any member variables so the default constructor and destructor generated by the C++ compiler are fine. No others are defined.
 
-#### Connect to Server
+### Connect to Server
 
 {% highlight c++ linenos %}
 #include <string.h>
@@ -191,7 +189,7 @@ TCPStream* TCPConnector::connect(const char* server, int port)
 
 **[Lines 17-20]** We call `::connect()` passing it the socket descriptor, pointer to the server `struct sockaddr_in` structure, cast to a `struct sockaddr` pointer, and the length of the server address structure. The `::connect()` call is prefeced with the `::` qualifier so the compiler does not confuse this function with `TCPConnector::connect()`.  If `::connect()`  succeeds a `TCPStream` object is created with the connected socket descriptor and the server socket address information and a pointer to the `TCPStream` object is returned to the caller.
 
-#### Resolve Host Name
+### Resolve Host Name
 
 `TCPConnector::resolveHostName()` converts a DNS host name to an IP address in network byte order by calling `getaddrinfo()`. This function was chosen over `gethostbyname()` since it is thread safe whereas `gethostbyname()` is not. If the host name is not a valid DNS name, i.e. it is an IP address string or something else, `-1` is returned, otherwise `0` is returned.
 
@@ -210,9 +208,9 @@ int TCPConnector::resolveHostName(const char* hostname, struct in_addr* addr)
 }
 {% endhighlight %}
 
-### TCPAcceptor Class
+## TCPAcceptor Class
 
-#### Interface
+### Interface
 
 `TCPAcceptor` includes member variables for the listening socket descriptor, the socket address information – IP address and TCP port – and a flag that indicates whether or not the TCPAcceptor has started listening for connections.
 
@@ -244,7 +242,7 @@ class TCPAcceptor
 };
 {% endhighlight %}
 
-#### Constructor
+### Constructor
 
 The constructor sets the member variables to as shown here. Setting `m_lsd` indicates that the listening socket has not been created.
 
@@ -258,7 +256,7 @@ TCPAcceptor::TCPAcceptor(int port, const char* address)
     : m_lsd(0), m_port(port), m_address(address), m_listening(false) {}
 {% endhighlight %}
 
-#### Destructor
+### Destructor
 
 If the listening socket has been created then it is closed in the destructor.
 
@@ -271,7 +269,7 @@ TCPAcceptor::~TCPAcceptor()
 }
 {% endhighlight %}
 
-#### Start Listening for Connections
+### Start Listening for Connections
 
 {% highlight c++ linenos %}
 int TCPAcceptor::start()
@@ -325,7 +323,7 @@ int TCPAcceptor::start()
 
 **[Lines 28-34]** Turn on server listening with the `listen()` function. The second argument of this function sets the number of connection requests TCP will queue. This may not be supported for your particular operating system. If `listen()` fails, display an error message. Otherwise, set the `m_listening` flag to true and return the `listen()` call return value
 
-#### Accept Connections from Clients
+### Accept Connections from Clients
 
 {% highlight c++ linenos %}
 TCPStream* TCPAcceptor::accept()
@@ -350,9 +348,9 @@ TCPStream* TCPAcceptor::accept()
 
 **[Lines 11-15]** When a connection with a client is established, the socket address structure is populated with the client’s socket information and `::accept()` returns `0`. Then a pointer to a `TCPStream` object is returned to the caller.
 
-### Test Applications
+## Test Applications
 
-#### Echo Server
+### Echo Server
 
 First let’s build a server with the `TCPAcceptor` class. To keep things simple we’ll just make an iterative server that handles one connection at a time. The server will be defined in the file *server.cpp*.
 
@@ -402,7 +400,7 @@ int main(int argc, char** argv)
 
 **[Lines 21-32]** If the call to `TCPAcceptor::start()` is successful, the server continually and indefinitely accepts connections from clients and processes each connection one at a time. Processing consists of getting a string of bytes from the client, displaying the string and returning it to the client. The string of bytes is `NULL` terminated at the index in the receive buffer equal to the value returned by the receive operation. This is repeated until the client closes the connection indicated by a return value of `0` from `TCPStream::receive()`. Deleting the stream object closes the connection on the server side.
 
-#### Echo Client
+### Echo Client
 
 The client application takes the server TCP port and IP address on the command line.  For each connection a string is displayed and sent to the server, the echoed string is received back and displayed, then the connection is closed. The client will be defined in the file *client.cpp*.
 
@@ -450,7 +448,7 @@ int main(int argc, char** argv)
 }
 {% endhighlight %}
 
-#### Build and Run
+### Build and Run
 
 You can get the source code for the project from Github – [https://github.com/vichargrave/tcpsockets.git](https://github.com/vichargrave/tcpsockets.git){:target="_blank"}. Create the test apps by running make. You can build the client and server separately by running:
 

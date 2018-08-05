@@ -10,8 +10,6 @@ image: "/assets/img/Java_CSV_Parser_Using_Regular_Expressions.png"
 ---
 Parsing files is a real pain. You can find programming tools to help, regular expressions for example, and even languages that are built for that sort of thing, like Perl.  But sooner or later you forget how to use them, unless you have a very good long term memory, in your head that is.
 
-<!--more-->
-
 Recently I had a *simple* job to do, parse some text values that laid out in comma separated format (CSV). The kicker was one of the fields contained cities and states separated by commas that I wanted to keep in the field. This turns out is a particularly thorny problem. I also had to do it in Java. So here’s the kind of text I was up against:
 
 {% highlight text %}

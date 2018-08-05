@@ -12,9 +12,7 @@ Creating a multithreaded TCP/IP protocol based server requires the capabilities 
 
 I have described how to build C++ components to handle this functionality in previous blogs. This time I’ll show you how to combine these components to create a simple multithreaded server.
 
-<!--more-->
-
-### Background Articles
+## Background Articles
 
 The core server functionality that I’ll use in this project come from source code presented in the following previous articles of mine. Note you can get the source code for the articles on Github.
 
@@ -22,9 +20,9 @@ The core server functionality that I’ll use in this project come from source c
 - Multithreading – [Java Style Thread Class in C++](/java-style-thread-class-in-cpp){:target="_blank"}
 - Inter-thread data transfer – [Multithreaded Work Queue in C++](/multithreaded-work-queue-in-cpp){:target="_blank"}
 
-### Server Structure
+## Server Structure
 
-#### Producer-Consumer Model
+### Producer-Consumer Model
 
 The server is based on the producer-consumer multithreaded model I discussed in [Multithreaded Work Queue in C++](/articles/2013-01/multithreaded-work-queue-in-cpp){:target="_blank"}, where a single producer thread passes work items to 1 or more consumer threads via a work queue, implemented with the wqueue class. Threads will be created using the Thread class discussed in [Java Style Thread Class in C++](/articles/2012-12/java-style-thread-class-in-cpp){:target="_blank"}.
 
@@ -32,7 +30,7 @@ In the case of the TCP/IP server, the producer thread accepts connections then q
 
 ![](/assets/img/TCPIP-Clients-and-Server.png){: .image-left-justify}
 
-#### Producer Thread
+### Producer Thread
 
 The producer thread in the server is implemented in the `main()` function. It’s job is to create the work queue and consumer threads then accept connections from clients and pass the connections off to the consumer threads to handle. Specifically, the producer thread takes the following actions:
 
@@ -43,7 +41,7 @@ The producer thread in the server is implemented in the `main()` function. It’
 5. For each connection create a work item that transfers the connected socket – contained in a `TCPStream` object – to a consumer thread to handle the connection.
 6. Return to step 4.
 
-#### Consumer Thread
+### Consumer Thread
 
 The consumer threads are the workers that do the protocol session handling for the server. Each consumer thread handles a connection in the following manner:
 
@@ -58,13 +56,13 @@ The consumer threads are the workers that do the protocol session handling for t
 9. Delete the work item.
 10. Return to step 1.
 
-#### Work Queue
+### Work Queue
 
 The `wqueue` class supports the methods to add and remove work items. It encapsulates a Standard C++ list object along with the Pthread functions to serialize access to the work items and enable the producer thread to signal each consumer thread when items are added to the queue.
 
-### Server Application
+## Server Application
 
-#### WorkItem Class
+### WorkItem Class
 
 The server code for the project resides in a single file *server.cpp*. It starts off with the headers files and the definition of the WorkItem class.
 
@@ -90,7 +88,7 @@ class WorkItem
 
 The constructor accepts a `TCPStream` object pointer which can be accessed through a call to the `WorkItem::getStream()` method. When the `WorkItem` object is deleted it closes the connection by deleting the `TCPStream` object.
 
-#### ConnectionHandler Class – Consumer Thread
+### ConnectionHandler Class – Consumer Thread
 
 The consumer threads are implemented by the `ConnectionHandler` class which is derived from the `Thread` class. The constructor is passed a reference to the work queue created in the `main()` function.
 
@@ -138,7 +136,7 @@ class ConnectionHandler : public Thread
 
 **[Lines 23-34]** Continually receives messages from the client, prints them to `stdout` and echoes them back to the client. When the client closes the connection, the WorkItem object is deleted then the thread returns to get another item from the queue.
 
-#### Main Function – Producer Thread
+### Main Function – Producer Thread
 
 The `main()` function implements the steps discussed in the **Producer Thread** section of this article.
 
@@ -210,7 +208,7 @@ int main(int argc, char** argv)
 
 **[Lines 41-53]** Called in an infinite loop, `TCPAcceptor::accept()` blocks until it receives a connection.  For each connection a WorkItem is created and passed a pointer to the resulting `TCPStream` object then placed onto the work queue.
 
-### Client Application
+## Client Application
 
 The client application code resides in a single file client.cpp. It starts with the header files we need from C/C++ environment and the interfaces for the `TCPConnector` class.  The client simply makes a connection, sends a message to the server and waits for the server to echo it back. This action is performed twice. In both cases the message sent and received back is displayed to `stdout`.
 
@@ -258,9 +256,9 @@ int main(int argc, char** argv)
 }
 {% endhighlight %}
 
-### Test Server and Client
+## Test Server and Client
 
-#### Build
+### Build
 
 Get the code for the project from Github – [https://github.com/vichargrave/mtserver](https://github.com/vichargrave/mtserver){:target="_blank"}. You’ll also need the code from these repositories:
 
@@ -270,7 +268,7 @@ Get the code for the project from Github – [https://github.com/vichargrave/mts
 
 Place all the directories in the same folder then cd into mtserver/ and run make. This will build the client, server and all dependencies across the folders.
 
-#### Run
+### Run
 
 First run the server listening on TCP port `9999` and with `5` consumer threads like this:
 

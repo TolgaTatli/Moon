@@ -12,11 +12,9 @@ Although Eclipse is commonly used for Java web service programming, it can be ch
 
 NetBeans provides a rich environment for developing Java web services with Jersey – the reference implementation of JAX-RS RESTful web services. This article will explain how to create a simple RESTful service and test it with the Apache Tomcat Server from the NetBeans IDE.
 
-<!--more-->
+## Install NetBeans and Tomcat
 
-### Install NetBeans and Tomcat
-
-#### NetBeans
+### NetBeans
 
 If you don't have it already, download the J2EE versions of [NetBeans](https://netbeans.org/downloads/){:target="_blank"}, which includes GlassFish and Tomcat web servers. I'll use Tomcat in this blog.
 
@@ -24,7 +22,7 @@ If you don't have it already, download the J2EE versions of [NetBeans](https://n
 2. Select the *Apache Tomcat* package and deselect the *GlassFish Server* package.x2
 3. Click **Install** to finish.
 
-#### Configure Tomcat
+### Configure Tomcat
 
 Now we need to configure Tomcat to be able to run and deploy web services. To run web services we need a Tomcat user with `manager-script` privileges. The easiest way to do that is let NetBeans do that for us by deleting the Tomcat server when NetBEans is installed, then adding it back in (bizarre as that may seem).
 
@@ -46,7 +44,7 @@ Now we need to configure Tomcat to be able to run and deploy web services. To ru
 15. Open up  *$CATALINA_HOME/conf/tomcat-users.xml* file. `$CATALINA_HOME` is the directory where you installed Tomcat.
 16. Add `manager-gui` to the list of roles for the `tomcat` user.
 
-#### Test NetBeans-Tomcat Integration
+### Test NetBeans-Tomcat Integration
 
 It's a good idea to test whether Tomcat can now be started within NetBeans.
 
@@ -58,9 +56,9 @@ It's a good idea to test whether Tomcat can now be started within NetBeans.
 
 Note that the **Deploy** section of this screen provides the tools we need to deploy our web service to Tomcat.
 
-### Create RESTful Web Services
+## Create RESTful Web Services
 
-#### Create a Web Application Project
+### Create a Web Application Project
 
 After configuring the development environment, you first need to build a base web application to which you will add a RESTful services class and methods later.
 
@@ -76,7 +74,7 @@ After configuring the development environment, you first need to build a base we
 
 You now have a simple web application that will load the index.html page. To run the application, click on the green triangle under the NetBeans menu bar, select **Run > Project** from the menu bar or press **F6**.
 
-#### GET Service Handler
+### GET Service Handler
 
 Now that we have a basic web application, we will add a RESTful service that responds to an HTTP GET request.
 
@@ -132,7 +130,7 @@ Next we need to set the path to the web service so it will be automatically invo
 3. When we test the web service the URL to the GET service will be `http://localhost:8080/getsomerest/webresources/service`. Recall that the `getsomerest` part of the URL is defined in the path attribute in the *context.xml* file which you can find in the configuration files of the project. The `webresources` part of the path is set in the `@javax.ws.rs.ApplicationPath("webresources")` annotation in the *ApplicationConfig.java* file that NetBeans created. The `service` part is defined by the `@Path` annotation in the **ServiceResource.java** file. Enter `/webresources/service` in the **Relative URL** field then click **OK**.
     ![](/assets/img/NetBeans-Project-Properties.png){: .image-left-justify}
 
-#### POST Service Handler
+### POST Service Handler
 
 Most web services have a POST handler so let’s add one now.  The handler will accept urlencoded text from a REST client which is specified with the @Consumes`(“application/x-www-form-urlencoded”)` Jersey annotation.  In this case the POST handler will simply return the decoded plain text to the client which is specified with the `@Produces(“text/plain”)` Jersey annotation.
 
@@ -163,7 +161,7 @@ $ curl http://localhost:8080/getsomerest/webresources/service --data "Hello Worl
 
 The POST handler should return `Hello World!`.
 
-#### Web Service Deployment
+### Web Service Deployment
 
 Now that you have a working RESTful web service with GET and POST handlers, you’ll want to deploy the service to your target Tomcat server. NetBeans packages all the web service code into a WAR package.  In the case of this project the package will be called GetSomeRest.war. You can deploy this package to the target Tomcat server as follows:
 
@@ -175,7 +173,7 @@ Now that you have a working RESTful web service with GET and POST handlers, you�
 6. Click on **Deploy**. In the *Path* column under **Applications** you should see `/getromerest`.
 7. Run the curl command from the previous section with the host/IP and port for your target Tomcat to make sure the service is working.
 
-### Jersey Web Service Annotations
+## Jersey Web Service Annotations
 
 Jersey provides a set of Java annotations that can be used to define the web service structure. So far we have already used these annotations in the example GET service:
 
@@ -239,11 +237,11 @@ public Response getImage(@PathParam("image") String image) {
 }
 {% endhighlight %}
 
-### Test RESTful Web Services
+## Test RESTful Web Services
 
 You can get the source code for the GetSomeRest project from GitHub – [https://github.com/vichargrave/getsomerest](https://github.com/vichargrave/getsomerest){:target="_blank"}. The master branch contains the project described in this blog. Open the project in Netbeans and run it with Tomcat according to the directions in this blog.
 
-### Additional Information
+## Additional Information
 
 The intent of this blog is to get you started with RESTful web services in NetBeans. To keep things simple I’ve left out some important aspects of web service development not the least of which includes processing POST and PUT request bodies. For more information on writing more complex RESTful web services you can check out these resources:
 

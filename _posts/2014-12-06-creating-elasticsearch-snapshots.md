@@ -12,9 +12,7 @@ Benjamin Franklin once wrote “…in this world nothing can be said to be certa
 
 For Elasticsearch users, backups are done using the Elasticsearch snapshot facility. In this article I’ll go through the design of an Elasticsearch backup system that you can use to create snapshots of your cluster’s indices and documents.
 
-<!--more-->
-
-### Elasticsearch Snapshot Storage System
+## Elasticsearch Snapshot Storage System
 
 For Elasticsearch snapshots to work, you must first set up a shared storage node that is accessible to all the nodes in your cluster over the common network which connects all the systems. The shared storage node can be either another computer system with volumes that are mounted on each of the nodes or a network storage drive.
 
@@ -22,7 +20,7 @@ For Elasticsearch snapshots to work, you must first set up a shared storage node
 
 The system described in this article is the former variety, that uses an SMB file server to store the snapshots.
 
-#### Configure Shared Storage Node
+### Configure Shared Storage Node
 
 Setting up a SMB file server starts on the server side where you define the shared drives. Let’s assume that for the Elasticsearch cluster in this article there is one drive on the shared storage node that. Follow these steps to create a shared SMB drive:
 
@@ -52,7 +50,7 @@ Setting up a SMB file server starts on the server side where you define the shar
     service nmb start
    </pre>
 
-### Configure Mount Points on the Cluster Nodes
+## Configure Mount Points on the Cluster Nodes
 
 At this point you have an SMB file server running on the shared storage node.  Next let’s set up the mount points and mount the shared drive. Follow this procedure for each node in your Elasticsearch cluster.
 
@@ -74,7 +72,7 @@ At this point you have an SMB file server running on the shared storage node.  N
     mount //smb-server-ip/snaps
    </pre>
 
-### Repositories and Snapshots
+## Repositories and Snapshots
 
 Elasticsearch snapshots are organized into containers known as repositories. You can store 1 or more snapshots in any given repository. Each repository maps to a shared drive on the shared storage node.
 
@@ -103,7 +101,7 @@ path.repo: /data/snapshots
 
 Note you will have to restart Elasticsearch for this setting to take affect.
 
-### Create a Snapshot
+## Create a Snapshot
 
 When you create a snapshot, you can either include all or specific indices. Continuing with the example of ingesting tweet data, let’s say you are creating a new index every hour and that the format of the index name is tweets-YYYY-MM-DD. If you want to snapshot the index created on 2014-11-01 in the `twitter_backup` repository run this command:
 
@@ -131,7 +129,7 @@ curl -XGET 'localhost:9200/_snapshot/twitter_backup/2014-11-01?pretty
 
 This command will indicate whether the given snapshot is in progress, finish and successful, or finished and failed.
 
-### Restore and Delete a Snapshot
+## Restore and Delete a Snapshot
 
 Restoring the snapshot that you just made is simple with this command:
 
@@ -147,7 +145,7 @@ To delete a snapshot and the snapshot files on the shared storage drive use this
 curl -XDELETE 'localhost:9200/_snapshot/twitter_backup/2014-11-01?pretty'
 {% endhighlight %}
 
-### Snapshot Management with Kopf
+## Snapshot Management with Kopf
 
 [Kopf](https://github.com/lmenezes/elasticsearch-kopf){:target="_blank"} is an open-source Elasticsearch plugin that provides a browser console interface to manage your cluster. Here’s an example of the cluster management console. The color of the top menu bar reflects the health of the cluster: `green`, `yellow` or `red`. The status bar below the menu bar shows top-level cluster metrics: number of cluster nodes, number of indices, number of shares, number of unassigned shards, total number of documents and the amount of data in the cluster – primary plus replica shards.
 

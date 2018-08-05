@@ -12,9 +12,7 @@ Among the many useful features of OSSEC is its capability to send alerts to any 
 
 Splunk can be expensive though, particularly if you collect a lot of log data. So I’ve been working on a solution for collecting OSSEC security alerts based on Elasticsearch that provides a cost effective alternative to Splunk.
 
-<!--more-->
-
-### Log Management System Architecture
+## Log Management System Architecture
 
 The OSSEC log management system I’ll discuss here relies on three open source technologies, in addition to OSSEC:
 
@@ -33,7 +31,7 @@ Logstash is configured to receive OSSEC syslog output then parse it and forward 
 
 All of these components could run on different systems, but to keep things simple, let's install them on a single system.
 
-### Configure OSSEC Syslog Output
+## Configure OSSEC Syslog Output
 
 To keep this article as brief as possible, I won’t go over how to install OSSEC. That is well documented on the [OSSEC Project website](https://ossec.github.io){:target="_blank"}. To configure OSSEC to send alerts to another system via syslog follow these steps:
 
@@ -56,7 +54,7 @@ To keep this article as brief as possible, I won’t go over how to install OSSE
 </li>
 </ol>
 
-### Install and Configure Logstash
+## Install and Configure Logstash
 
 The easiest way to install Elasticsearch is from RPMs or DEB packages. I use CentOS most of the time so I’ll discuss how to install from RPMs.  Let's start with Logstash.
 
@@ -124,7 +122,7 @@ If you store the Logstash configuration in your home directory in a file called 
 /usr/share/logstash/bin/logstash -f ${HOME}/logstash.conf
 {% endhighlight %}
 
-### Install and Configure Elasticsearch
+## Install and Configure Elasticsearch
 
 You can install Elasticsearch in a cluster, but to keep things simple,  I’ll cover a single node installation.
 
@@ -149,7 +147,7 @@ service elasticsearch start|stop|status
 
 If you want to create a multi-node cluster checkout the [Elasticsearch Definitive Guild chapter on Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration.html){:target="_blank"}.
 
-### Install and Configure Kibana
+## Install and Configure Kibana
 
 At this point you are able to collect OSSEC alerts and query them with the Elasticsearch RESTful API. But Elasticsearch provides a web console called Kibana which enables you to build consoles that post queries automatically to your Elasticsearch backend. To install and configure Kibana follow this procedure.
 
@@ -165,7 +163,7 @@ To test the installation, open the Kibana URL `http://10.0.0.1/kibana/` in a bro
 
 To get to the console screen, click on the **Logstash Dashboard** link in the **Yes** bullet point under **Are you a Logstash User?**
 
-### Query Elasticsearch with Kibana
+## Query Elasticsearch with Kibana
 
 If you let your OSSEC system run for a while you should have collected some alerts that were stored in Elasticsearch. After going to the Logstash Dashboard, you'll see a screen that has some panels on it. The top panel queries Elasticsearch for all alerts by default.
 

@@ -12,15 +12,13 @@ It’s been awhile since Kibana 4 was released, so I figured it was about time I
 
 In this article I’ll go over how to create a security event dashboard with KIbana 4. I’ll forgo discussing the details on setting up Elasticsearch and Logstash since they have been covered in my previous OSSEC log management and logstash blogs. Read those first to get an idea of how the system described here parses OSSEC alert logs and indexes them with Elasticsearch.
 
-<!--more-->
+## Install and Configure Kibana
 
-### Install and Configure Kibana
-
-#### Upgrade to Elasticsearch >= 1.4.4
+### Upgrade to Elasticsearch >= 1.4.4
 
 Kibana 4.x requires at least Elasticsearch 1.4.4, so you must upgrade to at least that version to use Kibana 4. To upgrade your Elasticsearch to 1.4.4 or later go to the Elasticsearch Downloads page then get the latest Elasticsearch package you need for your cluster’s operating system. I use CentOS 6.6 so I get the RPM packages. Then follow the rolling upgrade procedure described on the Upgrading page.
 
-#### Installing Kibana 4
+### Installing Kibana 4
 
 Next you want to go back to the Elasticsearch Downloads page and get Kibana 4.x. Kibana 4 has a Node.js server built in. To get it to work with your cluster you just have to set the first three configuration variables in the *conf/kibana.yml* file:
 
@@ -39,7 +37,7 @@ There are many other settings that are important, including security settings, b
 
 To start Kibana just go to the bin directory of your where you installed Kibana and run *kibana*. The built in Node.js server will load all your Kibana stuff so you are ready to go to the console.
 
-#### Set the Index Pattern
+### Set the Index Pattern
 
 The next step involves connecting Kibana to your Elasticsearch data so queries can be performed. Navigate to you Kibana console in the browser. For the example in this article The URL should be `http://10.0.0.1:9000`. With the browser open to the Kibana console, click on the **Settings** tab. You will a screen that looks like the following:
 
@@ -47,9 +45,9 @@ The next step involves connecting Kibana to your Elasticsearch data so queries c
 
 Kibana will automatically search for what look like time series indices in your cluster then display them in this screen. You then choose the one you want and identify the time field. In this example I’m using the logstash index naming convention and `@timestamp`. When you are happy with you choice click on **Create** when you are done.
 
-### Create OSSEC Visualizations
+## Create OSSEC Visualizations
 
-#### Dashboard Panels
+### Dashboard Panels
 
 The OSSEC Dashboard will consist of the following 3 panels:
 
@@ -59,7 +57,7 @@ The OSSEC Dashboard will consist of the following 3 panels:
 
 Each of these panels will consist of a visualization that is tied to a search of OSSEC alerts. Visualizations are charts that show the results of aggregation searches.
 
-#### Alert Table Search
+### Alert Table Search
 
 One of the great features of Kibana 4 is the capability to instantly view your data as soon as you identify an index series. When you click on the **Discover** tab, the discover button at the top of the Kibana console an alert count over time bar chart is displayed at the top of the screen and the raw JSON alert data is displayed at the bottom.
 
@@ -78,7 +76,7 @@ From here you create the search that you will use for your visualizations. Since
 8. Click on the **Save** button.
 9. Click on the **^** icon to close the panel.
 
-#### Alerts Over Time Visualization
+### Alerts Over Time Visualization
 
 The process of creating a visualization starts with picking a chart to represent your data aggregation. For the alerts over time visualization I’ll use a vertical bar chart.
 
@@ -98,7 +96,7 @@ The process of creating a visualization starts with picking a chart to represent
 10. Click on **Save**.
    ![](/assets/img/save-visualization1.png){: .image-left-justify}
 
-#### Top 10 Alerts Visualization
+### Top 10 Alerts Visualization
 
 The *Top 10 Alerts* visualization uses a terms aggregation search. The steps involved are essentially the same as for the bar chart.
 
@@ -119,7 +117,7 @@ The *Top 10 Alerts* visualization uses a terms aggregation search. The steps inv
 14. Set the visualization name to *Top 10 Alerts*.
 15. Click on **Save**.
 
-### Create OSSEC Dashboard
+## Create OSSEC Dashboard
 
 The dashboard can now be assembled by combining the saved visualizations that have been created so far.
 

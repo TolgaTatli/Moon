@@ -12,9 +12,7 @@ Awhile back I wrote a blog about [parsing XML documents](/xml-parsing-with-dom-i
 
 So I’ve dusted off the old `XmlDomDocument` class and added some methods that make it easy to build an XML document from scratch.
 
-<!--more-->
-
-### XmlDomDocument Class
+## XmlDomDocument Class
 
 I’m just adding some methods to the `XmlDomDocument` class, so I won’t show the original methods.
 
@@ -79,29 +77,29 @@ public class XmlDomDocument {
 }
 {% endhighlight %}
 
-#### Constructor
+### Constructor
 
 **Lines [23-25]**  The new constructor does not take any arguments since it is not parsing an XML document, but rather creating a new blank document. DocumentBuilderFactory gets a new `DocumentBuilder`. Call `DocumentBuilder.newDocument()` without arguments to create a new blank DOM document.
 
-#### Add Child Element
+### Add Child Element
 
 **Lines [29-31]** Find the node list with the given parent name by calling `DOMDocument.getElementsByTagName()` and get the parent element at the given index with `NodeList.item()`.  Create a child element with the given child tag.
 
 **Lines [32-40]** Create a child element with `Element.appendChild()` supplying the argument `DOMDocument.createTextNode()` to immediately assign a value to the element. If no parent name specified, then this is a root element so assign it to the top level of the document. Otherwise place the child element under the given parent.
 
-#### Set Element Attribute
+### Set Element Attribute
 
 **Lines [45-47]** Find the node list with the given element name by calling `DOMDocument.getElementsByTagName()`  then get the element on this list at the given index with `NodeList.item()`, Set the attribute name and value for the element with `Element.setAttribute()`.
 
-#### Render XML Document
+### Render XML Document
 
 **Lines [51-53]** The Java `Transformer` class provides the means to convert the DOM representation to the document to XML text. Get a `Transformer` object them set the document encoding and indentation.
 
 **Lines [54-56]** Create a `StringWriter` object then transform the DOM by calling `Transformer.transform` with a `DOMSource` created from the `DOMDocument` and a `StreamResult` created from the `StringWriter` object.
 
-### Test Application
+## Test Application
 
-#### Target Document
+### Target Document
 
 The test program will create an XML document having the same content as the `bookstore` XML file that was used in my previous blogs.
 
@@ -122,7 +120,7 @@ The test program will create an XML document having the same content as the `boo
 </bookstore>
 {% endhighlight %}
 
-#### Code
+### Code
 
 The test program will just build on the `ParseTest` class I used in my previous blog.
 
@@ -175,7 +173,7 @@ public class ParseTest {
 
 **Lines [21-34]** Add a `book` element at index `0` and sub-elements with values. Then add another `book` element at index 1 and sub-elements with values. The bookstore element index is always `0`. Finally, convert the DOM elements to an XML stream then display the XML.
 
-#### Build and Run
+### Build and Run
 
 You can get the code for the project at Github – [https://github.com/vichargrave/xmldom-java.git](https://github.com/vichargrave/xmldom-java.git){:target="_blank"}. You’ll need NetBeans 7.3 to build the project. Follow these instructions to build and run the test application:
 

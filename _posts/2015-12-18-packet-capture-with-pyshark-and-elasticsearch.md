@@ -12,9 +12,7 @@ Network packet capture and analysis are commonly done with tools like *tcpdump*,
 
 Pyshark is a module that provides a wrapper API to *tshark* – the command line version of *Wireshark* – with which you can build packet capture applications that take advantage of all the Wireshark protocol dissectors. With Pyshark and the Elasticsearch Python client library you can easily create a simple packet capture application in Python that can index packets in Elasticsearch.
 
-<!--more-->
-
-### Installing in a Python Virtual Environment
+## Installing in a Python Virtual Environment
 
 I like to run my Python projects in virtual environments to keep the dependencies isolated from each other. If you want to do likewise, install *virtualenv* and *virtualenvwrapper*. The latter keeps your virtual environments in one place in your $HOME directory. Here is how you install these two utilities:
 
@@ -40,7 +38,7 @@ source $HOME/.bash_profile
 mkvirtualenv vespcap
 {% endhighlight %}
 
-### Install Pyshark and Elasticsearch
+## Install Pyshark and Elasticsearch
 
 Let me fast forward a minute to the time when I when I wrote my first basic Pyshark application. I discovered that the latest version – 0.3.6 as of this writing – has a tendency to interrupt packet capture with the error message:
 
@@ -76,7 +74,9 @@ pip install -r requirements.txt
 
 Place all your code in the *escpap* directory.
 
-### Packet Capture Application
+## Packet Capture Application
+
+### Application Structure
 
 The sample packet capture application that will be built during the remainder of the article contains these functions:
 
@@ -215,7 +215,7 @@ def dump_packets(capture):
         i += 1
 {% endhighlight %}
 
-#### Index Packet Fields
+### Index Packet Fields
 
 To index packets in Elasticsearch we could just index a packet at a time in the `index_packets()` for loop. That approach is not nearly as efficient as using bulk indexing to load several packets a a time.
 
@@ -249,7 +249,7 @@ def index_packets(capture):
 
 Each time through the capture loop, `index_packets()` creates a JSON object that contains the type of bulk operation to perform, the name of the index where packets are stored, the type of the index, and finally the field names and values are placed in a JSON object named _source. Again `get_ip_version()` is called to determine how to access the IP layers fields. At the end of each loop, the action JSON object, as we’re calling it, is yielded to the caller. The helper function collects a group of packets, 1000 by default, then indexes them in Elasticsearch on the application’s behalf without the need for any additional code.
 
-### Running the Packet Capture Application
+## Running the Packet Capture Application
 
 I put all of this code together in the **escpap_lite.py** script which you can download from Github at [https://github.com/vichargrave/espcap](https://github.com/vichargrave/espcap){:target="_blank"}. Just clone the repo and cd into the *espcap/src* directory, then you can test the script with one of the test packet captures.
 
@@ -309,6 +309,6 @@ The first few packets in Elasticsearch should look like this:
     },
 {% endhighlight %}
 
-#### Espcap – A More Complete Example
+## Espcap – A More Complete Example
 
 The **espcap.git** repo contains a more complete packet capture example espcap.py, This script probes each captured more deeply and stores all the protocol layers. Using the dissector support provided by tshark, **espcap.py** has the capability to index the fields of most application protocols as well as those in the TCP stack. You can read more about it on the **Espcap** [README](https://github.com/vichargrave/espcap/blob/master/README.md){:target="_blank"} file.

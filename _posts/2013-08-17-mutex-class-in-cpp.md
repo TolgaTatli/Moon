@@ -12,9 +12,7 @@ When multiple threads want to synchronize access to a shared resource they use m
 
 In my next two blogs I’ll illustrate how to simplify Pthread mutex and condition variable functions by wrapping them in C++ classes, starting with mutexes.
 
-<!--more-->
-
-### Pthread Mutex Functions
+## Pthread Mutex Functions
 
 These are the standard Pthread functions that will be incorporated in the Mutex class.
 
@@ -38,7 +36,7 @@ int pthread_mutex_destroy(pthread_mutex_t *mutex);
 
 Each function returns `0` if successful or an error number if it fails.
 
-### Mutex Class
+## Mutex Class
 
 The `Mutex` class provides a method that wraps each of the Pthread mutex functions and contains a private `pthread_mutex_t` variable which is use by the function calls. This hides the parameter so applications that call the `Mutex` class methods do not have to provide it.  Note that I declare a friend class `CondVar` which will need to have access to the private `m_mutex` data member as you’ll see in my next blog.
 
@@ -65,7 +63,7 @@ class Mutex
 };
 {% endhighlight %}
 
-### Mutex Test Application
+## Mutex Test Application
 
 You can get the source code for this project from GitHub – [https://github.com/vichargrave/mutex.git](https://github.com/vichargrave/mutex.git){:target="_blank"}.
 

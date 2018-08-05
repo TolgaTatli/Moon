@@ -12,9 +12,7 @@ The ELK stack (Elasticsearch-Logstash-Kibana) provides a cost effective alternat
 
 Since then some readers have asked for and suggested ways to parse additional fields from the OSSEC alert log stream. For example, the IP addresses of systems that cause certain security events is buried down in the Details field. So I have created a Logstash configuration file that does just that.
 
-<!--more-->
-
-### Logstash Configuration for Alert Details
+## Logstash Configuration for Alert Details
 
 The log management system I described previously gets alerts from the OSSEC server via syslog (UDP) to Logstash which, in turn, parses the alerts and forwards them to an Elasticsearch instance for indexing. When OSSEC outputs alerts over syslog they are flattened into single lines and certain field names are altered over their alert log counterparts.
 

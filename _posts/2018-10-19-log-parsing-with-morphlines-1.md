@@ -269,7 +269,7 @@ public class ParserApp {
 
 ### Testing the Application
 
-You can get the code that I use in this article from my Github location [using-morphlines](https://github.com/vichargrave/using-morphlines){:target="_blank"}. Clone or download the code then cd into the *user-morphlines* directory.
+You can get the code that I use in this article from my Github location [using-morphlines](https://github.com/vichargrave/using-morphlines){:target="_blank"}. Clone or download then cd into the *using-morphlines* directory. The morphlines scripts and grok dictionary are contained in the *conf* directory. Open the *conf/env.conf* file in editor then set the **full** path to the *conf/dict/grok-dictionaries* file on your system.  
 
 ### Debugging Grok Parsing
 

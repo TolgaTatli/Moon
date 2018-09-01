@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Log Parsing with Morphlines, Part 1"
-date:   2018-10-19 12:40:37
+date:   2018-09-15 12:40:37
 categories: Programming
 tags: Morphlines Java
 comments: true

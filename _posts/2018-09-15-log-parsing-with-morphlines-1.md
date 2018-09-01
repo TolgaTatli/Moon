@@ -269,8 +269,33 @@ public class ParserApp {
 
 ### Testing the Application
 
-You can get the code that I use in this article from my Github location [using-morphlines](https://github.com/vichargrave/using-morphlines){:target="_blank"}. Clone or download then cd into the *using-morphlines* directory. The morphlines scripts and grok dictionary are contained in the *conf* directory. Open the *conf/env.conf* file in editor then set the **full** path to the *conf/dict/grok-dictionaries* file on your system.  
+You can get the code that I use in this article from my Github location [using-morphlines](https://github.com/vichargrave/using-morphlines){:target="_blank"}. To build the program jars, do the following:
 
-### Debugging Grok Parsing
+   1. `cd using-morphlines`
+   2. Set the `${dict_path}` in *conf/env.conf* to the absolute path of the *conf/dict* directory.
+   3. `mvn clean package`
+
+You can also build the jars with a Maven aware IDE like IntelliJ, which is what I use. To build that way, do the following:
+
+   1. At the main dialog box, click on **Open**.
+   2. Navigate to the *using-morphlines* directory.
+   3. Click on **Open**.
+   4. Click on **Maven Properties** tab to the right of the main window.
+   5. Click on **Maven Execute Goal**.
+   6. Type `mvn clean package`.
+   7. Click on **Execute**.
+
+The jars will be located in the *target* directory of each subproject. You can run the basic parser application as follows:
+
+    java -jar basicparser/target/basicparser-0.1-jar-with-dependencies.jar conf/syslogParser.conf data/ossec.syslog
+
+The output of this program should look like this:
+
+    [2018-09-01 09:29:41,944][INFO][LogInfoBuilder$LogInfo] output record: [{Alert_Level=[3], Description=[Login session opened.], Details=[ossec-server->/var/log/secure; classification:  pam,syslog,authentication_success,; Jul  8 10:58:08 ossec-server su: pam_unix(su-l:session): session opened for user root by ossec(uid=0)], Rule=[5501], syslog_host=[ossec-server], syslog_program=[ossec], syslog_timestamp=[Jul  8 10:58:09]}]
+    [2018-09-01 09:29:41,945][INFO][LogInfoBuilder$LogInfo] output record: [{Alert_Level=[2], Description=[Unknown problem somewhere in the system.], Details=[ossec-server->/var/log/messages; classification:  syslog,errors,; Jul  8 10:58:54 ossec-server firefox.desktop: 1531072734810#011addons.webextension.{cd7e22de-2e34-40f0-aeff-cec824cbccac}#011WARN#011Loading extension '{cd7e22de-2e34-40f0-aeff-cec824cbccac}': Reading manifest: Error processing browser_action.theme_icons: An unexpected property was found in the WebExtension manifest.], Rule=[1002], syslog_host=[ossec-server], syslog_program=[ossec], syslog_timestamp=[Jul  8 10:58:55]}]
+
+### Building Grok Expressions
+
+Writing grok expressions can seem a bit daunting.  One approach to simplifying the process is to build the expression one field at a time.    
 
 ## What's Next

@@ -8,7 +8,5 @@ comments: true
 feature: /assets/img/Log_Parsing_with_Morphlines.jpg
 image: "/assets/img/Log_Parsing_with_Morphlines.jpg"
 ---
-Morphlines is an open source framework that eases the development of data ingestion and parsing applications written in Java. Originally developed by Cloudera, Morphlines is part of the [Kite SDK](http://kitesdk.org){:target="_blank"} which was spun off as its own open source project. Although Morphlines was developed with the Hadoop ecosystem in mind, it can just as easily be used in any kind of program that needs to transform data in a consistent and configurable way. This is part 1 of a 2 part series that shows you how to create log parsing applications with Morphlines.
-
-Part 1 focuses on how to write Morphlines scripts and use them to parse and map common log formats.  Part 2 will cover how to write a Morphlines parsing application.
+Morphlines is an open source parsing engine that enables you to write parsing applications that can handle a wide variety of log formats.  In [part 1](/log-parsing-with-morphlines-1){:target="_blank"} of this series on log parsing with morphlines, I described how to use morphlines scripts to parse JSON and syslog formatted text streams then output the parsed fields on *stdout*.
 

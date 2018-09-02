@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Log Parsing with Morphlines, Part 1"
-date:   2018-09-15 12:40:37
+date:   2018-09-01 12:40:37
 categories: Programming
 tags: Morphlines Java
 comments: true
@@ -192,7 +192,7 @@ The dictionary file used for the examples in this blog is very long and comprehe
  
 ## Basic Parser Application
 
-### Application Structure
+### Application Code
 
 We have all the scripts that we need to parse JSON and syslog data.  Now we need to build the application that executes these scripts and actually parses the data. The application creates a *ParserApp* class that loads our morphlines script files then loads and processes sample data files.
 
@@ -294,8 +294,32 @@ The output of this program should look like this:
     [2018-09-01 09:29:41,944][INFO][LogInfoBuilder$LogInfo] output record: [{Alert_Level=[3], Description=[Login session opened.], Details=[ossec-server->/var/log/secure; classification:  pam,syslog,authentication_success,; Jul  8 10:58:08 ossec-server su: pam_unix(su-l:session): session opened for user root by ossec(uid=0)], Rule=[5501], syslog_host=[ossec-server], syslog_program=[ossec], syslog_timestamp=[Jul  8 10:58:09]}]
     [2018-09-01 09:29:41,945][INFO][LogInfoBuilder$LogInfo] output record: [{Alert_Level=[2], Description=[Unknown problem somewhere in the system.], Details=[ossec-server->/var/log/messages; classification:  syslog,errors,; Jul  8 10:58:54 ossec-server firefox.desktop: 1531072734810#011addons.webextension.{cd7e22de-2e34-40f0-aeff-cec824cbccac}#011WARN#011Loading extension '{cd7e22de-2e34-40f0-aeff-cec824cbccac}': Reading manifest: Error processing browser_action.theme_icons: An unexpected property was found in the WebExtension manifest.], Rule=[1002], syslog_host=[ossec-server], syslog_program=[ossec], syslog_timestamp=[Jul  8 10:58:55]}]
 
-### Building Grok Expressions
+The output consists of the entire set of parsed key-value pairs in single lines. Morphlines provides output loaders for Solr and other destinations that could be used in addition to or instead of the `logInfo` statement.  
 
-Writing grok expressions can seem a bit daunting.  One approach to simplifying the process is to build the expression one field at a time.    
+### Writing Grok Expressions
 
-## What's Next
+One approach to simplifying the process is to build the expression one field at a time.  You can start by consuming the entire message with a single GREEDYDATA regex, which is `.*` in the grok-dictionary file, like this:
+
+{% highlight bash %}
+    expressions : {
+        message : """%{GREEDYDATA:theRest}"""
+{% endhighlight %}
+
+This expression will put the entire line into the `theRest` field. Let's say we have another syslog line that looks like this:
+
+    Dec 19 00:38:09 <local0.info> 10.217.31.247 CEF:0|Citrix|NetScaler|NS10.0|APPFW|APPFW_SAFECOMMERCE_XFORM|6|src=10.217.253.78 spt=56116 method=GET request=http://vpx247.example.net/FFC/CreditCardMind.html msg= Transformed (xout) potential credit card numbers seen in server response cn1=652 cn2=610 cs1=pr_ffc cs2=PPE0 cs3=li8MdGfW49uG8tGdSV85ech41a0A000 cs4=ALERT cs5=2012 act=transformed
+
+The date field in the line can be parsed with a `SYSLOGTIMESTAMP` regex followed by a `SPACE` regex:
+
+{% highlight bash %}
+    expressions : {
+        message : """%{SYSLOGTIMESTAMP:timestamp}%{SPACE}%{GREEDYDATA:theRest}"""
+{% endhighlight %}
+
+This expression will put the date in `timestamp`, consume 1 or more space characters then put the rest of line starting at the `<` character into `theRest` field.
+
+Using this process you can progressively go through the line field by field to make sure you are getting it right. This approach is easier and less error prone than trying to write the expression to get all the fields the first time.
+
+## Next Step
+
+The basic parser we developed works, but it only sends its output to *stdout*. It provides a useful framework for writing morpshlines scripts to parse various kinds of log files, in particular JSON and syslog formatted logs. However, it does not provide access to the parsed fields at the application level. In the second article in this series, I'll show you how to write a general parser class facility that will expose the parse fields so you can write applications that can process or store the parsed data in any way you see fit.

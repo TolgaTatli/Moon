@@ -322,4 +322,4 @@ Using this process you can progressively go through the line field by field to m
 
 ## Next Step
 
-The basic parser provides a useful framework for writing morpshlines scripts to parse various kinds of log files, in particular JSON and syslog formatted logs. However, it does not provide access to the parsed fields at the application level. In the second article in this series, I'll show you how to write a general parser class facility that will expose the parse fields so you can write applications that can process or store the parsed data in any way you see fit.
+The basic parser provides a useful framework for writing morphlines scripts to parse various kinds of log files, in particular JSON and syslog formatted logs. However, it does not provide access to the parsed fields at the application level. In the second article in this series, I'll show you how to write a general parser class facility that will expose the parse fields so you can write applications that can process or store the parsed data in any way you see fit.

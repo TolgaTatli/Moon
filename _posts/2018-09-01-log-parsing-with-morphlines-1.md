@@ -316,7 +316,7 @@ The priority field in the line can be parsed with a `POSINT` regex surrounded by
         message : """%<%{POSINT:syslog_pri}>%{SPACE}%{GREEDYDATA:theRest}"""
 {% endhighlight %}
 
-This expression will put the priority in `syslog_pri`, consume 1 or more space characters then put the rest of line starting with the syslog date `theRest` field.  Assuming there is no `removeFields` directive after this expression in the script the output fields will look like this:
+This expression will put the priority in `syslog_pri`, consume 1 or more space characters then put the rest of line starting with the syslog date `theRest` field.  Assuming there is no `removeFields` directive after this expression in the script.  When you rerun the basic parser application, the output fields will look like this:
 
     syslog_pri=[132]
     theRest=[Jul  8 10:58:09 ossec-server ossec: Alert Level: 3; Rule: 5501 - Login session opened.; Location: ossec-server->/var/log/secure; classification:  pam,syslog,authentication_success,; Jul  8 10:58:08 ossec-server su: pam_unix(su-l:session): session opened for user root by ossec(uid=0)]
@@ -328,7 +328,7 @@ Now let's parse the syslog date. The process is the same as before. Add a time s
         message : """%<%{POSINT:syslog_pri}>%{SPACE}%{SYSLOGTIMESTAMP:syslog_timestamp}%{SPACE}%{GREEDYDATA:theRest}"""
 {% endhighlight %}
 
-This will produce the fields:
+When you rerun the basic parser application, it will produce these fields:
 
     syslog_pri=[132]
     syslog_timestamp=[Jul  8 10:58:09]
@@ -338,6 +338,6 @@ You can try this out with the *syslogParser.conf* script and *ossec.syslog* data
 
 Using this process you can progressively go through the line field by field to make sure you are getting it right. This approach is easier and less error prone than trying to write the expression to get all the fields the first time.
 
-## Next Step
+## Next Steps
 
 The basic parser provides a useful framework for writing morphlines scripts to parse various kinds of log files, in particular JSON and syslog formatted logs. However, it does not provide access to the parsed fields at the application level. In the second article in this series, I'll show you how to write a general parser class facility that will expose the parse fields so you can write applications that can process or store the parsed data in any way you see fit.

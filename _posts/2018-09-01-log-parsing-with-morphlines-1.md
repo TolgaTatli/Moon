@@ -305,18 +305,36 @@ One approach to simplifying the process is to build the expression one field at 
         message : """%{GREEDYDATA:theRest}"""
 {% endhighlight %}
 
-This expression will put the entire line into the `theRest` field. Let's say we have another syslog line that looks like this:
+This expression will put the entire line into the `theRest` field. Let's take an OSSEC alert syslog line:
 
-    Dec 19 00:38:09 <local0.info> 10.217.31.247 CEF:0|Citrix|NetScaler|NS10.0|APPFW|APPFW_SAFECOMMERCE_XFORM|6|src=10.217.253.78 spt=56116 method=GET request=http://vpx247.example.net/FFC/CreditCardMind.html msg= Transformed (xout) potential credit card numbers seen in server response cn1=652 cn2=610 cs1=pr_ffc cs2=PPE0 cs3=li8MdGfW49uG8tGdSV85ech41a0A000 cs4=ALERT cs5=2012 act=transformed
+    <132>Jul  8 10:58:09 ossec-server ossec: Alert Level: 3; Rule: 5501 - Login session opened.; Location: ossec-server->/var/log/secure; classification:  pam,syslog,authentication_success,; Jul  8 10:58:08 ossec-server su: pam_unix(su-l:session): session opened for user root by ossec(uid=0)
 
-The date field in the line can be parsed with a `SYSLOGTIMESTAMP` regex followed by a `SPACE` regex:
+The priority field in the line can be parsed with a `POSINT` regex surrounded by `<>`followed by a `SPACE` regex:
 
 {% highlight bash %}
     expressions : {
-        message : """%{SYSLOGTIMESTAMP:timestamp}%{SPACE}%{GREEDYDATA:theRest}"""
+        message : """%<%{POSINT:syslog_pri}>%{SPACE}%{GREEDYDATA:theRest}"""
 {% endhighlight %}
 
-This expression will put the date in `timestamp`, consume 1 or more space characters then put the rest of line starting at the `<` character into `theRest` field.
+This expression will put the priority in `syslog_pri`, consume 1 or more space characters then put the rest of line starting with the syslog date `theRest` field.  Assuming there is no `removeFields` directive after this expression in the script the output fields will look like this:
+
+    syslog_pri=[132]
+    theRest=[Jul  8 10:58:09 ossec-server ossec: Alert Level: 3; Rule: 5501 - Login session opened.; Location: ossec-server->/var/log/secure; classification:  pam,syslog,authentication_success,; Jul  8 10:58:08 ossec-server su: pam_unix(su-l:session): session opened for user root by ossec(uid=0)]
+    
+Now let's parse the syslog date. The process is the same as before. Add a time stamp directive `%{SYSLOGTIMESTAMP:syslog_timestamp}%{SPACE}%` between the priority field and greedy data extractions:
+
+{% highlight bash %}
+    expressions : {
+        message : """%<%{POSINT:syslog_pri}>%{SPACE}%{SYSLOGTIMESTAMP:syslog_timestamp}%{SPACE}%{GREEDYDATA:theRest}"""
+{% endhighlight %}
+
+This will produce the fields:
+
+    syslog_pri=[132]
+    syslog_timestamp=[Jul  8 10:58:09]
+    theRest=[ossec-server ossec: Alert Level: 3; Rule: 5501 - Login session opened.; Location: ossec-server->/var/log/secure; classification:  pam,syslog,authentication_success,; Jul  8 10:58:08 ossec-server su: pam_unix(su-l:session): session opened for user root by ossec(uid=0)]
+
+You can try this out with the *syslogParser.conf* script and *ossec.syslog* data file.  Make sure to remove `literal:syslog_pri` from the list of blacklisted fields in the `removeFields` directive in the sample code.
 
 Using this process you can progressively go through the line field by field to make sure you are getting it right. This approach is easier and less error prone than trying to write the expression to get all the fields the first time.
 

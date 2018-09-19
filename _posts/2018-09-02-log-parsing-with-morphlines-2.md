@@ -14,7 +14,7 @@ Morphlines is an open source parsing engine that enables you to write parsing ap
 
 ### Collector Class
 
-In the last article recall the basic parser application defined a ParserApp class having a constructor that initialized created a Morphlines parser as follows:
+In the last article recall the basic parser application defined a ParserApp class having a constructor that created a Morphlines parser as follows:
 
 {% highlight java %}
 public ParserApp(File morphlineFile) {
@@ -23,7 +23,7 @@ public ParserApp(File morphlineFile) {
 }
 {% endhighlight %}
 
-The 4th argument in the compile method call accepts a reference to a Morphlines `Command` object, was set to `null` previously.  To get the parsed fields up into the parser application, requires implementing a `Command` interface object designed to collect the parsed fields into a List.  The `Collector` class below satisfys that requirement.
+The 4th argument in the compile method call accepts a reference to a Morphlines `Command` object, which was set to `null` previously.  For this version of the parser application, we will instead supply a `Collector` class object to gather up the parsed records:
 
 {% highlight java linenos %}
 package io.github.vichargrave.morphlineparser;
@@ -39,29 +39,24 @@ import com.google.common.base.Preconditions;
 
 public class Collector implements Command {
 
-    private Command parent;
-    private List<Record> records;
-
-    public Collector() {
-        reset();
-    }
+    final private List<Record> records = new ArrayList<>();
 
     public void reset() {
-        records = new ArrayList<Record>();
+        records.clear();
     }
 
     @Override
     public Command getParent() {
-        return parent;
+        return null;
     }
 
     @Override
-    public void notify(Record notification) {
+    public void notify(final Record notification) {
         Notifications.containsLifecycleEvent(notification, Notifications.LifecycleEvent.START_SESSION);
     }
 
     @Override
-    public boolean process(Record record) {
+    public boolean process(final Record record) {
         Preconditions.checkNotNull(record);
         records.add(record);
         return true;
@@ -73,20 +68,21 @@ public class Collector implements Command {
 }
 {% endhighlight %}
 
-**Line [12-15]** The `Collector` class implements the `Command` interface.  The`parent` object is required to interact with the Morphlines framework. `records` is the List in which the parsed fields are collected while parsing. 
+**Line [12-14]** The `Collector` class implements the `Command` interface.  `records` is the List in which the parsed fields are collected while parsing which is created when the `Collector` is created. Records are added during parsing and cleared before each parsing run.
 
-**Lines [17-23]** The constructor simply calls the `reset` method to create a new empty list. This enables the class to be reused to collect a series of parsing runs.
+**Lines [16-18]** The parser object developed in the next section enables you parse multiple log payloads with a single Morphlines script. The `reset()` method must be called prior to each parsing run to clear the list of parsed records.
 
-**Lines [25-28]** The `getParent` method is required override that returns the parent `Command`. 
+**Lines [20-23]** The parent is not being tracked so just return `null` when the Morphlines framework calls this method.
 
-**Lines [30-33]**
+**Lines [25-28]** The `notity()` method is called by the Morphlines engine when a parsing session starts, which calls `Notifications.containsLifecycleEvent` to indicate the start of a parsing session.
 
-**Lines [35-40]**
+**Lines [30-35]** The `process()` method is called by Morphlines to add parsed records to the list. This process continues until all the records are parsed.
 
-**Lines [42-44]**
-
+**Lines [37-39]** `getRecords()` returns the list of parsed records.
 
 ### Morphlines Parser Class
+
+Armed with a mechanism to collect parsed records, the next step is to create a class to load Morphlines scripts and parse log lines. 
 
 {% highlight java linenos %}
 package io.github.vichargrave.morphlineparser;
@@ -96,7 +92,6 @@ import java.util.List;
 
 import org.apache.solr.common.util.ContentStreamBase;
 import org.kitesdk.morphline.api.Command;
-import org.kitesdk.morphline.api.MorphlineCompilationException;
 import org.kitesdk.morphline.api.MorphlineContext;
 import org.kitesdk.morphline.api.Record;
 import org.kitesdk.morphline.base.Compiler;
@@ -104,57 +99,56 @@ import org.kitesdk.morphline.base.Fields;
 import org.kitesdk.morphline.base.Notifications;
 
 public class MorphlineParser {
-    private Collector collector;
-    private MorphlineContext morphlineContext;
-    private File morphlineFile;
-    private String morphlineId;
-    private Command morphline;
+    final private Collector collector = new Collector();
+    final private Command morphline;
 
-    public MorphlineParser(String morphlineFile) {
-        collector = new Collector();
-        this.morphlineFile = new File(morphlineFile);
-        this.morphlineId = null;
+    public MorphlineParser(final String morphlineFile) {
+        morphline = new Compiler().compile(new File(morphlineFile),
+                null,
+                new MorphlineContext.Builder().build(),
+                collector);
     }
 
-    public MorphlineParser(String morphlineFile, String morphlineId) {
-        collector = new Collector();
-        this.morphlineFile = new File(morphlineFile);
-        this.morphlineId = morphlineId;
+    public MorphlineParser(final String morphlineFile, final String morphlineId) {
+        morphline = new Compiler().compile(new File(morphlineFile),
+                morphlineId,
+                new MorphlineContext.Builder().build(),
+                collector);
     }
 
-    private void createMorphline() throws MorphlineCompilationException {
-        morphlineContext = new MorphlineContext.Builder().build();
-        morphline = new Compiler().compile(morphlineFile, morphlineId, morphlineContext, collector);
-    }
-
-    /** Parses lines from any InputStream. The other two parse methods call this one. */
-    public List<Record> parse(InputStream in) {
+    private List<Record> parse(final InputStream in) {
         collector.reset();
-        createMorphline();
-        Record record = new Record();
+        final Record record = new Record();
         record.put(Fields.ATTACHMENT_BODY, in);
         Notifications.notifyStartSession(morphline);
         morphline.process(record);
         return collector.getRecords();
     }
 
-    /** Parses all the lines in a file. */
-    public List<Record> parse(File fileToParse) throws FileNotFoundException {
-        InputStream in = new BufferedInputStream(new FileInputStream(fileToParse));
+    public List<Record> parse(final File fileToParse) throws FileNotFoundException {
+        final InputStream in = new BufferedInputStream(new FileInputStream(fileToParse));
         return parse(in);
     }
 
-    /** Parse 1 or more lines in a String buffer. */
-    public List<Record> parse(String linesToParse) throws IOException {
-        ContentStreamBase.StringStream stream = new ContentStreamBase.StringStream(linesToParse);
-        InputStream in = stream.getStream();
+    public List<Record> parse(final String linesToParse) throws IOException {
+        final ContentStreamBase.StringStream stream = new ContentStreamBase.StringStream(linesToParse);
+        final InputStream in = stream.getStream();
         return parse(in);
     }
 }
 {% endhighlight %}
 
-**Lines [15-20]**
+**Lines [14-16]**  The `MorphlineParser` class encapsulates the mechanisms to read and parse lines from an InputStream, collect the parsed records and return them to the caller.  There are two private member objects, `Collector collector` and `Command morphline`.  The latter is the Morphlines parser that is created in the class constructors. 
 
+**Lines [18-23]** The first constructor creates a `morphline` parser object from the file specified in `morphlineFile`.  The call to `Compiler().compile()` takes four arguments:
+
+**Lines [25-30]** 
+
+**Lines [32-39]** 
+
+**Lines [41-44]** 
+
+**Lines [46-50]**  
 
 ## Parser Application
 
@@ -198,10 +192,6 @@ public class ParserApp {
             System.out.println(ex.getMessage());
             System.exit(-1);
         }
-        catch (MorphlineCompilationException ex) {
-            System.out.println(ex.getMessage());
-            System.exit(-1);
-        }
     }
 }
 {% endhighlight %}
@@ -210,5 +200,5 @@ public class ParserApp {
 
 ### Unit Testing
 
-## Morphlines vs Logstash
+## Summing Up
 

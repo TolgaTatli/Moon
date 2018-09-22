@@ -261,7 +261,7 @@ public class ParserApp {
 
 **Lines [22-25]** The *ParserApp* constructor creates a morphline context and then a morphline parser.  The `new Compile().compile(...)` call creates a parser given the morphline configuration file and the morphline context object. The `null` arguments correspond to a morphline ID in the script and a custom `Command` object. Neither are used in the example, but I'll have more to say about them in Part 2.  Stay tuned...
 
-**Lines [27-28]** The `process(...)` method is the heart of the parser application. It accepts an array of paths to files to be parsed. The boolean success or fail outcomes of the attempts to parse the files are stored in a boolean array.
+**Lines [27-28]** The `process()` method accepts an array of paths to files to be parsed. The boolean success or fail outcomes of the attempts to parse the files are stored in a boolean array.
 
 **Lines [31-41, 43]** Loop through the list of files to parse. Morphlines scripts ingest data from any *InputStream*. In this case there is a *BufferedInputStream* for each input file. Next a *Record* object is created to which the input stream is linked by the addition of an attachment body field. The call to `morphline.process(...)` invokes the script that was supplied to the `morphline` parser when it was created. For every file processed a separate boolean is returned indicating success or failure. We check the outcome array value in each case, reporting any failure.  Lastly, return the outcome array.  Note the parsed output will be displayed on *stdout* only.  Part 2 will cover how to get these fields into the application to do something else with them.
 

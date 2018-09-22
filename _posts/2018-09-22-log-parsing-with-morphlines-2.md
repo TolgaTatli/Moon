@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Log Parsing with Morphlines, Part 2"
-date:   2018-09-02 12:40:37
+date:   2018-09-22 12:40:37
 categories: Programming
 tags: Morphlines Java
 comments: true
@@ -126,33 +126,37 @@ public class MorphlineParser {
     }
 
     public List<Record> parse(final File fileToParse) throws FileNotFoundException {
-        final InputStream in = new BufferedInputStream(new FileInputStream(fileToParse));
-        return parse(in);
+        return parse(new BufferedInputStream(new FileInputStream(fileToParse)));
     }
 
     public List<Record> parse(final String linesToParse) throws IOException {
-        final ContentStreamBase.StringStream stream = new ContentStreamBase.StringStream(linesToParse);
-        final InputStream in = stream.getStream();
-        return parse(in);
+        return parse(new ByteArrayInputStream(linesToParse.getBytes()));
     }
 }
 {% endhighlight %}
 
-**Lines [14-16]**  The `MorphlineParser` class encapsulates the mechanisms to read and parse lines from an InputStream, collect the parsed records and return them to the caller.  There are two private member objects, `Collector collector` and `Command morphline`.  The latter is the Morphlines parser that is created in the class constructors. 
+**Lines [14-16]**  The `MorphlineParser` class encapsulates the mechanisms to read and parse lines from an InputStream, collect the parsed records and return them to the caller.  There are two private member objects, `Collector collector` and `Command morphline`.  The latter is the Morphlines parser that is created in the class constructors. The `Collector` object is created when the member variable is declared.
 
 **Lines [18-23]** The first constructor creates a `morphline` parser object from the file specified in `morphlineFile`.  The call to `Compiler().compile()` takes four arguments:
 
-**Lines [25-30]** 
+   1. Path to the Morphlines script file.
+   2. ID of the script to be compiled, which is set to `null` meaning the first script found in the script file will be used.
+   3. Morphline context that is built on the fly.
+   4. `Command` object, in this case the `Collector`. 
 
-**Lines [32-39]** 
+**Lines [25-30]** The second constructor accepts two arguments: a path to the Morphlines script and a script ID.  The call to `Compiler().compile()` is the same except the second argument will be set to the script ID passed into the constructor.
 
-**Lines [41-44]** 
+**Lines [32-39]** The private `parse()` method is the heart of the `MorphlineParser` class.  It takes an `InputStream` object then immediately clears the current contents of the `collector`, if any.  The stream is attached to a new `Record` object by adding it as a field with the key `Fields.ATTACHMENT_BODY`.  After the parsing session start notification is sent, `morphlines.parse()` is called to read and parse the line read from the stream.  After each record is parsed, Morphlines calls `Collector#process()` to add the record to the list of parsed records.  Then parsing is done the list is returned to the caller.
 
-**Lines [46-50]**  
+**Lines [41-43]** The second version of `parse()` takes a `File` object argument, converts it to a `FileInputStream`, then calls the private `parse()` method to parse the records from the stream.
+
+**Lines [45-47]** Thie third version of `parse()` takes a `String` object containing one or more lines, converts it `a ByteArrayStream`, then calls the private `parse()` method.
 
 ## Parser Application
 
 ### Application Code
+
+Now let's combine all the ingredients to build the parsing application.
 
 {% highlight java linenos %}
 package io.github.vichargrave.morphlineparser;
@@ -195,6 +199,14 @@ public class ParserApp {
     }
 }
 {% endhighlight %}
+
+**Lines [11-14]** 
+
+**Lines [16-19]**
+
+**Lines [21-33]** 
+
+**Lines [34-37]** 
 
 ### Testing the Application
 

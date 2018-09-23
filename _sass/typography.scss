@@ -92,13 +92,13 @@ a {
   transition: color .4s;
   color: $color_shark;
   &:link {
-  	color: $color_shark;
+  	color: #C2352D;
   }
   &:visited {
-  	color: $color_tuatara;
+  	color: #C2352D;
   }
   &:hover {
-  	color: $red;
+  	color: #C2352D;
   }
   &:active {
   	transition: color .3s;

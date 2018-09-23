@@ -7,9 +7,9 @@
     <!-- Twitter Cards -->
     {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ feature }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
     {% else %}<meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}">{% endif %}
+    <meta name="twitter:image" content="{{ site.url }}{{ site.logo }}">{% endif %}
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     {% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">
@@ -21,7 +21,7 @@
     {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:image" content="{{ site.url }}/{{ site.logo }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}">
     {% if site.google.verify %}
     <!-- Webmaster Tools verfication -->
     <meta name="google-site-verification" content="{{ site.google.verify }}">{% endif %}
@@ -37,11 +37,6 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
     <!-- JS -->
     <script src="{{ site.url }}/assets/js/modernizr-3.3.1.custom.min.js"></script>
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ site.url }}/assets/img/favicons/apple-icon-precomposed.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/assets/img/favicons/apple-icon-144x144.png">
     <link rel="shortcut icon" type="image/png" href="{{ site.url }}/favicon.png" />
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
     <!-- Background Image -->

@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
-reading_time:       true
+title:              Vic Hargrave
+bio:                'Coder on the loose'
+description:        "Enjoying life one cup of coffee at a time"
+reading_time:       false
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://taylantatli.github.io/Moon
+url:                http://localhost:4000
 
 # Jekyll
 permalink:          /:title/
@@ -20,37 +20,37 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-mathjax:            true
+mathjax:            false
 sass:
   sass_dir:         _sass
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   vichargrave
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
-  #plus:            #username
+google:
+  plus:            vichargrave
   #analytics:
   #verify:
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
+email:              vichargrave@gmail.com
+twitter:            vichargrave
+#facebook:           catwallader
+github-url:         vichargrave
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:           vichargrave
 #xing:              username
-instagram:          username
+#instagram:          username
 #lastfm:            username
 #tumblr:            username
-#medium:            '@username'
+#medium:            '@vichargrave'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:             username
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel

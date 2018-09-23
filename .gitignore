@@ -1,3 +1,13 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+
+.idea/dbnavigator.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vichargrave.github.io.iml
+.idea/workspace.xml
+Gemfile.lock
+.idea/codeStyles/Project.xml
+.idea/vcs.xml

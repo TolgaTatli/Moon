@@ -285,7 +285,7 @@ You can also build the jars with a Maven aware IDE like IntelliJ, which is what 
    6. Type `mvn clean package`.
    7. Click on **Execute**.
 
-The jars will be located in the *target* directory of each subproject. You can run the basic parser application as follows:
+The jars will be located in the *target* directory of each subproject. The script files are located in the *conf* directory and the data files in the *data* directory.  You can run the basic parser application as follows:
 
     java -jar basicparser/target/basicparser-0.1-jar-with-dependencies.jar conf/syslogParser.conf data/ossec.syslog
 

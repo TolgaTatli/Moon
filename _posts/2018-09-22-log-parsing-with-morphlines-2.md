@@ -200,17 +200,43 @@ public class ParserApp {
 }
 {% endhighlight %}
 
-**Lines [11-14]** 
+**Lines [9-14]** The main application is encapsulated in `ParserClass`.  The first method simply displays a message on *stdout* indicating how to invoke the parser application.
 
-**Lines [16-19]**
+**Lines [16-19]** The main method checks the number of arguments.  If application was not invoked with script file path, data file path, and morphline ID to compile, `usage()` is called.
 
-**Lines [21-33]** 
+**Lines [21-28]** Create a `MorphlineParser` specifying the paths to the script and data files.  Create a `File` object for the given data file path then pass it to the `parser.parse()` method to process.  If one or more parsed records are returned, display them on *stdout*.  At this point you could modify the program to format and output the records to other data stores like Elasticsearch, Postgres, etc.  
 
-**Lines [34-37]** 
+**Lines [29-33]** If no parsed records are returned, indicate that and exit with an error code.
+
+**Lines [34-37]** If the data file to parse cannot be found, catch the exception, display the error message, and exit with an error code.
 
 ### Testing the Application
 
-### Unit Testing
+ou can get the code that I use in this article from my Github location [using-morphlines](https://github.com/vichargrave/using-morphlines){:target="_blank"}. To build the program jars, do the following:
+
+   1. `cd using-morphlines`
+   2. Set the `${dict_path}` in *conf/env.conf* to the absolute path of the *conf/dict* directory.
+   3. `mvn clean package`
+
+You can also build the jars with a Maven aware IDE like IntelliJ, which is what I use. To build that way, do the following:
+
+   1. At the main dialog box, click on **Open**.
+   2. Navigate to the *using-morphlines* directory.
+   3. Click on **Open**.
+   4. Click on **Maven Properties** tab to the right of the main window.
+   5. Click on **Maven Execute Goal**.
+   6. Type `mvn clean package`.
+   7. Click on **Execute**.
+
+The jars will be located in the *target* directory of each subproject. The script files are located in the *conf* directory and the data files in the *data* directory.  To test the parser appication , we will use the *parser.conf* file that contains scripts to parse JSON, CEF (Common Event Format), and syslog lines.  For testing syslog parsing, the script ID is *syslog* and the data file is *OSSEC.syslog* which contains OSSEC alerts.  You can the application for this scenarios as follows:
+
+    java -jar morphlineparser/target/morphlineparser-0.1-jar-with-dependencies.jar conf/parsers.conf data/ossec.syslog syslog
+    
+The output of this program should look like this:
+
+    {Alert_Level=[3], Description=[Login session opened.], Details=[ossec-server->/var/log/secure; classification:  pam,syslog,authentication_success,; Jul  8 10:58:08 ossec-server su: pam_unix(su-l:session): session opened for user root by ossec(uid=0)], Rule=[5501], syslog_host=[ossec-server], syslog_program=[ossec], syslog_timestamp=[Jul  8 10:58:09]}
+    {Alert_Level=[2], Description=[Unknown problem somewhere in the system.], Details=[ossec-server->/var/log/messages; classification:  syslog,errors,; Jul  8 10:58:54 ossec-server firefox.desktop: 1531072734810#011addons.webextension.{cd7e22de-2e34-40f0-aeff-cec824cbccac}#011WARN#011Loading extension '{cd7e22de-2e34-40f0-aeff-cec824cbccac}': Reading manifest: Error processing browser_action.theme_icons: An unexpected property was found in the WebExtension manifest.], Rule=[1002], syslog_host=[ossec-server], syslog_program=[ossec], syslog_timestamp=[Jul  8 10:58:55]}
 
 ## Summing Up
 
+Over the last two articles I have shown you how Morphlines parsing works, scripts to parse JSON, syslog, and CEF logs, and how to build Morphlines parser applications.  The is a lot more you can do with Morhlines.  As you have seen, the sample application in this blog isn't doing anything with the parser output.  You can improve on it you can take the parsed record fields and store them in any number of indexed data stores.  If you use Elasticsearch, Morphlines could be used a lightweight alternative to Logstash.

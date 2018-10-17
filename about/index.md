@@ -8,7 +8,6 @@ comments: false
 
 
 <h3><b>About YOUNG</b></h3>
-<hr>
 <ul>
     <li>오영근</li>
     <li>90년 12월생</li>
@@ -20,11 +19,11 @@ comments: false
     <li>미래융합정보기술 인턴 2018.01-2018.06</li>
     <li>구직중인 신입 프로그래머</li>
 </ul>  
+<hr>
   
 
   
 <h3><b>Uni Projects</b></h3>
-<hr>
 <h4>로잉머신을 활용한 안드로이드 3D 유니티 게임 (2017.09-2017.12)</h4>
 <ul>
     <li>Unity, Android Studio 사용</li>
@@ -35,9 +34,11 @@ comments: false
 
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47088689-09e9b180-d25a-11e8-9013-e94b052b0982.png" width="200" height="200"></img>  
-    <img src="https://user-images.githubusercontent.com/34850791/47088721-15d57380-d25a-11e8-9b55-c956ea00ffc1.png" width="200" height="200"></img>
-    <img src="https://user-images.githubusercontent.com/34850791/47088966-baf04c00-d25a-11e8-93ba-f5417916dbd6.png" width="340" height="200"></img> <img src="https://user-images.githubusercontent.com/34850791/47088977-c2aff080-d25a-11e8-9a69-261d63fdc6c9.png" width="340" height="200"></img> </img> <img src="https://user-images.githubusercontent.com/34850791/47088992-c8a5d180-d25a-11e8-8c96-18c5f6b7fce4.png" width="340" height="200"></img>
+    <img src="https://user-images.githubusercontent.com/34850791/47088689-09e9b180-d25a-11e8-9013-e94b052b0982.png" width="200" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47088721-15d57380-d25a-11e8-9b55-c956ea00ffc1.png" width="200" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47088966-baf04c00-d25a-11e8-93ba-f5417916dbd6.png" width="340" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47088977-c2aff080-d25a-11e8-9a69-261d63fdc6c9.png" width="340" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47088992-c8a5d180-d25a-11e8-8c96-18c5f6b7fce4.png" width="340" height="200">
 </center>
 
 
@@ -51,7 +52,10 @@ comments: false
 </ul>
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47089118-04409b80-d25b-11e8-9cdf-6dfffbd90479.png" width="200" height="200"></img> <img src="https://user-images.githubusercontent.com/34850791/47089127-0c004000-d25b-11e8-9454-68c56a93e777.png" width="200" height="200"></img> <img src="https://user-images.githubusercontent.com/34850791/47089134-11f62100-d25b-11e8-94c0-8902842ebad9.png" width="200" height="200"></img> <img src="https://user-images.githubusercontent.com/34850791/47089146-17ec0200-d25b-11e8-8b4c-c8525b3f6a84.png" width="200" height="200"></img>
+    <img src="https://user-images.githubusercontent.com/34850791/47089118-04409b80-d25b-11e8-9cdf-6dfffbd90479.png" width="200" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47089127-0c004000-d25b-11e8-9454-68c56a93e777.png" width="200" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47089134-11f62100-d25b-11e8-94c0-8902842ebad9.png" width="200" height="200"> 
+    <img src="https://user-images.githubusercontent.com/34850791/47089146-17ec0200-d25b-11e8-8b4c-c8525b3f6a84.png" width="200" height="200">
 </center>
 
 
@@ -63,7 +67,7 @@ comments: false
 </ul>
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47089019-d6f3ed80-d25a-11e8-898c-af72917e0d4b.png" width="340" height="200"></img> 
+    <img src="https://user-images.githubusercontent.com/34850791/47089019-d6f3ed80-d25a-11e8-898c-af72917e0d4b.png" width="340" height="200">
     <img src="https://user-images.githubusercontent.com/34850791/47089197-37832a80-d25b-11e8-867f-10cf828f4e77.png" width="340" height="200">
 </center>
 
@@ -75,12 +79,13 @@ comments: false
 </ul>
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47089042-e2dfaf80-d25a-11e8-9e7b-84be7ed17780.png" width="340" height="200"></img> 
-    <img src="https://user-images.githubusercontent.com/34850791/47089067-ef640800-d25a-11e8-9544-f4f471861a9c.png" width="340" height="200"></img> <img src="https://user-images.githubusercontent.com/34850791/47089080-f5f27f80-d25a-11e8-8b80-cf8f0807c4ea.png" width="340" height="200"></img>
+    <img src="https://user-images.githubusercontent.com/34850791/47089042-e2dfaf80-d25a-11e8-9e7b-84be7ed17780.png" width="340" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47089067-ef640800-d25a-11e8-9544-f4f471861a9c.png" width="340" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47089080-f5f27f80-d25a-11e8-8b80-cf8f0807c4ea.png" width="340" height="200">
 </center>
+<hr>
 
 <h3><b>My Projects</b></h3>
-<hr>
 
 <h4>To Do List (2018.07)</h4>
 <ul>
@@ -90,7 +95,7 @@ comments: false
 </ul>
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47090713-62bb4900-d25e-11e8-9688-9d7cf74d2859.png" width="200" height="340"></img> 
+    <img src="https://user-images.githubusercontent.com/34850791/47090713-62bb4900-d25e-11e8-9688-9d7cf74d2859.png" width="200" height="340">
     <img src="https://user-images.githubusercontent.com/34850791/47090807-95654180-d25e-11e8-8b56-394060db0c8e.png" width="200" height="340">
 </center>
 

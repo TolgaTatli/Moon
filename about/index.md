@@ -33,11 +33,10 @@ comments: false
 
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47088689-09e9b180-d25a-11e8-9013-e94b052b0982.png" height="200" >
-    <img src="https://user-images.githubusercontent.com/34850791/47088721-15d57380-d25a-11e8-9b55-c956ea00ffc1.png" height="200">
-    <img src="https://user-images.githubusercontent.com/34850791/47088966-baf04c00-d25a-11e8-93ba-f5417916dbd6.png" height="200">
-    <img src="https://user-images.githubusercontent.com/34850791/47088977-c2aff080-d25a-11e8-9a69-261d63fdc6c9.png" height="200">
-    <img src="https://user-images.githubusercontent.com/34850791/47088992-c8a5d180-d25a-11e8-8c96-18c5f6b7fce4.png" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256468-10776380-d4bc-11e8-9def-a604b92a47dd.JPG" height="200" >
+    <img src="https://user-images.githubusercontent.com/34850791/47256469-11a89080-d4bc-11e8-927b-518ab34b89cd.JPG" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256470-11a89080-d4bc-11e8-9281-186d553e00ba.JPG" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256467-0fdecd00-d4bc-11e8-8660-94c53eca477f.JPG" height="200">
 </center>
 
 
@@ -51,10 +50,10 @@ comments: false
 
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47089118-04409b80-d25b-11e8-9cdf-6dfffbd90479.png" height="200">
-    <img src="https://user-images.githubusercontent.com/34850791/47089127-0c004000-d25b-11e8-9454-68c56a93e777.png" height="200">
-    <img src="https://user-images.githubusercontent.com/34850791/47089134-11f62100-d25b-11e8-94c0-8902842ebad9.png" height="200"> 
-    <img src="https://user-images.githubusercontent.com/34850791/47089146-17ec0200-d25b-11e8-8b4c-c8525b3f6a84.png" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256473-1b31f880-d4bc-11e8-951a-4eaf58babc80.JPG" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256474-1bca8f00-d4bc-11e8-8092-42cfb6a2f0ad.JPG" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256475-1bca8f00-d4bc-11e8-9203-d5b237da8261.JPG" height="200"> 
+    <img src="https://user-images.githubusercontent.com/34850791/47256472-1b31f880-d4bc-11e8-824e-7a10741a2e47.JPG" height="200">
 </center>
 
 
@@ -66,8 +65,8 @@ comments: false
 
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47089019-d6f3ed80-d25a-11e8-898c-af72917e0d4b.png" height="200">
-    <img src="https://user-images.githubusercontent.com/34850791/47089197-37832a80-d25b-11e8-867f-10cf828f4e77.png" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256481-238a3380-d4bc-11e8-9416-d5250fad7f4e.JPG" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256476-22f19d00-d4bc-11e8-982d-6d0ab3d2b4eb.png" height="200">
 </center>
 
 #### 지방선거 결과 예측 프로젝트 (2018.03-2018.06)
@@ -78,9 +77,8 @@ comments: false
 
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47089042-e2dfaf80-d25a-11e8-9e7b-84be7ed17780.png" height="200">
-    <img src="https://user-images.githubusercontent.com/34850791/47089067-ef640800-d25a-11e8-9544-f4f471861a9c.png" height="200">
-    <img src="https://user-images.githubusercontent.com/34850791/47089080-f5f27f80-d25a-11e8-8b80-cf8f0807c4ea.png" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256477-22f19d00-d4bc-11e8-8c35-e616140b4013.png" height="200">
+    <img src="https://user-images.githubusercontent.com/34850791/47256478-238a3380-d4bc-11e8-9474-b9dbd9d29b6e.png" height="200">
 </center>
 
 <hr/>>
@@ -95,8 +93,8 @@ comments: false
 
 
 <center>
-    <img src="https://user-images.githubusercontent.com/34850791/47090713-62bb4900-d25e-11e8-9688-9d7cf74d2859.png" height="340">
-    <img src="https://user-images.githubusercontent.com/34850791/47090807-95654180-d25e-11e8-8b56-394060db0c8e.png" height="340">
+    <img src="https://user-images.githubusercontent.com/34850791/47256479-238a3380-d4bc-11e8-82c5-1a15f7aaa83f.png" height="340">
+    <img src="https://user-images.githubusercontent.com/34850791/47256480-238a3380-d4bc-11e8-92d5-884633079da3.png" height="340">
 </center>
 
 #### 쌍용정보교육원 (2018.10-진행중)

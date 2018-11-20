@@ -1,7 +1,7 @@
 # Site
 title:              treasure_b
 bio:                '초보개발자 공부 블로그'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+description:        "초보개발자 개발, 취미, 관심사를 기록할 예정입니다."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -26,7 +26,7 @@ sass:
 
 # Comments
 disqus_shortname:   taylantatli
-
+comments: true
 # Social
 # if you don't have any of social below, comment the line.
 #google:

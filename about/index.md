@@ -14,7 +14,8 @@ comments: false
 * 생일 : 90년 12월 20일
 * 이메일 : treasure_b@naver.com
 * github : <a href="http://choiwono.github.io"><b>깃허브 주소</b></a>
-* skills : php, java, ci, spring,mssql, mysql, jquery, javascript, css, html 
+* skills : php, java, ci, spring,mssql, mysql, jquery, ajax,javascript, css, html
+* 개발환경 : linux, centos 
 <hr>
 
 ## 학력 && 경력

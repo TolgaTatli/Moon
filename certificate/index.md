@@ -1,6 +1,6 @@
 ---
 layout: certificate-list
-title: 자격증
+title: All Posts
 excerpt: "A List of Posts"
 comments: false
 ---

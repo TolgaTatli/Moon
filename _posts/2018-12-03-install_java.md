@@ -15,11 +15,11 @@ comments: true
 ## 자바 설치방법
 
 ## 1. www.java.sun.com 접속
-   메인페이지에서 - java SE 다운로드
+<p>메인페이지에서 - java SE 다운로드</p>
 
 ## 2. java SE 8 버전 - JDK 다운로드
-운영체제에 맞춰서 다운로드 할것 
-ex) Windows x64 jdk-8u191-windows-x64.exe
+<p>운영체제에 맞춰서 다운로드 할것</p> 
+<p>ex) Windows x64 jdk-8u191-windows-x64.exe</p>
 
 ## 3. 설치
 
@@ -33,21 +33,20 @@ ex) Windows x64 jdk-8u191-windows-x64.exe
 
 시작 - 제어판 - 시스템 - 고급시스템설정 - 환경변수
 환경변수 설정 - 시스템변수 설정
-1) CLASSPATH : .;%JAVA_HOME%\lib\tools.jar
-2) JAVA_HOME : C:\Java\jdk1.8.0_191
-3) Path : %JAVA_HOME%\bin;
+<p>1) CLASSPATH : .;%JAVA_HOME%\lib\tools.jar</p>
+<p>2) JAVA_HOME : C:\Java\jdk1.8.0_191</p>
+<p>3) Path : %JAVA_HOME%\bin;</p>
 
 ## 5. 실행
 
 환경변수 확인
-1) 시작 - CMD 실행
-2) 환경변수 설정값 확인
-ECHO %JAVA_HOME%
-ECHO %PATH%
-ECHO %CLASSPATH%
+<p>1) 시작 - CMD 실행</p>
+<p>2) 환경변수 설정값 확인</p>
+<p>ECHO %JAVA_HOME%</p>
+<p>ECHO %PATH%</p>
+<p>ECHO %CLASSPATH%</p>
 
-정상적으로 출력시 javac 입력
-javac 입력후 에러메시지가 없는경우 환경변수 설정완료
+정상적으로 출력시 javac 입력 javac 입력후 에러메시지가 없는경우 환경변수 설정완료
 
 ## 6. 테스트 
 
@@ -55,13 +54,13 @@ javac 입력후 에러메시지가 없는경우 환경변수 설정완료
 
 MyPf.java 작성 ( 테스트파일 작성 )
 
-public class MyPf {
-    public static void main(String[] args) {
-        System.out.println("본인이름 : 최원오");
-        System.out.println("email : treasure_b@naver.com");
-        System.out.println("각오 : 열심히 보다는 잘하고 싶습니다.");
-    }
-}
+<p>public class MyPf {</p>
+    <p>public static void main(String[] args) {</p>
+        <p>System.out.println("본인이름 : 최원오");</p>
+        <p>System.out.println("email : treasure_b@naver.com");</p>
+        <p>System.out.println("각오 : 열심히 보다는 잘하고 싶습니다.");</p>
+    <p>}</p>
+<p>}</p>
 
 주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
 

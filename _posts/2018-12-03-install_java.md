@@ -53,6 +53,8 @@ ECHO %CLASSPATH%
 
 정상적으로 출력시 javac 입력 javac 입력후 에러메시지가 없는경우 환경변수 설정완료
 
+시스템변수 등록확인
+
 <figure>
     <a href="/assets/img/java_01.png"><img src="/assets/img/java_01.png"></a>
     <!--<figcaption>Caption describing these two images.</figcaption>-->
@@ -69,19 +71,18 @@ public class MyPf {
     public static void main(String[] args) {
         System.out.println("본인이름 : 최원오");
         System.out.println("email : treasure_b@naver.com");
-        System.out.println("각오 : 열심히 보다는 잘하고 싶습니다.");
+        System.out.println("각오 : 잘하고 싶습니다.");
     }
 }
 {% endhighlight %}
 
-주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
+# 주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
 
 2) javac 컴파일 명령 실행
 
 <p>javac MyPf.java 실행 jvm에서 클래스패스 경로 확인->MyPf.java를 메모리에 올리고 class파일 생성</p>
 
-인코딩 에러 날시 
-javac MyPf.java -encoding UTF-8
+# 인코딩 에러 날시 javac MyPf.java -encoding UTF-8
 
 3) java 클래스파일명 실행
 

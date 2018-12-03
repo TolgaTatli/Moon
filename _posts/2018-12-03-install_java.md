@@ -56,7 +56,7 @@ MyPf.java 작성 ( 테스트파일 작성 )
 
 {% highlight css %}
 <div>
-public class MyPf {
+#public class MyPf {
     public static void main(String[] args) {
         System.out.println("본인이름 : 최원오");
         System.out.println("email : treasure_b@naver.com");
@@ -67,14 +67,6 @@ public class MyPf {
 {% endhighlight %}
 
 주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
-
-{% highlight css %}
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
-{% endhighlight %}
 
 2) javac 컴파일 명령 실행
 

@@ -54,7 +54,7 @@ comments: true
 
 MyPf.java 작성 ( 테스트파일 작성 )
 
-<p>
+{% highlight css %}
 public class MyPf {
     public static void main(String[] args) {
         System.out.println("본인이름 : 최원오");
@@ -62,7 +62,7 @@ public class MyPf {
         System.out.println("각오 : 열심히 보다는 잘하고 싶습니다.");
     }
 }
-</p>
+{% endhighlight %}
 
 주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
 

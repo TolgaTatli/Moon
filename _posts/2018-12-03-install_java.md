@@ -25,9 +25,9 @@ ex) Windows x64 jdk-8u191-windows-x64.exe
 
 설치시 자바설치 경로, 자바홈 설치경로 복사
 
-자바 설치경로 : C:\Java\jdk1.8.0_191
-자바 홈설치경로 : C:\Program Files\Java\jre1.8.0_191
-CLASSPATH : .;%JAVA_HOME%\lib\tools.jar
+<p>자바 설치경로 : C:\Java\jdk1.8.0_191</p>
+<p>자바 홈설치경로 : C:\Program Files\Java\jre1.8.0_191</p>
+<p>CLASSPATH : .;%JAVA_HOME%\lib\tools.jar</p>
 
 ## 4. 환경변수 설정
 

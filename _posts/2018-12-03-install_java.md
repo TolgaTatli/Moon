@@ -54,7 +54,7 @@ comments: true
 
 MyPf.java 작성 ( 테스트파일 작성 )
 
-{% highlight css %}
+{% highlight html %}
 <div>
 public class MyPf {
     public static void main(String[] args) {

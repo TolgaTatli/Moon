@@ -15,8 +15,8 @@ comments: true
 ## 자바 설치방법
 
 ## 1. 홈페이지 접속
-<p><a href="http://java.sun.com">http://java.sun.com</a></p>
-<p><a href="http://www.oracle.com">http://www.oracle.com</a></p>
+<p>링크 1번 : <a href="http://java.sun.com">http://java.sun.com</a></p>
+<p>링크 2번 : <a href="http://www.oracle.com">http://www.oracle.com</a></p>
 <p>메인페이지에서 - java SE 다운로드</p>
 
 ## 2. java SE 8 버전 - JDK 다운로드
@@ -52,6 +52,11 @@ ECHO %CLASSPATH%
 {% endhighlight %}
 
 정상적으로 출력시 javac 입력 javac 입력후 에러메시지가 없는경우 환경변수 설정완료
+
+<figure>
+    <a href="/assets/img/java_01.png"><img src="/assets/img/java_01.png"></a>
+    <!--<figcaption>Caption describing these two images.</figcaption>-->
+</figure>
 
 ## 6. 테스트 
 

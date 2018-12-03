@@ -42,9 +42,12 @@ comments: true
 환경변수 확인
 <p>1) 시작 - CMD 실행</p>
 <p>2) 환경변수 설정값 확인</p>
-<p>ECHO %JAVA_HOME%</p>
-<p>ECHO %PATH%</p>
-<p>ECHO %CLASSPATH%</p>
+
+{% highlight html %}
+ECHO %JAVA_HOME%
+ECHO %PATH%
+ECHO %CLASSPATH%
+{% highlight html %}
 
 정상적으로 출력시 javac 입력 javac 입력후 에러메시지가 없는경우 환경변수 설정완료
 

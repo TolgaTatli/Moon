@@ -14,7 +14,9 @@ comments: true
 
 ## 자바 설치방법
 
-## 1. www.java.sun.com 접속
+## 1. 홈페이지 접속
+<p><a href="http://java.sun.com">http://java.sun.com</a></p>
+<p><a href="http://www.oracle.com">http://www.oracle.com</a></p>
 <p>메인페이지에서 - java SE 다운로드</p>
 
 ## 2. java SE 8 버전 - JDK 다운로드

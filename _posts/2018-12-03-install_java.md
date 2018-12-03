@@ -68,6 +68,14 @@ public class MyPf {
 
 주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
 
+{% highlight css %}
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
+}
+{% endhighlight %}
+
 2) javac 컴파일 명령 실행
 
 ex) C:\Java\Work로 이동 -> javac MyPf.java 실행

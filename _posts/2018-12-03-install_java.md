@@ -76,13 +76,13 @@ public class MyPf {
 }
 {% endhighlight %}
 
-##### 주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
+<b>주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치</b>
 
 2) javac 컴파일 명령 실행
 
-<p>javac MyPf.java 실행 jvm에서 클래스패스 경로 확인->MyPf.java를 메모리에 올리고 class파일 생성</p>
+<b>javac MyPf.java 실행 jvm에서 클래스패스 경로 확인->MyPf.java를 메모리에 올리고 class파일 생성</b>
 
-##### 인코딩 에러 날시 javac MyPf.java -encoding UTF-8
+<b>인코딩 에러 날시 javac MyPf.java -encoding UTF-8</b>
 
 3) java 클래스파일명 실행
 

@@ -56,7 +56,7 @@ MyPf.java 작성 ( 테스트파일 작성 )
 
 {% highlight css %}
 <div>
-#public class MyPf {
+public class MyPf {
     public static void main(String[] args) {
         System.out.println("본인이름 : 최원오");
         System.out.println("email : treasure_b@naver.com");

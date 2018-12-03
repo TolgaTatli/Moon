@@ -78,7 +78,7 @@ public class MyPf {
 
 2) javac 컴파일 명령 실행
 
-<p>C:\Java\Work로 이동->javac MyPf.java 실행 jvm에서 클래스패스 경로 확인->MyPf.java를 메모리에 올리고 class파일 생성</p>
+<p>javac MyPf.java 실행 jvm에서 클래스패스 경로 확인->MyPf.java를 메모리에 올리고 class파일 생성</p>
 
 인코딩 에러 날시 
 javac MyPf.java -encoding UTF-8

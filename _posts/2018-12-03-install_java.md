@@ -47,7 +47,7 @@ comments: true
 ECHO %JAVA_HOME%
 ECHO %PATH%
 ECHO %CLASSPATH%
-{% highlight html %}
+{% endhighlight %}
 
 정상적으로 출력시 javac 입력 javac 입력후 에러메시지가 없는경우 환경변수 설정완료
 

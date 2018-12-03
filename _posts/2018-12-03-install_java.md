@@ -18,28 +18,28 @@ comments: true
    메인페이지에서 - java SE 다운로드
 
 ## 2. java SE 8 버전 - JDK 다운로드
-* 운영체제에 맞춰서 다운로드 할것 
-* ex) Windows x64 jdk-8u191-windows-x64.exe
+운영체제에 맞춰서 다운로드 할것 
+ex) Windows x64 jdk-8u191-windows-x64.exe
 
 ## 3. 설치
 
 설치시 자바설치 경로, 자바홈 설치경로 복사
 
-* 자바 설치경로 : C:\Java\jdk1.8.0_191
-* 자바 홈설치경로 : C:\Program Files\Java\jre1.8.0_191
-* CLASSPATH : .;%JAVA_HOME%\lib\tools.jar
+자바 설치경로 : C:\Java\jdk1.8.0_191
+자바 홈설치경로 : C:\Program Files\Java\jre1.8.0_191
+CLASSPATH : .;%JAVA_HOME%\lib\tools.jar
 
 ## 4. 환경변수 설정
 
-* 시작 - 제어판 - 시스템 - 고급시스템설정 - 환경변수
-* 환경변수 설정 - 시스템변수 설정
+시작 - 제어판 - 시스템 - 고급시스템설정 - 환경변수
+환경변수 설정 - 시스템변수 설정
 1) CLASSPATH : .;%JAVA_HOME%\lib\tools.jar
 2) JAVA_HOME : C:\Java\jdk1.8.0_191
 3) Path : %JAVA_HOME%\bin;
 
 ## 5. 실행
 
-* 환경변수 확인
+환경변수 확인
 1) 시작 - CMD 실행
 2) 환경변수 설정값 확인
 ECHO %JAVA_HOME%
@@ -63,15 +63,15 @@ public class MyPf {
     }
 }
 
-* 주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
+주의할점 : 인코딩 UTF-8로 저장, 파일 클래스명 = 실제파일명 일치
 
 2) javac 컴파일 명령 실행
 
 ex) C:\Java\Work로 이동 -> javac MyPf.java 실행
 jvm에서 클래스패스 경로 확인 -> MyPf.java를 메모리에 올리고 class파일 생성
 
-* 인코딩 에러 날시 
-* javac MyPf.java -encoding UTF-8
+인코딩 에러 날시 
+javac MyPf.java -encoding UTF-8
 
 3) java 클래스파일명 실행
 

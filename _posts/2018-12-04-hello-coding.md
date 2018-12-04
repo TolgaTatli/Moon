@@ -44,24 +44,24 @@ public class BinarySearch {
 }
 
 public class Search {
-     public void binarySearch(int i, int arr[]) {
-         int low = 0;
-         int high = arr.length - 1;
-         int mid = (low+high) /2;
+    public void binarySearch(int i, int arr[]) {
+        int low = 0;
+        int high = arr.length - 1;
+        int mid = (low+high) /2;
 
-         while(high >= low) {
-             if(i == mid) {
-                 System.out.println(i+"번째 인덱스에서 값이 발견됨");
-                 break;
-             }
+        while(high >= low) {
+            if(i == mid) {
+                System.out.println(i+"번째 인덱스에서 값이 발견됨");
+                break;
+            }
 
-             if(i < mid) {
-                 high = mid - 1;
-             } else {
-                 low = mid + 1;
-             }
-         }
-     }
+            if(i < mid) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+    }
 }
 
 {% endhighlight %}

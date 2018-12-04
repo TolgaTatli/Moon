@@ -25,8 +25,8 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
-comments: true
+disqus_shortname:   choiwono
+# comments: true
 # Social
 # if you don't have any of social below, comment the line.
 #google:

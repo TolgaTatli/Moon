@@ -51,10 +51,10 @@ public class Search {
 
         while(high >= low) {
             if(i == mid) {
-                System.out.println(i+"번째 인덱스에서 값이 발견됨");
+                System.out.println(i+"번째 인덱스에서 발견됨.");
                 break;
             }
-            
+
             if(i < mid) {
                 high = mid - 1;
             } else {

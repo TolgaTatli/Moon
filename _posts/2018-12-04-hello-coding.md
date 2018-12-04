@@ -61,7 +61,6 @@ public class Search {
                  low = mid + 1;
              }
          }
-
      }
 }
 

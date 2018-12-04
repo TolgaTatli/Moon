@@ -54,7 +54,7 @@ public class Search {
                 System.out.println(i+"번째 인덱스에서 값이 발견됨");
                 break;
             }
-
+            
             if(i < mid) {
                 high = mid - 1;
             } else {

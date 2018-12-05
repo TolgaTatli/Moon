@@ -1,7 +1,7 @@
 # Site
 title:              treasure_b
-bio:                '초보개발자 공부 블로그'
-description:        "초보개발자 개발, 취미, 관심사를 기록할 예정입니다."
+bio:                '주니어개발자 공부 블로그'
+description:        "주니어개발자 개발, 취미, 관심사를 기록할 예정입니다."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'

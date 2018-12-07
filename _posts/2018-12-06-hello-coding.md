@@ -7,8 +7,8 @@ algo: true
 tag:
 - 알고리즘
 - hello-coding
-- 이진탐색
-- log
+- 선택정렬
+- 재귀
 
 comments: true
 ---

@@ -79,6 +79,9 @@
                     {% if site.xmpp %}<li>
                         <a href="xmpp:{{ site.xmpp }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-lightbulb-o"></i> XMPP</a>
                     </li>{% endif %}
+                    {% if site.telegram %}<li>
+                        <a href="https://t.me/{{ site.telegram }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-telegram-o"></i> Telegram</a>
+                    </li>{% endif %}
                     {% if site.hackernews %}<li>
                         <a href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i> Hacker News</a>
                     </li>{% endif %}

@@ -37,40 +37,11 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-  
+    
 email:              dubzer@ya.ru               
-
-twitter:            username
-facebook:           username
-
 github-url:         dubzer
-
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin:          username
-xing:              username
-instagram:          username
-
-telegram:           dubzer
-
-lastfm:            username
-tumblr:            username
-medium:            '@username'
-pinterest:         username
-foursquare:        username
-
 steam:              dubzer
-
-dribbble:          username
-youtube:           username
-youtube-channel:   channel
-soundcloud:        username
-weibo:             username
-flickr:            username
-codepen:           username
-keybase:           username
-xmpp:              username@server.com
-hackernews:        username
-
+telegram:           dubzer
 # Gems
 gems:
   - jekyll-mentions

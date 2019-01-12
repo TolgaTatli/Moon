@@ -44,6 +44,8 @@
     <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/assets/img/favicons/apple-icon-144x144.png">
     <link rel="shortcut icon" type="image/png" href="{{ site.url }}/favicon.png" />
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
+    <!--Dubzer-->
+    <link rel="stylesheet" href="https://use.typekit.net/zro6dpz.css">  
     <!-- Background Image -->
     {% if site.background %}
     {% capture background %}{{ site.background }}{% endcapture %}
@@ -54,5 +56,8 @@
     {% if page.feature %}
     {% capture feature %}{{ page.feature }}{% endcapture %}
     {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
-    <style type="text/css">.feature {background-image:url({{ feature }});}</style>
+    <style 
+    @import url("https://use.typekit.net/zro6dpz.css");
+    type="text/css">.feature {background-image:url({{ feature }});}
+    </style>
     {% endif %}

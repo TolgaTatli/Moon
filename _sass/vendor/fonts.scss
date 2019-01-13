@@ -1,6 +1,6 @@
-// Fira Sans
+// acumin-pro
 @font-face{
-    font-family: 'Fira Sans';
+    font-family: 'acumin-pro';
     src: url("../fonts/FiraSans/eot/FiraSans-Light.eot");
     src: local("Fira Sans Light"),
          url("../fonts/FiraSans/eot/FiraSans-Light.eot") format("embedded-opentype"),
@@ -12,26 +12,20 @@
 }
 
 @font-face{
-    font-family: 'Fira Sans';
+    font-family: 'acumin-pro';
     src: url("../fonts/FiraSans/eot/FiraSans-LightItalic.eot");
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face{
-    font-family: 'Fira Sans';
-    src: url("../fonts/FiraSans/eot/FiraSans-Regular.eot");
-    src: local("Fira Sans Regular"),
-         url("../fonts/FiraSans/eot/FiraSans-Regular.eot") format("embedded-opentype"),
-         url("../fonts/FiraSans/woff/FiraSans-Regular.woff") format("woff"),
-         url("../fonts/FiraSans/woff2/FiraSans-Regular.woff2") format("woff2"),
-         url("../fonts/FiraSans/ttf/FiraSans-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+    font-family:"acumin-pro";
+    src:url("https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style:normal;font-weight:400;
 }
 
 @font-face{
-    font-family: 'Fira Sans';
+    font-family: 'acumin-pro';
     src: url("../fonts/FiraSans/eot/FiraSans-Italic.eot");
     src: local("Fira Sans Regular Italic"),
          url("../fonts/FiraSans/eot/FiraSans-Italic.eot") format("embedded-opentype"),
@@ -43,7 +37,7 @@
 }
 
 @font-face{
-    font-family: 'Fira Sans';
+    font-family: 'acumin-pro';
     src: url("../fonts/FiraSans/eot/FiraSans-Medium.eot");
     src: local("Fira Sans Medium"),
          url("../fonts/FiraSans/eot/FiraSans-Medium.eot") format("embedded-opentype"),
@@ -55,7 +49,7 @@
 }
 
 @font-face{
-    font-family: 'Fira Sans';
+    font-family: 'acumin-pro';
     src: url("../fonts/FiraSans/eot/FiraSans-MediumItalic.eot");
     src: local("Fira Sans Medium Italic"),
          url("../fonts/FiraSans/eot/FiraSans-MediumItalic.eot") format("embedded-opentype"),
@@ -67,7 +61,7 @@
 }
 
 @font-face{
-    font-family: 'Fira Sans';
+    font-family: 'acumin-pro';
     src: url("../fonts/FiraSans/eot/FiraSans-Bold.eot");
     src: local("Fira Sans Bold"),
          url("../fonts/FiraSans/eot/FiraSans-Bold.eot") format("embedded-opentype"),

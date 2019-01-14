@@ -1,8 +1,14 @@
 // acumin-pro
 @font-face{
-    font-family:"acumin-pro";
-    src:url("https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-    font-style:normal;font-weight:400;
+    font-family: 'acumin-pro';
+    src: url("../fonts/FiraSans/eot/FiraSans-Light.eot");
+    src: local("Fira Sans Light"),
+         url("../fonts/FiraSans/eot/FiraSans-Light.eot") format("embedded-opentype"),
+         url("../fonts/FiraSans/woff/FiraSans-Light.woff") format("woff"),
+         url("../fonts/FiraSans/woff2/FiraSans-Light.woff2") format("woff2"),
+         url("../fonts/FiraSans/ttf/FiraSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face{

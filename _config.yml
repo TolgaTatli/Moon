@@ -4,7 +4,7 @@ bio:                "Yep, that's me"
 description:        "Yep, that's me."
 reading_time:       true
 words_per_minute:   200
-logo:               'https://i.imgur.com/ioZoa9X.png'
+logo:               https://i.imgur.com/ioZoa9X.png
 background:         none
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US

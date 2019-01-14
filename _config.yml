@@ -1,12 +1,12 @@
 # Site
-title:              "Dubzer's page"
-bio:                "Yep, that's me"
-description:        "Yep, that's me."
+title:              "SenkOn"
+bio:                "It's little page about me"
+description:        "It's little page about me"
 reading_time:       true
 words_per_minute:   200
-logo:               https://i.imgur.com/ioZoa9X.png
+logo:               https://i.imgur.com/qqawC68.png
 locale:             en_US
-url:                https://dubzer.github.io/
+url:                https://senk0n.github.io/
 
 # Jekyll
 permalink:          /:title/
@@ -36,10 +36,13 @@ disqus_shortname:   taylantatli
   #ad-slot:
 #bing-verify:
     
-email:              dubzer@ya.ru               
-github-url:         dubzer
-steam:              dubzer
-telegram:           dubzer
+email:              s.shandalko@gmail.com
+github-url:         senk0n
+steam:              senk0n
+telegram:           senk0n
+vk:                 senk0n
+instagram:          senk0n
+youtube-channel:    UCxRxqC9y2R6lO3tXd8k1Izg
 # Gems
 gems:
   - jekyll-mentions

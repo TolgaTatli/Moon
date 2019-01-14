@@ -82,6 +82,12 @@
                     {% if site.telegram %}<li>
                         <a href="https://t.me/{{ site.telegram }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-telegram-o"></i> Telegram</a>
                     </li>{% endif %}
+					{% if site.vk %}<li>
+                        <a href="https://vk.com/{{ site.vk }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-vk-o"></i> Vk</a>
+                    </li>{% endif %}
+					{% if site.instagram %}<li>
+                        <a href="https://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-instagram-o"></i> Instagram</a>
+                    </li>{% endif %}
                     {% if site.hackernews %}<li>
                         <a href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i> Hacker News</a>
                     </li>{% endif %}

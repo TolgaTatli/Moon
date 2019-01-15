@@ -78,7 +78,7 @@ body {
 	background-color: $white;
 	color: $color_shark;
 	z-index: 1;
-	border-radius: 3px;
+	border-radius: 6px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	@include transition(.5s);
 	@media #{$small} {

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Epic UI</title>
+
+    <!-- Epic styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editor.css">
+
+    <!-- Google roboto font -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,300,700,400' rel='stylesheet' type='text/css'>-->
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <textarea id="shape-spawner-map"></textarea>
+    <div class="shape-spawner">
+        <div>
+            <img src="icons/circle.png" class="active"/>
+            <img src="icons/triangle.png"/>
+            <img src="icons/cross.png"/>
+            <img src="icons/square.png"/>
+        </div>
+        <div id="icon-placeholder">
+            <em class="epic-icon fa fa-android"></em>
+            <a href="#" id="icon-selector-show"><span class="fa fa-chevron-down" style="font-size:100%!important;"></span></a>
+        </div>
+        <a href="#" id="remove-all">Remove all</a>
+        <a href="#" id="remove-last-placed">Remove last placed</a>
+        <a href="#" id="export-map">Export map</a>
+        <a href="#" id="pause-refleshing">Pause map refleshing</a>
+    </div>
+    <div class="icon-selector">
+        <div class="close" id="icon-selector-close">Close&nbsp;&nbsp;&nbsp;</div>
+        <em class="fa fa-adjust" id="selectable-icon"></em>
+        <em class="fa fa-adn" id="selectable-icon"></em>
+        <em class="fa fa-align-center" id="selectable-icon"></em>
+        <em class="fa fa-align-justify" id="selectable-icon"></em>
+        <em class="fa fa-align-left" id="selectable-icon"></em>
+        <em class="fa fa-align-right" id="selectable-icon"></em>
+        <em class="fa fa-ambulance" id="selectable-icon"></em>
+        <em class="fa fa-anchor" id="selectable-icon"></em>
+        <em class="fa fa-android" id="selectable-icon"></em>
+        <em class="fa fa-angellist" id="selectable-icon"></em>
+        <em class="fa fa-angle-double-down" id="selectable-icon"></em>
+        <em class="fa fa-angle-double-left" id="selectable-icon"></em>
+        <em class="fa fa-angle-double-right" id="selectable-icon"></em>
+        <em class="fa fa-angle-double-up" id="selectable-icon"></em>
+        <em class="fa fa-angle-down" id="selectable-icon"></em>
+        <em class="fa fa-angle-left" id="selectable-icon"></em>
+        <em class="fa fa-angle-right" id="selectable-icon"></em>
+        <em class="fa fa-angle-up" id="selectable-icon"></em>
+        <em class="fa fa-apple" id="selectable-icon"></em>
+        <em class="fa fa-archive" id="selectable-icon"></em>
+        <em class="fa fa-area-chart" id="selectable-icon"></em>
+        <em class="fa fa-arrow-circle-down" id="selectable-icon"></em>
+        <em class="fa fa-arrow-circle-left" id="selectable-icon"></em>
+        <em class="fa fa-arrow-circle-o-down" id="selectable-icon"></em>
+        <em class="fa fa-arrow-circle-o-left" id="selectable-icon"></em>
+        <em class="fa fa-arrow-circle-o-right" id="selectable-icon"></em>
+        <em class="fa fa-arrow-circle-o-up" id="selectable-icon"></em>
+        <em class="fa fa-arrow-circle-right" id="selectable-icon"></em>
+        <em class="fa fa-arrow-circle-up" id="selectable-icon"></em>
+        <em class="fa fa-arrow-down" id="selectable-icon"></em>
+        <em class="fa fa-arrow-left" id="selectable-icon"></em>
+        <em class="fa fa-arrow-right" id="selectable-icon"></em>
+        <em class="fa fa-arrow-up" id="selectable-icon"></em>
+        <em class="fa fa-arrows" id="selectable-icon"></em>
+        <em class="fa fa-arrows-alt" id="selectable-icon"></em>
+        <em class="fa fa-arrows-h" id="selectable-icon"></em>
+        <em class="fa fa-arrows-v" id="selectable-icon"></em>
+        <em class="fa fa-asterisk" id="selectable-icon"></em>
+        <em class="fa fa-at" id="selectable-icon"></em>
+        <em class="fa fa-automobile" id="selectable-icon"></em>
+        <em class="fa fa-backward" id="selectable-icon"></em>
+        <em class="fa fa-ban" id="selectable-icon"></em>
+        <em class="fa fa-bank" id="selectable-icon"></em>
+        <em class="fa fa-bar-chart" id="selectable-icon"></em>
+        <em class="fa fa-bar-chart-o" id="selectable-icon"></em>
+        <em class="fa fa-barcode" id="selectable-icon"></em>
+        <em class="fa fa-bars" id="selectable-icon"></em>
+        <em class="fa fa-bed" id="selectable-icon"></em>
+        <em class="fa fa-beer" id="selectable-icon"></em>
+        <em class="fa fa-behance" id="selectable-icon"></em>
+        <em class="fa fa-behance-square" id="selectable-icon"></em>
+        <em class="fa fa-bell" id="selectable-icon"></em>
+        <em class="fa fa-bell-o" id="selectable-icon"></em>
+        <em class="fa fa-bell-slash" id="selectable-icon"></em>
+        <em class="fa fa-bell-slash-o" id="selectable-icon"></em>
+        <em class="fa fa-bicycle" id="selectable-icon"></em>
+        <em class="fa fa-binoculars" id="selectable-icon"></em>
+        <em class="fa fa-birthday-cake" id="selectable-icon"></em>
+        <em class="fa fa-bitbucket" id="selectable-icon"></em>
+        <em class="fa fa-bitbucket-square" id="selectable-icon"></em>
+        <em class="fa fa-bitcoin" id="selectable-icon"></em>
+        <em class="fa fa-bold" id="selectable-icon"></em>
+        <em class="fa fa-bolt" id="selectable-icon"></em>
+        <em class="fa fa-bomb" id="selectable-icon"></em>
+        <em class="fa fa-book" id="selectable-icon"></em>
+        <em class="fa fa-bookmark" id="selectable-icon"></em>
+        <em class="fa fa-bookmark-o" id="selectable-icon"></em>
+        <em class="fa fa-briefcase" id="selectable-icon"></em>
+        <em class="fa fa-btc" id="selectable-icon"></em>
+        <em class="fa fa-bug" id="selectable-icon"></em>
+        <em class="fa fa-building" id="selectable-icon"></em>
+        <em class="fa fa-building-o" id="selectable-icon"></em>
+        <em class="fa fa-bullhorn" id="selectable-icon"></em>
+        <em class="fa fa-bullseye" id="selectable-icon"></em>
+        <em class="fa fa-bus" id="selectable-icon"></em>
+        <em class="fa fa-buysellads" id="selectable-icon"></em>
+        <em class="fa fa-cab" id="selectable-icon"></em>
+        <em class="fa fa-calculator" id="selectable-icon"></em>
+        <em class="fa fa-calendar" id="selectable-icon"></em>
+        <em class="fa fa-calendar-o" id="selectable-icon"></em>
+        <em class="fa fa-camera" id="selectable-icon"></em>
+        <em class="fa fa-camera-retro" id="selectable-icon"></em>
+        <em class="fa fa-car" id="selectable-icon"></em>
+        <em class="fa fa-caret-down" id="selectable-icon"></em>
+        <em class="fa fa-caret-left" id="selectable-icon"></em>
+        <em class="fa fa-caret-right" id="selectable-icon"></em>
+        <em class="fa fa-caret-square-o-down" id="selectable-icon"></em>
+        <em class="fa fa-caret-square-o-left" id="selectable-icon"></em>
+        <em class="fa fa-caret-square-o-right" id="selectable-icon"></em>
+        <em class="fa fa-caret-square-o-up" id="selectable-icon"></em>
+        <em class="fa fa-caret-up" id="selectable-icon"></em>
+        <em class="fa fa-cart-arrow-down" id="selectable-icon"></em>
+        <em class="fa fa-cart-plus" id="selectable-icon"></em>
+        <em class="fa fa-cc" id="selectable-icon"></em>
+        <em class="fa fa-cc-amex" id="selectable-icon"></em>
+        <em class="fa fa-cc-discover" id="selectable-icon"></em>
+        <em class="fa fa-cc-mastercard" id="selectable-icon"></em>
+        <em class="fa fa-cc-paypal" id="selectable-icon"></em>
+        <em class="fa fa-cc-stripe" id="selectable-icon"></em>
+        <em class="fa fa-cc-visa" id="selectable-icon"></em>
+        <em class="fa fa-certificate" id="selectable-icon"></em>
+        <em class="fa fa-chain" id="selectable-icon"></em>
+        <em class="fa fa-chain-broken" id="selectable-icon"></em>
+        <em class="fa fa-check" id="selectable-icon"></em>
+        <em class="fa fa-check-circle" id="selectable-icon"></em>
+        <em class="fa fa-check-circle-o" id="selectable-icon"></em>
+        <em class="fa fa-check-square" id="selectable-icon"></em>
+        <em class="fa fa-check-square-o" id="selectable-icon"></em>
+        <em class="fa fa-chevron-circle-down" id="selectable-icon"></em>
+        <em class="fa fa-chevron-circle-left" id="selectable-icon"></em>
+        <em class="fa fa-chevron-circle-right" id="selectable-icon"></em>
+        <em class="fa fa-chevron-circle-up" id="selectable-icon"></em>
+        <em class="fa fa-chevron-down" id="selectable-icon"></em>
+        <em class="fa fa-chevron-left" id="selectable-icon"></em>
+        <em class="fa fa-chevron-right" id="selectable-icon"></em>
+        <em class="fa fa-chevron-up" id="selectable-icon"></em>
+        <em class="fa fa-child" id="selectable-icon"></em>
+        <em class="fa fa-circle" id="selectable-icon"></em>
+        <em class="fa fa-circle-o" id="selectable-icon"></em>
+        <em class="fa fa-circle-o-notch" id="selectable-icon"></em>
+        <em class="fa fa-circle-thin" id="selectable-icon"></em>
+        <em class="fa fa-clipboard" id="selectable-icon"></em>
+        <em class="fa fa-clock-o" id="selectable-icon"></em>
+        <em class="fa fa-close" id="selectable-icon"></em>
+        <em class="fa fa-cloud" id="selectable-icon"></em>
+        <em class="fa fa-cloud-download" id="selectable-icon"></em>
+        <em class="fa fa-cloud-upload" id="selectable-icon"></em>
+        <em class="fa fa-cny" id="selectable-icon"></em>
+        <em class="fa fa-code" id="selectable-icon"></em>
+        <em class="fa fa-code-fork" id="selectable-icon"></em>
+        <em class="fa fa-codepen" id="selectable-icon"></em>
+        <em class="fa fa-coffee" id="selectable-icon"></em>
+        <em class="fa fa-cog" id="selectable-icon"></em>
+        <em class="fa fa-cogs" id="selectable-icon"></em>
+        <em class="fa fa-columns" id="selectable-icon"></em>
+        <em class="fa fa-comment" id="selectable-icon"></em>
+        <em class="fa fa-comment-o" id="selectable-icon"></em>
+        <em class="fa fa-comments" id="selectable-icon"></em>
+        <em class="fa fa-comments-o" id="selectable-icon"></em>
+        <em class="fa fa-compass" id="selectable-icon"></em>
+        <em class="fa fa-compress" id="selectable-icon"></em>
+        <em class="fa fa-connectdevelop" id="selectable-icon"></em>
+        <em class="fa fa-copy" id="selectable-icon"></em>
+        <em class="fa fa-copyright" id="selectable-icon"></em>
+        <em class="fa fa-credit-card" id="selectable-icon"></em>
+        <em class="fa fa-crop" id="selectable-icon"></em>
+        <em class="fa fa-crosshairs" id="selectable-icon"></em>
+        <em class="fa fa-css3" id="selectable-icon"></em>
+        <em class="fa fa-cube" id="selectable-icon"></em>
+        <em class="fa fa-cubes" id="selectable-icon"></em>
+        <em class="fa fa-cut" id="selectable-icon"></em>
+        <em class="fa fa-cutlery" id="selectable-icon"></em>
+        <em class="fa fa-dashboard" id="selectable-icon"></em>
+        <em class="fa fa-dashcube" id="selectable-icon"></em>
+        <em class="fa fa-database" id="selectable-icon"></em>
+        <em class="fa fa-dedent" id="selectable-icon"></em>
+        <em class="fa fa-delicious" id="selectable-icon"></em>
+        <em class="fa fa-desktop" id="selectable-icon"></em>
+        <em class="fa fa-deviantart" id="selectable-icon"></em>
+        <em class="fa fa-diamond" id="selectable-icon"></em>
+        <em class="fa fa-digg" id="selectable-icon"></em>
+        <em class="fa fa-dollar" id="selectable-icon"></em>
+        <em class="fa fa-dot-circle-o" id="selectable-icon"></em>
+        <em class="fa fa-download" id="selectable-icon"></em>
+        <em class="fa fa-dribbble" id="selectable-icon"></em>
+        <em class="fa fa-dropbox" id="selectable-icon"></em>
+        <em class="fa fa-drupal" id="selectable-icon"></em>
+        <em class="fa fa-edit" id="selectable-icon"></em>
+        <em class="fa fa-eject" id="selectable-icon"></em>
+        <em class="fa fa-ellipsis-h" id="selectable-icon"></em>
+        <em class="fa fa-ellipsis-v" id="selectable-icon"></em>
+        <em class="fa fa-empire" id="selectable-icon"></em>
+        <em class="fa fa-envelope" id="selectable-icon"></em>
+        <em class="fa fa-envelope-o" id="selectable-icon"></em>
+        <em class="fa fa-envelope-square" id="selectable-icon"></em>
+        <em class="fa fa-eraser" id="selectable-icon"></em>
+        <em class="fa fa-eur" id="selectable-icon"></em>
+        <em class="fa fa-euro" id="selectable-icon"></em>
+        <em class="fa fa-exchange" id="selectable-icon"></em>
+        <em class="fa fa-exclamation" id="selectable-icon"></em>
+        <em class="fa fa-exclamation-circle" id="selectable-icon"></em>
+        <em class="fa fa-exclamation-triangle" id="selectable-icon"></em>
+        <em class="fa fa-expand" id="selectable-icon"></em>
+        <em class="fa fa-external-link" id="selectable-icon"></em>
+        <em class="fa fa-external-link-square" id="selectable-icon"></em>
+        <em class="fa fa-eye" id="selectable-icon"></em>
+        <em class="fa fa-eye-slash" id="selectable-icon"></em>
+        <em class="fa fa-eyedropper" id="selectable-icon"></em>
+        <em class="fa fa-facebook" id="selectable-icon"></em>
+        <em class="fa fa-facebook-f" id="selectable-icon"></em>
+        <em class="fa fa-facebook-official" id="selectable-icon"></em>
+        <em class="fa fa-facebook-square" id="selectable-icon"></em>
+        <em class="fa fa-fast-backward" id="selectable-icon"></em>
+        <em class="fa fa-fast-forward" id="selectable-icon"></em>
+        <em class="fa fa-fax" id="selectable-icon"></em>
+        <em class="fa fa-female" id="selectable-icon"></em>
+        <em class="fa fa-fighter-jet" id="selectable-icon"></em>
+        <em class="fa fa-file" id="selectable-icon"></em>
+        <em class="fa fa-file-archive-o" id="selectable-icon"></em>
+        <em class="fa fa-file-audio-o" id="selectable-icon"></em>
+        <em class="fa fa-file-code-o" id="selectable-icon"></em>
+        <em class="fa fa-file-excel-o" id="selectable-icon"></em>
+        <em class="fa fa-file-image-o" id="selectable-icon"></em>
+        <em class="fa fa-file-movie-o" id="selectable-icon"></em>
+        <em class="fa fa-file-o" id="selectable-icon"></em>
+        <em class="fa fa-file-pdf-o" id="selectable-icon"></em>
+        <em class="fa fa-file-photo-o" id="selectable-icon"></em>
+        <em class="fa fa-file-picture-o" id="selectable-icon"></em>
+        <em class="fa fa-file-powerpoint-o" id="selectable-icon"></em>
+        <em class="fa fa-file-sound-o" id="selectable-icon"></em>
+        <em class="fa fa-file-text" id="selectable-icon"></em>
+        <em class="fa fa-file-text-o" id="selectable-icon"></em>
+        <em class="fa fa-file-video-o" id="selectable-icon"></em>
+        <em class="fa fa-file-word-o" id="selectable-icon"></em>
+        <em class="fa fa-file-zip-o" id="selectable-icon"></em>
+        <em class="fa fa-files-o" id="selectable-icon"></em>
+        <em class="fa fa-film" id="selectable-icon"></em>
+        <em class="fa fa-filter" id="selectable-icon"></em>
+        <em class="fa fa-fire" id="selectable-icon"></em>
+        <em class="fa fa-fire-extinguisher" id="selectable-icon"></em>
+        <em class="fa fa-flag" id="selectable-icon"></em>
+        <em class="fa fa-flag-checkered" id="selectable-icon"></em>
+        <em class="fa fa-flag-o" id="selectable-icon"></em>
+        <em class="fa fa-flash" id="selectable-icon"></em>
+        <em class="fa fa-flask" id="selectable-icon"></em>
+        <em class="fa fa-flickr" id="selectable-icon"></em>
+        <em class="fa fa-floppy-o" id="selectable-icon"></em>
+        <em class="fa fa-folder" id="selectable-icon"></em>
+        <em class="fa fa-folder-o" id="selectable-icon"></em>
+        <em class="fa fa-folder-open" id="selectable-icon"></em>
+        <em class="fa fa-folder-open-o" id="selectable-icon"></em>
+        <em class="fa fa-font" id="selectable-icon"></em>
+        <em class="fa fa-forumbee" id="selectable-icon"></em>
+        <em class="fa fa-forward" id="selectable-icon"></em>
+        <em class="fa fa-foursquare" id="selectable-icon"></em>
+        <em class="fa fa-frown-o" id="selectable-icon"></em>
+        <em class="fa fa-futbol-o" id="selectable-icon"></em>
+        <em class="fa fa-gamepad" id="selectable-icon"></em>
+        <em class="fa fa-gavel" id="selectable-icon"></em>
+        <em class="fa fa-gbp" id="selectable-icon"></em>
+        <em class="fa fa-ge" id="selectable-icon"></em>
+        <em class="fa fa-gear" id="selectable-icon"></em>
+        <em class="fa fa-gears" id="selectable-icon"></em>
+        <em class="fa fa-genderless" id="selectable-icon"></em>
+        <em class="fa fa-gift" id="selectable-icon"></em>
+        <em class="fa fa-git" id="selectable-icon"></em>
+        <em class="fa fa-git-square" id="selectable-icon"></em>
+        <em class="fa fa-github" id="selectable-icon"></em>
+        <em class="fa fa-github-alt" id="selectable-icon"></em>
+        <em class="fa fa-github-square" id="selectable-icon"></em>
+        <em class="fa fa-gittip" id="selectable-icon"></em>
+        <em class="fa fa-glass" id="selectable-icon"></em>
+        <em class="fa fa-globe" id="selectable-icon"></em>
+        <em class="fa fa-google" id="selectable-icon"></em>
+        <em class="fa fa-google-plus" id="selectable-icon"></em>
+        <em class="fa fa-google-plus-square" id="selectable-icon"></em>
+        <em class="fa fa-google-wallet" id="selectable-icon"></em>
+        <em class="fa fa-graduation-cap" id="selectable-icon"></em>
+        <em class="fa fa-gratipay" id="selectable-icon"></em>
+        <em class="fa fa-group" id="selectable-icon"></em>
+        <em class="fa fa-h-square" id="selectable-icon"></em>
+        <em class="fa fa-hacker-news" id="selectable-icon"></em>
+        <em class="fa fa-hand-o-down" id="selectable-icon"></em>
+        <em class="fa fa-hand-o-left" id="selectable-icon"></em>
+        <em class="fa fa-hand-o-right" id="selectable-icon"></em>
+        <em class="fa fa-hand-o-up" id="selectable-icon"></em>
+        <em class="fa fa-hdd-o" id="selectable-icon"></em>
+        <em class="fa fa-header" id="selectable-icon"></em>
+        <em class="fa fa-headphones" id="selectable-icon"></em>
+        <em class="fa fa-heart" id="selectable-icon"></em>
+        <em class="fa fa-heart-o" id="selectable-icon"></em>
+        <em class="fa fa-heartbeat" id="selectable-icon"></em>
+        <em class="fa fa-history" id="selectable-icon"></em>
+        <em class="fa fa-home" id="selectable-icon"></em>
+        <em class="fa fa-hospital-o" id="selectable-icon"></em>
+        <em class="fa fa-hotel" id="selectable-icon"></em>
+        <em class="fa fa-html5" id="selectable-icon"></em>
+        <em class="fa fa-ils" id="selectable-icon"></em>
+        <em class="fa fa-image" id="selectable-icon"></em>
+        <em class="fa fa-inbox" id="selectable-icon"></em>
+        <em class="fa fa-indent" id="selectable-icon"></em>
+        <em class="fa fa-info" id="selectable-icon"></em>
+        <em class="fa fa-info-circle" id="selectable-icon"></em>
+        <em class="fa fa-inr" id="selectable-icon"></em>
+        <em class="fa fa-instagram" id="selectable-icon"></em>
+        <em class="fa fa-institution" id="selectable-icon"></em>
+        <em class="fa fa-ioxhost" id="selectable-icon"></em>
+        <em class="fa fa-italic" id="selectable-icon"></em>
+        <em class="fa fa-joomla" id="selectable-icon"></em>
+        <em class="fa fa-jpy" id="selectable-icon"></em>
+        <em class="fa fa-jsfiddle" id="selectable-icon"></em>
+        <em class="fa fa-key" id="selectable-icon"></em>
+        <em class="fa fa-keyboard-o" id="selectable-icon"></em>
+        <em class="fa fa-krw" id="selectable-icon"></em>
+        <em class="fa fa-language" id="selectable-icon"></em>
+        <em class="fa fa-laptop" id="selectable-icon"></em>
+        <em class="fa fa-lastfm" id="selectable-icon"></em>
+        <em class="fa fa-lastfm-square" id="selectable-icon"></em>
+        <em class="fa fa-leaf" id="selectable-icon"></em>
+        <em class="fa fa-leanpub" id="selectable-icon"></em>
+        <em class="fa fa-legal" id="selectable-icon"></em>
+        <em class="fa fa-lemon-o" id="selectable-icon"></em>
+        <em class="fa fa-level-down" id="selectable-icon"></em>
+        <em class="fa fa-level-up" id="selectable-icon"></em>
+        <em class="fa fa-life-bouy" id="selectable-icon"></em>
+        <em class="fa fa-life-buoy" id="selectable-icon"></em>
+        <em class="fa fa-life-ring" id="selectable-icon"></em>
+        <em class="fa fa-life-saver" id="selectable-icon"></em>
+        <em class="fa fa-lightbulb-o" id="selectable-icon"></em>
+        <em class="fa fa-line-chart" id="selectable-icon"></em>
+        <em class="fa fa-link" id="selectable-icon"></em>
+        <em class="fa fa-linkedin" id="selectable-icon"></em>
+        <em class="fa fa-linkedin-square" id="selectable-icon"></em>
+        <em class="fa fa-linux" id="selectable-icon"></em>
+        <em class="fa fa-list" id="selectable-icon"></em>
+        <em class="fa fa-list-alt" id="selectable-icon"></em>
+        <em class="fa fa-list-ol" id="selectable-icon"></em>
+        <em class="fa fa-list-ul" id="selectable-icon"></em>
+        <em class="fa fa-location-arrow" id="selectable-icon"></em>
+        <em class="fa fa-lock" id="selectable-icon"></em>
+        <em class="fa fa-long-arrow-down" id="selectable-icon"></em>
+        <em class="fa fa-long-arrow-left" id="selectable-icon"></em>
+        <em class="fa fa-long-arrow-right" id="selectable-icon"></em>
+        <em class="fa fa-long-arrow-up" id="selectable-icon"></em>
+        <em class="fa fa-magic" id="selectable-icon"></em>
+        <em class="fa fa-magnet" id="selectable-icon"></em>
+        <em class="fa fa-mail-forward" id="selectable-icon"></em>
+        <em class="fa fa-mail-reply" id="selectable-icon"></em>
+        <em class="fa fa-mail-reply-all" id="selectable-icon"></em>
+        <em class="fa fa-male" id="selectable-icon"></em>
+        <em class="fa fa-map-marker" id="selectable-icon"></em>
+        <em class="fa fa-mars" id="selectable-icon"></em>
+        <em class="fa fa-mars-double" id="selectable-icon"></em>
+        <em class="fa fa-mars-stroke" id="selectable-icon"></em>
+        <em class="fa fa-mars-stroke-h" id="selectable-icon"></em>
+        <em class="fa fa-mars-stroke-v" id="selectable-icon"></em>
+        <em class="fa fa-maxcdn" id="selectable-icon"></em>
+        <em class="fa fa-meanpath" id="selectable-icon"></em>
+        <em class="fa fa-medium" id="selectable-icon"></em>
+        <em class="fa fa-medkit" id="selectable-icon"></em>
+        <em class="fa fa-meh-o" id="selectable-icon"></em>
+        <em class="fa fa-mercury" id="selectable-icon"></em>
+        <em class="fa fa-microphone" id="selectable-icon"></em>
+        <em class="fa fa-microphone-slash" id="selectable-icon"></em>
+        <em class="fa fa-minus" id="selectable-icon"></em>
+        <em class="fa fa-minus-circle" id="selectable-icon"></em>
+        <em class="fa fa-minus-square" id="selectable-icon"></em>
+        <em class="fa fa-minus-square-o" id="selectable-icon"></em>
+        <em class="fa fa-mobile" id="selectable-icon"></em>
+        <em class="fa fa-mobile-phone" id="selectable-icon"></em>
+        <em class="fa fa-money" id="selectable-icon"></em>
+        <em class="fa fa-moon-o" id="selectable-icon"></em>
+        <em class="fa fa-mortar-board" id="selectable-icon"></em>
+        <em class="fa fa-motorcycle" id="selectable-icon"></em>
+        <em class="fa fa-music" id="selectable-icon"></em>
+        <em class="fa fa-navicon" id="selectable-icon"></em>
+        <em class="fa fa-neuter" id="selectable-icon"></em>
+        <em class="fa fa-newspaper-o" id="selectable-icon"></em>
+        <em class="fa fa-openid" id="selectable-icon"></em>
+        <em class="fa fa-outdent" id="selectable-icon"></em>
+        <em class="fa fa-pagelines" id="selectable-icon"></em>
+        <em class="fa fa-paint-brush" id="selectable-icon"></em>
+        <em class="fa fa-paper-plane" id="selectable-icon"></em>
+        <em class="fa fa-paper-plane-o" id="selectable-icon"></em>
+        <em class="fa fa-paperclip" id="selectable-icon"></em>
+        <em class="fa fa-paragraph" id="selectable-icon"></em>
+        <em class="fa fa-paste" id="selectable-icon"></em>
+        <em class="fa fa-pause" id="selectable-icon"></em>
+        <em class="fa fa-paw" id="selectable-icon"></em>
+        <em class="fa fa-paypal" id="selectable-icon"></em>
+        <em class="fa fa-pencil" id="selectable-icon"></em>
+        <em class="fa fa-pencil-square" id="selectable-icon"></em>
+        <em class="fa fa-pencil-square-o" id="selectable-icon"></em>
+        <em class="fa fa-phone" id="selectable-icon"></em>
+        <em class="fa fa-phone-square" id="selectable-icon"></em>
+        <em class="fa fa-photo" id="selectable-icon"></em>
+        <em class="fa fa-picture-o" id="selectable-icon"></em>
+        <em class="fa fa-pie-chart" id="selectable-icon"></em>
+        <em class="fa fa-pied-piper" id="selectable-icon"></em>
+        <em class="fa fa-pied-piper-alt" id="selectable-icon"></em>
+        <em class="fa fa-pinterest" id="selectable-icon"></em>
+        <em class="fa fa-pinterest-p" id="selectable-icon"></em>
+        <em class="fa fa-pinterest-square" id="selectable-icon"></em>
+        <em class="fa fa-plane" id="selectable-icon"></em>
+        <em class="fa fa-play" id="selectable-icon"></em>
+        <em class="fa fa-play-circle" id="selectable-icon"></em>
+        <em class="fa fa-play-circle-o" id="selectable-icon"></em>
+        <em class="fa fa-plug" id="selectable-icon"></em>
+        <em class="fa fa-plus" id="selectable-icon"></em>
+        <em class="fa fa-plus-circle" id="selectable-icon"></em>
+        <em class="fa fa-plus-square" id="selectable-icon"></em>
+        <em class="fa fa-plus-square-o" id="selectable-icon"></em>
+        <em class="fa fa-power-off" id="selectable-icon"></em>
+        <em class="fa fa-print" id="selectable-icon"></em>
+        <em class="fa fa-puzzle-piece" id="selectable-icon"></em>
+        <em class="fa fa-qq" id="selectable-icon"></em>
+        <em class="fa fa-qrcode" id="selectable-icon"></em>
+        <em class="fa fa-question" id="selectable-icon"></em>
+        <em class="fa fa-question-circle" id="selectable-icon"></em>
+        <em class="fa fa-quote-left" id="selectable-icon"></em>
+        <em class="fa fa-quote-right" id="selectable-icon"></em>
+        <em class="fa fa-ra" id="selectable-icon"></em>
+        <em class="fa fa-random" id="selectable-icon"></em>
+        <em class="fa fa-rebel" id="selectable-icon"></em>
+        <em class="fa fa-recycle" id="selectable-icon"></em>
+        <em class="fa fa-reddit" id="selectable-icon"></em>
+        <em class="fa fa-reddit-square" id="selectable-icon"></em>
+        <em class="fa fa-refresh" id="selectable-icon"></em>
+        <em class="fa fa-remove" id="selectable-icon"></em>
+        <em class="fa fa-renren" id="selectable-icon"></em>
+        <em class="fa fa-reorder" id="selectable-icon"></em>
+        <em class="fa fa-repeat" id="selectable-icon"></em>
+        <em class="fa fa-reply" id="selectable-icon"></em>
+        <em class="fa fa-reply-all" id="selectable-icon"></em>
+        <em class="fa fa-retweet" id="selectable-icon"></em>
+        <em class="fa fa-rmb" id="selectable-icon"></em>
+        <em class="fa fa-road" id="selectable-icon"></em>
+        <em class="fa fa-rocket" id="selectable-icon"></em>
+        <em class="fa fa-rotate-left" id="selectable-icon"></em>
+        <em class="fa fa-rotate-right" id="selectable-icon"></em>
+        <em class="fa fa-rouble" id="selectable-icon"></em>
+        <em class="fa fa-rss" id="selectable-icon"></em>
+        <em class="fa fa-rss-square" id="selectable-icon"></em>
+        <em class="fa fa-rub" id="selectable-icon"></em>
+        <em class="fa fa-ruble" id="selectable-icon"></em>
+        <em class="fa fa-rupee" id="selectable-icon"></em>
+        <em class="fa fa-save" id="selectable-icon"></em>
+        <em class="fa fa-scissors" id="selectable-icon"></em>
+        <em class="fa fa-search" id="selectable-icon"></em>
+        <em class="fa fa-search-minus" id="selectable-icon"></em>
+        <em class="fa fa-search-plus" id="selectable-icon"></em>
+        <em class="fa fa-sellsy" id="selectable-icon"></em>
+        <em class="fa fa-send" id="selectable-icon"></em>
+        <em class="fa fa-send-o" id="selectable-icon"></em>
+        <em class="fa fa-server" id="selectable-icon"></em>
+        <em class="fa fa-share" id="selectable-icon"></em>
+        <em class="fa fa-share-alt" id="selectable-icon"></em>
+        <em class="fa fa-share-alt-square" id="selectable-icon"></em>
+        <em class="fa fa-share-square" id="selectable-icon"></em>
+        <em class="fa fa-share-square-o" id="selectable-icon"></em>
+        <em class="fa fa-shekel" id="selectable-icon"></em>
+        <em class="fa fa-sheqel" id="selectable-icon"></em>
+        <em class="fa fa-shield" id="selectable-icon"></em>
+        <em class="fa fa-ship" id="selectable-icon"></em>
+        <em class="fa fa-shirtsinbulk" id="selectable-icon"></em>
+        <em class="fa fa-shopping-cart" id="selectable-icon"></em>
+        <em class="fa fa-sign-in" id="selectable-icon"></em>
+        <em class="fa fa-sign-out" id="selectable-icon"></em>
+        <em class="fa fa-signal" id="selectable-icon"></em>
+        <em class="fa fa-simplybuilt" id="selectable-icon"></em>
+        <em class="fa fa-sitemap" id="selectable-icon"></em>
+        <em class="fa fa-skyatlas" id="selectable-icon"></em>
+        <em class="fa fa-skype" id="selectable-icon"></em>
+        <em class="fa fa-slack" id="selectable-icon"></em>
+        <em class="fa fa-sliders" id="selectable-icon"></em>
+        <em class="fa fa-slideshare" id="selectable-icon"></em>
+        <em class="fa fa-smile-o" id="selectable-icon"></em>
+        <em class="fa fa-soccer-ball-o" id="selectable-icon"></em>
+        <em class="fa fa-sort" id="selectable-icon"></em>
+        <em class="fa fa-sort-alpha-asc" id="selectable-icon"></em>
+        <em class="fa fa-sort-alpha-desc" id="selectable-icon"></em>
+        <em class="fa fa-sort-amount-asc" id="selectable-icon"></em>
+        <em class="fa fa-sort-amount-desc" id="selectable-icon"></em>
+        <em class="fa fa-sort-asc" id="selectable-icon"></em>
+        <em class="fa fa-sort-desc" id="selectable-icon"></em>
+        <em class="fa fa-sort-down" id="selectable-icon"></em>
+        <em class="fa fa-sort-numeric-asc" id="selectable-icon"></em>
+        <em class="fa fa-sort-numeric-desc" id="selectable-icon"></em>
+        <em class="fa fa-sort-up" id="selectable-icon"></em>
+        <em class="fa fa-soundcloud" id="selectable-icon"></em>
+        <em class="fa fa-space-shuttle" id="selectable-icon"></em>
+        <em class="fa fa-spinner" id="selectable-icon"></em>
+        <em class="fa fa-spoon" id="selectable-icon"></em>
+        <em class="fa fa-spotify" id="selectable-icon"></em>
+        <em class="fa fa-square" id="selectable-icon"></em>
+        <em class="fa fa-square-o" id="selectable-icon"></em>
+        <em class="fa fa-stack-exchange" id="selectable-icon"></em>
+        <em class="fa fa-stack-overflow" id="selectable-icon"></em>
+        <em class="fa fa-star" id="selectable-icon"></em>
+        <em class="fa fa-star-half" id="selectable-icon"></em>
+        <em class="fa fa-star-half-empty" id="selectable-icon"></em>
+        <em class="fa fa-star-half-full" id="selectable-icon"></em>
+        <em class="fa fa-star-half-o" id="selectable-icon"></em>
+        <em class="fa fa-star-o" id="selectable-icon"></em>
+        <em class="fa fa-steam" id="selectable-icon"></em>
+        <em class="fa fa-steam-square" id="selectable-icon"></em>
+        <em class="fa fa-step-backward" id="selectable-icon"></em>
+        <em class="fa fa-step-forward" id="selectable-icon"></em>
+        <em class="fa fa-stethoscope" id="selectable-icon"></em>
+        <em class="fa fa-stop" id="selectable-icon"></em>
+        <em class="fa fa-street-view" id="selectable-icon"></em>
+        <em class="fa fa-strikethrough" id="selectable-icon"></em>
+        <em class="fa fa-stumbleupon" id="selectable-icon"></em>
+        <em class="fa fa-stumbleupon-circle" id="selectable-icon"></em>
+        <em class="fa fa-subscript" id="selectable-icon"></em>
+        <em class="fa fa-subway" id="selectable-icon"></em>
+        <em class="fa fa-suitcase" id="selectable-icon"></em>
+        <em class="fa fa-sun-o" id="selectable-icon"></em>
+        <em class="fa fa-superscript" id="selectable-icon"></em>
+        <em class="fa fa-support" id="selectable-icon"></em>
+        <em class="fa fa-table" id="selectable-icon"></em>
+        <em class="fa fa-tablet" id="selectable-icon"></em>
+        <em class="fa fa-tachometer" id="selectable-icon"></em>
+        <em class="fa fa-tag" id="selectable-icon"></em>
+        <em class="fa fa-tags" id="selectable-icon"></em>
+        <em class="fa fa-tasks" id="selectable-icon"></em>
+        <em class="fa fa-taxi" id="selectable-icon"></em>
+        <em class="fa fa-tencent-weibo" id="selectable-icon"></em>
+        <em class="fa fa-terminal" id="selectable-icon"></em>
+        <em class="fa fa-text-height" id="selectable-icon"></em>
+        <em class="fa fa-text-width" id="selectable-icon"></em>
+        <em class="fa fa-th" id="selectable-icon"></em>
+        <em class="fa fa-th-large" id="selectable-icon"></em>
+        <em class="fa fa-th-list" id="selectable-icon"></em>
+        <em class="fa fa-thumb-tack" id="selectable-icon"></em>
+        <em class="fa fa-thumbs-down" id="selectable-icon"></em>
+        <em class="fa fa-thumbs-o-down" id="selectable-icon"></em>
+        <em class="fa fa-thumbs-o-up" id="selectable-icon"></em>
+        <em class="fa fa-thumbs-up" id="selectable-icon"></em>
+        <em class="fa fa-ticket" id="selectable-icon"></em>
+        <em class="fa fa-times" id="selectable-icon"></em>
+        <em class="fa fa-times-circle" id="selectable-icon"></em>
+        <em class="fa fa-times-circle-o" id="selectable-icon"></em>
+        <em class="fa fa-tint" id="selectable-icon"></em>
+        <em class="fa fa-toggle-down" id="selectable-icon"></em>
+        <em class="fa fa-toggle-left" id="selectable-icon"></em>
+        <em class="fa fa-toggle-off" id="selectable-icon"></em>
+        <em class="fa fa-toggle-on" id="selectable-icon"></em>
+        <em class="fa fa-toggle-right" id="selectable-icon"></em>
+        <em class="fa fa-toggle-up" id="selectable-icon"></em>
+        <em class="fa fa-train" id="selectable-icon"></em>
+        <em class="fa fa-transgender" id="selectable-icon"></em>
+        <em class="fa fa-transgender-alt" id="selectable-icon"></em>
+        <em class="fa fa-trash" id="selectable-icon"></em>
+        <em class="fa fa-trash-o" id="selectable-icon"></em>
+        <em class="fa fa-tree" id="selectable-icon"></em>
+        <em class="fa fa-trello" id="selectable-icon"></em>
+        <em class="fa fa-trophy" id="selectable-icon"></em>
+        <em class="fa fa-truck" id="selectable-icon"></em>
+        <em class="fa fa-try" id="selectable-icon"></em>
+        <em class="fa fa-tty" id="selectable-icon"></em>
+        <em class="fa fa-tumblr" id="selectable-icon"></em>
+        <em class="fa fa-tumblr-square" id="selectable-icon"></em>
+        <em class="fa fa-turkish-lira" id="selectable-icon"></em>
+        <em class="fa fa-twitch" id="selectable-icon"></em>
+        <em class="fa fa-twitter" id="selectable-icon"></em>
+        <em class="fa fa-twitter-square" id="selectable-icon"></em>
+        <em class="fa fa-umbrella" id="selectable-icon"></em>
+        <em class="fa fa-underline" id="selectable-icon"></em>
+        <em class="fa fa-undo" id="selectable-icon"></em>
+        <em class="fa fa-university" id="selectable-icon"></em>
+        <em class="fa fa-unlink" id="selectable-icon"></em>
+        <em class="fa fa-unlock" id="selectable-icon"></em>
+        <em class="fa fa-unlock-alt" id="selectable-icon"></em>
+        <em class="fa fa-unsorted" id="selectable-icon"></em>
+        <em class="fa fa-upload" id="selectable-icon"></em>
+        <em class="fa fa-usd" id="selectable-icon"></em>
+        <em class="fa fa-user" id="selectable-icon"></em>
+        <em class="fa fa-user-md" id="selectable-icon"></em>
+        <em class="fa fa-user-plus" id="selectable-icon"></em>
+        <em class="fa fa-user-secret" id="selectable-icon"></em>
+        <em class="fa fa-user-times" id="selectable-icon"></em>
+        <em class="fa fa-users" id="selectable-icon"></em>
+        <em class="fa fa-venus" id="selectable-icon"></em>
+        <em class="fa fa-venus-double" id="selectable-icon"></em>
+        <em class="fa fa-venus-mars" id="selectable-icon"></em>
+        <em class="fa fa-viacoin" id="selectable-icon"></em>
+        <em class="fa fa-video-camera" id="selectable-icon"></em>
+        <em class="fa fa-vimeo-square" id="selectable-icon"></em>
+        <em class="fa fa-vine" id="selectable-icon"></em>
+        <em class="fa fa-vk" id="selectable-icon"></em>
+        <em class="fa fa-volume-down" id="selectable-icon"></em>
+        <em class="fa fa-volume-off" id="selectable-icon"></em>
+        <em class="fa fa-volume-up" id="selectable-icon"></em>
+        <em class="fa fa-warning" id="selectable-icon"></em>
+        <em class="fa fa-wechat" id="selectable-icon"></em>
+        <em class="fa fa-weibo" id="selectable-icon"></em>
+        <em class="fa fa-weixin" id="selectable-icon"></em>
+        <em class="fa fa-whatsapp" id="selectable-icon"></em>
+        <em class="fa fa-wheelchair" id="selectable-icon"></em>
+        <em class="fa fa-wifi" id="selectable-icon"></em>
+        <em class="fa fa-windows" id="selectable-icon"></em>
+        <em class="fa fa-won" id="selectable-icon"></em>
+        <em class="fa fa-wordpress" id="selectable-icon"></em>
+        <em class="fa fa-wrench" id="selectable-icon"></em>
+        <em class="fa fa-xing" id="selectable-icon"></em>
+        <em class="fa fa-xing-square" id="selectable-icon"></em>
+        <em class="fa fa-yahoo" id="selectable-icon"></em>
+        <em class="fa fa-yelp" id="selectable-icon"></em>
+        <em class="fa fa-yen" id="selectable-icon"></em>
+        <em class="fa fa-youtube" id="selectable-icon"></em>
+        <em class="fa fa-youtube-play" id="selectable-icon"></em>
+        <em class="fa fa-youtube-square" id="selectable-icon"></em>
+    </div>
+
+    <div class="wrapper gradient backwrap">
+        <div class="back-shapes">
+<img src="icons/circle.png" class="floating" style="top:66.59856996935649%;left:13.020833333333334%;animation-delay:-0.9s;"/>
+<img src="icons/triangle.png" class="floating" style="top:31.46067415730337%;left:33.59375%;animation-delay:-4.8s;"/>
+<img src="icons/cross.png" class="floating" style="top:76.50663942798774%;left:38.020833333333336%;animation-delay:-4s;"/>
+<img src="icons/square.png" class="floating" style="top:21.450459652706844%;left:14.0625%;animation-delay:-2.8s;"/>
+<img src="icons/square.png" class="floating" style="top:58.12053115423902%;left:56.770833333333336%;animation-delay:-2.15s;"/>
+<img src="icons/square.png" class="floating" style="top:8.682328907048008%;left:72.70833333333333%;animation-delay:-1.9s;"/>
+<img src="icons/cross.png" class="floating" style="top:31.3585291113381%;left:58.541666666666664%;animation-delay:-0.65s;"/>
+<img src="icons/cross.png" class="floating" style="top:69.96935648621042%;left:81.45833333333333%;animation-delay:-0.4s;"/>
+<img src="icons/circle.png" class="floating" style="top:15.117466802860061%;left:32.34375%;animation-delay:-4.1s;"/>
+<img src="icons/circle.png" class="floating" style="top:13.074565883554648%;left:45.989583333333336%;animation-delay:-3.65s;"/>
+<img src="icons/cross.png" class="floating" style="top:55.87334014300306%;left:27.135416666666668%;animation-delay:-2.25s;"/>
+<img src="icons/cross.png" class="floating" style="top:49.54034729315628%;left:53.75%;animation-delay:-2s;"/>
+<img src="icons/cross.png" class="floating" style="top:34.62717058222676%;left:49.635416666666664%;animation-delay:-1.55s;"/>
+<img src="icons/cross.png" class="floating" style="top:33.19713993871297%;left:86.14583333333333%;animation-delay:-0.95s;"/>
+<img src="icons/square.png" class="floating" style="top:28.19203268641471%;left:25.208333333333332%;animation-delay:-4.45s;"/>
+<img src="icons/circle.png" class="floating" style="top:39.7344228804903%;left:10.833333333333334%;animation-delay:-3.35s;"/>
+<img src="icons/triangle.png" class="floating" style="top:77.83452502553627%;left:24.427083333333332%;animation-delay:-2.3s;"/>
+<img src="icons/triangle.png" class="floating" style="top:2.860061287027579%;left:47.864583333333336%;animation-delay:-1.75s;"/>
+<img src="icons/triangle.png" class="floating" style="top:71.3993871297242%;left:66.45833333333333%;animation-delay:-1.25s;"/>
+<img src="icons/triangle.png" class="floating" style="top:31.256384065372828%;left:76.92708333333333%;animation-delay:-0.65s;"/>
+<img src="icons/triangle.png" class="floating" style="top:46.47599591419816%;left:38.90625%;animation-delay:-0.35s;"/>
+<img src="icons/cross.png" class="floating" style="top:3.4729315628192032%;left:19.635416666666668%;animation-delay:-4.3s;"/>
+<img src="icons/cross.png" class="floating" style="top:3.575076608784474%;left:6.25%;animation-delay:-4.05s;"/>
+<img src="icons/cross.png" class="floating" style="top:77.3237997957099%;left:4.583333333333333%;animation-delay:-3.75s;"/>
+<img src="icons/cross.png" class="floating" style="top:0.9193054136874361%;left:71.14583333333333%;animation-delay:-3.3s;"/>
+<img src="icons/square.png" class="floating" style="top:23.6976506639428%;left:63.28125%;animation-delay:-2.1s;"/>
+<img src="icons/square.png" class="floating" style="top:81.30745658835546%;left:45.15625%;animation-delay:-1.75s;"/>
+<img src="icons/square.png" class="floating" style="top:60.9805924412666%;left:42.239583333333336%;animation-delay:-1.45s;"/>
+<img src="icons/square.png" class="floating" style="top:29.009193054136876%;left:93.90625%;animation-delay:-1.05s;"/>
+<img src="icons/square.png" class="floating" style="top:52.093973442288046%;left:68.90625%;animation-delay:-0.7s;"/>
+<img src="icons/square.png" class="floating" style="top:81.51174668028601%;left:83.59375%;animation-delay:-0.35s;"/>
+<img src="icons/square.png" class="floating" style="top:11.542390194075587%;left:91.51041666666667%;animation-delay:-0.1s;"/>
+
+        </div>
+    </div>
+
+    <!-- Epic scripts -->
+    <script src="assets/jquery/jquery-1.11.3.min.js" type="text/javascript" defer></script>
+    <script src="js/epic-ui-editor.js" type="text/javascript" defer></script>
+
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+      <script src="assets/ie7-js/IE9.min.js" async></script>
+    <![endif]-->
+
+</body>
+</html>

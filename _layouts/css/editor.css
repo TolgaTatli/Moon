@@ -1,0 +1,125 @@
+.shape-spawner {
+    position:fixed;
+    left:10px;
+    bottom:10px;
+    background-color:rgba(0,0,0,0.5);
+    padding:10px;
+    z-index:999;
+    height:40px;
+    line-height:45px;
+}
+
+.shape-spawner > div {
+    display:inline-block;
+    width:auto;
+    float:left;
+    margin-right:15px;
+    color:#fff;
+    height:50px;
+    line-height:50px;
+}
+
+.shape-spawner img {
+    opacity:0.5;
+    transition:0.3s all;
+}
+
+.shape-spawner img:hover {
+    opacity:1;
+    cursor:pointer;
+}
+
+.shape-spawner img.active {
+    opacity:1;
+}
+
+.shape-spawner .epic-icon:hover {
+    opacity:1;
+    cursor:pointer;
+}
+
+.shape-spawner .epic-icon.active {
+    opacity:1;
+    cursor:pointer;
+}
+
+.shape-spawner a {
+    color:#fff;
+    text-decoration:none;
+    margin-right:10px;
+}
+
+.shape-spawner a:hover {
+    color:#3999BD;
+}
+
+#shape-spawner-map {
+    position:fixed;
+    width:750px;
+    bottom:10px;
+    right:10px;
+    height:200px;
+    z-index:999;
+    padding:10px;
+    font-size:110%;
+    font-weight:300;
+    display:none;
+}
+
+/* Icon selector
+*/
+#icon-placeholder {
+    margin-top:1px;
+}
+
+#icon-placeholder a {
+    display:inline-block;
+    opacity:0.5;
+    margin-left:10px;
+    transition:0.3s all;
+}
+
+#icon-placeholder a:hover {
+    opacity:1;
+    color:#fff;
+}
+
+.icon-selector {
+    position:fixed;
+    bottom:80px;
+    left:10px;
+    background-color:#fff;
+    width:750px;
+    height:200px;
+    padding:19px;
+    z-index:999;
+    display:none;
+    overflow:auto;
+}
+
+.icon-selector em {
+    font-size:200%;
+}
+
+.icon-selector .close {
+    width:100%;
+    text-align:right;
+    padding:10px 0px;
+    margin-bottom:10px;
+    transition:0.3s all;
+}
+
+.icon-selector .close:hover {
+    background-color:#eee;
+    cursor:pointer;
+}
+
+.icon-selector #selectable-icon {
+    display:inline-block;
+    padding:5px;
+}
+
+.icon-selector #selectable-icon:hover {
+    background-color:#eee;
+    cursor:pointer;
+}

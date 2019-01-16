@@ -1,16 +1,7 @@
 ---
 sitemap: false
 ---
-
-/*
- *
- *  Moon
- *
- *  Designer: Taylan Tatlı
- *  WEB: http://taylantatli.me
- *
-*/
-
+html { overflow-x: hidden; }
 // Partials
 @import "variables";
 @import "mixins";
@@ -25,4 +16,4 @@ sitemap: false
 @import "vendor/animate";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
-@import "bk"
+@import "bk"  

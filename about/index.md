@@ -2,34 +2,26 @@
 layout: page
 title: About the Theme
 tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+date: 2019-01-16
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center><a href="http://jasone-jaewon.github.io/"><b>Jaewon</b></a> will be a professional programmer.</center>
 
-## Features
-* Working, NHN Entertainment 2019.01~
-* Graduated, Hongik Univ ~2019.02
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## Life
+* 2012.02~2012.05 Got ESL certificate at CSLI
+* 2012.08~2012.11 Worked at Evident Point
+* 2011.03~2019.02(Expected) Graduated Hongik Univ
+* 2019.01~ NHN Entertainment
 
-## Preview
+## Hobby
+* Playing soccer
+* Watching on Netflix(I love `stranger things`)
+* Travelling
+
+## Picture
 
 {% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
+    ![1547636679.093643.jpg](/files/2393546979903237468)
+    ![1547636860.846259.jpg](/files/2393547054861520872)
 {% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
-
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
-
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.

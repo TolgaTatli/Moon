@@ -4,8 +4,8 @@ bio:                "It's my little web page"
 description:        "It's my little web page"
 reading_time:       true
 words_per_minute:   200
-logo:               https://i.imgur.com/qqawC68.png
-background:         https://i.imgur.com/oaeWsCB.png
+logo:               "assets/img/logo.png"
+background:         "assets/img/placeholder-big.jpg"
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://senk0n.github.io/

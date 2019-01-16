@@ -1,17 +1,3 @@
-jQuery(function ($) {
-	
-	
-
-    /* ======= Full Screen BG ======= */
-    (function () {
-
-        $(".full-height").height($(window).height());
-        $(window).resize(function(){
-            $(".full-height").height($(window).height());
-        });
-
-    }());
-
     /* ======= particles js ======= */
     (function () {
 
@@ -105,7 +91,3 @@ jQuery(function ($) {
         });
 
     }());
-
-
-
-}); // JQuery end

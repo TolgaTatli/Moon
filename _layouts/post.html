@@ -37,8 +37,8 @@ layout: compress
                 {% include meta.html %}
                 </div>
             </div>
+            {% if page.comments and site.gitment %}{% include gitment.html %}{% endif %}
         </div>
-        {% if page.comments and site.gitment %}{% include gitment.html %}{% endif %}
     </header>
     {% include scripts.html %}
     {% if site.mathjax == true %}

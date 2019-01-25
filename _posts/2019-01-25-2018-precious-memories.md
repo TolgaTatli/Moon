@@ -13,7 +13,7 @@ comments: true
 
 ​	2018年4月10日，我收到了你的礼物，是一块我很喜欢的手表，你说不久后会来上海看我。
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0550.JPG)
+![](./assets/IMG_0550.JPG)
 
 ------
 
@@ -21,35 +21,35 @@ comments: true
 
 ​
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0913.JPG)
+![](./assets/IMG_0913.JPG)
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0771.JPG)
+![](./assets/IMG_0771.JPG)
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0644-1548435684910.JPG)
+![](./assets/IMG_0644-1548435684910.JPG)
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0651.JPG)
+![](./assets/IMG_0651.JPG)
 
 ------
 
 ​	4月22日，我们去了东方明珠，我带你去了太空舱观赏大上海的夜景，希望你能感受到一丝丝的浪漫。之后我们又乘坐了你未曾坐过的轮渡，穿越黄浦江，去南京路溜达。
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0708.JPG)
+![](./assets/IMG_0708.JPG)
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0710.JPG)
+![](./assets/IMG_0710.JPG)
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0714.JPG)
+![](./assets/IMG_0714.JPG)
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0732.JPG)
+![](./assets/IMG_0732.JPG)
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_0068.JPG)
+![](./assets/IMG_0068.JPG)
 
 ------
 
 ​	6月16日，我去西安找你，小雨，你来火车站接我，我们去了你的学校。这几天我们没有去什么地方游玩，主要是腻歪在一起吃这吃那。你订了蛋糕，还亲手给我做了寿司，隔天我们还去吃了李想大虾，当然还有我们的最爱--凉皮和肉夹馍。差点忘了，还去了大雁塔看音乐喷泉。
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_1203.JPG)
+![](./assets/IMG_1203.JPG)
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_1208.JPG)
+![](./assets/IMG_1208.JPG)
 
 ------
 
@@ -59,4 +59,4 @@ comments: true
 
 
 
-![](/home/harris/wangharris.github.io/_posts/assets/IMG_1637.JPG)
+![](./assets/IMG_1637.JPG)

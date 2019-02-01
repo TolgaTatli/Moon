@@ -3,6 +3,7 @@ layout: post
 title: "Tui Editor"
 date: 2019-01-30
 excerpt: "Tui Editor 체험기"
+tags: ["똑똑해보임", "인정?"]
 comments: true
 ---
 

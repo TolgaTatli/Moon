@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Tui 체험기"
+title: "Tui Editor"
 date: 2019-01-30
-excerpt: "Tui editor"
-tags: [똑똑해보임, 인정?]
+excerpt: "Tui Editor 체험기"
+tags: [, 인정?]
 comments: true
 ---
 

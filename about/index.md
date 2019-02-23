@@ -30,7 +30,7 @@ Board		 : BTEB
 Department	 : Computer Technology (Running)
 
 **Secondary School Certificate**<br>
-        Istitution  : Napith khali high scholl<br>
+        Istitution  : Napith khali high school<br>
 		Board		: Chittagong<br>
         Passing Year	: 2016<br>
         Result (GPA	: 4.44<br>

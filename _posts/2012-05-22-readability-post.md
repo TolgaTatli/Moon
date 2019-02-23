@@ -1,45 +1,298 @@
 ---
 layout: post
-title: "Testing Readability with a Bunch of Text"
+title: "যে ভাবে শিখবেন মার্কডাউন মার্কাপ ল্যাংগুয়েজ ।"
 date: 2012-05-22
-excerpt: "A ton of text to test readability."
+excerpt: " তিন মিনিটে মার্কডাউন মার্কাপ ল্যাংগুয়েজ."
 tags: [sample post, readability, test]
 comments: true
 ---
+![mark up](https://cdn-images-1.medium.com/max/800/1*KLvPfJ6Ui3cZQd4Zj17kJg.png)
 
-Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90's narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
 
-Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
 
-## Cupidatat 90's lo-fi authentic try-hard
+**মার্কডাউন মার্কাআপ** এটি একটি টেক্স ফরমেটিং ল্যাংগুয়েজ। এটা কিছুটা HTML এর মত । অতি সহজে যে কেউ চাইলে এটা শিখতে পারবেন মাত্র কয়েকটা সিনট্যাক্স মনে রাখলে চলবে । এটি প্রথমত দেখা যায় গিটহাব এর README.md ফাইলে। এটির সিনট্যাক্স হল .md , .markdown এই ছাড়া আরও অনেক সিনট্যাক্স রয়েছে যা নিচে দেখানো হল।
 
-In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
 
-* Sartorial hoodie
-* Labore viral forage
-* Tote bag selvage
-* DIY exercitation et id ugh tumblr church-key
+```
+.markdown
+.Rmd
+.mkdn
+.mkd
+.md
+.text
+.mdtxt
+.mdtext
+.mdwn
+.mdown
+```
 
-Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
 
-Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven't heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney's Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.
+**মার্কডাউন মার্কাপ ল্যাংগুয়েজ ব্যবহার করে কিভাবে হেডার তৈরি করবেনঃ**
+HTML এর মত মার্কডাউন মার্কাপ ল্যাংগুয়েজেও ৬টি হেড বা হেডার রয়েছে ।HTML-এ যেমন h1 থেকে h6 পর্যন্ত হেডিং করা যায় ঠিক একিভাবে মার্কডাউন মার্কাপ ল্যাংগুয়েজে h1 এর পরিবর্তে # ব্যাবহার করে হেড তৈরি করা যায়। যেমনঃ
+```
+# heading 1
 
-## Forage occaecat cardigan qui
+## heading 2
 
-Fashion axe hella gastropub lo-fi kogi 90's aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.
+### heading 3
 
-> Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.
+#### heading 4
 
-Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney's next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney's sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.
+##### heading 5
 
-## Hoodie Duis
+###### heading 6
 
-Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90's pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.
 
-### Thundercats Ho!
+```
 
-Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney's seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.
+*Output:*
+# heading 1
+## heading 2
+### heading 3
+#### heading 4
+##### heading 5
+###### heading 6
 
-Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney's selfies. Odd Future Banksy non authentic.
+**যে কোন গুরুত্বপূর্ণ টেক্স এর জন্যঃ** আমরা কোন লেখাকে গুরুত্বপূর্ণ বুঝাতে বোল্ট করে থাকি এবং অনেক সময় ইটালিকও করে থাকি। যে ভাবে বোল্ট ও ইটালিক করবেন মার্কডাউন মার্কাপ লাংগয়েজে, যাস্ট একটা *(স্টার ) ব্যবহার করে ইটালিক এবং দু'টা ** ব্যবহার করে বোল্ট করা হয়। অনুরূপ ভাবে _(আন্ডারস্কোর) করেও করা যায়। যা নিচে দেখানো হলঃ
 
-Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.
+
+
+```
+*ইটালিক টেক্স করবেন এইভাবে*
+
+_ইটালিক টেক্স_
+
+**বোল্ট করবেন এইভাবে**
+
+__বোল্ট টেক্স__
+
+~~টেক্স কাটাকাটি করেবেন এইভাবে~~
+
+*ইটালিক টেক্স **বোল্ট ট্যাক্স** ইটালিক টেক্স*
+
+```
+
+Opuput:
+*ইটালিক টেক্স করবেন এইভাবে*
+
+_ইটালিক টেক্স_
+
+**বোল্ট করবেন এইভাবে**
+
+__বোল্ট টেক্স__
+
+~~টেক্স কাটাকাটি করেবেন এইভাবে~~
+
+*ইটালিক টেক্স **বোল্ট ট্যাক্স** ইটালিক টেক্স*
+
+
+**আউটপুটকোন উক্তি লিখতেঃ** একটা (>)গ্রেটারদেন দিয়ে স্পেস এর পর যে কোন উক্তি লিখবেন । যেমনঃ
+```
+\> নিজের ভিতরে কোন শত্রু না থাকলে, বাইরের কেউ ক্ষতি করতে পারে না।
+
+```
+
+
+output:
+
+> নিজের ভিতরে কোন শত্রু না থাকলে, বাইরের কেউ ক্ষতি করতে পারে না।
+
+**অর্ডার-আনঅর্ডার লিস্টঃ**
+```
+আর্ডার লিস্টঃ
+1. Order item 1
+2. Order item 2
+   1 Order item 1
+   2 Order item 2
+   
+আন-অর্ডারঃ
+* Unorder item 1
+* Unorder item 2
+  * Unorder item 1
+  * Unorder item 2
+```
+# output:
+আর্ডার লিস্টঃ
+1. Order item 1
+2. Order item 2
+   1 Order item 1
+   2 Order item 2
+   
+আন-অর্ডারঃ
+* Unorder item 1
+* Unorder item 2
+  * Unorder item 1
+  * Unorder item 2
+  
+অন্যভাবেও আন-অর্ডার লিস্ট ব্যবহার করা যায় । -(ড্যাশ) চিহ্ন ব্যবহার করে , যেমনঃ
+
+
+```
+- Items 1
+- items 2
+- items 3
+- items 4
+  - items 1
+  - items 2
+  - items 3
+  ```
+  
+  # output:
+  - Items 1
+- items 2
+- items 3
+- items 4
+  - items 1
+  - items 2
+  - items 3
+  
+**কোন লিংক এড করতে চাইলে**ঃ আমরা সাধারাণত লিংক ব্যবহার করে থাকি কোন রেফারেন্স বা নির্দিষ্ট সাইটের ঠিকানার জন্যে । মার্কডাউন ল্যাংগুজেও লিংক ব্যবহার করা যায়। প্রথমে যে লিংকটা, যে টেক্স দ্বরা Show করবে তার জন্য [] চিহ্ন এর ভিতর ঐ টেক্সটা দিতে হবে এবং তার পরে () বন্ধনীর ভিতর লিংকটার URL দিতে হবে । যেমনঃ
+```
+
+[Sing up my github](https://github.com/salahuddinjony)
+
+```
+
+# output:
+[Sing up my github](https://github.com/salahuddinjony)
+
+আউটপুটমাউস পয়েন্টার নিয়ে গেলে লিংকের উপর কোন টেক্স Show করার জন্য যা ব্যবহার করতে হবেঃ
+```
+[Sing up my github](https://github.com/salahuddinjon,"with.me")
+```
+# output:
+[Sing up my github](https://github.com/salahuddinjon,"with.me")
+
+**ইমেজ এড করা**ঃ যদি কোন ছবি এড করতে চান ,তাও করতে পারবেন।
+```
+![This is an image](http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-laguage.png)
+```
+# output:
+![This is an image](http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-laguage.png)
+
+**একসেফঃ** অনেক সময় আমাদের আলাদা ভাবে মার্কডাউনের সিন্ট্যাক্স ব্যবহার করার দরকার হতে পারে। কিন্তু আমরা যদি * ব্যবহার করি তাহলে সেটা ইটালিক হয়ে যাবে এবং ** ব্যবহার করলে সেটা বোল্ট হয়ে যাবেএবং # ব্যবহার করলে হেড হয়ে যাবে,এই সমস্যা দূর করার জন্যও একটা সমাধান রয়েছে চিন্তার কোন দরকার নাই। এটার জন্য আমরা একসেপ(।) চিহ্ন ইউজ করতে পারি । যেটা কী-বোর্ডের ইন্টার বাটন এর উপরে রয়েছ দেখুন! এটার সাহায্যে আমরা *,** এবং # ব্যবহার করতে পারি।
+
+\# হেডারের\#
+
+\* ইটালিক টেক্সট\*
+
+\** বোল্টে টেক্স \**
+
+**আউটপুটযে সব কেরেক্টারের জন্য একসেপ চিহ্ন ব্যবহার করবেনঃ**
+
+
+```
+!
+`
+.
+#
+()
+{}
+[]
+-
++
+_
+*
+\
+```
+
+
+**কাউকে মেনশন করতে চাইলে**ঃ আমরা সচরাচর ফেইসবুকে যেভাবে মেনশন করি মার্কডাউন ল্যাংগুজেও একি ভাবে মেনশন করে @ ব্যবহার করে । যেমনঃ
+
+@salahuddinjony
+
+**টেবিল বানাতে চাইলেঃ** টেবিলও বানাতে পারবেন রো আর কলাম দিয়ে আপনার প্রয়োজন অনুযায়ী।
+
+
+```
+কলাম এক | কলাম দুই | ]কলাম দিত | কলাম চার
+------------ | ------------ | ------------ | ------------
+ডাটা এক | ডাটা দুই | ডাটা তিন | ডাটা চার
+ডাটা পাঁচ | ডাটা ছয় | ডাটা সাত | ডাটা আট
+
+```
+
+
+# output:
+
+কলাম এক | কলাম দুই | ]কলাম দিত | কলাম চার
+------------ | ------------ | ------------ | ------------
+ডাটা এক | ডাটা দুই | ডাটা তিন | ডাটা চার
+ডাটা পাঁচ | ডাটা ছয় | ডাটা সাত | ডাটা আট
+
+**ইমোজি**ঃ মজার বিষয় হল আপনি মার্কডাউন ল্যাংগুজেও চাইলে ইমোজি ব্যবহার করতে পারবেন। যেভাবে করবেনঃ
+যে ইমোজি ব্যবহার করবেন তার নামের আগে ও পরে কোলন(:) দিবেন। যেমনঃ
+
+
+```
+:bowtie:
+:smile:
+:laughing:
+:blush:
+:smiley:
+:relaxed:
+:smirk:
+:heart_eyes:
+:kissing_heart:
+:kissing_closed_eyes:
+:flushed:
+:relieved:
+:satisfied:
+:grin:
+:wink:
+:stuck_out_tongue_winking_eye:
+:stuck_out_tongue_closed_eyes:
+:grinning:
+:kissing:
+:kissing_smiling_eyes:
+:stuck_out_tongue:
+:sleeping:
+```
+
+# output:
+:bowtie:
+:smile:
+:laughing:
+:blush:
+:smiley:
+:relaxed:
+:smirk:
+:heart_eyes:
+:kissing_heart:
+:kissing_closed_eyes:
+:flushed:
+:relieved:
+:satisfied:
+:grin:
+:wink:
+:stuck_out_tongue_winking_eye:
+:stuck_out_tongue_closed_eyes:
+:grinning:
+:kissing:
+:kissing_smiling_eyes:
+:stuck_out_tongue:
+:sleeping:
+
+
+ইমোজির ALL লিস্ট দেখতে চাইলে [এখানে](https://www.webfx.com/tools/emoji-cheat-sheet/) দেখতে পারেন।
+
+**সিলেক্ট লিস্ট বা টাস্ক লিস্টঃ** আপনি চাইলে আরও লিস্ট বানাতে পারবেন এবং তা সিলিক্টেড বা আনসিলেক্টেড অপশন ইউজ করতে পারবেন। যেমনঃ
+
+
+```
+- [ ] আইটেম এক
+- [ ] আইটেম দুি
+- [x] আইটেম তিন
+- [x] আইটেম চার
+```
+
+
+# output:
+- [ ] আইটেম এক
+- [ ] আইটেম দুি
+- [x] আইটেম তিন
+- [x] আইটেম চার
+
+
+
+ধন্যবাদ ,সময় নিয়ে পড়ার জন্য। কোন ভুল এবংপরামর্শ থাকলে অবশ্যই বলবেন । মূলত গিটহাবের readme.md এর জন্য এতটুকু জানলেই হবে।

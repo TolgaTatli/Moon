@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Student development pack কী? "
+title: "Student development pack কী?"
 date: 2019-02-23
 excerpt: "যেভাবে করবেন Student development pack এর জন্য রেজিস্ট্রেশন."
 tags: [sample post, readability, test]

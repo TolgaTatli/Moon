@@ -4,7 +4,7 @@ bio:                'Open source web developer.'
 description:        "Love coding and utilize merit"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'https://avatars2.githubusercontent.com/u/36960783?s=460&v=4'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US

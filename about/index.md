@@ -1,37 +1,60 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About Me
+tags: [about, me, my details, salah]
+date: 2019-02-24
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center><a href="https://github.com/salahuddinjony"><b>Hello</b>I am mohammad salah uddin</a></center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## Personal Profile :
 
-## Preview
+Name: Mohammad salahuddin
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+Born: March 03,2000
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+Profile: full stack developer
 
-## Getting Started
+Email:salahuddin0758@gmail.com
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
+Phone: +8801859617022
+
+## Education:
+
+**Diploma in Engineering**
+```
+Institute	 : Islami Bank Institute of Technology
+
+Board		 : BTEB
+
+Department	 : Computer Technology (Running)
+```
+**Secondary School Certificate:**
+
+		Institution	: Napith khali High School
+        
+		Board		: Chittagong
+        
+		Passing Year	: 2016
+        
+		Result (GPA	: 4.44
+        
+		Group		: Business Studies.
+        
+## Skills:
+
+> HTML 99%
+
+> CSS3 90%
+
+> Programing JAVA 50%
+
+> Protius circuit Making 60%
+
+> PHP 20%
+
+> Git 70%
+
+ 
 [Install Moon](https://github.com/TaylanTatli/Moon){: .btn}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Student development pack কী? "
-date: 2012-05-22
+date: 2019-02-23
 excerpt: "যেভাবে করবেন Student development pack এর জন্য রেজিস্ট্রেশন."
 tags: [sample post, readability, test]
 comments: true

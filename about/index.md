@@ -21,7 +21,7 @@ Phone: +8801859617022
 
 ## Education:
 
-**Diploma in Engineering:**
+**Diploma in Engineering**
 
 Institute	 : Islami Bank Institute of Technology
 
@@ -29,7 +29,7 @@ Board		 : BTEB
 
 Department	 : Computer Technology (Running)
 
-**Secondary School Certificate:**<br>
+**Secondary School Certificate**<br>
         Istitution  : Napith khali high scholl<br>
 		Board		: Chittagong<br>
         Passing Year	: 2016<br>

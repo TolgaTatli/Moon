@@ -1,6 +1,6 @@
 # Site
 title:              Mohammad salah uddin
-bio:                'Open source web developer.'
+bio:                'Open source Web developer.'
 description:        "Love coding and utilize merit"
 reading_time:       true
 words_per_minute:   200
@@ -37,17 +37,17 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
+email:              salahuddin0758@gmail.com
+twitter:            https://twitter.com/SALHUDDIN7
+facebook:           https://www.facebook.com/profile.php?id=100007519157769
+github-url:         https://github.com/salahuddinjony
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:           https://www.linkedin.com/in/salah-uddin-552b4a16b/
 #xing:              username
 instagram:          username
 #lastfm:            username
 #tumblr:            username
-#medium:            '@username'
+medium:            '@salahuddin'
 #pinterest:         username
 #foursquare:        username
 steam:              username

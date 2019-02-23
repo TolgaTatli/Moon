@@ -6,7 +6,7 @@ date: 2019-02-24
 comments: false
 ---
     
- <center><h1 style="color:#666;">Hello! I am Mohammad Salah ddin</h1></center>
+ <center><h1>HELLO! I am Mohammad Salah uddin</h1></center>
 
 ## Personal Profile :
 

@@ -6,7 +6,7 @@ date: 2019-02-24
 comments: false
 ---
     
- <center>#<a href="https://github.com/salahuddinjony"><h2>Hello I am mohammad salah uddin</h2></a></center>
+ <center><h1 style="color:#666;">Hello! I am Mohammad Salah ddin</h1><</center>
 
 ## Personal Profile :
 
@@ -30,7 +30,7 @@ Board		 : BTEB
 
 Department	 : Computer Technology (Running)
 
-**Secondary School Certificate:**
+**Secondary School Certificate:**<br>
         Istitution  : Napith khali high scholl<br>
 		Board		: Chittagong<br>
         Passing Year	: 2016<br>

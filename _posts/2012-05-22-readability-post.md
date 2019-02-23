@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Testing Readability with a Bunch of Text"
-date: 2012-05-22
-excerpt: "A ton of text to test readability."
+title: "Student development pack কী"
+date: 2019-02-23
+excerpt: "কিভাবে রেজিস্ট্রেশন করবেন Student development pack এর জন্য"
 tags: [sample post, readability, test]
 comments: true
 ---

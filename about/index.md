@@ -6,7 +6,7 @@ date: 2019-02-24
 comments: false
 ---
     
-<center><a href="https://github.com/salahuddinjony"><b>Hello</b>I am mohammad salah uddin</a></center>
+ <center>#<a href="https://github.com/salahuddinjony"><h2>Hello I am mohammad salah uddin</h2></a></center>
 
 ## Personal Profile :
 
@@ -23,24 +23,19 @@ Phone: +8801859617022
 ## Education:
 
 **Diploma in Engineering**
-```
+
 Institute	 : Islami Bank Institute of Technology
 
 Board		 : BTEB
 
 Department	 : Computer Technology (Running)
-```
-**Secondary School Certificate:**
 
-		Institution	: Napith khali High School
-        
+**Secondary School Certificate:**
+        Istitution  : Napith khali high scholl
 		Board		: Chittagong
-        
-		Passing Year	: 2016
-        
-		Result (GPA	: 4.44
-        
-		Group		: Business Studies.
+        Passing Year	: 2016
+        Result (GPA	: 4.44
+        Group		: Business Studies.
         
 ## Skills:
 

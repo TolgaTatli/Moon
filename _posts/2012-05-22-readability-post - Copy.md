@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Student development pack কী?"
+feaure: https://github.blog/wp-content/uploads/2014/10/4b0317bc-4599-11e4-8bc3-0ca4dd5223e8.png?resize=2284%2C889
 date: 2019-02-23
 excerpt: "যেভাবে করবেন Student development pack এর জন্য রেজিস্ট্রেশন."
 tags: [sample post, readability, test]

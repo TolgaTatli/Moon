@@ -27,3 +27,6 @@ comments: true
 
 প্রথমে আপনি [এই লিংক](https://education.github.com/students) ওপেন করলে  দেখতে পাবেন join Github Education. এখন join Github Education  এ ক্লিক করলে দেখতে পাবেন Get your pack আবার Get your pack ক্লিক করলে আবার দেখতে পাবেন একটা ফ্রম। সেখানে আপনার First name and Last name  দিবেন , আপনার ইউনিভার্সিটির নাম দিবেন এবং ইউনিভার্সিটির  থেকে দেওয়া আপনার ইমেইল এড্রেস দিবেন নয়ত বা আপনার ইউনিভার্সিটির আপনার আইডি কার্ড স্কেন করা কপি Upload  করে দিবেন । ব্যাস আপনার কাজ শেষ । সাবমিট করার পর গিটহাব থেকে আপনার দেওয়া ডিটেইলস যাচাই করে ৫ঘন্টা বা তার অধিক পর আপনাকে ইমেইল করবে।
 মূলত এইভাবে আপনি চাইলে  গিটহাব থেকে আপনার Student-development-pack ব্যবহার করতে পারেন রেজিষ্ট্রেশনের পর।
+
+
+<a href="https://www.facebook.com/profile.php?id=100007519157769" class="btn btn-success">Contact Facebook</a>

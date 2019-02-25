@@ -29,4 +29,4 @@ comments: true
 মূলত এইভাবে আপনি চাইলে  গিটহাব থেকে আপনার Student-development-pack ব্যবহার করতে পারেন রেজিষ্ট্রেশনের পর।
 
 
-<a href="https://www.facebook.com/profile.php?id=100007519157769" class="btn btn-success">Contact Facebook</a>
+<a href="https://www.facebook.com/profile.php?id=100007519157769" class="btn btn-primary">Contact Facebook</a>

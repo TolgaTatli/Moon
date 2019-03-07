@@ -49,12 +49,13 @@ instagram:          senk0n
 steam:              senk0n
 #github-url:         senk0n
 
-# Gems
+# Plagins
 gems:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-redirect-from
 
 jekyll-mentions:
     base_url: https://github.com

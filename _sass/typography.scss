@@ -56,7 +56,7 @@ h3.title a {
 			color: $color_shark;
 			font-weight: bolder;
             &:hover {
-                color: $red;
+                color: $accent;
             }
 		}
 		p {
@@ -98,7 +98,7 @@ a {
   	color: $color_tuatara;
   }
   &:hover {
-  	color: $red;
+  	color: $accent;
   }
   &:active {
   	transition: color .3s;

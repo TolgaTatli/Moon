@@ -33,7 +33,6 @@ Department	 : Computer Technology (Running)
         Istitution  : Napith khali high school<br>
 		Board		: Chittagong<br>
         Passing Year	: 2016<br>
-        Result (GPA	: 4.44<br>
         Group		: Business Studies.<br>
         
 ## Skills:

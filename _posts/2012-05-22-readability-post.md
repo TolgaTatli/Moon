@@ -2,7 +2,7 @@
 layout: post
 title: "যে ভাবে শিখবেন মার্কডাউন মার্কাপ ল্যাংগুয়েজ ।"
 date: 2019-02-24
-excerpt: " তিন মিনিটে মার্কডাউন মার্কাপ ল্যাংগুয়েজ."
+excerpt: "চার মিনিটে মার্কডাউন মার্কাপ ল্যাংগুয়েজ."
 tags: [sample post, readability, test]
 comments: true
 ---

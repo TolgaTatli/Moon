@@ -2,7 +2,7 @@
 title:              AUSLNDR
 bio:                'dark wave rural, pós punk sincopado, indie folk de carona, e um tiquinho de carimbó'
 description:        "AUSLNDR é uma banda formada no Rio de Janeiro, que busca explorar sons e cidades"
-reading_time:       true
+reading_time:       false
 words_per_minute:   200
 logo:               'assets/img/arvre.jpg'
 background:         'assets/img/arvre.jpg'

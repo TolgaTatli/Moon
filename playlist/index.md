@@ -1,6 +1,6 @@
 ---
-layout: project
-title: All Projects
-excerpt: "A List of Projects"
+layout: page
+title: Nosso som
+excerpt: "Um pouco dessa viagem"
 comments: false
 ---

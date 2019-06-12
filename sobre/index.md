@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sobre banda
-tags: [sobre, release]
+title: Sobre a banda
+tags: [sobre, release, sonicidades]
 date: 2019-06-12
 comments: false
 ---

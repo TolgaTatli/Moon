@@ -16,7 +16,7 @@ Formada em 2016, no Rio de Janeiro, pelos multi-insrumentistas João Bayer e Car
 
 Contando com músicos de toda sorte e muitas estradas do Brasil, **AUSLNDR** faz uma viagem sonora.
 
-*"Auslander"* vem do anglo-saxão, e significa "forasteiro; aquele que vem de fora; alien(ígena, ado, e afins)". **AUSLNDR** significa *viajar* pra dentro, mas *ser* fora de si - redescobrir através da música o que nos torna únicos e também uníssonos - a soma de regiões, sotaques, lutas.
+*"Auslander"* vem do anglo-saxão, e significa "forasteiro; aquele que vem de fora; alien(ígena, ado, e afins)". **AUSLNDR** significa _viajar_ pra dentro, mas _ser_ fora de si - redescobrir através da música o que nos torna únicos e também uníssonos - a soma de regiões, sotaques, lutas.
 Em **Sonicidades**, nosso repertório propõe essa viagem: por muitos *Brasis*, possíveis e idealizados, caminhando do rock de Porto Alegre, descasando na viola de Goiás, pra pegar carona no punk de São Paulo até uma esquina em Minas Gerais.
 
 Vem divagar com a gente?

@@ -12,7 +12,7 @@ comments: false
 
 ## Release
 
-Formada em 2016, no Rio de Janeiro, pelos multi-insrumentistas João Bayer e Carolina Weber, a banda conta com uma formação volátil, e  procura sempre reimaginar seus sons e repertórios - de músicas autorais, ou de versões -, tendo em seus integrantes a idéia de colaboradores - ou *caroneiros*.
+Formada em 2016, no Rio de Janeiro, pelos multi-insrumentistas João Bayer e Carolina Weber, a banda conta com uma formação volátil, e  procura sempre reimaginar seus sons e repertórios - de músicas autorais, ou de versões - tendo em seus integrantes a idéia de colaboradores - ou *caroneiros*.
 
 ### Sonicidades
 

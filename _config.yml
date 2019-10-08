@@ -2,7 +2,7 @@
 title:              Jane(Qihua) Chen
 bio:                'There is no royal road to learning.'
 description:        "I’m interested in Computer Vision, Computer Graphics, Machine learning, vision and visual arts."
-reading_time:       true
+reading_time:       false
 words_per_minute:   200
 logo:               'assets/img/author.jpg'
 background:         'assets/img/placeholder-big.jpg'
@@ -20,7 +20,7 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-mathjax:            true
+mathjax:            false
 sass:
   sass_dir:         _sass
   style:            compressed

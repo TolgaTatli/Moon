@@ -9,5 +9,5 @@ comments: False
 
 My Watercolor Painting.
 <figure>
-	<img src="/assets/img/Watercolor.jpg">
+	<img src="/assets/img/watercolor.jpg">
 </figure>

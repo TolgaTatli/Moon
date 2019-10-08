@@ -8,8 +8,8 @@ comments: False
 ---
 
 My Chinese Kungfu Video.
-<feature>
+<div class="container animated fadeIn">
 <video width="254" height="360" src="/assets/kungfu.mp4" controls="controls">
 您的浏览器不支持 video 标签。
 </video>
-</feature>
+</div>

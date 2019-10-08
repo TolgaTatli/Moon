@@ -7,8 +7,8 @@ tags: [KungFu, Video]
 comments: False
 ---
 
-Chinese Kungfu.
+My Chinese Kungfu Video.
 
-<video width="338" height="478" src="/assets/kungfu.mp4" controls="controls">
+<video width="138" height="278" src="/assets/kungfu.mp4" controls="controls">
 您的浏览器不支持 video 标签。
 </video>

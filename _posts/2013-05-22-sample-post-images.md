@@ -13,6 +13,6 @@ Here are some examples of what a post with images might look like. If you want t
 
 #### One Up
 
-<video src="/assets/kungfu.mp4" controls="controls">
+<video width="338" height="478" src="/assets/kungfu.mp4" controls="controls">
 您的浏览器不支持 video 标签。
 </video>

@@ -21,19 +21,12 @@ Phone: +8801859617022
 
 ## Education:
 
-**Diploma in Engineering**
+**B.sc in Engineering**
 
-Institute	 : Islami Bank Institute of Technology
+University	 : Dhaka University of engineering Technology
 
-Board		 : BTEB
+Department	 : Computer Science & Engineering Technology (Running)
 
-Department	 : Computer Technology (Running)
-
-**Secondary School Certificate**<br>
-        Istitution  : Napith khali high school<br>
-		Board		: Chittagong<br>
-        Passing Year	: 2016<br>
-        Group		: Business Studies.<br>
         
 ## Skills:
 

@@ -23,7 +23,7 @@ Phone: +8801859617022
 
 **B.sc in Engineering**
 
-University	 : Dhaka University of engineering Technology
+University	 : Dhaka University of Engineering Technology
 
 Department	 : Computer Science & Engineering Technology (Running)
 

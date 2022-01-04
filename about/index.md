@@ -23,9 +23,9 @@ Phone: +8801859617022
 
 **B.sc in Engineering**
 
-University	 : Dhaka University of Engineering Technology
+University	: Dhaka University of Engineering Technology
 
-Department	 : Computer Science & Engineering Technology (Running)
+Department	: Computer Science & Engineering Technology (Running)
 
         
 ## Skills:
@@ -36,11 +36,11 @@ Department	 : Computer Science & Engineering Technology (Running)
 
 > Programing JAVA 50%
 
-> Protius circuit Making 60%
+> Protius circuit Making 40%
 
 > PHP 20%
 
-> Git 70%
+> Git 80%
 
 
 

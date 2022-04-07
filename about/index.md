@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 tags: [about, me, my details, salah]
-date: 2019-02-24
+date: 2022-04-8
 comments: false
 ---
     

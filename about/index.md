@@ -40,7 +40,7 @@ Department	: Computer Science & Engineering Technology (Running)
 
 > PHP 20%
 
-> Git 80%
+> Git 90%
 
 
 

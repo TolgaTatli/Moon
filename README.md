@@ -1,8 +1,11 @@
-# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
+# Moon Jekyll Theme 
   
-## `Sorry guys but there will be no update until I buy a new laptop.`
-    
-######(If you like this theme or using it, please give a :star: for motivation.)
+## A NEW HOME FOR MOON!
+
+> [!WARNING]  
+> Moon's development is taken over by my brother [@tolgattli](https://github.com/tolgattli).
+> You can access new repository from [here](https://github.com/tolgattli/Moonrise/).
+---
 
 **[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
 

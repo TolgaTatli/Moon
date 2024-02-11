@@ -3,8 +3,8 @@
 ## A NEW HOME FOR MOON!
 
 > [!WARNING]  
-> Moon's development is taken over by my brother [@tolgattli](https://github.com/tolgattli).  
-> You can access new repository from [here](https://github.com/tolgattli/Moonrise/).
+> Moon's development is taken over by my brother [@TolgaTatli](https://github.com/TolgaTatli).  
+> You can access new repository from [here](https://github.com/TolgaTatli/Moonrise/).
 ---
 
 **[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.

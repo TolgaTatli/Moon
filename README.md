@@ -2,8 +2,7 @@
   
 ## A NEW HOME FOR MOON!
 
-> [!WARNING]  
-> Moon's development is taken over by my brother [@TolgaTatli](https://github.com/TolgaTatli).  
+> [!WARNING]   
 > You can access new repository from [here](https://github.com/TolgaTatli/Moonrise/).
 ---
 

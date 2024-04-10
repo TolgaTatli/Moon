@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              岳同学
+bio:                '只要自己努力，别怕学不会！'
+description:        "你是猪嘛"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://taylantatli.github.io/Moon
+url:                https://nul1.cn
 
 # Jekyll
 permalink:          /:title/
@@ -41,7 +41,7 @@ disqus_shortname:   taylantatli
 twitter:            username
 facebook:           username
 github-url:         username
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#stackoverflow:     123456/username   from a "https://github.com/1259060712/Moon1.git" link
 #linkedin:          username
 #xing:              username
 instagram:          username

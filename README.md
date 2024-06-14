@@ -1,12 +1,12 @@
 # Moon Jekyll Theme 
-  
-## A NEW HOME FOR MOON!
 
-> [!WARNING]   
+> [!WARNING]
+> ###### A NEW HOME FOR MOON!
+> ***
 > You can access new repository from [here](https://github.com/TolgaTatli/Moonrise/).
 ---
 
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+**[Moon](https://tolgatatli.github.io/Moon)** is a minimal, one column jekyll theme.
 
 ## Features
 * Minimal, you can focus on your content
@@ -25,7 +25,7 @@
 ![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
 ![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
 
-See a [live version of Moon](https://taylantatli.github.io/Moon) hosted on GitHub.
+See a [live version of Moon](https://tolgatatli.github.io/Moon) hosted on GitHub.
 
 ## Getting Started
 

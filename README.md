@@ -2,7 +2,7 @@
 
 > [!WARNING]
 > ###### A NEW HOME FOR MOON!
-> ***
+> 
 > You can access new repository from [here](https://github.com/TolgaTatli/Moonrise/).
 ---
 

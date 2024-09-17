@@ -145,29 +145,6 @@ body {
 	    list-style-type: none;
 	    display: inline;
 	}
-	.tag {
-	    display: inline-block;
-        border: 1px solid;
-        border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
-        @include rounded(3px);
-        text-decoration: none;
-        background-color: $white;
-        color: $color_tuatara;
-        @include transition(.75s);
-        margin: 2px 5px;
-		span {
-			float: left;
-			padding: 2px 6px;
-		}
-		.count {
-			background-color: darken($white,15);
-			@include border-radius(3px,3px,0,0);
-		}
-		&:hover {
-			background-color: darken($white,15);
-			box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
-		}
-	}
 }
 header .entry-meta {
 	display: none; // hide header meta on small screens
@@ -177,13 +154,6 @@ header .entry-meta {
 }
 .entry-title a {
     text-decoration: none;
-}
-.entry-tags {
-	display: block;
-    margin-top: 1rem;
-	width: 70%;
-    float: left;
-    text-align: left;
 }
 .social-share {
 	display: block;

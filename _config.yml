@@ -1,14 +1,16 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              "SenkOn"
+bio:                "mb Android-developer  ┐(￣～￣)┌"
+info:               "Зовут Сергей, помешанный из Украины. Кидается на всё что отдаёт блеском в его глазах с желанием сделать это идеально."
+description:        "null"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
+logo:               "assets/img/logo.png"
+background:         "assets/img/placeholder-big.jpg"
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://taylantatli.github.io/Moon
+url:                https://senk0n.github.io/
+url2:               https://senk0n.dev/
 
 # Jekyll
 permalink:          /:title/
@@ -37,37 +39,23 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-instagram:          username
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-steam:              username
-#dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
+    
+email:              push@senk0n.dev
+#email:              senk0n.u@otso.city 
+telegram:           senk0n
+vk:                 senk0n
+instagram:          senk0n
+#youtube-channel:    UCxRxqC9y2R6lO3tXd8k1Izg
+steam:              senk0n
+#github-url:         senk0n
 
-# Gems
+# Plagins
 gems:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-redirect-from
 
 jekyll-mentions:
     base_url: https://github.com

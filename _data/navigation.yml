@@ -1,4 +1,5 @@
 # Site navigation links
-
+- title: Members
+  url: /members/
 - title: Projects
   url: /projects/

@@ -1,0 +1,50 @@
+{% if include.type == "start" %}
+<div class="card-container">
+{% elsif include.type == "end" %}
+</div>
+{% else %}
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <img src="{{ site.url }}/assets/img/profile/{{ include.img }}" alt="profile one" />
+            </div>
+            <ul class="social-icons">
+                {% if include.facebook %}
+                <li>
+                    <a href="http://facebook.com/{{ include.facebook }}">
+                        <i class="fa fa-fw fa-facebook-square"></i>
+                    </a>
+                </li>
+                {% endif %}
+                {% if include.instagram %}
+                <li>
+                    <a href="http://instagram.com/{{ include.instagram }}">
+                        <i class="fa fa-fw fa-instagram"></i>
+                    </a>
+                </li>
+                {% endif %}
+                {% if include.twitter %}
+                <li>
+                    <a href="http://twitter.com/{{ include.twitter }}">
+                        <i class="fa fa-fw fa-twitter-square"></i>
+                    </a>
+                </li>
+                {% endif %}
+                {% if include.github %}
+                <li>
+                    <a href="https://github.com/{{ include.github }}">
+                        <i class="fa fa-fw fa-github"></i>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+            <div class="details">
+                <h2>
+                    {{ include.name }}
+                    <br />
+                    <span class="job-title">{{ include.org }}</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+{% endif %}

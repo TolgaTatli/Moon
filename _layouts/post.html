@@ -17,7 +17,9 @@ layout: compress
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
+                    {% if page.project == null and page.members == null and page.about == null %}
                     <h4>{{ page.date | date_to_string }}</h4>
+                    {% endif %}
                     {% if site.reading_time %}
                     <p class="reading-time">
                       <i class="fa fa-clock-o"></i>
@@ -26,6 +28,10 @@ layout: compress
                     {% endif %}
                     {% if page.project %}
                     <a class="btn zoombtn" href="{{site.url}}/projects/">
+                    {% elsif page.members %}
+                    <a class="btn zoombtn" href="{{site.url}}/members/">
+                    {% elsif page.about %}
+                        <a class="btn zoombtn" href="{{site.url}}/about/">
                     {% else %}
                     <a class="btn zoombtn" href="{{site.url}}/posts/">
                     {% endif %}
@@ -38,12 +44,20 @@ layout: compress
                 </div>
             </div>
         </div>
-        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
+        {% if page.comments and site.disqus_shortname %}
+            <section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->
+        {% endif %}
     </header>
     {% include scripts.html %}
     {% if site.mathjax == true %}
     <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script -->
+    <script
+            type="text/javascript"
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
     {% endif %}
 </body>
 </html>

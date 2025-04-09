@@ -111,7 +111,14 @@ body {
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	@include transition(.5s);
 	@media #{$small} {
-		width: 90%;
+		max-width:unset;
+		width: 100%;
+		padding: 2em 0;
+	    box-shadow: none;
+	}
+	@media #{$medium} {
+		max-width:unset;
+		width: 100%;
 		padding: 2em 0;
 	    box-shadow: none;
 	}
@@ -219,4 +226,5 @@ header .entry-meta {
         background-blend-mode: multiply;
         background-position: center center;
     }
+	background-size:cover;
 }

@@ -1,6 +1,15 @@
 // content area
 .content {
-	@include font-size(14);
+    font-family: dnp-shuei-nmincho-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	@include font-size(17);
+	text-align:justify;
+	word-break:break-all; 
+	text-justify:inter-ideograph;
+	text-justify:inter-character;
+	word-wrap:break-word;
+	overflow-wrap:break-word;
 	padding: 0 2rem;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
@@ -14,6 +23,9 @@
 
 // titles
 .title {
+    font-family: dnp-shuei-anti-std, sans-serif;
+    font-weight: 600;
+    font-style: normal;
 	text-align: center;
 	font-weight: bold;
 	> p {
@@ -26,6 +38,20 @@
 	}
 }
 .post-title {
+    font-family: dnp-shuei-anti-std, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    > h1 {
+		font-family: senobi-gothic, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+        > big {
+            font-size: 3em;
+        }
+		> small {
+            font-size: 1.5em;
+        }
+    }
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 3rem;
@@ -41,6 +67,7 @@ h3.title a {
 .post-list {
     text-align: left;
 	ul {
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 		list-style: none;
 		padding-left: 0;
 	}

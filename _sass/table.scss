@@ -1,0 +1,124 @@
+.content table {
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.content table td,
+.content table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.content table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 0.9em;
+}
+
+.content table thead th {
+    color: #ffffff;
+    background: #4fc3a1;
+}
+
+.content table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.content table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+/* Key-Value Table */
+.content table.keyvalue tbody tr {
+    border-bottom: #324960 dotted 1px;
+}
+
+.content table.keyvalue tbody tr:nth-child(odd) td:first-child {
+    background: #c34f71;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.content table.keyvalue tbody tr:nth-child(even) td:first-child {
+    background: #324960;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .content table.keyvalue {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 0.6em;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .content table.keyvalue thead,
+    .content table.keyvalue tbody,
+    .content table.keyvalue thead th {
+        display: block;
+    }
+    .content table.keyvalue thead th:last-child {
+        border-bottom: none;
+    }
+    .content table.keyvalue thead {
+        float: left;
+    }
+    .content table.keyvalue tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .content table.keyvalue td,
+    .content table.keyvalue th {
+        writing-mode: vertical-lr;
+        padding: 1em;
+        height: calc(100vh - 10em);
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-size: 1em;
+    }
+    .content table.keyvalue thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .content table.keyvalue tbody tr {
+        display: table-cell;
+    }
+    .content table.keyvalue tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .content table tr:nth-child(even) {
+        background: transparent;
+    }
+    .content table.keyvalue tr td:nth-child(odd) {
+        background: #f8f8f8;
+        border-right: 1px solid #e6e4e4;
+    }
+    .content table.keyvalue tr td:nth-child(even) {
+        border-right: 1px solid #e6e4e4;
+    }
+    .content table.keyvalue tr td:first-child {
+        height: 10em;
+    }
+    .content table.keyvalue tbody td {
+        display: block;
+        text-align: center;
+    }
+}

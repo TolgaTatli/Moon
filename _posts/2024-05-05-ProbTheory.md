@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 
 title:  "A brief introduction to Mathematical Statistics"
 date:   2024-05-05
 category: Data Science 
